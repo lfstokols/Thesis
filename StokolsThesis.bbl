@@ -1,0 +1,632 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{AMU{\etalchar{+}}10}
+
+\bibitem[ACV16]{AlCaVa}
+M.~Allen, L.~Caffarelli, and A.~Vasseur.
+\newblock A parabolic problem with a fractional time derivative.
+\newblock {\em Arch. Ration. Mech. Anal.}, 221(2):603--630, 2016.
+
+\bibitem[Ago84]{Ag}
+V.~Agoshkov.
+\newblock Spaces of functions with differential-difference characteristics and
+  the smoothness of solutions of the transport equation.
+\newblock {\em Dokl. Akad. Nauk SSSR}, 276(6):1289--1293, 1984.
+
+\bibitem[AGVG14]{AdGhVG}
+Adimurthi, Shyam~Sundar Ghoshal, and G.~D. Veerappa~Gowda.
+\newblock {$L^p$} stability for entropy solutions of scalar conservation laws
+  with strict convex flux.
+\newblock {\em J. Differential Equations}, 256(10):3395--3416, 2014.
+
+\bibitem[AMU{\etalchar{+}}10]{AlMoUkXuYa}
+R.~Alexandre, Y.~Morimoto, S.~Ukai, C.-J. Xu, and T.~Yang.
+\newblock Regularizing effect and local existence for the non-cutoff
+  {B}oltzmann equation.
+\newblock {\em Arch. Ration. Mech. Anal.}, 198(1):39--123, 2010.
+
+\bibitem[Bar10]{Ba.hamjac}
+G.~Barles.
+\newblock A short proof of the {$C^{0,\alpha}$}-regularity of viscosity
+  subsolutions for superquadratic viscous {H}amilton-{J}acobi equations and
+  applications.
+\newblock {\em Nonlinear Anal.}, 73(1):31--47, 2010.
+
+\bibitem[Bar13]{Ba.viscosity}
+G.~Barles.
+\newblock An introduction to the theory of viscosity solutions for first-order
+  {H}amilton-{J}acobi equations and applications.
+\newblock In {\em Hamilton-{J}acobi equations: approximations, numerical
+  analysis and applications}, volume 2074 of {\em Lecture Notes in Math.},
+  pages 49--109. Springer, Heidelberg, 2013.
+
+\bibitem[BCD11]{BaChDa}
+H.~Bahouri, J.-Y. Chemin, and R.~Danchin.
+\newblock {\em Fourier analysis and nonlinear partial differential equations},
+  volume 343 of {\em Grundlehren der Mathematischen Wissenschaften [Fundamental
+  Principles of Mathematical Sciences]}.
+\newblock Springer, Heidelberg, 2011.
+
+\bibitem[BDY12]{BuDuYa}
+H.-Q. Bui, X.-T. Duong, and L.~Yan.
+\newblock Calder\'{o}n reproducing formulas and new {B}esov spaces associated
+  with operators.
+\newblock {\em Adv. Math.}, 229(4):2449--2502, 2012.
+
+\bibitem[B{\'{e}}z94]{Be}
+M.~B{\'{e}}zard.
+\newblock R\'{e}gularit\'{e} {$L^p$} pr\'{e}cis\'{e}e des moyennes dans les
+  \'{e}quations de transport.
+\newblock {\em Bull. Soc. Math. France}, 122(1):29--76, 1994.
+
+\bibitem[BLY99]{BrLiYa}
+Alberto Bressan, Tai-Ping Liu, and Tong Yang.
+\newblock {$L^1$} stability estimates for {$n\times n$} conservation laws.
+\newblock {\em Arch. Ration. Mech. Anal.}, 149(1):1--22, 1999.
+
+\bibitem[Bou02]{Bo}
+F.~Bouchut.
+\newblock Hypoelliptic regularity in kinetic equations.
+\newblock {\em J. Math. Pures Appl. (9)}, 81(11):1135--1159, 2002.
+
+\bibitem[BZ10]{BeZh}
+J.~Benedetto and S.~Zheng.
+\newblock Besov spaces for the {S}chr\"{o}dinger operator with barrier
+  potential.
+\newblock {\em Complex Anal. Oper. Theory}, 4(4):777--811, 2010.
+
+\bibitem[Car09]{Ca}
+P.~Cardaliaguet.
+\newblock A note on the regularity of solutions of {H}amilton-{J}acobi
+  equations with superlinear growth in the gradient variable.
+\newblock {\em ESAIM Control Optim. Calc. Var.}, 15(2):367--376, 2009.
+
+\bibitem[CC10]{CaCa}
+P.~Cannarsa and P.~Cardaliaguet.
+\newblock H\"older estimates in space-time for viscosity solutions of
+  {H}amilton-{J}acobi equations.
+\newblock {\em Comm. Pure Appl. Math.}, 63(5):590--629, 2010.
+
+\bibitem[CCV11a]{CaChVa}
+L.~Caffarelli, C.-H. Chan, and A.~Vasseur.
+\newblock Regularity theory for parabolic nonlinear integral operators.
+\newblock {\em J. Amer. Math. Soc.}, 24(3):849--869, 2011.
+
+\bibitem[CCV11b]{CaChVa.nio}
+L.~Caffarelli, C.-H. Chan, and A.~Vasseur.
+\newblock Regularity theory for parabolic nonlinear integral operators.
+\newblock {\em J. Amer. Math. Soc.}, 24(3):849--869, 2011.
+
+\bibitem[CCW01]{CoCoWu}
+P.~Constantin, D.~Cordoba, and J.~Wu.
+\newblock On the critical dissipative quasi-geostrophic equation.
+\newblock {\em Indiana Univ. Math. J.}, 50(Special Issue):97--107, 2001.
+\newblock Dedicated to Professors Ciprian Foias and Roger Temam (Bloomington,
+  IN, 2000).
+
+\bibitem[Cha71]{Ch}
+J.~Charney.
+\newblock Geostrophic turbulence.
+\newblock {\em Journal of the Atmospheric Sciences}, 28(6):1087--1095, 1971.
+
+\bibitem[CI16]{CoIg.sqg}
+P.~Constantin and M.~Ignatova.
+\newblock Critical {SQG} in bounded domains.
+\newblock {\em Ann. PDE}, 2(2):Art. 8, 42, 2016.
+
+\bibitem[CI17]{CoIg.fraclap}
+P.~Constantin and M.~Ignatova.
+\newblock Remarks on the fractional {L}aplacian with {D}irichlet boundary
+  conditions and applications.
+\newblock {\em Int. Math. Res. Not. IMRN}, (6):1653--1673, 2017.
+
+\bibitem[CIN18]{CoIgNg}
+P.~Constantin, M.~Ignatova, and H.-Q. Nguyen.
+\newblock Inviscid limit for {SQG} in bounded domains.
+\newblock {\em SIAM J. Math. Anal.}, 50(6):6196--6207, 2018.
+
+\bibitem[CKN82]{CaKoNi}
+L.~Caffarelli, R.~Kohn, and L.~Nirenberg.
+\newblock Partial regularity of suitable weak solutions of the
+  {N}avier-{S}tokes equations.
+\newblock {\em Comm. Pure Appl. Math.}, 35(6):771--831, 1982.
+
+\bibitem[CMT94]{CoMaTa}
+P.~Constantin, A.~J. Majda, and E.~Tabak.
+\newblock Formation of strong fronts in the {$2$}-{D} quasigeostrophic thermal
+  active scalar.
+\newblock {\em Nonlinearity}, 7(6):1495--1533, 1994.
+
+\bibitem[CN18a]{CoNg}
+P.~Constantin and H.-Q. Nguyen.
+\newblock Global weak solutions for {SQG} in bounded domains.
+\newblock {\em Comm. Pure Appl. Math.}, 71(11):2323--2333, 2018.
+
+\bibitem[CN18b]{CoNg.strong}
+P.~Constantin and H.-Q. Nguyen.
+\newblock Local and global strong solutions for {SQG} in bounded domains.
+\newblock {\em Phys. D}, 376/377:195--203, 2018.
+
+\bibitem[CR11]{CaRa}
+P.~Cardaliaguet and C.~Rainer.
+\newblock H\"older regularity for viscosity solutions of fully nonlinear, local
+  or nonlocal, {H}amilton-{J}acobi equations with superquadratic growth in the
+  gradient.
+\newblock {\em SIAM J. Control Optim.}, 49(2):555--573, 2011.
+
+\bibitem[Cra97]{Cr}
+M.~G. Crandall.
+\newblock Viscosity solutions: a primer.
+\newblock In {\em Viscosity solutions and applications ({M}ontecatini {T}erme,
+  1995)}, volume 1660 of {\em Lecture Notes in Math.}, pages 1--43. Springer,
+  Berlin, 1997.
+
+\bibitem[CS07]{CaSi.extension}
+L.~Caffarelli and L.~Silvestre.
+\newblock An extension problem related to the fractional {L}aplacian.
+\newblock {\em Comm. Partial Differential Equations}, 32(7-9):1245--1260, 2007.
+
+\bibitem[CS12]{CaSi.hamjac}
+P.~Cardaliaguet and L.~Silvestre.
+\newblock H\"older continuity to {H}amilton-{J}acobi equations with
+  superquadratic growth in the gradient and unbounded right-hand side.
+\newblock {\em Comm. Partial Differential Equations}, 37(9):1668--1688, 2012.
+
+\bibitem[CS16]{CaSt}
+L.~A. Caffarelli and P.~R. Stinga.
+\newblock Fractional elliptic equations, {C}accioppoli estimates and
+  regularity.
+\newblock {\em Ann. Inst. H. Poincar\'{e} Anal. Non Lin\'{e}aire},
+  33(3):767--807, 2016.
+
+\bibitem[CS17]{CaSi.pointwise}
+L.~Caffarelli and Y.~Sire.
+\newblock On some pointwise inequalities involving nonlocal operators.
+\newblock In {\em Harmonic analysis, partial differential equations and
+  applications}, Appl. Numer. Harmon. Anal., pages 1--18.
+  Birkh\"{a}user/Springer, Cham, 2017.
+
+\bibitem[CSS18]{CaSiSn}
+S.~{Cameron}, L.~{Silvestre}, and S.~{Snelson}.
+\newblock {Global a priori estimates for the inhomogeneous Landau equation with
+  moderately soft potentials}.
+\newblock {\em Annales de L'Institut Henri Poincare Section (C) Non Linear
+  Analysis}, 35:625--642, May 2018.
+
+\bibitem[CV10a]{CaVa}
+L.~{Ca}ffarelli and A.~{Va}sseur.
+\newblock Drift diffusion equations with fractional diffusion and the
+  quasi-geostrophic equation.
+\newblock {\em Ann. of Math. (2)}, 171(3):1903--1930, 2010.
+
+\bibitem[CV10b]{CaVa.sqg}
+L.~A. Caffarelli and A.~Vasseur.
+\newblock Drift diffusion equations with fractional diffusion and the
+  quasi-geostrophic equation.
+\newblock {\em Ann. of Math. (2)}, 171(3):1903--1930, 2010.
+
+\bibitem[CV12]{CoVi}
+P.~Constantin and V.~Vicol.
+\newblock Nonlinear maximum principles for dissipative linear nonlocal
+  operators and applications.
+\newblock {\em Geom. Funct. Anal.}, 22(5):1289--1321, 2012.
+
+\bibitem[CV17]{ChVa}
+C.-H. Chan and A.~Vasseur.
+\newblock De {G}iorgi techniques applied to the {H}\"{o}lder regularity of
+  solutions to {H}amilton-{J}acobi equations.
+\newblock In {\em From particle systems to partial differential equations},
+  volume 209 of {\em Springer Proc. Math. Stat.}, pages 117--137. Springer,
+  Cham, 2017.
+
+\bibitem[CW08]{CoWu}
+P.~Constantin and J.~Wu.
+\newblock Regularity of {H}\"{o}lder continuous solutions of the supercritical
+  quasi-geostrophic equation.
+\newblock {\em Ann. Inst. H. Poincar\'{e} Anal. Non Lin\'{e}aire},
+  25(6):1103--1110, 2008.
+
+\bibitem[Daf96]{Da}
+C.~M. Dafermos.
+\newblock Entropy and the stability of classical solutions of hyperbolic
+  systems of conservation laws.
+\newblock In {\em Recent mathematical methods in nonlinear wave propagation
+  ({M}ontecatini {T}erme, 1994)}, volume 1640 of {\em Lecture Notes in Math.},
+  pages 48--69. Springer, Berlin, 1996.
+
+\bibitem[DG57]{DG}
+E.~De~Giorgi.
+\newblock Sulla differenziabilit\`a e l'analiticit\`a delle estremali degli
+  integrali multipli regolari.
+\newblock {\em Mem. Accad. Sci. Torino. Cl. Sci. Fis. Mat. Nat. (3)}, 3:25--43,
+  1957.
+
+\bibitem[DLM91]{DiLiMe}
+R.~DiPerna, P.-L. Lions, and Y.~Meyer.
+\newblock {$L^p$} regularity of velocity averages.
+\newblock {\em Ann. Inst. H. Poincar\'{e} Anal. Non Lin\'{e}aire},
+  8(3-4):271--287, 1991.
+
+\bibitem[DLP10]{DoLePo}
+I.~C. Dolcetta, F.~Leoni, and A.~Porretta.
+\newblock H\"older estimates for degenerate elliptic equations with coercive
+  {H}amiltonians.
+\newblock {\em Trans. Amer. Math. Soc.}, 362(9):4511--4536, 2010.
+
+\bibitem[DP01]{DePe}
+R.~DeVore and G.~Petrova.
+\newblock The averaging lemma.
+\newblock {\em J. Amer. Math. Soc.}, 14(2):279--296, 2001.
+
+\bibitem[DP09]{DoPa}
+H.~Dong and N.~Pavlovi\'{c}.
+\newblock Regularity criteria for the dissipative quasi-geostrophic equations
+  in {H}\"{o}lder spaces.
+\newblock {\em Comm. Math. Phys.}, 290(3):801--812, 2009.
+
+\bibitem[FBK05]{BaKa}
+R.~F.~Bass and M.~Kassmann.
+\newblock Harnack inequalities for non-local operators of variable order.
+\newblock {\em Transactions of the American Mathematical Society}, 357, 02
+  2005.
+
+\bibitem[FMP04]{FMP}
+S.~Fornaro, G.~Metafune, and E.~Priola.
+\newblock Gradient estimates for {D}irichlet parabolic problems in unbounded
+  domains.
+\newblock {\em J. Differential Equations}, 205(2):329--353, 2004.
+
+\bibitem[FS98]{FrSe}
+H.~Freist\"{u}hler and D.~Serre.
+\newblock {$L^1$} stability of shock waves in scalar viscous conservation laws.
+\newblock {\em Comm. Pure Appl. Math.}, 51(3):291--301, 1998.
+
+\bibitem[GIMV16]{GoImMoVa}
+F.~{Golse}, C.~{Imbert}, C.~{Mouhot}, and A.~{Vasseur}.
+\newblock {Harnack inequality for kinetic Fokker-Planck equations with rough
+  coefficients and application to the Landau equation}.
+\newblock {\em To appear in Annali della Scuola Normale Superiore di Pisa,
+  Classe di Scienze}, page arXiv:1607.08068, July 2016.
+
+\bibitem[GLPS88]{GoLiPeSe}
+F.~Golse, P.-L. Lions, B.~Perthame, and R.~Sentis.
+\newblock Regularity of the moments of the solution of a transport equation.
+\newblock {\em J. Funct. Anal.}, 76(1):110--125, 1988.
+
+\bibitem[Goo86]{Go}
+Jonathan Goodman.
+\newblock Nonlinear asymptotic stability of viscous shock profiles for
+  conservation laws.
+\newblock {\em Arch. Rational Mech. Anal.}, 95(4):325--344, 1986.
+
+\bibitem[Goy17]{Go.physics}
+I.~Goychuk.
+\newblock Fractional {B}hatnagar-{G}ross-{K}rook kinetic equation.
+\newblock {\em Eur. Phys. J. B}, 90(11):Paper No. 208, 13, 2017.
+
+\bibitem[GPS85]{GoPeSe}
+F.~Golse, B.~Perthame, and R.~Sentis.
+\newblock Un r\'{e}sultat de compacit\'{e} pour les \'{e}quations de transport
+  et application au calcul de la limite de la valeur propre principale d'un
+  op\'{e}rateur de transport.
+\newblock {\em C. R. Acad. Sci. Paris S\'{e}r. I Math.}, 301(7):341--344, 1985.
+
+\bibitem[GT01]{GiTr}
+D.~Gilbarg and N.S. Trudinger.
+\newblock {\em Elliptic Partial Differential Equations of Second Order}.
+\newblock Classics in Mathematics. U.S. Government Printing Office, 2001.
+
+\bibitem[HM00]{HaMa}
+H.~J. Haubold and A.~M. Mathai.
+\newblock The fractional kinetic equation and thermonuclear functions.
+\newblock {\em Astrophysics and Space Science}, 273(1-4):53--63, 2000.
+
+\bibitem[H{\"{o}}r67]{Ho}
+L.~H{\"{o}}rmander.
+\newblock Hypoelliptic second order differential equations.
+\newblock {\em Acta Math.}, 119:147--171, 1967.
+
+\bibitem[HPGS95]{GaHePiSw}
+I.~Held, R.~Pierrehumbert, S.~Garner, and K.~Swanson.
+\newblock Surface quasi-geostrophic dynamics.
+\newblock {\em Journal of Fluid Mechanics}, 282:1–20, 1995.
+
+\bibitem[HS17]{HeSn}
+C.~{Henderson} and S.~{Snelson}.
+\newblock {$C^\infty$ smoothing for weak solutions of the inhomogeneous Landau
+  equation}.
+\newblock {\em arXiv e-prints}, page arXiv:1707.05710, July 2017.
+
+\bibitem[HST17]{HeSnTa}
+C.~{Henderson}, S.~{Snelson}, and A.~{Tarfulea}.
+\newblock {Local existence, lower mass bounds, and a new continuation criterion
+  for the Landau equation}.
+\newblock {\em arXiv e-prints}, page arXiv:1712.07111, December 2017.
+
+\bibitem[IM18]{ImMo}
+C.~{Imbert} and C.~{Mouhot}.
+\newblock {A toy nonlinear model in kinetic theory}.
+\newblock {\em arXiv e-prints}, page arXiv:1801.07891, January 2018.
+
+\bibitem[IMS18]{ImMoSi}
+C.~Imbert, C.~Mouhot, and L.~Silvestre.
+\newblock Decay estimates for large velocities in the {B}oltzmann equation
+  without cutoff, 2018.
+
+\bibitem[IMT17]{IMT.bilinear}
+T.~{Iwabuchi}, T.~{Matsuyama}, and K.~{Taniguchi}.
+\newblock Bilinear estimates in {B}esov spaces generated by the {D}irichlet
+  {L}aplacian.
+\newblock {\em arXiv e-prints}, page arXiv:1705.08595, May 2017.
+
+\bibitem[IMT18]{IMT.schrodinger}
+T.~Iwabuchi, T.~Matsuyama, and K.~Taniguchi.
+\newblock Boundedness of spectral multipliers for {S}chr\"{o}dinger operators
+  on open sets.
+\newblock {\em Rev. Mat. Iberoam.}, 34(3):1277--1322, 2018.
+
+\bibitem[IMT19]{IMT.besov}
+T.~Iwabuchi, T.~Matsuyama, and K.~Taniguchi.
+\newblock {B}esov spaces on open sets.
+\newblock {\em Bull. Sci. Math.}, 152:93--149, 2019.
+
+\bibitem[IO60]{IlOl}
+A.~M. Ilyin and O.~A. Ole\u{\i}nik.
+\newblock Asymptotic behavior of solutions of the {C}auchy problem for some
+  quasi-linear equations for large values of the time.
+\newblock {\em Mat. Sb. (N.S.)}, 51 (93):191--216, 1960.
+
+\bibitem[IS16]{ImSi}
+C.~{Imbert} and L.~{Silvestre}.
+\newblock {The weak Harnack inequality for the Boltzmann equation without
+  cut-off}.
+\newblock {\em arXiv e-prints}, page arXiv:1608.07571, August 2016.
+
+\bibitem[JK95]{JeKe}
+D.~Jerison and C.~Kenig.
+\newblock The inhomogeneous {D}irichlet problem in {L}ipschitz domains.
+\newblock {\em J. Funct. Anal.}, 130(1):161--219, 1995.
+
+\bibitem[Juu01]{Ju}
+P.~Juutinen.
+\newblock On the definition of viscosity solutions for parabolic equations.
+\newblock {\em Proc. Amer. Math. Soc.}, 129(10):2907--2911, 2001.
+
+\bibitem[Kan19]{Ka}
+M.-J. Kang.
+\newblock {$L^2$}-type contraction for shocks of scalar viscous conservation
+  laws with strictly convex flux.
+\newblock 2019.
+
+\bibitem[KN09]{KiNa.variations}
+A.~Kiselev and F.~Nazarov.
+\newblock A variation on a theme of {C}affarelli and {V}asseur.
+\newblock {\em Zap. Nauchn. Sem. S.-Peterburg. Otdel. Mat. Inst. Steklov.
+  (POMI)}, 370(Kraevye Zadachi Matematichesko\u{\i} Fiziki i Smezhnye Voprosy
+  Teorii Funktsi\u{\i}. 40):58--72, 220, 2009.
+
+\bibitem[KNV07]{KiNaVo}
+A.~Kiselev, F.~Nazarov, and A.~Volberg.
+\newblock Global well-posedness for the critical 2{D} dissipative
+  quasi-geostrophic equation.
+\newblock {\em Invent. Math.}, 167(3):445--453, 2007.
+
+\bibitem[Kri15]{Kr.landsea}
+D.~Kriventsov.
+\newblock Regularity for a local-nonlocal transmission problem.
+\newblock {\em Arch. Ration. Mech. Anal.}, 217(3):1103--1195, 2015.
+
+\bibitem[Kru70]{Kr.entropy}
+S.~N. Kru\v{z}kov.
+\newblock First order quasilinear equations with several independent variables.
+\newblock {\em Mat. Sb. (N.S.)}, 81 (123):228--255, 1970.
+
+\bibitem[KV17]{KaVa.burgers}
+M.-J. Kang and A.~Vasseur.
+\newblock {$L^2$}-contraction for shock waves of scalar viscous conservation
+  laws.
+\newblock {\em Ann. Inst. H. Poincar\'{e} Anal. Non Lin\'{e}aire},
+  34(1):139--156, 2017.
+
+\bibitem[KV19]{KaVa.navier}
+M.-J. Kang and A.~Vasseur.
+\newblock Contraction property for large perturbations of shocks of the
+  barotropic {N}avier-{S}tokes system.
+\newblock {\em J. Eur. Math. Soc.}, to appear, 2019.
+
+\bibitem[Leg11]{Le}
+N.~Leger.
+\newblock {$L^2$} stability estimates for shock solutions of scalar
+  conservation laws using the relative entropy method.
+\newblock {\em Arch. Ration. Mech. Anal.}, 199(3):761--778, 2011.
+
+\bibitem[Li14]{Li}
+W.-X. Li.
+\newblock Global hypoelliptic estimates for fractional order kinetic equation.
+\newblock {\em Math. Nachr.}, 287(5-6):610--637, 2014.
+
+\bibitem[LK74]{LaKe}
+E.~Larsen and J.~Keller.
+\newblock Asymptotic solution of neutron transport problems for small mean free
+  paths.
+\newblock {\em Journal of Mathematical Physics}, 15(1):75--81, 1974.
+
+\bibitem[LL89]{LaLi.nonlinear}
+J.-M. Lasry and P.-L. Lions.
+\newblock Nonlinear elliptic equations with singular boundary conditions and
+  stochastic control with state constraints. {I}. {T}he model problem.
+\newblock {\em Math. Ann.}, 283(4):583--630, 1989.
+
+\bibitem[LL07]{LaLi.meanfield}
+J.-M. Lasry and P.-L. Lions.
+\newblock Mean field games.
+\newblock {\em Jpn. J. Math.}, 2(1):229--260, 2007.
+
+\bibitem[LMPS12]{LeMoPr}
+N.~Lerner, Y.~Morimoto, and K.~Pravda-Starov.
+\newblock Hypoelliptic estimates for a linear model of the {B}oltzmann equation
+  without angular cutoff.
+\newblock {\em Comm. Partial Differential Equations}, 37(2):234--284, 2012.
+
+\bibitem[LV11]{LeVa}
+N.~Leger and A.~Vasseur.
+\newblock Relative entropy and the stability of shocks and contact
+  discontinuities for systems of conservation laws with non-{BV} perturbations.
+\newblock {\em Arch. Ration. Mech. Anal.}, 201(1):271--302, 2011.
+
+\bibitem[Mel10]{Me}
+A.~Mellet.
+\newblock Fractional diffusion limit for collisional kinetic equations: a
+  moments method.
+\newblock {\em Indiana Univ. Math. J.}, 59(4):1333--1360, 2010.
+
+\bibitem[MMM11]{MeMiMo}
+A.~Mellet, S.~Mischler, and C.~Mouhot.
+\newblock Fractional diffusion limit for collisional kinetic equations.
+\newblock {\em Arch. Ration. Mech. Anal.}, 199(2):493--525, 2011.
+
+\bibitem[{Mou}18]{Mo}
+C.~{Mouhot}.
+\newblock {De Giorgi-Nash-Moser and H\"{o}rmander theories: new interplay}.
+\newblock {\em arXiv e-prints}, page arXiv:1808.00194, August 2018.
+
+\bibitem[MR94]{MeRo}
+D.~Mendis and M.~Rosenberg.
+\newblock Cosmic dusty plasma.
+\newblock {\em Annual Review of Astronomy and Astrophysics}, 32(1):419--463,
+  1994.
+
+\bibitem[MX07]{MoXu}
+Y.~Morimoto and C.-J. Xu.
+\newblock Hypoellipticity for a class of kinetic equations.
+\newblock {\em J. Math. Kyoto Univ.}, 47(1):129--152, 2007.
+
+\bibitem[NV18a]{NoVa.qg}
+M.~D. Novack and A.~Vasseur.
+\newblock Global in time classical solutions to the 3{D} quasi-geostrophic
+  system for large initial data.
+\newblock {\em Comm. Math. Phys.}, 358(1):237--267, 2018.
+
+\bibitem[NV18b]{NoVa.bounded}
+M.~D. {Novack} and A.~{Vasseur}.
+\newblock {The Inviscid 3{D} Quasi-Geostrophic System on Bounded Domains}.
+\newblock {\em arXiv e-prints}, page arXiv:1806.00547, Jun 2018.
+
+\bibitem[NV19]{NoVa.solutions}
+M.~D. {Novack} and A.~{Vasseur}.
+\newblock {Classical Solutions for the 3{D} Quasi-Geostrophic System on a
+  Bounded Domain}.
+\newblock {\em arXiv e-prints}, page arXiv:1904.13050, Apr 2019.
+
+\bibitem[Ped92]{Pe}
+J.~Pedlosky.
+\newblock {\em Geophysical Fluid Dynamics}.
+\newblock Springer study edition. Springer New York, 1992.
+
+\bibitem[Res95]{Re}
+S.~Resnick.
+\newblock {\em Dynamical problems in non-linear advective partial differential
+  equations}.
+\newblock ProQuest LLC, Ann Arbor, MI, 1995.
+\newblock Thesis (Ph.D.)--The University of Chicago.
+
+\bibitem[Sch13]{Sc}
+R.~W. Schwab.
+\newblock Stochastic homogenization for some nonlinear integro-differential
+  equations.
+\newblock {\em Comm. Partial Differential Equations}, 38(2):171--198, 2013.
+
+\bibitem[Ser99]{Se}
+Denis Serre.
+\newblock {\em Systems of Conservation Laws 1: Hyperbolicity, Entropies, Shock
+  Waves}.
+\newblock Cambridge University Press, 1999.
+
+\bibitem[Sil16]{Si}
+L.~Silvestre.
+\newblock A new regularization mechanism for the {B}oltzmann equation without
+  cut-off.
+\newblock {\em Comm. Math. Phys.}, 348(1):69--100, 2016.
+
+\bibitem[ST10]{StTo}
+P.-R. Stinga and J.-L. Torrea.
+\newblock Extension problem and {H}arnack's inequality for some fractional
+  operators.
+\newblock {\em Comm. Partial Differential Equations}, 35(11):2092--2122, 2010.
+
+\bibitem[Ste70]{St.book}
+E.~Stein.
+\newblock {\em Singular integrals and differentiability properties of
+  functions}.
+\newblock Princeton Mathematical Series, No. 30. Princeton University Press,
+  Princeton, N.J., 1970.
+
+\bibitem[{Sto}18]{St.hypo}
+L.~F. {Stokols}.
+\newblock Holder continuity for a family of nonlocal hypoelliptic kinetic
+  equations.
+\newblock {\em arXiv e-prints}, page arXiv:1812.09006, Dec 2018.
+
+\bibitem[Sto19]{St.shocks}
+L.~F. Stokols.
+\newblock {$L^2$}-type contraction of viscous shocks for large family of scalar
+  conservation laws.
+\newblock {\em preprint}, page arXiv:1911.12526, 2019.
+
+\bibitem[SV]{StVa.higher}
+L.~F. Stokols and A.~Vasseur.
+\newblock Smooth global solutions for {SQG} on bounded domains.
+\newblock {\em Work in Progress}.
+
+\bibitem[SV16]{SeVa}
+D.~Serre and A.~Vasseur.
+\newblock About the relative entropy method for hyperbolic systems of
+  conservation laws.
+\newblock In {\em A panorama of mathematics: pure and applied}, volume 658 of
+  {\em Contemp. Math.}, pages 237--248. Amer. Math. Soc., Providence, RI, 2016.
+
+\bibitem[SV18]{StVa.hamjac}
+L.~F. Stokols and A.~Vasseur.
+\newblock De {G}iorgi techniques applied to {H}amilton-{J}acobi equations with
+  unbounded right-hand side.
+\newblock {\em Commun. Math. Sci.}, 16(6):1465--1487, 2018.
+
+\bibitem[SV19]{StVa.sqg}
+L.~F. Stokols and A.~Vasseur.
+\newblock Holder regularity up to the boundary for critical {SQG} on bounded
+  domains.
+\newblock {\em preprint}, page arXiv:1906.00251, 2019.
+
+\bibitem[Vas08]{Va.recent}
+Alexis~F. Vasseur.
+\newblock Recent results on hydrodynamic limits.
+\newblock In {\em Handbook of differential equations: evolutionary equations.
+  {V}ol. {IV}}, Handb. Differ. Equ., pages 323--376. Elsevier/North-Holland,
+  Amsterdam, 2008.
+
+\bibitem[Vas16a]{Va.dg}
+A.~Vasseur.
+\newblock The {D}e {G}iorgi method for elliptic and parabolic equations and
+  some applications.
+\newblock In {\em Lectures on the analysis of nonlinear partial differential
+  equations. {P}art 4}, volume~4 of {\em Morningside Lect. Math.}, pages
+  195--222. Int. Press, Somerville, MA, 2016.
+
+\bibitem[Vas16b]{Va.entropy}
+Alexis~F. Vasseur.
+\newblock Relative entropy and contraction for extremal shocks of conservation
+  laws up to a shift.
+\newblock In {\em Recent advances in partial differential equations and
+  applications}, volume 666 of {\em Contemp. Math.}, pages 385--404. Amer.
+  Math. Soc., Providence, RI, 2016.
+
+\bibitem[Zas94]{Za}
+G.~M. Zaslavsky.
+\newblock Fractional kinetic equation for hamiltonian chaos.
+\newblock {\em Physica D: Nonlinear Phenomena}, 76:110--122, 09 1994.
+
+\bibitem[Zhe06]{Zh}
+S.~Zheng.
+\newblock Littlewood-{P}aley theorem for {S}chr\"{o}dinger operators.
+\newblock {\em Anal. Theory Appl.}, 22(4):353--361, 2006.
+
+\end{thebibliography}
