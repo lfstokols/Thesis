@@ -1,0 +1,43 @@
+\contentsline {chapter}{Acknowledgments}{iv}%
+\contentsline {chapter}{Abstract}{v}%
+\contentsline {chapter}{List of Tables}{viii}%
+\contentsline {chapter}{List of Figures}{ix}%
+\contentsline {chapter}{Chapter 1.\hspace *{1em}Introduction}{1}%
+\contentsline {section}{\numberline {1.1}Hilbert's Nineteenth Problem}{1}%
+\contentsline {section}{\numberline {1.2}The De Giorgi Method}{3}%
+\contentsline {section}{\numberline {1.3}Research Statement Intro}{4}%
+\contentsline {section}{\numberline {1.4}On well-posedness of SQG on bounded domains}{6}%
+\contentsline {section}{\numberline {1.5}On hypoelliptic kinetic equations}{8}%
+\contentsline {section}{\numberline {1.6}On superquadratic first-order Hamilton-Jacobi equations}{11}%
+\contentsline {section}{\numberline {1.7}On stability of shocks}{14}%
+\contentsline {chapter}{Chapter 2.\hspace *{1em}Hamilton-Jacobi 1}{17}%
+\contentsline {section}{\numberline {2.1}Introduction}{17}%
+\contentsline {section}{\numberline {2.2}The Energy Inequalities}{22}%
+\contentsline {section}{\numberline {2.3}De Giorgi's first lemma}{26}%
+\contentsline {section}{\numberline {2.4}De Giorgi's second lemma}{34}%
+\contentsline {section}{\numberline {2.5}Transporting improvement forwards in time}{40}%
+\contentsline {section}{\numberline {2.6}Proof of the main theorem}{44}%
+\contentsline {chapter}{Chapter 3.\hspace *{1em}kinetic}{55}%
+\contentsline {section}{\numberline {3.1}Introduction}{55}%
+\contentsline {section}{\numberline {3.2}Preliminary Lemmas}{64}%
+\contentsline {section}{\numberline {3.3}First De Giorgi Lemma}{74}%
+\contentsline {section}{\numberline {3.4}Second De Giorgi Lemma}{83}%
+\contentsline {section}{\numberline {3.5}H\"{o}lder Continuity}{98}%
+\contentsline {chapter}{Appendix}{106}%
+\contentsline {section}{\numberline {0.1}Some Technical Lemmas}{107}%
+\contentsline {chapter}{Appendix 1.\hspace *{1em}SQG}{112}%
+\contentsline {section}{\numberline {1.1}Preliminaries}{112}%
+\contentsline {section}{\numberline {1.2}Properties of the Fractional Dirichlet Laplacian}{123}%
+\contentsline {section}{\numberline {1.3}Existence of suitable solutions}{133}%
+\contentsline {section}{\numberline {1.4}Littlewood-Paley Theory}{146}%
+\contentsline {section}{\numberline {1.5}De Giorgi Estimates}{153}%
+\contentsline {section}{\numberline {1.6}A Decrease in Oscillation}{166}%
+\contentsline {section}{\numberline {1.7}H\"{o}lder Continuity}{173}%
+\contentsline {chapter}{Appendix}{183}%
+\contentsline {section}{\numberline {0.1}Technical Lemmas}{184}%
+\contentsline {chapter}{Appendix 1.\hspace *{1em}conservation}{190}%
+\contentsline {section}{\numberline {1.1}Time derivative}{194}%
+\contentsline {section}{\numberline {1.2}Lemmas}{199}%
+\contentsline {section}{\numberline {1.3}Functional Estimates}{205}%
+\contentsline {section}{\numberline {1.4}Proof of Main Theorem}{217}%
+\contentsline {chapter}{Bibliography}{221}%

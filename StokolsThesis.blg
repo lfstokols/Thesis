@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7380 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: StokolsThesis.aux
+A level-1 auxiliary file: chapter-intro.aux
+A level-1 auxiliary file: chapter-HamJac.aux
+A level-1 auxiliary file: chapter-kinetic.aux
+A level-1 auxiliary file: chapter-SQG.aux
+A level-1 auxiliary file: chapter-conservation.aux
+The style file: alpha.bst
+Database file #1: StokolsThesis.bib
+Warning--there's a number but no volume in CoIg.fraclap
+Warning--empty journal in Ka
+Warning--can't use both author and editor fields in Se
+Warning--empty year in StVa.higher
+You've used 108 entries,
+            2543 wiz_defined-function locations,
+            1294 strings with 20732 characters,
+and the built_in function-call counts, 47482 in all, are:
+= -- 5090
+> -- 1852
+< -- 65
++ -- 618
+- -- 601
+* -- 3332
+:= -- 7310
+add.period$ -- 337
+call.type$ -- 108
+change.case$ -- 639
+chr.to.int$ -- 103
+cite$ -- 112
+duplicate$ -- 2055
+empty$ -- 3424
+format.name$ -- 743
+if$ -- 10015
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 113
+newline$ -- 545
+num.names$ -- 324
+pop$ -- 470
+preamble$ -- 1
+purify$ -- 753
+quote$ -- 0
+skip$ -- 1934
+stack$ -- 0
+substring$ -- 3395
+swap$ -- 589
+text.length$ -- 65
+text.prefix$ -- 35
+top$ -- 0
+type$ -- 840
+warning$ -- 4
+while$ -- 471
+width$ -- 113
+write$ -- 1420
+(There were 4 warnings)

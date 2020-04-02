@@ -484,6 +484,12 @@ A.~Mellet, S.~Mischler, and C.~Mouhot.
 \newblock Fractional diffusion limit for collisional kinetic equations.
 \newblock {\em Arch. Ration. Mech. Anal.}, 199(2):493--525, 2011.
 
+\bibitem[Mos60]{Mo.dg}
+J\"{u}rgen Moser.
+\newblock A new proof of {D}e {G}iorgi's theorem concerning the regularity
+  problem for elliptic differential equations.
+\newblock {\em Comm. Pure Appl. Math.}, 13:457--468, 1960.
+
 \bibitem[{Mou}18]{Mo}
 C.~{Mouhot}.
 \newblock {De Giorgi-Nash-Moser and H\"{o}rmander theories: new interplay}.
@@ -499,6 +505,11 @@ D.~Mendis and M.~Rosenberg.
 Y.~Morimoto and C.-J. Xu.
 \newblock Hypoellipticity for a class of kinetic equations.
 \newblock {\em J. Math. Kyoto Univ.}, 47(1):129--152, 2007.
+
+\bibitem[Nas58]{Na.dg}
+J.~Nash.
+\newblock Continuity of solutions of parabolic and elliptic equations.
+\newblock {\em Amer. J. Math.}, 80:931--954, 1958.
 
 \bibitem[NV18a]{NoVa.qg}
 M.~D. Novack and A.~Vasseur.
