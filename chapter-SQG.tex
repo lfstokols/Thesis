@@ -1,4 +1,4 @@
-\chapter{SQG}
+\chapter{SQG} \label{ch:SQG}
 
 %\documentclass[11pt]{amsart}
 %\usepackage{amssymb,amsbsy,upref,epsf,MnSymbol}
@@ -161,7 +161,7 @@
 The surface quasigeostrophic equation (SQG) is a special case of the quasi-geostrophic system (QG) with uniform potential vorticity. The QG model is used extensively in meteorology and oceanography (e.g. Charney \cite{Ch}). These models are described in Pedlosky \cite{Pe}. The SQG model was popularized by Constantin, Majda and Tabak in \cite{CoMaTa}, due to its similarities with the Euler and Navier-Stokes  equation. They proposed it as a toy model for the study of 3D Fluid equations (see also Held, Garner, Pierrehumbert, and Swanson \cite{GaHePiSw}). 
 
 \vskip0.3cm
- We consider in this paper  critical SQG on a bounded domain. We will focus on the following model, which was introduced by Constantin and Ignatova in \cite{CoIg.fraclap} and \cite{CoIg.sqg}.
+ We consider in this chapter critical SQG on a bounded domain. We will focus on the following model, which was introduced by Constantin and Ignatova in \cite{CoIg.fraclap} and \cite{CoIg.sqg}.
  Consider  $\Omega$ a connected bounded domain in $\R^2$ with $C^{2,\beta}$ boundary for some $\beta \in (0,1)$, and the Laplacian with homogeneous Dirichlet boundary conditions $-\Laplace_D$.  If $(\eigen{k})_{k \in \N}$ is the sequence of $L^2$-normalized eigenfunctions of $-\Laplace_D$ with corresponding eigenvalues $\lambda_k$ listed in non-decreasing order, define
 \[ \Lambda f := \sum_{k=0}^\infty \sqrt{\lambda_k} \chevron{f,\eigen{k}}_{L^2(\Omega)} \eigen{k}. \]
 The critical SQG problem on $\Omega$ with initial data $\theta_0 \in L^2(\Omega)$ is
@@ -174,7 +174,7 @@ The critical SQG problem on $\Omega$ with initial data $\theta_0 \in L^2(\Omega)
 In the model, the dissipation $\Lambda =\paren{-\Delta_D}^{1/2}$  is due to the  Ekman pumping, while the nonlinear velocity $u$ comes from the geostrophic and hydrostatic balance (see \cite{Pe}).
 \vskip.3cm
 
-The main result of this paper is the following:
+The main result of this chapter is the following:
 \begin{theorem} \label{thm:main continuity}
 There exists a universal constant $C_1 > 0$ such that the following holds:
 
@@ -223,7 +223,7 @@ propagation of $C^\infty$ regularity. The global $C^\infty$ regularity for any $
 \vskip0.3cm
 
 In the presence of boundaries, there are several  distinct ways to define SQG. This can be attributed  to alternative generalizations of the fractional Laplacian.  Kriventsov \cite{Kr.landsea} considered a two-phase problem which satisfies critical SQG only in part of the domain, and was able to prove H\"{o}lder regularity in the time-independent case.  This problem, intended to model air currents over a region containing both land and water, contains a half-Laplacian and a Riesz transform defined, not spectrally, but in terms of extension.  In \cite{NoVa.bounded}, the authors consider the Euler-Coriolis-Boussinesq model and derive the full 3D inviscid quasigeostrophic system in an impermeable cylinder (see also \cite{NoVa.solutions} for the construction of small time smooth solutions to the model).  They obtain natural boundary conditions for SQG distinct from the homogeneous conditions introduced in \cite{CoIg.fraclap}, \cite{CoIg.sqg} and described above. 
-However, due to the complexity of the model described in \cite{NoVa.bounded}, we focus in this paper only on the homogenous case.
+However, due to the complexity of the model described in \cite{NoVa.bounded}, we focus in this chapter only on the homogenous case.
 
 \vskip0.3cm
 Existence of weak solutions for \eqref{eq:main nonlinear}  is proven in \cite{CoIg.fraclap}, and local existence and uniqueness for strong solutions with sufficiently smooth initial data is proven by Constantin and Nguyen in \cite{CoNg.strong} (see also Constantin and Nguyen \cite{CoNg} and Constantin, Ignatova, and Nguyen \cite{CoIgNg} for the inviscid case). The interior regularity of solutions  is proven in \cite{CoIg.sqg} (together with propagation of $L^\infty$ bounds).  The method of proof for interior regularity uses  nonlinear maximum principles, introduced by Constantin and Vicol \cite{CoVi}.   However, the bounds obtained in \cite{CoIg.sqg} blow up near the boundary and do not provide global regularity.
@@ -236,7 +236,7 @@ Our proof is based on  the De Giorgi method pioneered by De Giorgi in \cite{DG}.
 
 The De Giorgi method involves rescaling our equation by zooming in iteratively, and applying regularity results at each scale.  Therefore it is important that certain results be proven independently of the domain $\Omega$.  
 %In particular, $\Omega$, like $\theta$ and $u$, will throughout this paper refer to a general object which may not match the assumptions of Theorem~\ref{thm:main continuity}.  
-The particular dependence on $\Omega$ will be made clear in each lemma of this paper.  
+The particular dependence on $\Omega$ will be made clear in each lemma of this chapter.  
 As a general overview, in the proof of Theorem~\ref{thm:main continuity} we will apply the results of Sections~\ref{sec:suitable} and \ref{sec:littlewood paley} only on a single fixed domain, while the results of Sections~\ref{sec:de giorgi} and \ref{sec:harnack} must be applied at each level of zoom with a different rescaled domain each time.  
 %, as a general overview, the results of Sections~\ref{sec:Linfty} and \ref{sec:littlewood paley} will be applied, in the proof of Theorem~\ref{thm:main continuity}, only at the first level (hence their results may depend strongly on $\Omega$), while the results of Sections~\ref{sec:de giorgi} and \ref{sec:harnack} must be applied at each level of zoom with a different domain each time.  
 
@@ -292,19 +292,19 @@ At each scale, there will be a natural Lagrangian path $\Gammal$ corresponding t
 %By ``moving reference frame,'' we mean that instead of proving a decrease-in-oscillation between cylinders $[0,T]\times B_R(0)$ and $[T/2,T]\times B_r(0)$, we will prove a decrease-in-oscillation between tubular regions $\{(t,x)|t \in [0,T], x\in B_R(\Gamma(t))\}$ and $\{(t,x)|t \in [T/2,T], x\in B_r(\Gamma(t) + \gamma(t))\}$.  The precise argument is in Section~\ref{sec:harnack}.  
 \vskip.3cm
 
-Previous applications of the De Giorgi method to non-local equations such as \eqref{eq:main linear} generally make extensive use of either an extension representation (c.f. \cite{CaVa.sqg}) or a singular integral representation (c.f. \cite{NoVa.qg}).  In this paper, we  use the singular integral representation for the Dirichlet fractional Laplacian  derived by Caffarelli and Stinga \cite{CaSt}. It is based on the results of Stinga and Torrea \cite{StTo} which generalize the extension representation of Caffarelli and Silvestre \cite{CaSi.extension}. 
+Previous applications of the De Giorgi method to non-local equations such as \eqref{eq:main linear} generally make extensive use of either an extension representation (c.f. \cite{CaVa.sqg}) or a singular integral representation (c.f. \cite{NoVa.qg}).  In this chapter, we  use the singular integral representation for the Dirichlet fractional Laplacian  derived by Caffarelli and Stinga \cite{CaSt}. It is based on the results of Stinga and Torrea \cite{StTo} which generalize the extension representation of Caffarelli and Silvestre \cite{CaSi.extension}. 
 This theory is pivotal in translating the existing non-local De Giorgi techniques to the problem at hand (see Section~\ref{sec:lambda}).  
 \vskip.3cm
 
 In order to apply De Giorgi's method to weak solutions of \eqref{eq:main linear}, we will need to assume a certain a priori estimate which holds, in particular, for $L^2(H_0^1)$ weak solutions.  However, such solutions are only known to exist for short time and for $H^2$ initial data, as shown by Constantin and Nguyen in \cite{CoNg.strong}.  We call weak solutions in $L^2(\HD^{1/2})$ which happen to verify this a priori estimate ``suitable solutions,'' by analogy to suitable solutions to Navier-Stokes as in \cite{CaKoNi}.  We give the formal definition of suitable solutions in Section~\ref{sec:suitable}, where we also construct global-in-time suitable solutions using the vanishing viscosity method.  Compared to \cite{CoIg.fraclap}, our solutions verify a full family of localized energy inequalities which allow us to apply the De Giorgi method.  
 \vskip.3cm
 
-The Paper is organized as follows. Section \ref{sec:lambda} is dedicated to basic properties of the operator $\Lambda$ and the corresponding Sobolev spaces $\HD^s$.  In Section~\ref{sec:suitable} we construct weak solutions which verify the suitability conditions.  
+The chapter is organized as follows. Section \ref{sec:lambda} is dedicated to basic properties of the operator $\Lambda$ and the corresponding Sobolev spaces $\HD^s$.  In Section~\ref{sec:suitable} we construct weak solutions which verify the suitability conditions.  
 %In Section~\ref{sec:Linfty} we prove $L^2$ to $L^\infty$ regularization.  
-In Section~\ref{sec:littlewood paley} we prove that the Riesz transform of the $L^\infty$ function $\theta$ is callibrated.  Section~\ref{sec:de giorgi} contains the De Giorgi Lemmas.  Section~\ref{sec:harnack} is dedicated to the local decrease in oscillation through an analog of the Harnack inequality.  Finally in Section~\ref{sec:holder} we prove the main theorem, Theorem~\ref{thm:main continuity}.  In the Appendix \ref{sec:technical} we prove a few technical lemmas which are needed in the main paper.  
+In Section~\ref{sec:littlewood paley} we prove that the Riesz transform of the $L^\infty$ function $\theta$ is callibrated.  Section~\ref{sec:de giorgi} contains the De Giorgi Lemmas.  Section~\ref{sec:harnack} is dedicated to the local decrease in oscillation through an analog of the Harnack inequality.  Finally in Section~\ref{sec:holder} we prove the main theorem, Theorem~\ref{thm:main continuity}.  In the Appendix \ref{sec:technical} we prove a few technical lemmas which are needed in the main chapter.  
 \vskip.3cm
 
-\textbf{Notation.} Throughout the paper, we will use the following notations.
+\textbf{Notation.} Throughout the chapter, we will use the following notations.
 By $\eigen{k}$ and $\lambda_k$ we mean the eigenfunctions and eigenvalues of $-\Laplace_D$, with $\lambda_0 \leq \lambda_1 \leq \ldots$ and $\norm{\eigen{k}}_2 = 1$ for all $k$.  
 If $f = \sum_k f_k \eigen{k}$ then
 \begin{align*} 
@@ -319,19 +319,14 @@ For a set $A$ and a function $f:A \to \R$, denote
 \norm{f}_{C^\alpha(A)} &:= \norm{f}_{L^\infty(A)} + \bracket{f}_{\alpha;A}, & \alpha \in (0,1], \\
 \norm{f}_{C^{k,\alpha}(A)} &:= \sum_{n=0}^k \norm{D^n f}_{L^\infty(A)} + \bracket{D^k f}_{\alpha;A}, & \alpha \in (0,1], k \in \N.
 \end{align*}
-When the domain $A$ is ommited, the relevant spatial domain $\Omega$ is implied.  
+When the domain $A$ is ommited, the relevant spatial domain $\Omega$ is implied.   
 
-We will use the notation $(x)_+ := \max(0,x)$.  When the parentheses are ommited, the subscript~$+$ is merely a label.  
-
-Throughout this paper, if an integral sign is written $\int$ without a specified domain, the domain is implied to be $\Omega$, with $\Omega$ defined in context.  
+Throughout this chapter, if an integral sign is written $\int$ without a specified domain, the domain is implied to be $\Omega$, with $\Omega$ defined in context.  
 
 For any vector $v = (v_1,v_2)$, by $v^\perp$ we mean $(-v_2,v_1)$. By $\grad^\perp$ we mean $(-\del_y, \del_x)$.  
 
-In the remainder of this paper, the differential operator $D^2$ refers to the Hessian in space, excluding time derivatives.  The function space $\Ctest$ consists of smooth functions with compact support.  By abuse of notation, if $\Gamma: [a,b] \to \R^2$, we write $[a,b] \times B_R(\Gamma)$ to denote $\{(t,x) \in [a,b]\times\R^2: |x-\Gamma(t)| \leq R\}$.  
+In the remainder of this chapter, the differential operator $D^2$ refers to the Hessian in space, excluding time derivatives.  By abuse of notation, if $\Gamma: [a,b] \to \R^2$, we write $[a,b] \times B_R(\Gamma)$ to denote $\{(t,x) \in [a,b]\times\R^2: |x-\Gamma(t)| \leq R\}$.  
 
-%The operator $D^2$ is the Hessian, the matrix-valued operator of second-order spatial derivatives.  Specifically, $D^2$, like $\grad$, never includes time derivatives.  
-
-The symbol $C$ represents a constant which may change value each time it is written.  
 
 \vskip1cm
 \section{Properties of the Fractional Dirichlet Laplacian} \label{sec:lambda}
@@ -369,7 +364,7 @@ from which \eqref{relationship Kt and Ks} follows.
 
 From the explicit formulae given in \cite{CaSt}, we see that $K_{2s}$ is approximately equal to the standard kernel for the $\R^2$ fractional Laplacian $(-\Laplace)^s$ when both $x$ and $y$ are in the interior of $\Omega$ or when $x$ and $y$ are extremely close together, but decays to zero when one point is in the interior and the other is near the boundary.  The kernel $B_{2s}$ is well-behaved in the interior but has a singularity at the boundary $\del \Omega$.  This justifies our thinking of the $K_{2s}$ term as the interior term and $B_{2s}$ as a boundary term.  
 
-When comparing the computations in this paper to corresponding computations on $\R^2$, one finds that the interior term behaves nearly the same as in the unbounded case, while the boundary term behaves roughly like a lower order term (in the sense that it is easily localized).  
+When comparing the computations in this chapter to corresponding computations on $\R^2$, one finds that the interior term behaves nearly the same as in the unbounded case, while the boundary term behaves roughly like a lower order term (in the sense that it is easily localized).  
 
 Many useful results can be derived from Caffarelli-Stinga representation formula.  We summarize them in the following lemma.  
 
@@ -1619,146 +1614,7 @@ For the original unscaled $\theta$, we have
 %-------%-------%-------%-------%-------%-------%-------%-------%-------%-------%-------%-------
 
 \vskip1cm
-\appendix
-\section{Technical Lemmas} \label{sec:technical}
 
-In this appendix we state and prove a few technical lemmas.  
-
-\begin{lemma}[De Giorgi Iteration Argument] \label{thm:DG1 skeleton}
-For any constant $\bar{C} \geq 0$, there exists a $\delta>0$ such that the following holds:
-
-Let $\Omega \subseteq \R^2$ be a bounded open set with $C^{2,\beta}$ boundary for some $\beta \in (0,1)$.  
-Let $f \in L^2([-2,0]\times\Omega)$ be a function with the property that for any positive constant $a$
-\begin{equation} \label{DG energy ddt} \ddt \int (f-a)_+^2 + \int \abs{\Lambda^{1/2} (f-a)_+}^2 \leq \bar{C} \paren{ \int \indic{f \geq a} + \int (f-a)_+ + \int (f-a)_+^2 }. \end{equation}
-
-Then
-\[ \int_{-2}^0 \int (f-0)_+^2 \,dxdt \leq \delta \]
-implies that
-\[ f(t,x) \leq 1 \qquad \forall t\in[-1,0], x \in \Omega. \]
-\end{lemma}
-
-\begin{proof}
-Consider for $k \in \N$ the constants $t_k := -1 - 2^{-k}$ (so that $t_0 = -2$ and $t_\infty = -1$), and functions
-\[ f_k := (f - 1 + 2^{-k})_+ \]
-(so that $f_0 = (f)_+$ and $f_\infty = (f-1)_+$).  
-
-Define
-\[ \E_k := \int_{t_k}^0 \int_\Omega f_k^2 \,dxdt. \]
-
-When $f_{k+1}>0$, then in particular $f_k \geq 2^{-k-1}$.  Thus for any finite $p$, there exists a constant $C$ so
-\begin{equation} \label{non-linearization} \indic{f_{k+1}>0} \leq C^k f_k^p. \end{equation}
-\vskip.3cm
-
-Let $k\geq 0$ and define $\eta:[-2,0] \to \R$ a continuous function
-\[ \eta(t) := \begin{cases}
-0 & t \leq t_k \\
-2^{k+1} (t-t_k) & t_k \leq t \leq t_{k+1} \\
-1 & t_{k+1} \leq t.
-\end{cases} \]
-
-Let $s \in (t_{k+1},0)$.  Multiplying the inequality \eqref{DG energy ddt} with cutoff $a_k$ by $\eta(t)$ and integrating in time from $-2$ to $s$, then integrating by parts, we obtain
-\[ \int f_k(s,x)^2\,dx - 2^{k+1} \int\displaylimits_{t_k}^{t_{k+1}} \int f_k(t,x)^2 \,dxdt + \int\displaylimits_{t_{k+1}}^s \HDint{1/2}{f_k} \,dxdt \leq \bar{C} \paren{ \int\displaylimits_{t_k}^0 \int \indic{f_k>0} + f_k + f_k^2 \,dxdt } \]
-By taking the supremum over all $s \in (t_{k+1},0)$, we obtain
-\begin{equation} \label{DG energy sup}
-\sup_{[t_{k+1},0]} \int f_k^2 \,dx + \int_{t_{k+1}}^0 \HDint{1/2}{f_k}\,dxdt \leq C \paren{ 2^{k+1} \int_{t_k}^0 \int f_k^2\,dxdt + \int_{t_k}^0 \int \indic{f_k > 0} + f_k \,dxdt } 
-\end{equation}
-\vskip.3cm
-
-From Proposition~\ref{thm:hadamard 3 lines} and Sobolev embedding, 
-\[ \int_{t_{k+1}}^0 \paren{ \int f_k^4 \,dx }^{1/2} \,dt \leq C \int_{t_{k+1}}^0 \HDint{1/2}{f_k} \,dxdt. \]
-Therefore by the Riesz-Thorin interpolation theorem,
-\[ \int_{t_{k+1}}^0 \int f_k^3 \,dxdt \leq C \paren{ \sup_{[t_{k+1},0]} \int f_k^2 \,dx + \int_{t_{k+1}}^0 \HDint{1/2}{f_k} }^{3/2}. \]
-This estimate, along with \eqref{DG energy sup} and \eqref{non-linearization}, and the fact that $t_{k-1} < t_k$ and $f_{k-1} \geq f_k$, tell us that
-\[ \int_{t_{k+1}}^0 \int f_k^3 \,dxdt \leq C^k \E_{k-1}^{3/2}. \]
-
-Now we can estimate, using again \eqref{non-linearization} and the fact $f_k \geq f_{k+1}$,
-\[ \E_{k+1} \leq C^k \int_{t_{k+1}}^0 \int f_k^3 \,dxdt \leq C^k \E_{k-1}^{3/2}. \]
-\vskip.3cm
-
-This nonlinear recursive inequality $\E_{k+1} \leq C^k \E_{k-1}^{3/2}$, by a standard fact about nonlinear recursions (see \cite{DG} or \cite{Va.dg}), tells us that there exists a constant $\delta$ depending only on $C$ (which in turn depends only on the constant $\bar{C}$ in \eqref{DG energy ddt})
-\[ \E_0 \leq \delta \textrm{ implies } \lim_{k \to \infty} \E_k = 0. \]
-
-By assumption
-\[ \E_0 = \int_{-2}^0 \int (f)_+ \leq \delta. \]
-Therefore $\E_k \to 0$ and, by the dominated convergence theorem,
-\[ \int_{-1}^0 \int (f-1)_+ \,dxdt = 0. \]
-
-The result follows.  
-\end{proof}
-
-%\label{thm:Holder interpolation}
-
-\begin{lemma} \label{thm:interpolation C1 to holder}
-Let $\alpha \in (0,1)$.  There exists a constant $C = C(\alpha)$ such that, for any set $\Omega$ and any $f \in C^{0,1}(\Omega)$,
-\[ \bracket{f}_\alpha \leq C \norm{f}_\infty^{1-\alpha} \norm{\grad f}_\infty^\alpha. \]
-\end{lemma}
-
-\begin{proof}
-This simple lemma is a straightforward calculation:
-\begin{align*} 
-\sup_{x,y \in \Omega} \frac{|f(x)-f(y)|}{|x-y|^\alpha} &= \sup |f(x)-f(y)|^{1-\alpha} \paren{\frac{|f(x)-f(y)|}{|x-y|}}^\alpha 
-\\ &\leq \paren{2 \norm{f}_\infty}^{1-\alpha} \paren{ \sup \frac{|f(x)-f(y)|}{|x-y|} }^\alpha
-\\ &\leq C \norm{f}_\infty^{1-\alpha} \norm{\grad f}_\infty^\alpha.
-\end{align*}
-\end{proof}
-
-\begin{lemma} \label{thm:interpolation holder to C1}
-Let $\alpha \in (0,1)$ and $\Omega$ a set that satisfies the cone condition.  There exist constants $C = C(\alpha, \Omega)$ and $\ell = \ell(\Omega)$ such that, for any $f \in C^{1,\alpha}(\Omega)$
-\[ \norm{\grad f}_\infty \leq C \paren{ \delta\n \norm{f}_\infty  + \delta^\alpha \bracket{\grad f}_\alpha }\]
-for all $\delta < \ell$.  
-\end{lemma}
-
-The idea of the proof is to average $\grad f$ along an interval of length $\delta$ with endpoint $x$.  The magnitude of the average will be small, since $f \in L^\infty$, and the average will differ not very much from $\grad f(x)$ since $\grad f \in C^{1,\alpha}$.  
-
-\begin{proof}
-Since $\Omega$ satisfies the cone condition, there exist positive constants $\ell$ and $a<1$ such that, at each point $x \in \bar{\Omega}$, there exist two unit vectors $e_1$ and $e_2$ such that $|e_1\cdot e_2| \leq a$ and $x + \tau e_i \in \Omega$ for $i=1,2$ and $0 < \tau \leq \ell$.  In other words, $\Omega$ contains rays at each point that extend for length $\ell$, end at $x$, and are non-parallel with angle at least $\cos\n(a)$.  
-
-Consider the directional derivative $\del_i f$ of $f$ along the direction $e_i$, and observe that for any $0 < \delta \leq \ell$,
-\begin{equation} \label{average bounded by Linfty} \abs{\int_0^\delta \del_i f(x + \tau e_i) \,d\tau} = \abs{f(x+\delta e_i) - f(x)} \leq 2 \norm{f}_\infty. \end{equation}
-
-On the other hand, $\del_i f$ is continous so, for any $\tau \in (0,\ell]$,
-\[ \abs{\del_i f(x) - \del_i f(x+\tau e_i)} \leq \bracket{\grad f}_\alpha \tau^\alpha. \]
-From this, we obtain that
-\[ \int_0^\delta \del_i f(x + \tau e_i) \,d\tau \leq \int_0^\delta \paren{\del_i f(x) + \bracket{\grad f}_\alpha \tau^\alpha } \,d\tau = \delta \del_i f(x) + \bracket{\grad f}_\alpha \frac{\delta^{1+\alpha}}{1+\alpha} \]
-and a similar bound holds from below.  Thus
-\[ \abs{ \delta \del_i f(x) - \int_0^\delta \del_i f(x + \tau e_i) \,d\tau} \leq \bracket{\grad f}_\alpha \frac{\delta^{1+\alpha}}{1+\alpha}. \]
-
-Combining this bound with \eqref{average bounded by Linfty}, we obtain
-\[ \abs{\del_i f(x)} \leq \frac{2}{\delta} \norm{f}_\infty + \frac{\delta^\alpha}{1+\alpha} \bracket{\grad f}_\alpha. \]
-
-This bound is independent of $x$ and of $i=1,2$.  Since $e_1 \cdot e_2 \leq a$ by assumption, by a little linear algebra we can bound $\grad f$ in terms of the $\del_i f$ and obtain that, for all $\delta \in (0,\ell]$,
-\[ \norm{\grad f}_\infty \leq \frac{C}{1-a^2} \paren{ \delta\n \norm{f}_\infty + \delta^\alpha \bracket{\grad f}_\alpha }. \]
-
-\end{proof}
-
-
-
-\begin{lemma} \label{thm:technical scaling of barrier}
-There exist constants $\bar{\lambda} > 0$ and $\alpha > 1$ such that, for any $0 < \eps \leq 1/2$ and any $z \geq 1$
-\[ \paren{|\eps\n (z - 1) + 3|^{1/4} - 2^{1/4}}_+ - \alpha \paren{|z|^{1/4} - 2^{1/4}}_+ \geq \bar{\lambda}. \]
-\end{lemma}
-
-\begin{proof}
-For $z$ fixed, this function is increasing as $\eps$ decreases, so it will suffice to show the lemma when $\eps = 1/2$, that is to show
-\[ f_\alpha(z) := \paren{|2 z + 1|^{1/4} - 2^{1/4}}_+ - \alpha \paren{|z|^{1/4} - 2^{1/4}}_+ \geq \bar{\lambda} \]
-for all $z \geq 1$.  Note that $f_\alpha(z) \geq f_\beta(z)$ if $\alpha < \beta$.  
-
-For $z \geq 2$, 
-\[ f_\alpha(z) = (2z+1)^{1/4} - 2^{1/4} - \alpha z^{1/4} + \alpha 2^{1/4} = z^{1/4} \paren{(2 + 1/z)^{1/4} - \alpha} + (\alpha-1)2^{1/4}. \]
-For any $\alpha < 2^{1/4}$, clearly $f_\alpha(z)$ tends to $\infty$ as $z$ increases. Therefore there exist $N$ and $\alpha_0 > 1$ such that 
-\[ f_\alpha(z) \geq 1 \qquad \forall z \geq N, \alpha\leq \alpha_0. \]
-\vskip.3cm
-
-We can decompose $f_\alpha(z) = g_1(z) - (\alpha - 1) g_2(z)$ where
-\begin{align*} 
-g_1(z) &:= \paren{|2 z + 1|^{1/4} - 2^{1/4}}_+ - \paren{|z|^{1/4} - 2^{1/4}}_+, \\
-g_2(z) &:= \paren{|z|^{1/4} - 2^{1/4}}_+. 
-\end{align*}
-Note that $g_1$, $g_2$ are both continuous, and $g_1(z)$ is strictly positive for $z \geq 1$.  Therefore we can take $\alpha \in (1,\alpha_0]$ small enough that
-\[ \alpha - 1 < \frac{\inf_{[1,N]} g_1}{\sup_{[1,N]} g_2}. \]
-
-For this $\alpha$, $f_\alpha(z)$ is strictly positive on the compact interval $[1,N]$, and $f_\alpha(z) \geq 1$ on $[N,\infty)$.  Therefore $f_\alpha(z)$ has a positive lower bound $\bar{\lambda}$ for all $z \geq 1$.  
-\end{proof}
 
 %-------%-------%-------%-------%-------%-------%-------%-------%-------%-------%-------%-------
 

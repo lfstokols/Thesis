@@ -97,7 +97,7 @@ $\circ$}\hbox{$#1$}} \baselineskip = 10pt\!}
 
 \section{Introduction}
 \index{Introduction}
-In the present paper, we study $C^\gamma$ regularization in solutions to a Hamilton-Jacobi evolution equation with viscosity:
+In this chapter, we will study $C^\gamma$ regularization of solutions to a Hamilton-Jacobi evolution equation with viscosity:
 \[ \del_t u + H(x,u,\grad u) - \varepsilon \Laplace u = 0, \qquad (t,x)\in (0,T)\times\Omega, \]
 where $\Lambda > 0$, $\varepsilon \in [0,\Lambda]$, $\Omega \subseteq \R^n$, and the Hamiltonian has superquadratic growth in the gradient variable, uniform in $x$ and $t$:
 \[ \frac{1}{\Lambda} \abs{v}^p - f(x,t) \leq H(t,x,z,v) \leq \Lambda \abs{v}^p + \Lambda, \qquad p>2, f \in L^m, m > 1+ \frac{\max(n,2)}{p}.\]
@@ -133,7 +133,7 @@ Schwab \cite{Sc} studied homogenization problems for Hamilton-Jacobi equations w
 
 In the case that $f$ is bounded, Cardaliaguet and Silvestre (\cite{CaSi.hamjac}, Theorem 1.2) showed H\"{o}lder continuity, using a second order term $m^+(D^2 u)$ instead of $\div(A \grad u)$ in \eqref{eq:mainPDEdist}.  In the case that $f$ is not assumed bounded, they could only show H\"{o}lder regularity with second order term $\trace(A D^2 u)$, $A \in C^1$.  Our result requires no regularity on $A$, at the expense of requiring that $\grad u \in L^p$ and $u$ solve Inequality~\eqref{eq:mainPDEdist} in the sense of distribution.  The motivation for considering $f$ unbounded is from Lasry and Lions \cite{LaLi.meanfield}.  
 
-Most of the aforementioned results are proven by constructing super- and subsolutions.  In \cite{ChVa}, H\"{o}lder estimates are obtained, with $f$ bounded and no second order term, using a variation of De Giorgi's method.  The present work is a continuation of that project.  
+Most of the aforementioned results are proven by constructing super- and subsolutions.  In \cite{ChVa}, H\"{o}lder estimates are obtained, with $f$ bounded and no second order term, using a variation of De Giorgi's method.  The results in this chapter are a continuation of that project.  
 
 The proof will proceed mostly along the same lines as De Giorgi \cite{DG} and \cite{ChVa}.  In the classical De Giorgi proof, in order to prove H\"{o}lder continuity one merely shows that if the function $u$ is ``mostly negative'' in some range of time, then the upper bound is improved in a later range of time.  If, alternatively, the function is not ``mostly negative,'' it must be ``mostly positive'' and hence one can apply the original argument to $-u$, improving the lower bound on $u$ in the same later range of time.  Either way, the $L^\infty$-bound of $u$ is improved in the later time range.  
 

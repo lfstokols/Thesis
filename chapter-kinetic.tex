@@ -1,4 +1,4 @@
-\chapter{kinetic}
+\chapter{kinetic} \label{ch:kinetic}
 
 %\documentclass[11pt]{amsart}
 %\usepackage{amssymb,amsbsy,upref,epsf,MnSymbol}
@@ -125,7 +125,7 @@
 
 \section{Introduction}\label{sec:intro}
 
-We study in this paper the family of nonlocal kinetic equations
+We study in this chapter the family of nonlocal kinetic equations
 \begin{gather} \label{eq:main.kinetic}
 \kinet f = \L f + a, \\
 \L f := \int K(t,x,v,w) [f(w)-f(v)] \, dw. \nonumber
@@ -153,9 +153,9 @@ Equation~\eqref{eq:main.kinetic} is a typical hypoelliptic equation.  Although r
 
 This $H^s$ theory has already been applied specifically to the nonlocal kinetic Fokker-Planck Equation.  Lerner, Morimoto, and Pravda-Starov \cite{LeMoPr} showed that solutions to certain fractional kinetic equations are in a Sobolev space $H^\sigma$ in all three variables.  This result was inspired by the work on hypoelliptic equations by Bouchut \cite{Bo}, which is discussed in more detail below.  The precise amount of Sobolev regularity is improved and expanded upon, for example, by Morimoto and Xu \cite{MoXu} and by Li \cite{Li}.  In fact, \cite{MoXu} obtains $C^\infty$ solutions in the case of no source term and $\L$ a specific operator similar to $(-\Laplace)^s$.  
 
-This paper extends a $C^\alpha$ hypoellipticity theory, as was first introduced for kinetic Fokker-Planck by Golse, Imbert, Mouhot, and Vasseur \cite{GoImMoVa}.  They show that solutions to the (local) kinetic Fokker-Planck Equation
+This chapter extends a $C^\alpha$ hypoellipticity theory, as was first introduced for kinetic Fokker-Planck by Golse, Imbert, Mouhot, and Vasseur \cite{GoImMoVa}.  They show that solutions to the (local) kinetic Fokker-Planck Equation
 \[ \kinet f = \Laplace_v f \]
-are H\"{o}lder continuous.  In \cite{ImMo}, Imbert and Mouhot show that, for certain initial data, the nonlinear Fokker-Planck Equation has smooth solutions for all time.  They utilize the H\"{o}lder continuity of \cite{GoImMoVa}, as well as a Schauder-type estimate.  In \cite{ImSi}, Imbert and Silvestre obtain H\"{o}lder continuity for a class of nonlocal kinetic Fokker-Planck-type equations with operators $\L$ more general than those considered in the present paper, and with uniformly bounded source terms.  
+are H\"{o}lder continuous.  In \cite{ImMo}, Imbert and Mouhot show that, for certain initial data, the nonlinear Fokker-Planck Equation has smooth solutions for all time.  They utilize the H\"{o}lder continuity of \cite{GoImMoVa}, as well as a Schauder-type estimate.  In \cite{ImSi}, Imbert and Silvestre obtain H\"{o}lder continuity for a class of nonlocal kinetic Fokker-Planck-type equations with operators $\L$ more general than those considered in the present chapter, and with uniformly bounded source terms.  
 
 The seminal work on averaging lemmas is by Golse, Lions, Perthame and Sentis in 1988 \cite{GoLiPeSe}, which shows that solutions to $\kinet f = g$ have their weighted velocity averages $\rho[f] = \int \eta f dv$ in $H^{1/2}$, assuming $f$ and $g$ are in $L^2$.  This result had precursers in \cite{GoPeSe} and Agoshkov \cite{Ag}.  Many results followed, see for example DiPerna, Lions, and Meyer \cite{DiLiMe} and DeVore and Petrova \cite{DePe}, which show various levels of regularity for $\rho[f]$ assuming different regularity measures of $f$ and $g$.  
 
@@ -200,14 +200,14 @@ Although the assumption \eqref{eq:kappa_bound} on the kernel is a natural one fo
 
 The assumption that solutions are in $L^\infty$ will hold in particular when the initial data and source term are both in $L^\infty$.  In such a case, we could obtain a maximum principle by computing $\ddt \iint (f-C-t\norm{a}_\infty)_+^2 dvdx$.  
 
-With arbitrary source term, a more robust $L^\infty$ bound can sometimes be obtained by adapting Proposition~\ref{thm:DG1.kinetic} below.  As stated, this proposition requires an assumption of uniformly bounded growth for large values of $v$, to avoid interactions between high-velocity particles and the boundary $\del \Omega$ of our spatial domain.  Though outside the scope of the present paper, this assumption could be removed with proper boundary conditions.  For example, if we take $x \in \mathbb{T}^n$ the torus, then solutions will be $L^\infty$ at any positive time.  
+With arbitrary source term, a more robust $L^\infty$ bound can sometimes be obtained by adapting Proposition~\ref{thm:DG1.kinetic} below.  As stated, this proposition requires an assumption of uniformly bounded growth for large values of $v$, to avoid interactions between high-velocity particles and the boundary $\del \Omega$ of our spatial domain.  Though outside the scope of the present work, this assumption could be removed with proper boundary conditions.  For example, if we take $x \in \mathbb{T}^n$ the torus, then solutions will be $L^\infty$ at any positive time.  
 
 In the case that $K$ is homogeneous near the origin, meaning equal to $|v-w|^{-n-2s}$ for $|v-w|$ sufficiently small, we can obtain existence of an $L^2(H^s)$ weak solution from \cite{MoXu} Theorem 1.1 (by treating the difference between $\L f$ and $(-\Laplace)^sf$ as a source term).  When $K$ is not homogeneous near the origin, our result is an a priori estimate.  In particular, when a uniform $L^\infty$ bound exists (as discussed above), we can obtain existence of continuous solutions through the method of continuity.  
 
 %[Logan: are you looking for weak solutions or regularity?  For weak solutions, that's not the way.  For regularity, you only get that there exist regular solutions, but if the solution you have isn't equal to the limit then the solution might be irregular.]  
 %If $K$ is not homogeneous near the origin, and we have some way to bound the $L^\infty$ norm of solutions, then we can obtain existence of weak solutions by the method of continuity.  
 
-The symmetry assumption posed in \eqref{eq:kappa_bound} is actually two symmetry assumptions.  The former, $K(t,x,v,w) = K(t,x,w,v)$, is crucial to the weak formulation of the problem and hence is used throughout this paper.  The latter assumption $K(t,x,v,v+w) = K(t,x,v,v-w)$ is really only used in the proof of Lemma~\ref{thm:psi_properties}.  It is necessary because otherwise, in the case $s \geq 1/2$, the operator $\L$ might not be bounded even from $\Ctest$ to $L^\infty$.  We list here a few alternative assumptions, any one of which could replace the latter symmetry assumption of \eqref{eq:kappa_bound} with no loss of generality.  
+The symmetry assumption posed in \eqref{eq:kappa_bound} is actually two symmetry assumptions.  The former, $K(t,x,v,w) = K(t,x,w,v)$, is crucial to the weak formulation of the problem and hence is used throughout this chapter.  The latter assumption $K(t,x,v,v+w) = K(t,x,v,v-w)$ is really only used in the proof of Lemma~\ref{thm:psi_properties}.  It is necessary because otherwise, in the case $s \geq 1/2$, the operator $\L$ might not be bounded even from $\Ctest$ to $L^\infty$.  We list here a few alternative assumptions, any one of which could replace the latter symmetry assumption of \eqref{eq:kappa_bound} with no loss of generality.  
 \begin{itemize}
 \item For any $C^2$ function $\phi$, $\norm{\L \phi}_\infty \leq C \norm{\phi}_{C^2}$. 
 \item The parameter $s$ is strictly less than $1/2$.  
@@ -221,9 +221,8 @@ This bound is strictly greater than 2, and it is also strictly greater than $n+1
 
 The remainder of this article is dedicated to the proof of Theorem~\ref{thm:main}.  Section~\ref{sec:preliminaries} contains a few preliminary lemmas.  Sections~\ref{sec:DG1.kinetic} and \ref{sec:DG2.kinetic} are dedicated to the proofs of the first and second De Giorgi lemmas, respectively.  Section~\ref{sec:Holder} combines the De Giorgi lemmas to obtain a Harnack inequality that proves Theorem~\ref{thm:main}.  
 
-Throughout this paper, $C$ will represent arbitrary constants which may change from line to line.  A constant is called ``universal'' if it depends only on the dimension $n$, the order $s$ of the operator $\L$, and the coercivity bound $\kappa$.  
+In this chapter, a constant is called ``universal'' if it depends only on the dimension $n$, the order $s$ of the operator $\L$, and the coercivity bound $\kappa$.  
 
-The function space $\Ctest$ contains smooth functions with compact support.  
 
 %------------------%---------------------%--------------------%------------------%_--------------%-------------------%_----
 
@@ -1277,130 +1276,7 @@ Theorem~\ref{thm:main} is proven by iteratively applying this Lemma~\ref{thm:osc
 
 %------------------%---------------------%--------------------%------------------%_--------------%-------------------%_----
 
-\appendix
-\section{Some Technical Lemmas}\label{sec:appendix}
-%\appendix
 
-We prove here the averaging lemma used throughout this paper.  
-This lemma is an immediate corollary of \cite{Be} Theorem 6.  It is merely a localization of that result.  
-\begin{lemma}[Averaging Lemma]\label{thm:avg_lemma}
-Let $\Omega$ be an open subset of space-time $\R \times \R^n$, and $\bar{\Omega}$ a compact subset of $\Omega$.  
-
-For any smooth function $\eta \in \Ctest(\R^n)$ and any $m \in \R^+$, there exists a constant $C = C(n,m,\eta, \bar{\Omega}, \Omega)$ and a constant
-\[ \alpha = \frac{1}{2(1+m)} \]
-such that the following is true:
-
-For any two functions $f$ and $g$ in $L^2(\Omega \times \R^n)$ satisfying
-\[ \kinet f = g, \]
-it is true that
-\[ \norm{\int \eta f \,dv}_{H^\alpha(\bar{\Omega})} \leq C \paren{\norm{f}_{L^2(\Omega \times \R^n)} + \norm{\bessel^{-m/2} g}_{L^2(\Omega\times\R^n)}}. \]
-%
-%Assume that
-%\[ \kinet f = g. \]
-%Then for any smooth function $\eta \in \Ctest(\R^n)$ and any $m \in \R^+$, there exists a constant $C = C(n,m,\eta, \bar{\Omega}, \Omega)$ and a constant
-%\[ \alpha = \frac{1}{2(1+m)} \]
-%such that
-%\[ \norm{\int \eta f \,dv}_{H^\alpha(\bar{\Omega})} \leq C \paren{\norm{f}_{L^2(\Omega \times \R^n)} + \norm{\bessel^{-m/2} g}_{L^2(\Omega\times\R^n)}}. \]
-\end{lemma}
-
-By $\norm{g}_{H^\alpha(\bar{\Omega})}$, we mean the infimum of $\norm{\tilde{g}}_{H^\alpha(\R^{n+1})}$ over all extensions $\tilde{g}$ of $g$ to $\R^{n+1}$.  
-
-\begin{proof}
-Let $\phi(t,x)$ be a smooth function supported on $\Omega$ and identically equal to 1 on $\bar{\Omega}$.  Then
-\[ \kinet (\phi f) = \phi g + f \kinet \phi. \]
-By \cite{Be} Theorem 6,
-\[ \norm{\phi \int \eta f \,dv}_{H^\alpha(\R \times \R^n)} \leq C \paren{\norm{\phi f}_{L^2(\R \times \R^n \times \R^n)} + \norm{\bessel^{-m/2} \paren{\phi g + f \kinet \phi}}_{L^2(\R \times \R^n \times \R^n)}}. \]
-Because $\bessel^{-m/2}$ is a bounded operator from $L^2$ to $L^2$, and because $\phi$ is a smooth function supported on $\Omega$ and depending only on $t$ and $x$, 
-\[ \norm{\bessel^{\frac{-m}{2}} \paren{\phi g + f \kinet \phi}}_{L^2(\R^{1+n+n})} \leq C(\phi) \norm{\bessel^{\frac{-m}{2}}g}_{L^2(\Omega\times \R^n)} + C(m,\phi)\! \norm{f}_{L^2(\Omega\times\R^n)}\!. \]
-
-The result follows.  
-\end{proof}
-
-The following is a technical lemma about the geometry of cones.  We use it at the very end of the proof of Proposition~\ref{thm:DG2.kinetic}.  
-
-\begin{figure}[h]
-\includegraphics[width=.5 \textwidth]{NFP-diagram-Cone}
-\caption{A diagram showing the assumptions of Lemma~\ref{thm:cone}.}
-\end{figure}
-
-\begin{lemma}\label{thm:cone}
-Let $\mathcal{C} \subseteq \R \times \R^n$ be a cone from a vertex $(t_0,x_0) \in [-5, -4] \times B_2$ to a base set $B \subseteq [-2,0]\times B_2$.  % having $(t_0,x_0) \in [-5, -4] \times B_2$ and $B \subseteq [-2,0]\times B_2$.  
-Let $S$ be a subset of $\R\times\R^n$ such that for each $b \in B$, the line segment connecting $(t_0,x_0)$ to $b$ intersects $S$ on a set with Hausdorff $\mathcal{H}^1$ measure at least $\mu$.  
-
-Then 
-\[ \abs{\mathcal{C} \cap S} \geq \frac{ |B| \mu^2}{80}. \]
-\end{lemma}
-
-\begin{proof}
-Let $A(t)$ be the cross-sectional area of our cone at time slice $t$.  If $\mathcal{H}^n$ is the Hausdorff measure of dimension $n$, we write
-\[ A(t) = \mathcal{H}^n\paren{\mathcal{C} \cap \bracket{\{t\}\times \R^n}}. \]
-By the nature of cones, $A(t_0)=0$, $A$ is affine for $t_0 < t < -2$, then sub-affine for $-2<t<0$, and $A(t)=0$ for $t > 0$.  Specifically,
-\[ A(t) = \frac{A(-2)}{-2-t_0} \paren{t-t_0} \qquad t_0 < t < -2, \]
-\[ A(t) \leq \frac{A(-2)}{-2-t_0} \paren{t-t_0} \qquad -2 \leq t. \]
-
-
-Since $B$ is contained in $\mathcal{C} \cap [-2,0]\times \R^n$, 
-\[ |B| \leq \int_{-2}^0 A(t) \,dt \leq \int_{-2}^0 \frac{A(-2)}{-2-t_0}\paren{t-t_0} \,dt = \frac{A(-2)}{-2-t_0} \bracket{t_0^2 - (2+t_0)^2}/2 \leq 4 A(-2). \]
-
-This means that 
-\[ A(-2) \geq \frac{|B|}{4}. \]
-
-Now we have a lower bound on the size of the cone, so for $t_0 \leq t \leq -2$
-\begin{equation}\label{lower_bound_on_A} 
-A(t) \geq \frac{|B|}{4(-2-t_0)}(t - t_0). 
-\end{equation}
-
-%Since $A(t)$ is increasing in $t$, the total measure of $\mathcal{C}\cap S$ will be smallest when $S$ is located near the vertex.  Each segment intersects $S$ on a set with measure at least $\mu$, and a segment of length $\mu$ can fit inside the cylinder $[t_0,t_0+x]\times B_2$ $\mu^2 = 4^2 + x^2$, $x = \sqrt{\mu^2 - 16}$.  At its most slant, a segment goes up $-2-t_0$ and over $4$, so with an extent $t$ you get rise $t$ and run $4t/(-2-t_0)$ for a length$^2$ of $t^2 + 16t^2/(2+t_0)^2$ or $t^2 \paren{1 + 16/2^2} = 5t^2$.  
-%
-%Consider a point $b \in B$ and the line segment from $(t_0,x_0)$ to $b$, which intersects $S$ on a set of measure at least $\mu$.  Because $A(t)$ is increasing in $t$, this intersection contributes more 
-
-Consider the map from $B$ to $\{0\}\times\R^n$ given by stereographic projection from the point $(t_0,x_0)$, and let $db$ be a probability measure on $B$ proportional to the pullback of $\mathcal{H}^n \rest_{\{0\}\times\R^n}$ under this projection.  %In other words, $db(E)$ is the probabilty that a ray from $(t_0,x_0)$ to $B$ will intersect $E$.  
-%Let $db$ be a probability measure on $B \subseteq \R \times \R^n$ which is a pullback of the stereographic projection, with pole $(t_0,x_0)$, from $\R \times \R^n$ to a copy of $\R^n$.  It measures what percentage of the rays from $(t_0,x_0)$ intersect a region of $B$.  
-Then $db$ represents the proportion of any time-slice of $\mathcal{C}$ generated by rays through a given portion of $B$.  
-
-To find the measure of $\mathcal{C} \cap S$, we must ask how much each time slice intersects $S$, or in integral form
-\[ \abs{\mathcal{C} \cap S} = \int_{t_0}^{0} A(t) \int_{b \in B} \indic{(t,x) \in \mathcal{C} \cap S} \,dbdt. \]
-By Fubini, this becomes
-\begin{equation}\label{measure_of_intersection} 
-\abs{\mathcal{C} \cap S} = \int_{b \in B} \int_{t_0}^0 A(t) \indic{(t,x) \in \mathcal{C} \cap S} \,dtdb. 
-\end{equation}
-
-From the definition of $\mu$ and the arc length formula,
-\[ \mu \leq \int_{t_0}^0 \indic{(t,x) \in \mathcal{C} \cap S} \sqrt{1 + |b-x_0|^2/(-2-t_0)^2} \,dt \leq \sqrt{5} \int_{t_0}^0 \indic{(t,x) \in \mathcal{C} \cap S}. \]
-
-Because $A(t)$ is increasing and $\indic{(t,x) \in \mathcal{C} \cap S}$ integrates to at least $\mu/\sqrt{5}$, 
-\[ \int_{t_0}^0 A(t) \indic{(t,x) \in \mathcal{C} \cap S} \,dt \geq \int_{t_0}^{t+\mu/\sqrt{5}} A(t) \,dt. \]
-From this bound, \eqref{measure_of_intersection}, and \eqref{lower_bound_on_A} we can at last compute
-\[ \abs{\mathcal{C} \cap S} \geq \frac{|B|}{4(-2-t_0)} \int_{t_0}^{t_0 + \mu/\sqrt{5}} (t-t_0) \,dt = \frac{|B|}{4(-2-t_0)} \frac{\mu^2}{10} \geq \frac{|B|\mu^2}{80}. \]
-\end{proof}
-
-The following lemma is a commonly known fact about mollifiers.  Despite being known, a proof is surprisingly difficult to find in the existing literature.  Therefore, in the interest of completeness, we prove it here.   
-
-\begin{lemma}\label{thm:convolution_estimate}
-Let $\eta\in \Ctest(\R^n)$ be such that the sequence $\eta_\eps(v) = \eps^{-n} \eta(v/\eps)$ is an approximation to the identity.  There exists a constant $C=C(n,s,\eta)$ such that, for any $g \in H^s(\R^n)$, 
-\[ \norm{g - g\ast \eta_\eps}_{L^2(\R^n)} \leq C \norm{g}_{H^s(\R^n)} \eps^s. \]
-\end{lemma}
-
-\begin{proof}
-The bound is easy to compute by taking the Fourier transform and using Plancharel's theorem:
-\begin{align*} 
-\norm{g - g\ast \eta_\eps}_{L^2}^2 &= \int \hat{g}^2 \paren{1 - \hat{\eta_\eps}}^2 \,d\xi 
-\\ &\leq \int (1+\xi^2)^s \hat{g}^2 \,d\xi \,\, \sup_{\xi} \frac{\abs{1-\hat{\eta_\eps}(\xi)}^2}{(1+\xi^2)^s}
-\\ &= \norm{g}_{H^s(\R^n)}^2 \,\, \sup_{\xi} \frac{\abs{1-\hat{\eta_\eps}(\xi)}^2}{(1+\xi^2)^s}.
-\end{align*}
-
-Since $\eta \in \Ctest$, the fourier transform $\hat{\eta}$ is Lipschitz with some constant $\bar{C}$. Thus $\hat{\eta_\eps}(\xi) = \hat{\eta}(\eps \xi)$ is Lipschitz with constant $\bar{C}\eps$.  Since $\eta_\eps$ is an approximation to the identity, $\hat{\eta_\eps}(0) = 1$ and $\abs{\hat{\eta_\eps}(\xi)} \leq 1$ for all $\xi$.  Thus
-\[ \abs{1 - \hat{\eta_\eps}(\xi)} \leq \min(2,\bar{C}\eps|\xi|). \]
-%
-%Our goal is to bound
-%\begin{align*} 
-%\norm{g - g\ast \eta_\eps}_{L^2}^2 &= \int \hat{g}^2 \paren{1 - \hat{\eta_\eps}}^2 \,d\xi 
-%\\ &\leq \int (1+\xi^2)^s \hat{g}^2 \frac{\min(2,C\eps|\xi|)^2}{(1+\xi^2)^s} \,d\xi. 
-%\end{align*}
-
-The function $\frac{\min(2,\bar{C}\eps\xi)^2}{(1+\xi^2)^s}$ achieves its maxumum value at the critical point $\bar{C}\eps|\xi| = 2$, and that maximum value is 
-\[ \frac{2^2}{\paren{1+\paren{\frac{2}{\bar{C}\eps}}^2}^s} = \frac{4 \eps^{2s}}{\paren{\eps^2 + 4/\bar{C}^2}^s} \leq C \eps^{2s}. \]
-\end{proof}
 
 %\bibliographystyle{plain}
 %\bibliography{NFP-references.bib}
