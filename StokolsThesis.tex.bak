@@ -353,8 +353,7 @@
 
 \begin{acknowledgments}		% Optional
 \index{Acknowledgments@\emph{Acknowledgments}}%
-I wish to thank the multitudes of people who helped me. Time would
-fail me to tell of \ldots
+I wish to thank the multitudes of people who helped me.  \ldots
 \end{acknowledgments}
 
 
@@ -365,7 +364,7 @@ fail me to tell of \ldots
 %
 \utabstract
 \indent
-This is my abstract.  Isn't it pretty?
+This is my abstract.  I need to write the abstract.  
 
 
 
@@ -393,13 +392,13 @@ This is my abstract.  Isn't it pretty?
 
 \include{chapter-intro}
 
-\include{chapter-HamJac}
+%\include{chapter-HamJac}
 
-\include{chapter-kinetic}
+%\include{chapter-kinetic}
 
-\include{chapter-SQG}
+%\include{chapter-SQG}
 
-\include{chapter-conservation}
+%\include{chapter-conservation}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -409,10 +408,10 @@ This is my abstract.  Isn't it pretty?
 % If you have only one appendix, use the command \appendix instead
 % of \appendices.
 %
-%\appendices
+\appendix
 %\index{Appendices@\emph{Appendices}}%
 %
-%\include{chapter-appendix1}
+\include{appendix}
 %
 %\include{chapter-appendix2}
 %

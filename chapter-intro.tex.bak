@@ -160,7 +160,7 @@ Historically, the De Giorgi-Nash-Moser theorem was the most difficult step to pr
 
 The method of De Giorgi was first applied to this elliptic problem, but in fact the core concept has wide-ranging applications.  We will explore the method below, using the toy model of an inhomogeneous parabolic equation.  Let $d \geq 1$ a dimension and $\lambda \in (0,1)$ a coercivity parameter, let $A:\R_+\times\R^d \to \R^{d\times d}$ a matrix satisfying $\lambda |\xi|^2 \leq \xi^\transpose A(t,x) \xi \leq \lambda\n |\xi|^2$ for all $\xi \in \R^d$, let $b:\R_+\times\R^d \to \R^d$ a vector, and $f:\R_+\times\R^d \to \R$ a scalar forcing term.  Suppose that $u \in L^2(\R_+;H^1(\R^d)) \cap L^\infty(\R_+; L^2(\R^d))$ satisfies the parabolic equation
 \begin{equation} \label{eq:intro-parabolic}
-\del_t u + \div(A \grad u) = b\cdot\grad u + f \qquad (t,x) \in \R_+\times\R^d.
+\del_t u = \div(A \grad u) + b\cdot\grad u + f \qquad (t,x) \in \R_+\times\R^d.
 \end{equation}
 
 \begin{theorem} \label{thm:intro-DG toy theorem}
@@ -174,8 +174,94 @@ The constants $\alpha$ and $C$ depend on $\lambda$ and on $f$ and $b$ and $d$, a
 
 We will prove this well-known theorem using the De Giorgi method.  
 
+\begin{theorem}
+Energy Inequality
+\end{theorem}
+
+\begin{proof}
+For any $s \in [-1,0]$, let $\eta_s:[-2,0]\to \R$ be given by 
+\[ \eta_s(t) = \begin{cases}
+t+2 & t \in [-2,-1], \\
+1 & t \in [-1,s], \\
+0 & t \in (s,0].
+\end{cases} \]
+Let $\varphi: \R^d\to\R$ be a smooth function which is identically 1 on $B_1$ and identically zero on the complement of $B_2$, satisfying $\norm{\grad\varphi}_{L^\infty} \leq 2$.  
+Since $u \in L^2(H^1)$ by assumption, we can multiply \eqref{eq:intro-parabolic} by the test function $\eta_s(t) \varphi(x)^2 (u-k)_+$ to obtain
+\begin{equation} \label{intro-integrate equation against (u-k)_+} 
+\frac{1}{2} \iint [(u-k)_+ \varphi]^2 (-\eta_s') + \iint \eta_s \grad [\varphi^2 (u-k)_+] A \grad(u-k)_+ = \iint \eta_s \varphi^2(u-k)_+ b \cdot \grad(u-k)_+ + \iint \eta_s \varphi^2 (u-k)_+ f. 
+\end{equation}
+
+The left hand side is bounded
+\begin{equation} \label{intro-right hand side of energy} \begin{aligned} 
+\frac{1}{2} \iint [(u-k)_+ \varphi]^2 (-\eta_s') + \iint \eta_s \grad [\varphi^2 (u-k)_+] A \grad(u-k)_+ &\geq \frac{1}{2}\int [\varphi (u-k)_+]^2|_{t=s} \,dx + 2 \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi (u-k)_+] - \frac{1}{2} \int_{-2}^{-1} \int [(u-k)_+ \varphi]^2 - 2 \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi] (u-k)_+ 
+\\ &\geq \frac{1}{2}\int [\varphi (u-k)_+]^2|_{t=s} \,dx + \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi (u-k)_+] - \frac{1}{2} \int_{-2}^{-1} \int [(u-k)_+ \varphi]^2 - \iint \eta_s (u-k)_+^2 \grad\varphi A \grad\varphi
+\\ & \geq \frac{1}{2}\int_{B_1} (u-k)_+^2|_{t=s} \,dx + \lambda \int_{-1}^s \int_{B_1} |\grad(u-k)_+|^2 - \frac{1}{2} \int_{-2}^{-1} \int_{B_2} (u-k)_+^2 - \lambda\n 2 \int_{-2}^0 \int_{B_2} (u-k)_+^2.
+\end{aligned} \end{equation}
+
+Define $p^*$ such that $\frac{1}{p} + \frac{1}{p^*} = 1$.  The right hand side of \eqref{intro-integrate equation against (u-k)_+} is bounded
+\begin{equation*} \begin{aligned}
+\iint \iint \eta_s \varphi^2 (u-k)_+ f 
+&\leq \norm{f}_{L^p} \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*}.
+\end{aligned} \end{equation*}
+By combining this with \eqref{intro-integrate equation against (u-k)_+} and \eqref{intro-right hand side of energy}, we obtain
+\[ \frac{1}{2}\int_{B_1} (u-k)_+^2|_{t=s} \,dx + \lambda \int_{-1}^s \int_{B_1} |\grad(u-k)_+|^2 \leq \frac{1}{2} \int_{-2}^{-1} \int_{B_2} (u-k)_+^2 + \lambda\n 2 \int_{-2}^0 \int_{B_2} (u-k)_+^2 + \norm{f}_{L^p} \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*}. \]
+Taking the supremum of the left hand side over all $s \in [-1,0]$, and recalling that all of our integrands are non-negative, we obtain that in particular
+\[ \sup_{t \in [-1,0]} \int_{B_1} (u-k)_+^2 \,dx + \int_{-1}^0 \int_{B_1} |\grad(u-k)_+|^2 \leq C\paren{\lambda, \norm{f}_{L^p}} \paren{ \int_{-2}^{0} \int_{B_2} (u-k)_+^2 + \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*} }. \]
+
+
+\end{proof}
+
+\begin{theorem}
+There exists a constant $\delta_0$ such that any solution which satisfies
+\[ \int_{-2}^0 \int_{B_2} (u)_+^2 \,dxdt \leq \delta_0 \]
+will also satisfy $u \leq 1$ on $[-1,0]\times B_1$.  
+\end{theorem}
+
+\begin{proof}
+We consider the sequence of truncated functions $u_k := (u-1 + 2^{-k})_+$ and the sequence of regions $Q_k := [-1-2^{-k},0] \times B_{1 + 2^{-k}}$.  Note that $u_0 = (u)_+$ and, in the limit, $u_\infty = (u-1)_+$, while $Q_0 = [-2,0]\times B_2$ and, in the limit, $Q_\infty = [-1,0]\times B_1$. 
+
+For each truncated function, we consider the energy
+\[ \E_k = \sup_{[-1-2^{-k},0]} \int u_k^2 + \iint_{Q_k} \abs{\grad u_k}^2. \]
+
+We wish to show that $\E_k$ bounds some Lebesgue norm of $u_k$, using a combination of Sobolev embedding and Riesz-Thorin interpolation.  To that end, consider the function $m(t) := \int_{B_{1+2^{-k}}} u_k$ (the spatial average of $u_k$), and note that $0 \leq m(t) \leq \sqrt{|B_2|} \E_k^{1/2}$ by H\"{o}lder's inequality.  
+
+By the Sobolev embedding, we know that 
+\begin{align*} 
+\int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} u_k^{\frac{2d}{d-2}} }^{\frac{d-2}{2d}} 
+&\leq \norm{ \grad u_k}_{L^1([-1-2^{-k},0]; L^2(B_{1+2^{-k}}))} + \int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} m^{\frac{2d}{d-2}} }^{\frac{d-2}{2d}}
+\\ &\leq \sqrt{1+2^{-k}} \norm{ \grad u_k}_{L^2(Q_k)} + m(t) (1+2^{-k}\int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} 1 }^{\frac{d-2}{2d} }
+\\ &\leq C \E_k^{1/2}.
+\end{align*}
+The constant $C$ here depends only on the dimension.  The quantity $\E_k^{1/2}$ then controls both the $L^1\paren{ L^{2d/(d-2)} }$ and the $L^\infty\paren{L^2}$ norm of $u_k$ over the region $Q_k$.  By interpolation, we conclude that for any $q_1 \in (0,1)$, $q_2 \in (1/2-1/d, 1/2)$ satisfying
+\[ \frac{2}{d} \frac{1}{q_1} + 2 \frac{1}{q_2} = 1, \]
+the quantity $\E_k^{1/2}$ also controls the $L^{q_1}\paren{L^{q_2}}$ norm of $u_k$ on $Q_k$.  This equation represents the line segment between $(1,1/2-1/d)$ and $(0,1/2)$.  Simply because $1/2 - 1/d$ is less than $1/2$, we know that there must exist a point on this line segment such that $q_1 = q_2$ called $(q,q)$ with $q = 2 + \frac{2}{d}$.  
+
+We conclude that 
+\begin{equation} \label{intro-lower bound on energy E_k}
+\iint_{Q_k} u_k^q \leq \E_k^{q/2}. 
+\end{equation}
+Note that, whatever the value of $d$, we have $q/2 > 1$.  We have shown that the energy $\E_k$ has superlinear control on some Lebesgue norm of $u_k$.  
+
+\vskip.3cm
+
+Now that we have used Sobolev embedding to bound $\E_k$ from below, we can use the energy inequality to bound it from above.  First, define the indicator functions $\chi_k := \indic{u_k > 0}$ so that $u_k = \chi_k \paren{u_{k-1} - 2^{-k-1} }$ and 
+\[ 2^{-k-1} \chi_k = \chi_k u_{k-1} - u_k \leq u_{k-1}. \]
+We have by the energy inequality \eqref{eq:intro-energy inequality}, assuming $p^* \leq q$, 
+\begin{align*} 
+\E_k &\leq C 2^k \bracket{ \iint_{Q_{k-1}} u_k^2 + \paren{ \iint_{Q_{k-1}} u_k^{p^*} }^{1/p^*} }
+\\ &= C^k \bracket{ \iint_{Q_{k-1}} u_k^2 \chi_k^{q-2} + \paren{ \iint_{Q_{k-1}} u_k^{p^*} \chi_k^{q - p*} }^{1/p^*} }
+\\ &\leq C^k \bracket{ \iint_{Q_{k-1}} u_{k-1}^2 (2^{k+1} u_{k-1})^{q-2} + \paren{ \iint_{Q_{k-1}} u_{k-1}^{p^*} (2^{k+1} u_{k-1})^{q - p*} }^{1/p^*} }
+\\ &\leq C^k \bracket{ \iint_{Q_{k-1}} u_{k-1}^q + \paren{ \iint_{Q_{k-1}} u_{k-1}^q }^{1/p^*} }.
+\end{align*}
+By combining this inequality with \eqref{intro-lower bound on energy E_k}, we finally arrive at a recursive inequality for the sequence $\E_k$:
+\[ \E_k \leq C^k \bracket{ \E_{k-1}^{q/2} + \E_{k-1}^{q/(2p^*)} }. \]
+
+\end{proof}
+
 
 \section{Research Statement Intro}
+
+
 
 My research interests are in the extension of techniques from the regularity theory of elliptic PDE to a wide variety of problems.  I have applied elliptic methods to problems which are highly degenerate.  I favor energy-based approaches, and am particularly well versed in the De Giorgi method, an elliptic method for proving continuity of weak solutions.  Most of the problems I have studied are related to fluid mechanics.  I have worked on projects involving nonlocal operators, boundary effects, kinetic equations, and a mixing of divergence-form and non-divergence-form methods, among many other hurdles.   
 
@@ -275,8 +361,6 @@ As in previous $L^2$-type estimates, I broke up the solution $u$ into a part whi
 This result is part of a rich ongoing program.  Open problems include expansions to multiple independent variables and more general flux and viscosities (particularly with higher growth rates at infinity).  This technique has already been applied to systems of conservation laws in \cite{KaVa.navier}, so this new result may translate also to the system case.  There is a possibility to handle multiple shocks in superposition, though in the viscous case there is significant work to be done understanding how shocks interact as they cross one another; recall that the relative motion of shocks is complex due to the Rankine-Hugoniot condition and the presence of artificial shifts.  
 
 
-%\bibliographystyle{alpha}
-%\bibliography{StokolsResearchStatement.bib}
-%
-%\end{document}
 
+
+Throughout this work, $C$ will represent arbitrary constants which may change from line to line.  The function space $\Ctest$ contains smooth functions with compact support.  We will use the notation $(x)_+ := \max(0,x)$.  When the parentheses are ommited, the subscript~$+$ is merely a label. 
