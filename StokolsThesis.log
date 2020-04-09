@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  8 APR 2020 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  8 APR 2020 19:16
 entering extended mode
 **./StokolsThesis.tex
 (StokolsThesis.tex
@@ -246,23 +246,25 @@ d-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count272
 \l__pdf_internal_box=\box48
-) (StokolsThesis.aux (chapter-intro.aux) (appendix.aux))
+) (StokolsThesis.aux (chapter-intro.aux) (chapter-HamJac.aux)
+(chapter-kinetic.aux) (chapter-SQG.aux) (chapter-conservation.aux)
+(appendix.aux))
 \openout1 = `StokolsThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 321.
-LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
 
 ("C:\Users\lfsto\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
@@ -314,29 +316,35 @@ LaTeX Font Info:    Trying to load font information for U+esint on input line 6
 ("C:\Users\lfsto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/esint\uesint.fd"
 File: uesint.fd 
 )
+[6
 
-LaTeX Warning: Reference `ch:kinetic' on page 19 undefined on input line 14.
+]
+
+LaTeX Warning: Reference `ch:kinetic' on page 191 undefined on input line 40.
 
 
-LaTeX Warning: Reference `ch:SQG' on page 23 undefined on input line 15.
+LaTeX Warning: Reference `ch:SQG' on page 195 undefined on input line 41.
 
 )
 \tf@toc=\write4
 \openout4 = `StokolsThesis.toc'.
 
- [6
-
-] (StokolsThesis.lot)
+ [7] (StokolsThesis.lot)
 \tf@lot=\write5
 \openout5 = `StokolsThesis.lot'.
 
- [7
+ [8
 
-] (StokolsThesis.lof)
+] (StokolsThesis.lof
+
+LaTeX Warning: Reference `thm:DG2.kinetic' on page 80 undefined on input line 4
+.
+
+)
 \tf@lof=\write6
 \openout6 = `StokolsThesis.lof'.
 
- [8
+ [9
 
 ]
 \openout2 = `chapter-intro.aux'.
@@ -366,1401 +374,310 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
  []
 
 [2] [3]
-Overfull \hbox (21.55771pt too wide) detected at line 192
-[] []\OT1/cmr/m/n/12 [(\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 k
-\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ][](\OMS/cmsy/m/n/12  \OML
-/cmm/m/it/12 []\OT1/cmr/m/n/12 ) + [] \OML/cmm/m/it/12 []\OMS/cmsy/m/n/12 r\O
-T1/cmr/m/n/12 [\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cms
-y/m/n/12   \OML/cmm/m/it/12 k\OT1/cmr/m/n/12 )[]]\OML/cmm/m/it/12 A\OMS/cmsy/m/
-n/12 r\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 k
-\OT1/cmr/m/n/12 )[] = [] \OML/cmm/m/it/12 []'[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
-12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 k\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 b
- \OMS/cmsy/m/n/12  r\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OM
-L/cmm/m/it/12 k\OT1/cmr/m/n/12 )[] + [] \OML/cmm/m/it/12 []'[]\OT1/cmr/m/n/12 
-(\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 k\OT1/cmr/m/n/12 )[]\OM
-L/cmm/m/it/12 f:
+Overfull \hbox (39.75931pt too wide) detected at line 171
+[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t; \OM
+S/cmsy/m/n/12 \OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 k\OT1/cmr/
+m/n/12 )[] \OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 + [][] [][] [][]  \OML/cmm/m/it/
+12 dxdt \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 C []
  []
 
-
-Overfull \hbox (443.55147pt too wide) detected at line 199
-[][]
+[4] [5] [6] [7] [8]
+Overfull \hbox (29.64882pt too wide) in paragraph at lines 244--245
+[]\OT1/cmr/m/n/12 The os-cil-la-tion will ei-ther de-crease from above or be-lo
+w, de-pend-ing whether $[]$
  []
 
-
-Overfull \hbox (96.34018pt too wide) detected at line 207
-[] [][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 
-k\OT1/cmr/m/n/12 )[]\OMS/cmsy/m/n/12 j[] \OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 + 
-\OML/cmm/m/it/12  [][] [][] \OMS/cmsy/m/n/12 jr\OT1/cmr/m/n/12 (\OML/cmm/m/it/
-12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 k\OT1/cmr/m/n/12 )[]\OMS/cmsy/m/n/12 j
-[]  [] [][] [][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cm
-m/m/it/12 k\OT1/cmr/m/n/12 )[] + \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 2 [][] [][
-](\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 k\OT1/cmr/m/n/12 )[] +
- [][] [][] \OML/cmm/m/it/12 :
- []
-
-
-Overfull \hbox (27.49467pt too wide) detected at line 209
-[] [][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 
-k\OT1/cmr/m/n/12 )[] \OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 + [][] [][] \OMS/cmsy/
-m/n/12 jr\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/1
-2 k\OT1/cmr/m/n/12 )[]\OMS/cmsy/m/n/12 j[]  \OML/cmm/m/it/12 C [] [] :
- []
-
-[4]
-LaTeX Font Info:    Trying to load font information for U+eus on input line 224
-.
-
-("C:\Users\lfsto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueus.fd"
-File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [5]
-
-LaTeX Warning: Reference `eq:intro-energy inequality' on page 6 undefined on in
-put line 249.
-
-[6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]) [17]
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]) [20]
 \openout2 = `chapter-HamJac.aux'.
 
  (chapter-HamJac.tex
 Chapter 2.
-[18
+[21
 
 
 
 ]
 
-LaTeX Warning: Reference `eq:basePDEvisc' on page 19 undefined on input line 12
-7.
-
-[19]
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 20 undefined on input line 13
-4.
+LaTeX Warning: Citation `Ba.viscosity' on page 22 undefined on input line 127.
 
 
-LaTeX Warning: Reference `eq:mainPDEdist' on page 20 undefined on input line 13
-4.
+LaTeX Warning: Citation `LaLi.nonlinear' on page 22 undefined on input line 130
+.
 
 
-LaTeX Warning: Reference `eq:mainPDEdist' on page 20 undefined on input line 14
-0.
+LaTeX Warning: Citation `Ba.hamjac' on page 22 undefined on input line 132.
 
 
-LaTeX Warning: Reference `eq:mainPDEdist' on page 20 undefined on input line 14
-0.
-
-[20]
-
-LaTeX Warning: Reference `eq:basePDEvisc' on page 21 undefined on input line 14
-2.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 21 undefined on input line 14
-4.
-
-
-LaTeX Warning: Reference `sec:energy' on page 21 undefined on input line 146.
-
-
-LaTeX Warning: Reference `sec:DG1' on page 21 undefined on input line 146.
-
-
-LaTeX Warning: Reference `sec:DG2' on page 21 undefined on input line 146.
-
-
-LaTeX Warning: Reference `sec:flowforward' on page 21 undefined on input line 1
-46.
-
-
-LaTeX Warning: Reference `sec:main' on page 21 undefined on input line 146.
-
-
-LaTeX Warning: Reference `sec:main' on page 21 undefined on input line 146.
-
-[21]
-
-LaTeX Warning: Reference `sec:DG1' on page 22 undefined on input line 172.
-
-
-LaTeX Warning: Reference `sec:DG1' on page 22 undefined on input line 172.
-
-
-LaTeX Warning: Reference `sec:DG2' on page 22 undefined on input line 172.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 22 undefined on input line 17
-5.
+LaTeX Warning: Citation `DoLePo' on page 22 undefined on input line 132.
 
 [22]
 
-LaTeX Warning: Reference `eq:mainPDEdist' on page 23 undefined on input line 20
-5.
+LaTeX Warning: Citation `LaLi.meanfield' on page 23 undefined on input line 134
+.
 
-[23]
+[23] [24] [25] [26] [27] [28] [29]
+LaTeX Font Info:    Trying to load font information for U+eus on input line 302
+.
 
-LaTeX Warning: Reference `eq:mainPDEdist' on page 24 undefined on input line 20
-7.
-
-[24]
-
-LaTeX Warning: Reference `energy_3' on page 25 undefined on input line 233.
-
-[25]
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 26 undefined on input line 27
-0.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 26 undefined on input line 27
-3.
-
-[26] [27] [28]
-
-LaTeX Warning: Reference `grad_1+beta_bdd' on page 29 undefined on input line 3
-46.
-
-[29]
-
-LaTeX Warning: Reference `def_of_q' on page 30 undefined on input line 398.
-
-
-LaTeX Warning: Reference `energy_1' on page 30 undefined on input line 410.
-
-
-LaTeX Warning: Reference `q_leq_E' on page 30 undefined on input line 412.
-
-[30]
-
-LaTeX Warning: Reference `useful_q_facts' on page 31 undefined on input line 42
-3.
-
-
-LaTeX Warning: Reference `energy_for_dg1' on page 31 undefined on input line 42
-3.
-
-
-LaTeX Warning: Reference `energy_for_dg1' on page 31 undefined on input line 42
-5.
-
-[31]
-
-LaTeX Warning: Reference `q_leq_E' on page 32 undefined on input line 434.
-
-
-LaTeX Warning: Reference `useful_q_facts' on page 32 undefined on input line 44
-0.
-
-
-LaTeX Warning: Reference `useful_q_facts' on page 32 undefined on input line 44
-0.
-
-[32]
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 33 undefined on input line 49
-3.
-
-[33]
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 34 undefined on input line 50
-1.
-
-
-LaTeX Warning: Reference `th:DG1' on page 34 undefined on input line 505.
-
-[34]
-
-LaTeX Warning: Reference `th:Energy' on page 35 undefined on input line 516.
-
-
-LaTeX Warning: Reference `energy_2' on page 35 undefined on input line 520.
-
-
-LaTeX Warning: Reference `energy_3' on page 35 undefined on input line 534.
-
-[35]
+("C:\Users\lfsto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueus.fd"
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+) [30] [31] [32] [33] [34] [35] [36] [37] [38]
 Overfull \hbox (1.543pt too wide) detected at line 553
 []
  []
 
-[36] [37]
+[39] [40] [41] [42]
 
-LaTeX Warning: Reference `energy_3' on page 38 undefined on input line 598.
+LaTeX Warning: Citation `Cr' on page 43 undefined on input line 644.
 
-[38]
 
-LaTeX Warning: Reference `measure_of_v_half' on page 39 undefined on input line
- 606.
+LaTeX Warning: Citation `Ju' on page 43 undefined on input line 644.
 
-
-LaTeX Warning: Reference `measure_of_v_delta' on page 39 undefined on input lin
-e 606.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 39 undefined on input line 62
-1.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 39 undefined on input line 62
-5.
-
-[39]
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 40 undefined on input line 63
-0.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 40 undefined on input line 64
-4.
-
-[40] [41]
-
-LaTeX Warning: Reference `th:scaling1' on page 42 undefined on input line 725.
-
-
-LaTeX Warning: Reference `th:scaling2' on page 42 undefined on input line 725.
-
-
-LaTeX Warning: Reference `th:oscillation' on page 42 undefined on input line 72
-5.
-
-
-LaTeX Warning: Reference `th:DG1' on page 42 undefined on input line 725.
-
-
-LaTeX Warning: Reference `th:DG2' on page 42 undefined on input line 725.
-
-[42]
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 43 undefined on input line 73
-0.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 43 undefined on input line 73
-0.
-
-[43]
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 44 undefined on input line 77
-7.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 44 undefined on input line 78
-1.
-
-[44] [45]
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 46 undefined on input line 81
-6.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 46 undefined on input line 81
-6.
-
-
-LaTeX Warning: Reference `th:DG2' on page 46 undefined on input line 819.
-
-
-LaTeX Warning: Reference `th:DG1' on page 46 undefined on input line 819.
-
-
-LaTeX Warning: Reference `th:flowforward' on page 46 undefined on input line 81
-9.
-
-
-LaTeX Warning: Reference `th:scaling2' on page 46 undefined on input line 819.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 46 undefined on input line 81
-9.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 46 undefined on input line 81
-9.
-
-
-LaTeX Warning: Reference `th:DG2' on page 46 undefined on input line 835.
-
-[46]
-
-LaTeX Warning: Reference `th:scaling2' on page 47 undefined on input line 850.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 47 undefined on input line 85
-0.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 47 undefined on input line 85
-0.
-
-[47]
-
-LaTeX Warning: Reference `th:flowforward' on page 48 undefined on input line 87
-2.
-
-[48]
-
-LaTeX Warning: Reference `th:main' on page 49 undefined on input line 885.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 49 undefined on input line 89
-0.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 49 undefined on input line 89
-0.
-
-[49]
-
-LaTeX Warning: Reference `th:scaling1' on page 50 undefined on input line 907.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 50 undefined on input line 90
-9.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 50 undefined on input line 90
-9.
-
-
-LaTeX Warning: Reference `th:oscillation' on page 50 undefined on input line 91
-1.
-
-
-LaTeX Warning: Reference `th:scaling1' on page 50 undefined on input line 915.
-
-
-LaTeX Warning: Reference `eq:mainPDEdist' on page 50 undefined on input line 91
-7.
-
-
-LaTeX Warning: Reference `eq:mainPDEvisc' on page 50 undefined on input line 91
-7.
-
-
-LaTeX Warning: Reference `th:oscillation' on page 50 undefined on input line 91
-7.
-
-[50] [51]) [52]
+[43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53]) [54]
 \openout2 = `chapter-kinetic.aux'.
 
- (chapter-kinetic.tex
+
+(chapter-kinetic.tex
 Chapter 3.
 
-LaTeX Warning: Reference `eq:main.kinetic' on page 53 undefined on input line 1
-40.
+LaTeX Warning: Citation `Za' on page 55 undefined on input line 140.
 
-[53
+
+LaTeX Warning: Citation `HaMa' on page 55 undefined on input line 140.
+
+
+LaTeX Warning: Citation `Me' on page 55 undefined on input line 140.
+
+
+LaTeX Warning: Citation `MeMiMo' on page 55 undefined on input line 140.
+
+[55
 
 
 
 ]
 
-LaTeX Warning: Reference `eq:main.kinetic' on page 54 undefined on input line 1
-42.
+LaTeX Warning: Citation `AlMoUkXuYa' on page 56 undefined on input line 148.
 
 
-LaTeX Warning: Reference `eq:main.kinetic' on page 54 undefined on input line 1
-44.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 54 undefined on input line 1
-44.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 54 undefined on input line 1
-48.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 54 undefined on input line 1
-48.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 54 undefined on input line 14
-8.
-
-[54]
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 55 undefined on input line 1
-52.
-
-[55]
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 56 undefined on input line 1
-62.
-
-
-LaTeX Warning: Reference `sec:intro' on page 56 undefined on input line 162.
+LaTeX Warning: Citation `CaSiSn' on page 56 undefined on input line 148.
 
 [56]
 
-LaTeX Warning: Reference `eq:main.kinetic' on page 57 undefined on input line 1
-79.
+LaTeX Warning: Citation `LeMoPr' on page 57 undefined on input line 154.
 
 
-LaTeX Warning: Reference `eq:main.kinetic' on page 57 undefined on input line 1
-90.
+LaTeX Warning: Citation `MoXu' on page 57 undefined on input line 154.
 
 
-LaTeX Warning: Reference `eq:kappa_bound' on page 57 undefined on input line 19
-0.
+LaTeX Warning: Citation `Li' on page 57 undefined on input line 154.
+
+
+LaTeX Warning: Citation `MoXu' on page 57 undefined on input line 154.
+
+
+LaTeX Warning: Citation `ImMo' on page 57 undefined on input line 158.
 
 [57]
 
-LaTeX Warning: Reference `eq:kappa_bound' on page 58 undefined on input line 19
-9.
+LaTeX Warning: Citation `GoPeSe' on page 58 undefined on input line 160.
 
 
-LaTeX Warning: Reference `thm:DG1.kinetic' on page 58 undefined on input line 2
-03.
+LaTeX Warning: Citation `DiLiMe' on page 58 undefined on input line 160.
 
-[58]
 
-LaTeX Warning: Reference `eq:kappa_bound' on page 59 undefined on input line 21
-0.
+LaTeX Warning: Citation `DePe' on page 58 undefined on input line 160.
 
 
-LaTeX Warning: Reference `thm:psi_properties' on page 59 undefined on input lin
-e 210.
+LaTeX Warning: Citation `LeMoPr' on page 58 undefined on input line 162.
 
 
-LaTeX Warning: Reference `eq:kappa_bound' on page 59 undefined on input line 21
-0.
+LaTeX Warning: Citation `MoXu' on page 58 undefined on input line 162.
 
 
-LaTeX Warning: Reference `thm:main' on page 59 undefined on input line 222.
+LaTeX Warning: Citation `Li' on page 58 undefined on input line 162.
 
 
-LaTeX Warning: Reference `sec:preliminaries' on page 59 undefined on input line
- 222.
+LaTeX Warning: Citation `CaVa.sqg' on page 58 undefined on input line 166.
 
 
-LaTeX Warning: Reference `sec:DG1.kinetic' on page 59 undefined on input line 2
-22.
+LaTeX Warning: Citation `CaChVa' on page 58 undefined on input line 166.
 
 
-LaTeX Warning: Reference `sec:DG2.kinetic' on page 59 undefined on input line 2
-22.
+LaTeX Warning: Citation `CaChVa' on page 58 undefined on input line 166.
 
+[58] [59]
 
-LaTeX Warning: Reference `sec:Holder' on page 59 undefined on input line 222.
+LaTeX Warning: Citation `CaChVa' on page 60 undefined on input line 199.
 
+[60]
 
-LaTeX Warning: Reference `thm:main' on page 59 undefined on input line 222.
+LaTeX Warning: Citation `MoXu' on page 61 undefined on input line 205.
 
-[59] [60] [61]
+[61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73]
 
-LaTeX Warning: Reference `eq:main.kinetic' on page 62 undefined on input line 2
-75.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 62 undefined on input line 2
-87.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 62 undefined on input line 28
-7.
-
-
-LaTeX Warning: Reference `thm:B_and_Hs' on page 62 undefined on input line 300.
-
-
-[62]
-
-LaTeX Warning: Reference `sec:DG2.kinetic' on page 63 undefined on input line 3
-07.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 63 undefined on input line 3
-10.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 63 undefined on input line 3
-20.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 63 undefined on input line 3
-28.
-
-[63] [64]
-
-LaTeX Warning: Reference `thm:energy_inequality' on page 65 undefined on input 
-line 357.
-
-
-LaTeX Warning: Reference `thm:DG1.kinetic' on page 65 undefined on input line 3
-64.
-
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 65 undefined on input line 3
-64.
-
-
-LaTeX Warning: Reference `thm:oscillation' on page 65 undefined on input line 3
-64.
-
-[65] [66]
-
-LaTeX Warning: Reference `psi_vanish_on_balls' on page 67 undefined on input li
-ne 412.
-
-
-LaTeX Warning: Reference `psi_increasing' on page 67 undefined on input line 41
-2.
-
-
-LaTeX Warning: Reference `psi_geq_one_plus_psi' on page 67 undefined on input l
-ine 412.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 67 undefined on input line 42
-0.
-
-[67]
-
-LaTeX Warning: Reference `L_of_psi' on page 68 undefined on input line 442.
-
-
-LaTeX Warning: Reference `psi_scaled_inequality' on page 68 undefined on input 
-line 444.
-
-
-LaTeX Warning: Reference `altered_scaled_inequality' on page 68 undefined on in
-put line 452.
-
-[68]
-
-LaTeX Warning: Reference `altered_scaled_inequality' on page 69 undefined on in
-put line 454.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 69 undefined on input line 4
-64.
-
-
-LaTeX Warning: Reference `thm:psi_properties' on page 69 undefined on input lin
-e 466.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 69 undefined on input line 4
-71.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 69 undefined on input line 47
-1.
-
-
-LaTeX Warning: Reference `recursive_inequality' on page 69 undefined on input l
-ine 480.
-
-[69] [70] [71]
-
-LaTeX Warning: Reference `indicator_bound' on page 72 undefined on input line 5
-41.
-
-
-LaTeX Warning: Reference `thm:psi_properties' on page 72 undefined on input lin
-e 541.
-
-
-LaTeX Warning: Reference `L_of_psi' on page 72 undefined on input line 541.
-
-
-LaTeX Warning: Reference `sec:intro' on page 72 undefined on input line 555.
-
-[72]
-
-LaTeX Warning: Reference `gk_PDE' on page 73 undefined on input line 559.
-
-
-LaTeX Warning: Reference `thm:B_and_Hs' on page 73 undefined on input line 561.
-
-
-
-LaTeX Warning: Reference `energy_inequality_for_g' on page 73 undefined on inpu
-t line 568.
-
-
-LaTeX Warning: Reference `energy_inequality_for_g' on page 73 undefined on inpu
-t line 584.
-
-[73]
-
-LaTeX Warning: Reference `Fk_bound' on page 74 undefined on input line 610.
-
-
-LaTeX Warning: Reference `gk_bound' on page 74 undefined on input line 610.
-
-
-LaTeX Warning: Reference `thm:B_and_Hs' on page 74 undefined on input line 610.
-
-
-
-LaTeX Warning: Reference `Hs(gk)_bound' on page 74 undefined on input line 610.
-
-
-
-LaTeX Warning: Reference `bezard_result' on page 74 undefined on input line 632
+LaTeX Warning: Citation `CaSi.pointwise' on page 74 undefined on input line 534
 .
 
 
-LaTeX Warning: Reference `sobolev' on page 74 undefined on input line 632.
+LaTeX Warning: Citation `MoXu' on page 74 undefined on input line 555.
 
-[74]
-
-LaTeX Warning: Reference `thm:psi_properties' on page 75 undefined on input lin
-e 640.
-
-
-LaTeX Warning: Reference `L_of_psi' on page 75 undefined on input line 640.
-
-
-LaTeX Warning: Reference `thm:energy_inequality' on page 75 undefined on input 
-line 640.
-
-
-LaTeX Warning: Reference `thm:B_and_Hs' on page 75 undefined on input line 642.
-
-
-
-LaTeX Warning: Reference `indicator_bound' on page 75 undefined on input line 6
-42.
-
-
-LaTeX Warning: Reference `t_and_x_integrability' on page 75 undefined on input 
-line 651.
-
-[75]
-
-LaTeX Warning: Reference `t_and_x_integrability' on page 76 undefined on input 
-line 659.
-
-
-LaTeX Warning: Reference `v_integration' on page 76 undefined on input line 659
-.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 76 undefined on input line 6
-69.
-
-
-LaTeX Warning: Reference `recursive_inequality' on page 76 undefined on input l
-ine 669.
-
-
-LaTeX Warning: Reference `indicator_bound' on page 76 undefined on input line 6
-71.
-
-
-LaTeX Warning: Reference `recursive_inequality' on page 76 undefined on input l
-ine 680.
-
-
-LaTeX Warning: Reference `sec:intro' on page 76 undefined on input line 682.
-
-[76]
-
-LaTeX Warning: Reference `sequence' on page 77 undefined on input line 692.
-
-<NFP-diagram-Q-3.pdf, id=288, 438.59938pt x 580.49704pt>
+[74] [75] [76] [77] [78]
+<NFP-diagram-Q-3.pdf, id=298, 438.59938pt x 580.49704pt>
 File: NFP-diagram-Q-3.pdf Graphic file (type pdf)
 <use NFP-diagram-Q-3.pdf>
 Package pdftex.def Info: NFP-diagram-Q-3.pdf  used on input line 705.
 (pdftex.def)             Requested size: 126.47249pt x 167.3832pt.
 
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 77 undefined on input line 7
-06.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[79] [80 <./NFP-diagram-Q-3.pdf>] [81] [82] [83] [84]
 
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 77 undefined on input line 7
-09.
+LaTeX Warning: Citation `St.book' on page 85 undefined on input line 833.
 
-[77]
+[85] [86] [87]
 
-LaTeX Warning: Reference `thm:DG1.kinetic' on page 78 undefined on input line 7
-17.
+LaTeX Warning: Citation `CaChVa' on page 88 undefined on input line 915.
 
 
-LaTeX Warning: Reference `eq:main.kinetic' on page 78 undefined on input line 7
-22.
+LaTeX Warning: Citation `BaKa' on page 88 undefined on input line 915.
 
+[88] [89]
 
-LaTeX Warning: Reference `eq:kappa_bound' on page 78 undefined on input line 72
-2.
-
-[78 <./NFP-diagram-Q-3.pdf>]
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 79 undefined on input line 7
-45.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 79 undefined on input line 74
-5.
-
-[79]
-
-LaTeX Warning: Reference `thm:psi_properties' on page 80 undefined on input lin
-e 774.
-
-
-LaTeX Warning: Reference `psi_increasing' on page 80 undefined on input line 77
-4.
-
-[80]
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 81 undefined on input line 7
-79.
-
-
-LaTeX Warning: Reference `thm:energy_inequality' on page 81 undefined on input 
-line 779.
-
-
-LaTeX Warning: Reference `LF_bounded' on page 81 undefined on input line 779.
-
-
-LaTeX Warning: Reference `thm:psi_properties' on page 81 undefined on input lin
-e 779.
-
-
-LaTeX Warning: Reference `L_of_psi' on page 81 undefined on input line 779.
-
-
-LaTeX Warning: Reference `f_leq_F' on page 81 undefined on input line 779.
-
-
-LaTeX Warning: Reference `thm:B_and_Hs' on page 81 undefined on input line 783.
-
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 81 undefined on input line 79
-6.
-
-[81]
-
-LaTeX Warning: Reference `f_leq_F' on page 82 undefined on input line 822.
-
-
-LaTeX Warning: Reference `v_regularity_of_fip' on page 82 undefined on input li
-ne 822.
-
-
-LaTeX Warning: Reference `thm:B_and_Hs' on page 82 undefined on input line 822.
-
-
-[82]
-
-LaTeX Warning: Reference `Bs_are_bounded' on page 83 undefined on input line 83
-1.
-
-
-LaTeX Warning: Reference `f_leq_F' on page 83 undefined on input line 841.
-
-
-LaTeX Warning: Reference `bound_on_H1' on page 83 undefined on input line 852.
-
-
-LaTeX Warning: Reference `bound_on_H2' on page 83 undefined on input line 852.
-
-
-LaTeX Warning: Reference `bound_on_H3' on page 83 undefined on input line 852.
-
-
-LaTeX Warning: Reference `bound_on_H4' on page 83 undefined on input line 852.
-
-[83]
-
-LaTeX Warning: Reference `f_leq_F' on page 84 undefined on input line 859.
-
-
-LaTeX Warning: Reference `Halpha_bounded' on page 84 undefined on input line 86
-5.
-
-
-LaTeX Warning: Reference `f_leq_F' on page 84 undefined on input line 873.
-
-[84]
-
-LaTeX Warning: Reference `fip_in_Hs' on page 85 undefined on input line 885.
-
-
-LaTeX Warning: Reference `v_regularity_of_fip' on page 85 undefined on input li
-ne 885.
-
-
-LaTeX Warning: Reference `convergence_of_convolutions' on page 85 undefined on 
-input line 892.
-
-[85]
-
-LaTeX Warning: Reference `constant_in_v' on page 86 undefined on input line 915
+LaTeX Warning: Citation `CaSi.pointwise' on page 90 undefined on input line 983
 .
 
+[90] [91] [92]
 
-LaTeX Warning: Reference `thm:energy_inequality' on page 86 undefined on input 
-line 927.
+LaTeX Warning: Citation `CaChVa' on page 93 undefined on input line 1072.
 
-[86]
-
-LaTeX Warning: Reference `thm:psi_properties' on page 87 undefined on input lin
-e 932.
-
-
-LaTeX Warning: Reference `L_of_psi' on page 87 undefined on input line 932.
-
-
-LaTeX Warning: Reference `LF_bounded' on page 87 undefined on input line 932.
-
-
-LaTeX Warning: Reference `flambda_energy_inequality' on page 87 undefined on in
-put line 938.
-
-
-LaTeX Warning: Reference `mass_of_limit' on page 87 undefined on input line 955
-.
-
-[87]
-
-LaTeX Warning: Reference `bound_on_good_term' on page 88 undefined on input lin
-e 967.
-
-[88]
-
-LaTeX Warning: Reference `LF_bounded' on page 89 undefined on input line 986.
-
-
-LaTeX Warning: Reference `thm:psi_properties' on page 89 undefined on input lin
-e 986.
-
-
-LaTeX Warning: Reference `L_of_psi' on page 89 undefined on input line 986.
-
-
-LaTeX Warning: Reference `constant_in_v' on page 89 undefined on input line 101
-0.
-
-
-LaTeX Warning: Reference `LF_bounded' on page 89 undefined on input line 1010.
-
-[89]
-
-LaTeX Warning: Reference `mass_of_limit' on page 90 undefined on input line 103
-3.
-
-[90]
-
-LaTeX Warning: Reference `size_of_M1eps' on page 91 undefined on input line 105
-1.
-
-
-LaTeX Warning: Reference `line_segments_have_large_measure' on page 91 undefine
-d on input line 1051.
-
-
-LaTeX Warning: Reference `mass_of_limit' on page 91 undefined on input line 105
-7.
-
-
-LaTeX Warning: Reference `thm:DG1.kinetic' on page 91 undefined on input line 1
-072.
-
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 91 undefined on input line 1
-072.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 91 undefined on input line 1
-072.
-
-
-LaTeX Warning: Reference `thm:oscillation' on page 91 undefined on input line 1
-072.
-
-
-LaTeX Warning: Reference `thm:DG1.kinetic' on page 91 undefined on input line 1
-072.
-
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 91 undefined on input line 1
-072.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 91 undefined on input line 1
-075.
-
-[91]
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 92 undefined on input line 10
-79.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 92 undefined on input line 1
-087.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 92 undefined on input line 11
-04.
-
-[92]
-
-LaTeX Warning: Reference `scaled_delt' on page 93 undefined on input line 1121.
-
-
-
-LaTeX Warning: Reference `scaled_gradx' on page 93 undefined on input line 1121
-.
-
-
-LaTeX Warning: Reference `scaled_L' on page 93 undefined on input line 1121.
-
-
-LaTeX Warning: Reference `scaled_sigma' on page 93 undefined on input line 1121
-.
-
-
-LaTeX Warning: Reference `PDE_at_barp' on page 93 undefined on input line 1121.
-
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 93 undefined on input line 1
-127.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 93 undefined on input line 1
-129.
-
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 93 undefined on input line 1
-134.
-
-
-LaTeX Warning: Reference `thm:DG1.kinetic' on page 93 undefined on input line 1
-134.
-
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 93 undefined on input line 1
-134.
-
-[93]
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 94 undefined on input line 1
-139.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 94 undefined on input line 11
-39.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 94 undefined on input line 1
-153.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 94 undefined on input line 11
-53.
-
-[94]
-
-LaTeX Warning: Reference `thm:psi_properties' on page 95 undefined on input lin
-e 1169.
-
-
-LaTeX Warning: Reference `psi_scaled_inequality' on page 95 undefined on input 
-line 1169.
-
-
-LaTeX Warning: Reference `thm:scaling.kinetic' on page 95 undefined on input li
-ne 1179.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 95 undefined on input line 1
-179.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 95 undefined on input line 1
-179.
-
-
-LaTeX Warning: Reference `eq:kappa_bound' on page 95 undefined on input line 11
-79.
-
-
-LaTeX Warning: Reference `lambda_assumptions' on page 95 undefined on input lin
-e 1179.
-
-
-LaTeX Warning: Reference `eq:main.kinetic' on page 95 undefined on input line 1
-186.
-
-
-LaTeX Warning: Reference `lambda_assumptions' on page 95 undefined on input lin
-e 1190.
-
-
-LaTeX Warning: Reference `f_leq_1+psi' on page 95 undefined on input line 1190.
-
-
-
-LaTeX Warning: Reference `lambda_assumptions' on page 95 undefined on input lin
-e 1190.
-
-[95]
-
-LaTeX Warning: Reference `fk_can_haz_DG1' on page 96 undefined on input line 11
-99.
-
-
-LaTeX Warning: Reference `DG2_mass_late' on page 96 undefined on input line 119
-9.
-
-
-LaTeX Warning: Reference `DG2_mass_early' on page 96 undefined on input line 11
-99.
-
-
-LaTeX Warning: Reference `fk_can_haz_measure_below' on page 96 undefined on inp
-ut line 1199.
-
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 96 undefined on input line 1
-199.
-
-
-LaTeX Warning: Reference `DG2_mass_between' on page 96 undefined on input line 
-1199.
-
-
-LaTeX Warning: Reference `fk_can_haz_DG1' on page 96 undefined on input line 12
-01.
-
-
-LaTeX Warning: Reference `fk_has_bounded_growth' on page 96 undefined on input 
-line 1204.
-
-
-LaTeX Warning: Reference `thm:psi_properties' on page 96 undefined on input lin
-e 1204.
-
-
-LaTeX Warning: Reference `psi_geq_one_plus_psi' on page 96 undefined on input l
-ine 1204.
-
-
-LaTeX Warning: Reference `fk_has_bounded_growth' on page 96 undefined on input 
-line 1206.
-
-
-LaTeX Warning: Reference `fk_can_haz_DG1' on page 96 undefined on input line 12
-06.
-
-
-LaTeX Warning: Reference `thm:DG1.kinetic' on page 96 undefined on input line 1
-210.
-
-
-LaTeX Warning: Reference `Harnack_partial_result' on page 96 undefined on input
- line 1216.
-
-
-LaTeX Warning: Reference `lambda_assumptions' on page 96 undefined on input lin
-e 1216.
-
-[96]
-
-LaTeX Warning: Reference `thm:psi_properties' on page 97 undefined on input lin
-e 1222.
-
-
-LaTeX Warning: Reference `psi_scaled_inequality' on page 97 undefined on input 
-line 1222.
-
-
-LaTeX Warning: Reference `thm:main' on page 97 undefined on input line 1275.
-
-
-LaTeX Warning: Reference `thm:oscillation' on page 97 undefined on input line 1
-275.
-
-) [97]
+[93] [94] [95] [96] [97] [98]) [99]
 \openout2 = `chapter-SQG.aux'.
 
  (chapter-SQG.tex
 Chapter 4.
-[98
+
+LaTeX Warning: Citation `GaHePiSw' on page 100 undefined on input line 161.
+
+[100
 
 
 
 ]
 
-LaTeX Warning: Reference `eq:main nonlinear' on page 99 undefined on input line
- 184.
-
-[99]
-
-LaTeX Warning: Reference `eq:main nonlinear' on page 100 undefined on input lin
-e 229.
+LaTeX Warning: Citation `Re' on page 101 undefined on input line 220.
 
 
-LaTeX Warning: Reference `eq:main nonlinear' on page 100 undefined on input lin
-e 231.
-
-[100]
-
-LaTeX Warning: Reference `thm:main continuity' on page 101 undefined on input l
-ine 240.
+LaTeX Warning: Citation `CoCoWu' on page 101 undefined on input line 220.
 
 
-LaTeX Warning: Reference `sec:suitable' on page 101 undefined on input line 240
-.
+LaTeX Warning: Citation `CoWu' on page 101 undefined on input line 220.
 
 
-LaTeX Warning: Reference `sec:littlewood paley' on page 101 undefined on input 
-line 240.
+LaTeX Warning: Citation `DoPa' on page 101 undefined on input line 220.
 
 
-LaTeX Warning: Reference `sec:de giorgi' on page 101 undefined on input line 24
-0.
+LaTeX Warning: Citation `CaVa.sqg' on page 101 undefined on input line 221.
 
 
-LaTeX Warning: Reference `sec:harnack' on page 101 undefined on input line 240.
-
-
-
-LaTeX Warning: Reference `sec:suitable' on page 101 undefined on input line 246
-.
+LaTeX Warning: Citation `KiNa.variations' on page 101 undefined on input line 2
+21.
 
 [101]
 
-LaTeX Warning: Reference `sec:littlewood paley' on page 102 undefined on input 
-line 254.
-
-
-LaTeX Warning: Reference `thm:calibration is good' on page 102 undefined on inp
-ut line 254.
+LaTeX Warning: Citation `StVa.higher' on page 102 undefined on input line 232.
 
 [102]
 
-LaTeX Warning: Reference `sec:holder' on page 103 undefined on input line 273.
+LaTeX Warning: Citation `CaVa.sqg' on page 103 undefined on input line 235.
 
 
-LaTeX Warning: Reference `sec:suitable' on page 103 undefined on input line 279
-.
+LaTeX Warning: Citation `CaChVa.nio' on page 103 undefined on input line 235.
 
 
-LaTeX Warning: Reference `eq:main nonlinear' on page 103 undefined on input lin
-e 279.
+LaTeX Warning: Citation `AlCaVa' on page 103 undefined on input line 235.
 
 
-LaTeX Warning: Reference `sec:littlewood paley' on page 103 undefined on input 
-line 279.
+LaTeX Warning: Citation `NoVa.qg' on page 103 undefined on input line 235.
 
 
-LaTeX Warning: Reference `sec:de giorgi' on page 103 undefined on input line 27
-9.
+LaTeX Warning: Citation `CaVa.sqg' on page 103 undefined on input line 249.
 
 
-LaTeX Warning: Reference `sec:harnack' on page 103 undefined on input line 279.
-
-
-
-LaTeX Warning: Reference `eq:main linear' on page 103 undefined on input line 2
-79.
-
-
-LaTeX Warning: Reference `sec:holder' on page 103 undefined on input line 279.
+LaTeX Warning: Citation `NoVa.qg' on page 103 undefined on input line 249.
 
 [103]
 
-LaTeX Warning: Reference `sec:de giorgi' on page 104 undefined on input line 28
-8.
+LaTeX Warning: Citation `Zh' on page 104 undefined on input line 251.
 
 
-LaTeX Warning: Reference `sec:harnack' on page 104 undefined on input line 288.
+LaTeX Warning: Citation `BeZh' on page 104 undefined on input line 251.
 
 
-
-LaTeX Warning: Reference `thm:main continuity' on page 104 undefined on input l
-ine 288.
-
-
-LaTeX Warning: Reference `sec:holder' on page 104 undefined on input line 288.
-
-
-LaTeX Warning: Reference `thm:energy inequality' on page 104 undefined on input
- line 288.
-
-
-LaTeX Warning: Reference `thm:DG1' on page 104 undefined on input line 288.
-
-
-LaTeX Warning: Reference `thm:DG2' on page 104 undefined on input line 288.
-
-
-LaTeX Warning: Reference `thm:oscillation general' on page 104 undefined on inp
-ut line 288.
-
-
-LaTeX Warning: Reference `thm:oscillation shifted' on page 104 undefined on inp
-ut line 288.
+LaTeX Warning: Citation `BuDuYa' on page 104 undefined on input line 251.
 
 [104]
 
-LaTeX Warning: Reference `eq:main linear' on page 105 undefined on input line 2
-95.
+LaTeX Warning: Citation `CaVa.sqg' on page 105 undefined on input line 282.
 
 
-LaTeX Warning: Reference `sec:lambda' on page 105 undefined on input line 296.
+LaTeX Warning: Citation `NoVa.qg' on page 105 undefined on input line 282.
 
 
-LaTeX Warning: Reference `eq:main linear' on page 105 undefined on input line 2
-99.
+LaTeX Warning: Citation `CaVa.sqg' on page 105 undefined on input line 282.
 
 
-LaTeX Warning: Reference `sec:suitable' on page 105 undefined on input line 299
-.
+LaTeX Warning: Citation `NoVa.qg' on page 105 undefined on input line 282.
+
+[105]
+
+LaTeX Warning: Citation `CaVa.sqg' on page 106 undefined on input line 295.
 
 
-LaTeX Warning: Reference `sec:lambda' on page 105 undefined on input line 302.
+LaTeX Warning: Citation `NoVa.qg' on page 106 undefined on input line 295.
 
 
-LaTeX Warning: Reference `sec:suitable' on page 105 undefined on input line 302
-.
+LaTeX Warning: Citation `CaSt' on page 106 undefined on input line 295.
 
 
-LaTeX Warning: Reference `sec:littlewood paley' on page 105 undefined on input 
-line 304.
+LaTeX Warning: Citation `StTo' on page 106 undefined on input line 295.
 
 
-LaTeX Warning: Reference `sec:de giorgi' on page 105 undefined on input line 30
-4.
+LaTeX Warning: Citation `CaSi.extension' on page 106 undefined on input line 29
+5.
+
+[106]
+
+LaTeX Warning: Citation `CaKoNi' on page 107 undefined on input line 299.
+
+[107] [108]
+
+LaTeX Warning: Citation `CaSt' on page 109 undefined on input line 336.
 
 
-LaTeX Warning: Reference `sec:harnack' on page 105 undefined on input line 304.
+LaTeX Warning: Citation `CaSt' on page 109 undefined on input line 356.
 
 
-
-LaTeX Warning: Reference `sec:holder' on page 105 undefined on input line 304.
-
-
-LaTeX Warning: Reference `thm:main continuity' on page 105 undefined on input l
-ine 304.
-
-[105] [106] [107]
-
-LaTeX Warning: Reference `relationship Kt and Ks' on page 108 undefined on inpu
-t line 358.
-
-
-LaTeX Warning: Reference `relationship Kt and Ks' on page 108 undefined on inpu
-t line 362.
-
-[108]
-
-LaTeX Warning: Reference `thm:disjoint' on page 109 undefined on input line 402
-.
-
-
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 109 undefined
- on input line 403.
+LaTeX Warning: Citation `CaSt' on page 109 undefined on input line 358.
 
 [109]
 
-LaTeX Warning: Reference `thm:product rule' on page 110 undefined on input line
- 411.
+LaTeX Warning: Citation `CaSt' on page 110 undefined on input line 365.
 
+[110] [111] [112] [113]
 
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 110 undefined
- on input line 412.
-
-
-LaTeX Warning: Reference `thm:extra product rule' on page 110 undefined on inpu
-t line 417.
-
-
-LaTeX Warning: Reference `thm:product rule' on page 110 undefined on input line
- 418.
-
-
-LaTeX Warning: Reference `thm:L1 of Lambda bounded' on page 110 undefined on in
-put line 425.
-
-
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 110 undefined
- on input line 426.
-
-[110]
-
-LaTeX Warning: Reference `K bounded between orders' on page 111 undefined on in
-put line 435.
-
-[111]
-
-LaTeX Warning: Reference `K near of L1 less than L2 stuff' on page 112 undefine
-d on input line 457.
-
-
-LaTeX Warning: Reference `K far of L1 less than L2 stuff' on page 112 undefined
- on input line 457.
-
-
-LaTeX Warning: Reference `thm:L1 of Lambda1/4 bounded' on page 112 undefined on
- input line 463.
-
-
-LaTeX Warning: Reference `thm:L1 of Lambda bounded' on page 112 undefined on in
-put line 464.
-
-[112] [113]
-
-LaTeX Warning: Reference `thm:hadamard 3 lines' on page 114 undefined on input 
-line 514.
+LaTeX Warning: Citation `CaSt' on page 114 undefined on input line 470.
 
 [114]
 
-LaTeX Warning: Reference `derivative of integrand' on page 115 undefined on inp
-ut line 543.
+LaTeX Warning: Citation `JeKe' on page 115 undefined on input line 487.
 
 [115]
 
-LaTeX Warning: Reference `leray-hopf condition' on page 116 undefined on input 
-line 559.
+LaTeX Warning: Citation `JeKe' on page 116 undefined on input line 521.
 
-
-LaTeX Warning: Reference `thm:DG2' on page 116 undefined on input line 559.
-
-
-LaTeX Warning: Reference `local condition' on page 116 undefined on input line 
-559.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 116 undefined on input 
-line 561.
-
-
-LaTeX Warning: Reference `local condition' on page 116 undefined on input line 
-561.
-
-
-LaTeX Warning: Reference `thm:suitability' on page 116 undefined on input line 
-561.
-
-
-LaTeX Warning: Reference `eq:viscous' on page 116 undefined on input line 567.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 116 undefined on input 
-line 570.
-
-
-LaTeX Warning: Reference `local condition' on page 116 undefined on input line 
-570.
-
-[116]
-
-LaTeX Warning: Reference `eq:viscous linear' on page 117 undefined on input lin
-e 582.
-
-
+[116] [117] [118]
 Underfull \hbox (badness 10000) in paragraph at lines 584--585
 []\OT1/cmr/m/it/12 Then for any smooth non-negative func-tion $\OT1/cmr/m/n/12 
 	 \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 ([0\OML/cmm/m/it/12 ; 
@@ -1768,163 +685,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 584--585
 r/m/n/12 )$ \OT1/cmr/m/it/12 sat-is-fy-ing
  []
 
-
-LaTeX Warning: Reference `thm:suitability' on page 117 undefined on input line 
-599.
-
-
-LaTeX Warning: Reference `eq:viscous linear' on page 117 undefined on input lin
-e 599.
-
-
-LaTeX Warning: Reference `thm:suitability' on page 117 undefined on input line 
-599.
-
-[117]
-
-LaTeX Warning: Reference `thm:suitability' on page 118 undefined on input line 
-602.
-
-
-LaTeX Warning: Reference `eq:viscous linear' on page 118 undefined on input lin
-e 603.
-
-
-LaTeX Warning: Reference `thm:Lambda stuff' on page 118 undefined on input line
- 619.
-
-
-LaTeX Warning: Reference `thm:disjoint' on page 118 undefined on input line 619
-.
-
-[118]
-
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 119 undefined
- on input line 635.
-
-
-LaTeX Warning: Reference `just the K cacciopolli' on page 119 undefined on inpu
-t line 641.
-
-
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 119 undefined
- on input line 646.
-
-[119]
-
-LaTeX Warning: Reference `first form of cacciopolli' on page 120 undefined on i
-nput line 652.
-
-
-LaTeX Warning: Reference `good lower bound on psi term cacciopoli' on page 120 
-undefined on input line 652.
-
-
-LaTeX Warning: Reference `eps term for leray hopf' on page 120 undefined on inp
-ut line 652.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 120 undefined on input 
-line 652.
-
-
-LaTeX Warning: Reference `local condition' on page 120 undefined on input line 
-657.
-
-
-LaTeX Warning: Reference `eq:viscous linear' on page 120 undefined on input lin
-e 657.
-
-
-LaTeX Warning: Reference `thm:Lambda stuff' on page 120 undefined on input line
- 673.
-
-
-LaTeX Warning: Reference `thm:extra product rule' on page 120 undefined on inpu
-t line 673.
-
-[120]
-
-LaTeX Warning: Reference `thm:Lambda stuff' on page 121 undefined on input line
- 677.
-
-
-LaTeX Warning: Reference `thm:extra product rule' on page 121 undefined on inpu
-t line 677.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 121 undefined on input 
-line 686.
-
-
-LaTeX Warning: Reference `equality with varphi' on page 121 undefined on input 
-line 691.
-
-
-LaTeX Warning: Reference `eps term for local' on page 121 undefined on input li
-ne 691.
-
-
-LaTeX Warning: Reference `phi disrupting theta_+ theta_+' on page 121 undefined
- on input line 691.
-
-
-LaTeX Warning: Reference `phi disrupting Lambda Psi' on page 121 undefined on i
-nput line 691.
-
-
-LaTeX Warning: Reference `dissipation controlled by earlier in time' on page 12
-1 undefined on input line 693.
-
-
-LaTeX Warning: Reference `local condition' on page 121 undefined on input line 
-693.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 121 undefined on input line 6
-97.
-
-
-LaTeX Warning: Reference `eq:viscous linear' on page 121 undefined on input lin
-e 697.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 121 undefined on input 
-line 697.
-
-
-LaTeX Warning: Reference `local condition' on page 121 undefined on input line 
-697.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 121 undefined on input line 6
-99.
-
-[121]
-
-LaTeX Warning: Reference `eq:main linear' on page 122 undefined on input line 7
-01.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 122 undefined on input line 7
-03.
-
-
+[119] [120] [121] [122] [123]
 Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 122 undefined on input 
-line 704.
-
-
-LaTeX Warning: Reference `local condition' on page 122 undefined on input line 
-704.
-
-
-LaTeX Warning: Reference `thm:suitability' on page 122 undefined on input line 
-704.
 
 
 Underfull \hbox (badness 1253) in paragraph at lines 708--709
@@ -1938,271 +702,11 @@ m/n/12 2 \U/msb/m/n/12 R[] \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 x \OMS/cmsy/m/n/
  x\OT1/cmr/m/n/12 ) :=
  []
 
+[124] [125] [126] [127] [128] [129] [130]
 
-LaTeX Warning: Reference `leray-hopf condition' on page 122 undefined on input 
-line 710.
+LaTeX Warning: Citation `FMP' on page 131 undefined on input line 868.
 
-
-LaTeX Warning: Reference `local condition' on page 122 undefined on input line 
-710.
-
-
-LaTeX Warning: Reference `eq:main nonlinear' on page 122 undefined on input lin
-e 721.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 122 undefined on input line 7
-21.
-
-[122]
-
-LaTeX Warning: Reference `eq:viscous' on page 123 undefined on input line 727.
-
-
-LaTeX Warning: Reference `eq:viscous' on page 123 undefined on input line 732.
-
-
-LaTeX Warning: Reference `weak eqn for theta_N' on page 123 undefined on input 
-line 748.
-
-[123]
-
-LaTeX Warning: Reference `weak eqn for theta_N' on page 124 undefined on input 
-line 756.
-
-
-LaTeX Warning: Reference `weak eqn for theta_N' on page 124 undefined on input 
-line 761.
-
-
-LaTeX Warning: Reference `eq:viscous' on page 124 undefined on input line 768.
-
-[124]
-
-LaTeX Warning: Reference `eq:viscous' on page 125 undefined on input line 772.
-
-
-LaTeX Warning: Reference `eq:viscous' on page 125 undefined on input line 788.
-
-
-LaTeX Warning: Reference `thm:existence' on page 125 undefined on input line 78
-8.
-
-
-LaTeX Warning: Reference `thm:existence' on page 125 undefined on input line 79
-0.
-
-
-LaTeX Warning: Reference `eq:viscous' on page 125 undefined on input line 791.
-
-
-LaTeX Warning: Reference `thm:viscous' on page 125 undefined on input line 791.
-
-
-[125]
-
-LaTeX Warning: Reference `leray-hopf condition' on page 126 undefined on input 
-line 804.
-
-
-LaTeX Warning: Reference `local condition' on page 126 undefined on input line 
-804.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 126 undefined on input 
-line 804.
-
-
-LaTeX Warning: Reference `local condition' on page 126 undefined on input line 
-804.
-
-
-LaTeX Warning: Reference `thm:suitability' on page 126 undefined on input line 
-804.
-
-
-LaTeX Warning: Reference `eq:viscous linear' on page 126 undefined on input lin
-e 817.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 126 undefined on input 
-line 817.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 126 undefined on input 
-line 817.
-
-[126]
-
-LaTeX Warning: Reference `local condition' on page 127 undefined on input line 
-819.
-
-
-LaTeX Warning: Reference `local condition' on page 127 undefined on input line 
-819.
-
-
-LaTeX Warning: Reference `local condition' on page 127 undefined on input line 
-819.
-
-
-LaTeX Warning: Reference `def:calibrated' on page 127 undefined on input line 8
-27.
-
-
-LaTeX Warning: Reference `sec:holder' on page 127 undefined on input line 829.
-
-
-LaTeX Warning: Reference `def:calibrated' on page 127 undefined on input line 8
-33.
-
-[127] [128] [129]
-
-LaTeX Warning: Reference `thm:IMT stuff' on page 130 undefined on input line 88
-2.
-
-
-LaTeX Warning: Reference `thm:IMT stuff' on page 130 undefined on input line 88
-6.
-
-
-LaTeX Warning: Reference `thm:u is calibrated' on page 130 undefined on input l
-ine 891.
-
-
-LaTeX Warning: Reference `thm:u is calibrated' on page 130 undefined on input l
-ine 893.
-
-
-LaTeX Warning: Reference `thm:IMT stuff' on page 130 undefined on input line 90
-1.
-
-[130]
-
-LaTeX Warning: Reference `thm:IMT stuff' on page 131 undefined on input line 90
-9.
-
-
-LaTeX Warning: Reference `thm:grad and proj' on page 131 undefined on input lin
-e 909.
-
-
-LaTeX Warning: Reference `thm:IMT stuff' on page 131 undefined on input line 90
-9.
-
-[131]
-
-LaTeX Warning: Reference `thm:IMT stuff' on page 132 undefined on input line 93
-7.
-
-
-LaTeX Warning: Reference `schauder estimate' on page 132 undefined on input lin
-e 950.
-
-
-LaTeX Warning: Reference `uj in Linfty' on page 132 undefined on input line 956
-.
-
-[132]
-
-LaTeX Warning: Reference `uj in Linfty' on page 133 undefined on input line 966
-.
-
-
-LaTeX Warning: Reference `uj in W-1/4' on page 133 undefined on input line 966.
-
-
-
-LaTeX Warning: Reference `eq:main linear' on page 133 undefined on input line 9
-74.
-
-[133]
-
-LaTeX Warning: Reference `leray-hopf condition' on page 134 undefined on input 
-line 1009.
-
-[134]
-
-LaTeX Warning: Reference `eq:main linear' on page 135 undefined on input line 1
-014.
-
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 135 undefined on i
-nput line 1023.
-
-
-LaTeX Warning: Reference `Caff Stinga representation' on page 135 undefined on 
-input line 1029.
-
-[135]
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 136 undefined on i
-nput line 1032.
-
-
-LaTeX Warning: Reference `leray-hopf condition' on page 136 undefined on input 
-line 1049.
-
-
-LaTeX Warning: Reference `thm:Lambda stuff' on page 136 undefined on input line
- 1053.
-
-
-LaTeX Warning: Reference `thm:L1 of Lambda1/4 bounded' on page 136 undefined on
- input line 1053.
-
-
-LaTeX Warning: Reference `thm:extra product rule' on page 136 undefined on inpu
-t line 1053.
-
-[136]
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 137 undefined on i
-nput line 1059.
-
-
-LaTeX Warning: Reference `low pass term definition' on page 137 undefined on in
-put line 1069.
-
-
-LaTeX Warning: Reference `low pass control' on page 137 undefined on input line
- 1074.
-
-
-LaTeX Warning: Reference `control from cacciopolli' on page 137 undefined on in
-put line 1074.
-
-[137]
-
-LaTeX Warning: Reference `Caff Stinga representation' on page 138 undefined on 
-input line 1086.
-
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 138 undefined on i
-nput line 1089.
-
-
-LaTeX Warning: Reference `thm:energy inequality' on page 138 undefined on input
- line 1104.
-
-[138]
-
-LaTeX Warning: Reference `Caff Stinga representation' on page 139 undefined on 
-input line 1123.
-
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 139 undefined on i
-nput line 1126.
-
-[139]
-
-LaTeX Warning: Reference `thm:DG1' on page 140 undefined on input line 1141.
-
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 140 undefined on i
-nput line 1144.
-
-
+[131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141]
 Underfull \hbox (badness 1748) in paragraph at lines 1148--1149
 []\OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12   \OT1/cmr/m/n/12 : \U/msb/m/n/12 R[] \
 OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$ \OT1/cmr/m/n/12 be a smooth func-tion which 
@@ -2210,473 +714,40 @@ van-ishes on $\OML/cmm/m/it/12 B[]$ \OT1/cmr/m/n/12 such that $\OML/cmm/m/it/12
   \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 2 +
  []
 
-[140]
+[142] [143] [144] [145] [146] [147] [148] [149] [150] [151] [152] [153]
 
-LaTeX Warning: Reference `thm:energy inequality' on page 141 undefined on input
- line 1161.
+LaTeX Warning: Citation `CaSt' on page 154 undefined on input line 1442.
 
+[154] [155] [156]
 
-LaTeX Warning: Reference `thm:energy inequality' on page 141 undefined on input
- line 1163.
+LaTeX Warning: Citation `BaChDa' on page 157 undefined on input line 1511.
 
-[141]
-
-LaTeX Warning: Reference `thm:hadamard 3 lines' on page 142 undefined on input 
-line 1174.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 142 undefined on input line 1
-182.
-
-
-LaTeX Warning: Reference `local condition' on page 142 undefined on input line 
-1182.
-
-
-LaTeX Warning: Reference `thm:energy inequality' on page 142 undefined on input
- line 1191.
-
-
-LaTeX Warning: Reference `thm:Lambda stuff' on page 142 undefined on input line
- 1198.
-
-
-LaTeX Warning: Reference `thm:L1 of Lambda1/4 bounded' on page 142 undefined on
- input line 1198.
-
-
-LaTeX Warning: Reference `thm:extra product rule' on page 142 undefined on inpu
-t line 1198.
-
-[142]
-
-LaTeX Warning: Reference `time compactness setup' on page 143 undefined on inpu
-t line 1205.
-
-
-LaTeX Warning: Reference `theta3 compact in time' on page 143 undefined on inpu
-t line 1210.
-
-[143]
-
-LaTeX Warning: Reference `theta3 compact in space' on page 144 undefined on inp
-ut line 1228.
-
-
-LaTeX Warning: Reference `theta3 compact in time' on page 144 undefined on inpu
-t line 1230.
-
-
-LaTeX Warning: Reference `ddt theta bounded' on page 144 undefined on input lin
-e 1240.
-
-
-LaTeX Warning: Reference `mass assumption above' on page 144 undefined on input
- line 1244.
-
-
-LaTeX Warning: Reference `mass assumption between' on page 144 undefined on inp
-ut line 1244.
-
-
-LaTeX Warning: Reference `mass assumption below' on page 144 undefined on input
- line 1244.
-
-
-LaTeX Warning: Reference `definition of v_n' on page 144 undefined on input lin
-e 1244.
-
-[144]
-
-LaTeX Warning: Reference `ddt v bounded' on page 145 undefined on input line 12
-59.
-
-
-LaTeX Warning: Reference `mass assumptions v' on page 145 undefined on input li
-ne 1259.
-
-
-LaTeX Warning: Reference `thm:DG1' on page 145 undefined on input line 1270.
-
-
-LaTeX Warning: Reference `thm:DG2' on page 145 undefined on input line 1270.
-
-
-LaTeX Warning: Reference `Caff Stinga representation' on page 145 undefined on 
-input line 1275.
-
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 145 undefined on i
-nput line 1278.
-
-[145]
-
-LaTeX Warning: Reference `thm:DG2' on page 146 undefined on input line 1291.
-
-
-LaTeX Warning: Reference `oscillation boundedness' on page 146 undefined on inp
-ut line 1295.
-
-
-LaTeX Warning: Reference `thm:DG2' on page 146 undefined on input line 1297.
-
-
-LaTeX Warning: Reference `thm:DG2' on page 146 undefined on input line 1307.
-
-[146]
-
-LaTeX Warning: Reference `oscillation amount below' on page 147 undefined on in
-put line 1309.
-
-
-LaTeX Warning: Reference `oscillation amount below' on page 147 undefined on in
-put line 1309.
-
-
-LaTeX Warning: Reference `oscillation amount above' on page 147 undefined on in
-put line 1309.
-
-
-LaTeX Warning: Reference `thm:DG1' on page 147 undefined on input line 1312.
-
-
-LaTeX Warning: Reference `thm:oscillation general' on page 147 undefined on inp
-ut line 1322.
-
-
-LaTeX Warning: Reference `Caff Stinga representation' on page 147 undefined on 
-input line 1324.
-
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 147 undefined on i
-nput line 1327.
-
-[147]
-
-LaTeX Warning: Reference `sec:holder' on page 148 undefined on input line 1344.
-
-
-
-LaTeX Warning: Reference `Cgamma and eps for harnack' on page 148 undefined on 
-input line 1344.
-
-[148]
-
-LaTeX Warning: Reference `thm:oscillation general' on page 149 undefined on inp
-ut line 1360.
-
-
-LaTeX Warning: Reference `lambda smallness assumptions' on page 149 undefined o
-n input line 1361.
-
-
-LaTeX Warning: Reference `theta bounded everywhere' on page 149 undefined on in
-put line 1367.
-
-
-LaTeX Warning: Reference `bar theta bounded above everywhere' on page 149 undef
-ined on input line 1376.
-
-
-LaTeX Warning: Reference `lambda smallness assumptions' on page 149 undefined o
-n input line 1376.
-
-[149]
-
-LaTeX Warning: Reference `bar theta bounded below everywhere' on page 150 undef
-ined on input line 1383.
-
-
-LaTeX Warning: Reference `lambda smallness assumptions' on page 150 undefined o
-n input line 1383.
-
-
-LaTeX Warning: Reference `bar theta bounded basin' on page 150 undefined on inp
-ut line 1394.
-
-
-LaTeX Warning: Reference `Cgamma and eps for harnack' on page 150 undefined on 
-input line 1399.
-
-
-LaTeX Warning: Reference `bar theta bounded everywhere' on page 150 undefined o
-n input line 1402.
-
-
-LaTeX Warning: Reference `thm:main continuity' on page 150 undefined on input l
-ine 1412.
-
-
-LaTeX Warning: Reference `thm:oscillation shifted' on page 150 undefined on inp
-ut line 1412.
-
-[150]
-
-LaTeX Warning: Reference `eq:main linear' on page 151 undefined on input line 1
-414.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 151 undefined on input line 1
-419.
-
-
-LaTeX Warning: Reference `Caff Stinga representation' on page 151 undefined on 
-input line 1424.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 151 undefined on input line 1
-432.
-
-[151]
-
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 152 undefined
- on input line 1445.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 152 undefined on input line 1
-448.
-
-
-LaTeX Warning: Reference `scaling 1/4 to 1 property' on page 152 undefined on i
-nput line 1448.
-
-
-LaTeX Warning: Reference `thm:oscillation shifted' on page 152 undefined on inp
-ut line 1457.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 152 undefined on input line 1
-465.
-
-[152]
-
-LaTeX Warning: Reference `thm:u is calibrated' on page 153 undefined on input l
-ine 1475.
-
-
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 153 undefined
- on input line 1486.
-
-
-LaTeX Warning: Reference `thm:Caff Stinga representation' on page 153 undefined
- on input line 1486.
-
-
-LaTeX Warning: Reference `thm:scaling' on page 153 undefined on input line 1486
-.
-
-[153]
-
-LaTeX Warning: Reference `thm:scaling' on page 154 undefined on input line 1497
-.
-
-
-LaTeX Warning: Reference `thm:calibration is good' on page 154 undefined on inp
-ut line 1497.
-
-[154] [155]
-
-LaTeX Warning: Reference `ODE for dot gamma' on page 156 undefined on input lin
-e 1538.
-
-
-LaTeX Warning: Reference `Cgamma and eps for harnack' on page 156 undefined on 
-input line 1545.
-
-
-LaTeX Warning: Reference `eps is small enough for Cgamma' on page 156 undefined
- on input line 1545.
-
-
-LaTeX Warning: Reference `thm:scaling' on page 156 undefined on input line 1555
-.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 156 undefined on input line 1
-555.
-
-
-LaTeX Warning: Reference `eq:main linear brokendown' on page 156 undefined on i
-nput line 1555.
-
-[156]
-
-LaTeX Warning: Reference `thetak below the barrier' on page 157 undefined on in
-put line 1564.
-
-
-LaTeX Warning: Reference `thm:oscillation shifted' on page 157 undefined on inp
-ut line 1564.
-
-
-LaTeX Warning: Reference `thetak below the barrier' on page 157 undefined on in
-put line 1564.
-
-[157]
-
-LaTeX Warning: Reference `thm:main continuity' on page 158 undefined on input l
-ine 1590.
-
-
-LaTeX Warning: Reference `thm:main continuity' on page 158 undefined on input l
-ine 1592.
-
-
-LaTeX Warning: Reference `thm:existence' on page 158 undefined on input line 15
-95.
-
-
-LaTeX Warning: Reference `eq:main nonlinear' on page 158 undefined on input lin
-e 1595.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 158 undefined on input line 1
-599.
-
-
-LaTeX Warning: Reference `eq:main linear' on page 158 undefined on input line 1
-605.
-
-
-LaTeX Warning: Reference `thm:continuity for suitable' on page 158 undefined on
- input line 1605.
-
-[158]) [159]
+[157] [158] [159] [160]) [161]
 \openout2 = `chapter-conservation.aux'.
 
  (chapter-conservation.tex
 Chapter 5.
+[162
 
-LaTeX Warning: Reference `eq:main' on page 160 undefined on input line 139.
 
-[160
 
+] [163]
 
+LaTeX Warning: Citation `Va.entropy' on page 164 undefined on input line 162.
 
-]
 
-LaTeX Warning: Reference `convexity condition' on page 161 undefined on input l
-ine 147.
+LaTeX Warning: Citation `Va.recent' on page 164 undefined on input line 162.
 
 
-LaTeX Warning: Reference `eq:main' on page 161 undefined on input line 149.
+LaTeX Warning: Citation `BrLiYa' on page 164 undefined on input line 176.
 
 
-LaTeX Warning: Reference `eq:main' on page 161 undefined on input line 149.
+LaTeX Warning: Citation `AdGhVG' on page 164 undefined on input line 176.
 
-[161]
 
-LaTeX Warning: Reference `convexity condition' on page 162 undefined on input l
-ine 162.
+LaTeX Warning: Citation `Go' on page 164 undefined on input line 176.
 
-
-LaTeX Warning: Reference `thm:main simple' on page 162 undefined on input line 
-164.
-
-
-LaTeX Warning: Reference `convexity condition' on page 162 undefined on input l
-ine 166.
-
-
-LaTeX Warning: Reference `eq:main' on page 162 undefined on input line 168.
-
-
-LaTeX Warning: Reference `eq:main' on page 162 undefined on input line 170.
-
-[162]
-
-LaTeX Warning: Reference `sec:prelim' on page 163 undefined on input line 184.
-
-
-LaTeX Warning: Reference `sec:lemmas' on page 163 undefined on input line 184.
-
-
-LaTeX Warning: Reference `sec:functional' on page 163 undefined on input line 1
-84.
-
-
-LaTeX Warning: Reference `sec:main thm' on page 163 undefined on input line 184
-.
-
-
-LaTeX Warning: Reference `thm:main simple' on page 163 undefined on input line 
-184.
-
-
-LaTeX Warning: Reference `thm:main technical' on page 163 undefined on input li
-ne 184.
-
-[163]
-
-LaTeX Warning: Reference `eq:main' on page 164 undefined on input line 203.
-
-[164] [165]
-
-LaTeX Warning: Reference `time deriv with Y' on page 166 undefined on input lin
-e 247.
-
-
-LaTeX Warning: Reference `expansion of deltu term' on page 166 undefined on inp
-ut line 247.
-
-
-LaTeX Warning: Reference `F term explanation' on page 166 undefined on input li
-ne 247.
-
-[166]
-
-LaTeX Warning: Reference `thm:time derivative' on page 167 undefined on input l
-ine 269.
-
-[167]
-
-LaTeX Warning: Reference `thm:rewrite time derivative' on page 168 undefined on
- input line 300.
-
-[168]
-
-LaTeX Warning: Reference `eq:main' on page 169 undefined on input line 324.
-
-
-LaTeX Warning: Reference `taylor u-s' on page 169 undefined on input line 330.
-
-
-LaTeX Warning: Reference `taylor Q' on page 169 undefined on input line 337.
-
-
-LaTeX Warning: Reference `taylor u-s' on page 169 undefined on input line 337.
-
-
-LaTeX Warning: Reference `taylor eta' on page 169 undefined on input line 339.
-
-
-LaTeX Warning: Reference `taylor eta' thrd' on page 169 undefined on input line
- 339.
-
-
-LaTeX Warning: Reference `taylor Q' on page 169 undefined on input line 339.
-
-
-LaTeX Warning: Reference `taylor u-s' on page 169 undefined on input line 341.
-
-
-LaTeX Warning: Reference `taylor eta' scnd' on page 169 undefined on input line
- 343.
-
-[169]
-
-LaTeX Warning: Reference `taylor F' on page 170 undefined on input line 345.
-
-
-LaTeX Warning: Reference `taylor u-s' on page 170 undefined on input line 350.
-
-
-LaTeX Warning: Reference `taylor F' on page 170 undefined on input line 350.
-
-
-LaTeX Warning: Reference `taylor u-s' on page 170 undefined on input line 358.
-
-
+[164] [165] [166] [167] [168] [169] [170] [171]
 Overfull \hbox (13.7857pt too wide) detected at line 366
 [] [][] \OT1/cmr/m/n/12 + (1 + \OML/cmm/m/it/12 \OT1/cmr/m/n/12 )   [][]   \OM
 L/cmm/m/it/12 W[]dx \OT1/cmr/m/n/12 + [] [][]   \OML/cmm/m/it/12 W[]dx \OT1/cmr
@@ -2687,303 +758,35 @@ T1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OMS/cms
 y/m/n/12 j\OML/cmm/m/it/12 @[]W\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 dx
  []
 
-[170]
+[172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183]
+[184] [185]
 
-LaTeX Warning: Reference `thm:rewrite time derivative' on page 171 undefined on
- input line 374.
+LaTeX Warning: Citation `Se' on page 186 undefined on input line 744.
 
-[171]
-
-LaTeX Warning: Reference `thm:main technical' on page 172 undefined on input li
-ne 416.
-
-
-LaTeX Warning: Reference `thm:rewrite time derivative' on page 172 undefined on
- input line 416.
-
-[172]
-
-LaTeX Warning: Reference `thm:taylor' on page 173 undefined on input line 425.
-
-
-LaTeX Warning: Reference `taylor eta' on page 173 undefined on input line 425.
-
-
-LaTeX Warning: Reference `taylor u-s' on page 173 undefined on input line 425.
-
-
-LaTeX Warning: Reference `eq:main' on page 173 undefined on input line 439.
-
-[173]
-
-LaTeX Warning: Reference `convexity condition' on page 174 undefined on input l
-ine 442.
-
-
-LaTeX Warning: Reference `eq:main' on page 174 undefined on input line 444.
-
-
-LaTeX Warning: Reference `thm:poincare' on page 174 undefined on input line 451
-.
-
-
-LaTeX Warning: Reference `thm:taylor' on page 174 undefined on input line 451.
-
-
-LaTeX Warning: Reference `thm:poincare' on page 174 undefined on input line 454
-.
-
-
-LaTeX Warning: Reference `thm:rewrite time derivative' on page 174 undefined on
- input line 456.
-
-[174]
-
-LaTeX Warning: Reference `thm:taylor' on page 175 undefined on input line 460.
-
-
-LaTeX Warning: Reference `taylor eta' on page 175 undefined on input line 460.
-
-
-LaTeX Warning: Reference `thm:taylor' on page 175 undefined on input line 467.
-
-
-LaTeX Warning: Reference `taylor u-s' on page 175 undefined on input line 467.
-
-[175]
-
-LaTeX Warning: Reference `thm:taylor' on page 176 undefined on input line 491.
-
-
-LaTeX Warning: Reference `taylor Q' on page 176 undefined on input line 491.
-
-
-LaTeX Warning: Reference `thm:taylor' on page 176 undefined on input line 505.
-
-
-LaTeX Warning: Reference `taylor eta' thrd' on page 176 undefined on input line
- 505.
-
-[176]
-
-LaTeX Warning: Reference `F decomposition' on page 177 undefined on input line 
-532.
-
-
-LaTeX Warning: Reference `bound the three parts' on page 177 undefined on input
- line 532.
-
-
-LaTeX Warning: Reference `Q(ubar) bound' on page 177 undefined on input line 53
-7.
-
-
-LaTeX Warning: Reference `w(ubar) bound' on page 177 undefined on input line 53
-7.
-
-
-LaTeX Warning: Reference `eta'(ubar) bound' on page 177 undefined on input line
- 537.
-
-
-LaTeX Warning: Reference `F(ubar) bound' on page 177 undefined on input line 53
-7.
-
-
-LaTeX Warning: Reference `thm:taylor' on page 177 undefined on input line 544.
-
-
-LaTeX Warning: Reference `taylor 1-y2' on page 177 undefined on input line 544.
-
-
-[177]
-
-LaTeX Warning: Reference `Y2(ubar) bound' on page 178 undefined on input line 5
-53.
-
-
-LaTeX Warning: Reference `B(ubar) bound' on page 178 undefined on input line 55
-3.
-
-
-LaTeX Warning: Reference `D(ubar) bound' on page 178 undefined on input line 55
-3.
-
-[178]
-
-LaTeX Warning: Reference `R(ubar) bound' on page 179 undefined on input line 58
-2.
-
-
-LaTeX Warning: Reference `thm:poincare' on page 179 undefined on input line 596
-.
-
-
-LaTeX Warning: Reference `convexity condition' on page 179 undefined on input l
-ine 602.
-
-
-LaTeX Warning: Reference `eq:main' on page 179 undefined on input line 604.
-
-[179]
-
-LaTeX Warning: Reference `thm:functional near' on page 180 undefined on input l
-ine 611.
-
-[180] [181]
-
-LaTeX Warning: Reference `far bound F' on page 182 undefined on input line 677.
-
-
-
-LaTeX Warning: Reference `far bound Q' on page 182 undefined on input line 677.
-
-
-
-LaTeX Warning: Reference `far bound eta'' on page 182 undefined on input line 6
-77.
-
-
-LaTeX Warning: Reference `far bound w' on page 182 undefined on input line 677.
-
-
-
-LaTeX Warning: Reference `far bound D' on page 182 undefined on input line 683.
-
-
-
-LaTeX Warning: Reference `far bound Y' on page 182 undefined on input line 683.
-
-
-
-LaTeX Warning: Reference `far bound B' on page 182 undefined on input line 683.
-
-
-
-LaTeX Warning: Reference `thm:functional near' on page 182 undefined on input l
-ine 691.
-
-[182]
-
-LaTeX Warning: Reference `thm:gagliardo' on page 183 undefined on input line 70
-1.
-
-
-LaTeX Warning: Reference `R2 bound' on page 183 undefined on input line 712.
-
-
-LaTeX Warning: Reference `thm:gagliardo' on page 183 undefined on input line 72
-0.
-
-[183]
-
-LaTeX Warning: Reference `R decomposition' on page 184 undefined on input line 
-732.
-
-
-LaTeX Warning: Reference `thm:main technical' on page 184 undefined on input li
-ne 740.
-
-
-LaTeX Warning: Reference `thm:functional far' on page 184 undefined on input li
-ne 740.
-
-
-LaTeX Warning: Reference `thm:functional far' on page 184 undefined on input li
-ne 742.
-
-
-LaTeX Warning: Reference `thm:taylor' on page 184 undefined on input line 749.
-
-
-LaTeX Warning: Reference `thm:gagliardo' on page 184 undefined on input line 75
-1.
-
-[184]
-
-LaTeX Warning: Reference `continuity in gamma' on page 185 undefined on input l
-ine 775.
-
-
-LaTeX Warning: Reference `nonlinear gamma lipschitz' on page 185 undefined on i
-nput line 775.
-
-
-LaTeX Warning: Reference `thm:functional far' on page 185 undefined on input li
-ne 787.
-
-[185]
-
-LaTeX Warning: Reference `thm:time derivative' on page 186 undefined on input l
-ine 790.
-
-
-LaTeX Warning: Reference `nonlinear gamma lipschitz' on page 186 undefined on i
-nput line 792.
-
-
-LaTeX Warning: Reference `thm:main simple' on page 186 undefined on input line 
-795.
-
-
-LaTeX Warning: Reference `thm:main technical' on page 186 undefined on input li
-ne 798.
-
-
-LaTeX Warning: Reference `thm:main technical' on page 186 undefined on input li
-ne 800.
-
-
-LaTeX Warning: Reference `convexity condition' on page 186 undefined on input l
-ine 804.
-
-
-LaTeX Warning: Reference `eq:main' on page 186 undefined on input line 804.
-
-[186]
-
-LaTeX Warning: Reference `eq:main' on page 187 undefined on input line 812.
-
-) [187]
+[186] [187] [188]) [189]
 Appendix.
-[188
+[190
 
 
 ]
 \openout2 = `appendix.aux'.
 
- (appendix.tex
-
-LaTeX Warning: Reference `ch:kinetic' on page 189 undefined on input line 2.
-
-[189
+ (appendix.tex [191
 
 ]
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 190 undefined on input line 
-40.
-
-<NFP-diagram-Cone.pdf, id=671, 550.0066pt x 347.84894pt>
+<NFP-diagram-Cone.pdf, id=681, 550.0066pt x 347.84894pt>
 File: NFP-diagram-Cone.pdf Graphic file (type pdf)
 <use NFP-diagram-Cone.pdf>
 Package pdftex.def Info: NFP-diagram-Cone.pdf  used on input line 43.
 (pdftex.def)             Requested size: 252.94499pt x 159.9753pt.
-[190 <./NFP-diagram-Cone.pdf>] [191] [192]
-
-LaTeX Warning: Reference `ch:SQG' on page 193 undefined on input line 132.
-
-[193] [194]
-
-LaTeX Warning: Reference `thm:hadamard 3 lines' on page 195 undefined on input 
-line 176.
-
-[195] [196] [197] [198]) [199] (StokolsThesis.bbl [200
+ [192 <./NFP-diagram-Cone.pdf>] [193] [194] [195]
+[196] [197] [198] [199] [200]) [201] (StokolsThesis.bbl [202
 
 
-] [201] [202] [203]
-[204] [205] [206] [207] [208] [209] [210] [211]) [212] (StokolsThesis.aux
-(chapter-intro.aux) (chapter-HamJac.aux) (chapter-kinetic.aux) (chapter-SQG.aux
-) (chapter-conservation.aux) (appendix.aux))
+] [203] [204]
+[205] [206] [207]) [208] (StokolsThesis.aux (chapter-intro.aux)
+(chapter-HamJac.aux) (chapter-kinetic.aux) (chapter-SQG.aux)
+(chapter-conservation.aux) (appendix.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2992,11 +795,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3828 strings out of 480897
- 53563 string characters out of 2898199
- 295341 words of memory out of 3000000
- 19611 multiletter control sequences out of 15000+200000
- 544968 words of font info for 73 fonts, out of 3000000 for 9000
+ 3786 strings out of 480897
+ 53456 string characters out of 2898199
+ 301585 words of memory out of 3000000
+ 19562 multiletter control sequences out of 15000+200000
+ 544768 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,16n,27p,1442b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
@@ -3026,9 +829,9 @@ ts/cm/cmti8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/euler/eusm10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfsto/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on StokolsThesis.pdf (220 pages, 882422 bytes).
+Output written on StokolsThesis.pdf (217 pages, 873868 bytes).
 PDF statistics:
- 848 PDF objects out of 1000 (max. 8388607)
+ 839 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

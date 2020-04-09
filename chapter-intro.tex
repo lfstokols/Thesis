@@ -160,106 +160,210 @@ Historically, the De Giorgi-Nash-Moser theorem was the most difficult step to pr
 
 The method of De Giorgi was first applied to this elliptic problem, but in fact the core concept has wide-ranging applications.  We will explore the method below, using the toy model of an inhomogeneous parabolic equation.  Let $d \geq 1$ a dimension and $\lambda \in (0,1)$ a coercivity parameter, let $A:\R_+\times\R^d \to \R^{d\times d}$ a matrix satisfying $\lambda |\xi|^2 \leq \xi^\transpose A(t,x) \xi \leq \lambda\n |\xi|^2$ for all $\xi \in \R^d$, let $b:\R_+\times\R^d \to \R^d$ a vector, and $f:\R_+\times\R^d \to \R$ a scalar forcing term.  Suppose that $u \in L^2(\R_+;H^1(\R^d)) \cap L^\infty(\R_+; L^2(\R^d))$ satisfies the parabolic equation
 \begin{equation} \label{eq:intro-parabolic}
-\del_t u = \div(A \grad u) + b\cdot\grad u + f \qquad (t,x) \in \R_+\times\R^d.
+\del_t u = \div(A \grad u) + f \qquad (t,x) \in \R_+\times\R^d.
 \end{equation}
-
-\begin{theorem} \label{thm:intro-DG toy theorem}
-For any $T > 0$, there exists a constant $C > 0$ and $\alpha \in (0,1)$ so that all solutions $u$ to \eqref{eq:intro-parabolic} will satisfy 
-\[ \norm{u}_{L^\infty((T,\infty)\times\R^d)} \leq C \norm{u(0,\cdot)}_{L^2(\R^d)} \]
-and
-\[ \norm{u}_{C^\alpha((2T,\infty)\times\R^d)} \leq C \norm{u}_{L^\infty((T,\infty)\times\R^d)}. \]
-
-The constants $\alpha$ and $C$ depend on $\lambda$ and on $f$ and $b$ and $d$, as well as $T$.  
-\end{theorem}
-
-We will prove this well-known theorem using the De Giorgi method.  
-
-\begin{theorem}
-Energy Inequality
-\end{theorem}
-
-\begin{proof}
-For any $s \in [-1,0]$, let $\eta_s:[-2,0]\to \R$ be given by 
-\[ \eta_s(t) = \begin{cases}
-t+2 & t \in [-2,-1], \\
-1 & t \in [-1,s], \\
-0 & t \in (s,0].
-\end{cases} \]
-Let $\varphi: \R^d\to\R$ be a smooth function which is identically 1 on $B_1$ and identically zero on the complement of $B_2$, satisfying $\norm{\grad\varphi}_{L^\infty} \leq 2$.  
-Since $u \in L^2(H^1)$ by assumption, we can multiply \eqref{eq:intro-parabolic} by the test function $\eta_s(t) \varphi(x)^2 (u-k)_+$ to obtain
-\begin{equation} \label{intro-integrate equation against (u-k)_+} 
-\frac{1}{2} \iint [(u-k)_+ \varphi]^2 (-\eta_s') + \iint \eta_s \grad [\varphi^2 (u-k)_+] A \grad(u-k)_+ = \iint \eta_s \varphi^2(u-k)_+ b \cdot \grad(u-k)_+ + \iint \eta_s \varphi^2 (u-k)_+ f. 
-\end{equation}
-
-The left hand side is bounded
-\begin{equation} \label{intro-right hand side of energy} \begin{aligned} 
-\frac{1}{2} \iint [(u-k)_+ \varphi]^2 (-\eta_s') + \iint \eta_s \grad [\varphi^2 (u-k)_+] A \grad(u-k)_+ &\geq \frac{1}{2}\int [\varphi (u-k)_+]^2|_{t=s} \,dx + 2 \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi (u-k)_+] - \frac{1}{2} \int_{-2}^{-1} \int [(u-k)_+ \varphi]^2 - 2 \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi] (u-k)_+ 
-\\ &\geq \frac{1}{2}\int [\varphi (u-k)_+]^2|_{t=s} \,dx + \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi (u-k)_+] - \frac{1}{2} \int_{-2}^{-1} \int [(u-k)_+ \varphi]^2 - \iint \eta_s (u-k)_+^2 \grad\varphi A \grad\varphi
-\\ & \geq \frac{1}{2}\int_{B_1} (u-k)_+^2|_{t=s} \,dx + \lambda \int_{-1}^s \int_{B_1} |\grad(u-k)_+|^2 - \frac{1}{2} \int_{-2}^{-1} \int_{B_2} (u-k)_+^2 - \lambda\n 2 \int_{-2}^0 \int_{B_2} (u-k)_+^2.
-\end{aligned} \end{equation}
-
-Define $p^*$ such that $\frac{1}{p} + \frac{1}{p^*} = 1$.  The right hand side of \eqref{intro-integrate equation against (u-k)_+} is bounded
-\begin{equation*} \begin{aligned}
-\iint \iint \eta_s \varphi^2 (u-k)_+ f 
-&\leq \norm{f}_{L^p} \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*}.
-\end{aligned} \end{equation*}
-By combining this with \eqref{intro-integrate equation against (u-k)_+} and \eqref{intro-right hand side of energy}, we obtain
-\[ \frac{1}{2}\int_{B_1} (u-k)_+^2|_{t=s} \,dx + \lambda \int_{-1}^s \int_{B_1} |\grad(u-k)_+|^2 \leq \frac{1}{2} \int_{-2}^{-1} \int_{B_2} (u-k)_+^2 + \lambda\n 2 \int_{-2}^0 \int_{B_2} (u-k)_+^2 + \norm{f}_{L^p} \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*}. \]
-Taking the supremum of the left hand side over all $s \in [-1,0]$, and recalling that all of our integrands are non-negative, we obtain that in particular
-\[ \sup_{t \in [-1,0]} \int_{B_1} (u-k)_+^2 \,dx + \int_{-1}^0 \int_{B_1} |\grad(u-k)_+|^2 \leq C\paren{\lambda, \norm{f}_{L^p}} \paren{ \int_{-2}^{0} \int_{B_2} (u-k)_+^2 + \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*} }. \]
-
-
-\end{proof}
-
-\begin{theorem}
-There exists a constant $\delta_0$ such that any solution which satisfies
-\[ \int_{-2}^0 \int_{B_2} (u)_+^2 \,dxdt \leq \delta_0 \]
-will also satisfy $u \leq 1$ on $[-1,0]\times B_1$.  
-\end{theorem}
-
-\begin{proof}
-We consider the sequence of truncated functions $u_k := (u-1 + 2^{-k})_+$ and the sequence of regions $Q_k := [-1-2^{-k},0] \times B_{1 + 2^{-k}}$.  Note that $u_0 = (u)_+$ and, in the limit, $u_\infty = (u-1)_+$, while $Q_0 = [-2,0]\times B_2$ and, in the limit, $Q_\infty = [-1,0]\times B_1$. 
-
-For each truncated function, we consider the energy
-\[ \E_k = \sup_{[-1-2^{-k},0]} \int u_k^2 + \iint_{Q_k} \abs{\grad u_k}^2. \]
-
-We wish to show that $\E_k$ bounds some Lebesgue norm of $u_k$, using a combination of Sobolev embedding and Riesz-Thorin interpolation.  To that end, consider the function $m(t) := \int_{B_{1+2^{-k}}} u_k$ (the spatial average of $u_k$), and note that $0 \leq m(t) \leq \sqrt{|B_2|} \E_k^{1/2}$ by H\"{o}lder's inequality.  
-
-By the Sobolev embedding, we know that 
-\begin{align*} 
-\int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} u_k^{\frac{2d}{d-2}} }^{\frac{d-2}{2d}} 
-&\leq \norm{ \grad u_k}_{L^1([-1-2^{-k},0]; L^2(B_{1+2^{-k}}))} + \int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} m^{\frac{2d}{d-2}} }^{\frac{d-2}{2d}}
-\\ &\leq \sqrt{1+2^{-k}} \norm{ \grad u_k}_{L^2(Q_k)} + m(t) (1+2^{-k}\int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} 1 }^{\frac{d-2}{2d} }
-\\ &\leq C \E_k^{1/2}.
-\end{align*}
-The constant $C$ here depends only on the dimension.  The quantity $\E_k^{1/2}$ then controls both the $L^1\paren{ L^{2d/(d-2)} }$ and the $L^\infty\paren{L^2}$ norm of $u_k$ over the region $Q_k$.  By interpolation, we conclude that for any $q_1 \in (0,1)$, $q_2 \in (1/2-1/d, 1/2)$ satisfying
-\[ \frac{2}{d} \frac{1}{q_1} + 2 \frac{1}{q_2} = 1, \]
-the quantity $\E_k^{1/2}$ also controls the $L^{q_1}\paren{L^{q_2}}$ norm of $u_k$ on $Q_k$.  This equation represents the line segment between $(1,1/2-1/d)$ and $(0,1/2)$.  Simply because $1/2 - 1/d$ is less than $1/2$, we know that there must exist a point on this line segment such that $q_1 = q_2$ called $(q,q)$ with $q = 2 + \frac{2}{d}$.  
-
-We conclude that 
-\begin{equation} \label{intro-lower bound on energy E_k}
-\iint_{Q_k} u_k^q \leq \E_k^{q/2}. 
-\end{equation}
-Note that, whatever the value of $d$, we have $q/2 > 1$.  We have shown that the energy $\E_k$ has superlinear control on some Lebesgue norm of $u_k$.  
 
 \vskip.3cm
 
-Now that we have used Sobolev embedding to bound $\E_k$ from below, we can use the energy inequality to bound it from above.  First, define the indicator functions $\chi_k := \indic{u_k > 0}$ so that $u_k = \chi_k \paren{u_{k-1} - 2^{-k-1} }$ and 
-\[ 2^{-k-1} \chi_k = \chi_k u_{k-1} - u_k \leq u_{k-1}. \]
-We have by the energy inequality \eqref{eq:intro-energy inequality}, assuming $p^* \leq q$, 
-\begin{align*} 
-\E_k &\leq C 2^k \bracket{ \iint_{Q_{k-1}} u_k^2 + \paren{ \iint_{Q_{k-1}} u_k^{p^*} }^{1/p^*} }
-\\ &= C^k \bracket{ \iint_{Q_{k-1}} u_k^2 \chi_k^{q-2} + \paren{ \iint_{Q_{k-1}} u_k^{p^*} \chi_k^{q - p*} }^{1/p^*} }
-\\ &\leq C^k \bracket{ \iint_{Q_{k-1}} u_{k-1}^2 (2^{k+1} u_{k-1})^{q-2} + \paren{ \iint_{Q_{k-1}} u_{k-1}^{p^*} (2^{k+1} u_{k-1})^{q - p*} }^{1/p^*} }
-\\ &\leq C^k \bracket{ \iint_{Q_{k-1}} u_{k-1}^q + \paren{ \iint_{Q_{k-1}} u_{k-1}^q }^{1/p^*} }.
-\end{align*}
-By combining this inequality with \eqref{intro-lower bound on energy E_k}, we finally arrive at a recursive inequality for the sequence $\E_k$:
-\[ \E_k \leq C^k \bracket{ \E_{k-1}^{q/2} + \E_{k-1}^{q/(2p^*)} }. \]
+The first step is to derive an energy inequality.  Assuming $u$ solves \eqref{eq:intro-parabolic} in the sense of distributions, we can formally multiply the equation by a test function of the form $\varphi(t,x) (u-k)_+$ for $\varphi$ a smooth cutoff function (i.e. which is identically one on some space-time region $Q_1$ and identically zero outside of some region $Q_2$) and $k$ an arbitrary constant.  This new equality can be manipulated by standard integration by parts and H\"{o}lder-type estimates into an energy inequality.  Of course test functions must be smooth, and in general we cannot assume that $(u-k)_+$ is smooth.  In this parabolic case, we can generally assume that a solution $u$ exists in $L^2(H^1)$, which is sufficient to justify this formal calculation.  In general, one may need to take the energy inequality so derived as an a priori assumption, and construct solutions which satisfy the energy inequality but not necessarily the regularity assumption needed to justify it.  
 
-\end{proof}
+The energy inequality, in the parabolic case, will have the general form
+\[ \int_{A} (u(t,\cdot)-k)_+^2 \,dx + \int_s^t \int_A \abs{\grad (u-k)_+}^2 \,dxdt \leq C \bracket{\int_B (u(s,\cdot)-k)_+^2 \,dx + \norm{f}_{L^p} \paren{\int_s^t \int_B (u-k)_+^{p^*} \,dxdt}^{1/p^*}} \]
+where $A \subsetneq B$ are two bounded open sets with $A$ compactly contained in $B$, $s < t$ are two times, $1/p + 1/p^* = 1$, and the constant $C$ depends on the ellipticity constant $\lambda$ and the distance between $A$ and $B^\complement$.  This is called an energy inequality because the energy $\int(u-k)_+^2$ at a time $t$ is smaller than the energy at an earlier time $s$, where the dissipation term $\int |\grad (u-k)_+|^2$ causes the energy to decrease or dissipate, and the source term corresponding to $f$ puts more energy into the system, allowing the energy to increase.  Note that the energy in a small region $A$ is bounded by the energy in a larger region $B$, to account for energy that travels through space and enters through the boundary.  
+
+Though this form of the energy inequality makes the dynamics of the system clear, a more useful form is to consider intervals in time rather than points in time.  For $A$ a bounded open region in space and $[t,s]$ a time-interval, consider some parameter $\eps > 0$ and define $A_\eps$ to be the $\eps$-envelope around $A$ (the points within distance $\eps$ of $A$).  We call $[a-\eps,b] \times A_\eps$ a parabolic envelope of $[a,b] \times A$.  Then
+\[ \sup_{t \in [a,b]} \int_A (u-k)_+^2 + \int_a^b \int_A |\grad (u-k)_+|^2 \leq C \bracket{ \int_{a-\eps}^b \int_{A_\eps} (u-k)_+^2 + \paren{\int_{a-\eps}^b \int_{A_\eps} (u-k)_+^{p^*} }^{1/p^*} }. \]
+
+\vskip.3cm
+
+Armed with this energy inequality, the next step is to prove the so-called ``first De Giorgi lemma.''  This result is sometimes called $L^2-\textrm{to}-L^\infty$ regularization. It comes in two flavors: a global-in-space variety which shows that any solution to \eqref{eq:intro-parabolic} with $L^2$ initial data is necessarily in $L^\infty$ locally in time, and a localized version that says regions where $(u-k)_+$ has a sufficiently small $L^2$ norm in some parabolic envelope will satisfy an $L^\infty$ bound in that local region.  For different PDE, either one of these results may or may not hold, but in general the former version is simpler so we shall concentrate on the latter version.  It is the latter version which is useful in the proof of H\"{o}lder continuity.  
+
+Specifically, the first De Giorgi lemma says that 
+\begin{lemma}[First De Giorgi Lemma]
+There exists a constant $\delta_0$ such that, for $u$ a solution to \eqref{eq:intro-parabolic} on $[0,2]\times B_2$ with $f \in L^p([0,2]\times B_2)$ and $p$ sufficiently large, if
+\[ \iint_{[0,2]\times B_2} (u-0)_+^2 \,dxdt \leq \delta_0 \]
+then $u(t,x) \leq 1$ for $(t,x) \in [1,2] \times B_1$.  
+\end{lemma}
+
+The proof of this lemma is typically by recursion.  A sequence of functions $u_k := (u-1+2^{-k})_+$ and regions $Q_k := [1-2^{-k},2]\times B_{1+2^{-k}}$ is considered, and the goal is to prove that if $\iint_{Q_0} u_0^2 = \iint_{[0,2]\times B_2} (u-0)_+^2 \leq \delta_0$ then $\iint_{Q_\infty} u_\infty^2 = \iint_{[1,2]\times B_1} (u-1)_+^2 = 0$.  To accomplish this, one constructs a recursive inequality comparing $\iint_{Q_k} u_k$ to $\iint_{Q_{k-1}} u_{k-1}$.  
+
+The lynchpin of this recursive inequality is the energy inequality, which compares the $L^\infty(L^2) \cap L^2(H^1)$ norm of $u_k$ on $Q_k$ to the $L^2 \cap L^{p^*}$ norm of $u_k$ on $Q_{k-1}$.  
+
+By a variant of Sobolev's inequality, the $L^\infty(L^2) \cap L^2(H^1)$ norm controls the $L^q$ norm for some $q > 2$.  The $L^\infty(L^2)$ gives an improvement of integrability (as compared to $L^2$) in time, and the $L^2(H^1)$ gives an improvement in space, and by interpolation we obtain an improvement in both time and space.  Note that this bound is linear, in the sense of dimensional analysis.  
+
+We now want to see that the right-hand-side of the energy inequality, the $L^2 \cap L^{p^*}$ norm, is controlled by the $L^q$ norm of $u_{k-1}$ on $Q_{k-1}$, with the same $q$ as on the left-hand-side.  This is true because $u_{k-1}$ is bounded below on the support of $u_k$, meaning that in particular $u_k^a \leq 2^{(k+1)(b-a)}u_{k-1}^b$ for any $0 \leq a < b$. We have the non-linear bound, assuming $p^* \leq q$,
+\[ \iint_{Q_{k-1}} u_k^2 + \paren{\iint_{Q_{k-1}} u_k^{p^*} }^{1/p^*} \leq \iint_{Q_{k-1}} u_{k-1}^q + \paren{ \iint_{Q_{k-1}} u_{k-1}^q }^{1/p^*}. \]
+Notice that the exponent on $u_{k-1}$ is always $q$, but the exponent on the integral itself varies, making the inequality nonlinear in the sense of dimensional analysis.  Combining this with the energy inequality and our bound on the left-hand-side of the energy inequality, we obtain
+\[ \norm{u_k}_{L^q(Q_{k-1}} \leq C^k \norm{u_{k-1}}_{L^q(Q_{k-1})}^{q/2} + \norm{u_{k-1}}_{L^q(Q_{k-1})}^{q/(2p^*)}. \]
+So long as the exponents $\frac{q}{2}$ and $\frac{q}{2 p^*}$ are strictly greater than 1, this inequality is superlinear.  In that case, if the initial value of the sequence is sufficiently small, the limit will be zero and the lemma will be proven.  
+
+The mechanism underlying this proof method is the fact that the energy inequality goes in the opposite direction of the conventional Sobolev and H\"{o}lder inequalities.  The energy inequality has an order-1 quantity (meaning a single derivative) bounded by an order-0 quantity (meaning a quantity with no derivatives).  After reducing the orders with Sobolev embedding, we find that the $L^q$ norm is bounded by, for example, an $L^2$ norm, even though $q > 2$.  This defies our intuition that on bounded regions, higher Lebesgue norms control lower Lebesgue norms.  It is therefore not surprising that $L^2-\textrm{to}-L^\infty$ regularization is possible.  In the case of \eqref{eq:intro-parabolic}, this will hold so long as the source term $f$ is in some $L^p$ space with $p$ sufficiently large, specifically $1/p + 2/q < 1$.  When faced with a novel PDE, the first question one must ask is whether the exponent $q$ is larger than any exponents which may appear on the right-hand-side of the energy inequality.  
+
+\vskip.3cm
+
+The next step in the De Giorgi argument is to prove the second De Giorgi lemma, also known as the isoperimetric inequality.  
+\begin{lemma}[Second De Giorgi Lemma]
+There exists a constant $\mu_0 > 0$ such that, for $u$ a solution to \eqref{eq:intro-parabolic} on $[0,4]\times B_3$ with $f \in L^p([0,4]\times B_3)$ and $p$ sufficiently large, if
+\begin{equation} \label{intro-DG2 assumption Linfty} u(t,x) \leq 2 \qquad \forall (t,x) \in [0,4] \times B_3 \end{equation}
+and
+\begin{equation} \label{intro-DG2 assumption above} \abs{\{u \geq 1\} \cap [2,4] \times B_2} \geq \delta_0 \end{equation}
+and
+\begin{equation} \label{intro-DG2 assumption below} \abs{\{u \leq 0\} \cap [1,4] \times B_2} \geq \frac{\abs{[1,4]\times B_2}}{2} \end{equation}
+then
+\begin{equation} \label{intro-DG2 assumption middle} \abs{\{0 < u < 1\} \cap [1,4] \times B_2} \geq \mu_0. \end{equation}
+\end{lemma}
+
+This is called an isoperimetric inequality because, roughly speaking, if $u$ were the indicator function of some set, then \eqref{intro-DG2 assumption above} would represent the measure of that set, \eqref{intro-DG2 assumption below} would represent the measure of its complement, and \eqref{intro-DG2 assumption middle} would be analogous to the measure of its boundary.  The lemma then claims that solutions to \eqref{eq:intro-parabolic} must have some minimum perimeter.  The claim \eqref{intro-DG2 assumption above} uses the same $\delta_0$ as in the statement of the first De Giorgi lemma.  The intention is that, if \eqref{intro-DG2 assumption above} fails to be satisfied, then the first lemma can be applied to some translation of $(u-1)_+$.  
+
+Note that the assumption \eqref{intro-DG2 assumption Linfty} must be satisfied on a larger region $[0,4]\times B_3$ than the rest of our assumptions.  This is so that, by the energy inequality, $(u-0)_+$ will be in $L^2([1,4]; H^1(B_2))$.  If we could say that $(u-0)_+ \in H^1([1,4] \times B_2)$, meaning it is regular in both time and space, and we could set $\mu_0 = 0$, then the lemma would be trivial, simply because a function in $H^1$ cannot have a jump discontinuity.  
+
+Assuming still that $(u-0)_+ \in H^1([1,4] \times B_2)$, even for $\mu_0 > 0$ we could easily prove the result by contradiction.  Take a sequence of solutions $u_k$ satisfying \eqref{intro-DG2 assumption Linfty}-\eqref{intro-DG2 assumption below} but such that
+\[ \abs{\{0 < u_k < 1\} \cap [1,4] \times B_2} \leq \frac{1}{k}. \]
+This sequence $u_k$ would be uniformly bounded in $H^1$, and so it would have a strong $L^2$ limit $u_\infty$.  But $u_\infty \in H^1$ and $u_\infty$ has a jump discontinuity, which gives us our contradiction.  
+
+Unfortunately, it is generally not the case that $(u-0)_+$ is $H^1$-regular in time.  The proof relies on showing that the sequence $u_k$ has enough uniform regularity in time (derived still from the assumption \eqref{intro-DG2 assumption Linfty}) so that the strong-$L^2$ limit $u_\infty$ exists, and cannot have a jump discontinuity.  In general, it is easier to bound $\del_t u_\infty$ from above than to bound it from below.  This is why assumption \eqref{intro-DG2 assumption above} is phrased on the time-interval $[2,4]$ rather than $[1.4]$: to guarantee that a jump discontinuity in $u_\infty$ will exist such that $\del_t u_\infty \geq 0$ in the sense of distributions.  
+
+The actual technique for showing regularity-in-time is highly dependent on the specific PDE in question, and so it is not useful to give a more detailed outline.  
+
+\vskip.3cm
+
+Once the first and second De Giorgi lemmas are proven, the rest of the method is typically very similar across different applications of the method.  The proof of H\"{o}lder continuity essentially consists of applying the first and second lemmas to various translated and scaled copies of $u$.  It is, therefore, essential that the first and second lemmas are formulated in a way that is invariant under translations and scalings, in particular under transformations of the form $\bar{u}(t,x) := C + \alpha u(t,x)$ for \emph{possibly negative} constants $C, \alpha \in \R$.  
+
+A common intermediate step between the De Giorgi lemmas and the proof of H\"{o}lder continuity is known as the oscillation lemma.  Note that some sources use the name ``second De Giorgi lemma'' to refer to the oscillation lemma, rather than the isoperimetric inequality.  
+
+The oscillation of a function over a set $S$ is defined by 
+\[ \osc_{x \in S} f := \sup_{x \in S} f(x) - \inf_{x \in S} f(x). \]
+The oscillation lemma then states that the oscillation of a solution $u$ to \eqref{eq:intro-parabolic} over a space-time region $Q$ is bounded by the oscillation of the same $u$ over a parabolic envelope of that region.  We will present the lemma in a more rigid formulation, for clarity of presentation:
+\begin{lemma}[Oscillation Lemma]
+There exists a constant $\lambda_0$ such that, for $u$ a solution to \eqref{eq:intro-parabolic} on $[0,4]\times B_3$ with $f \in L^p([0,4]\times B_3)$ and $p$ sufficiently large, if
+\[ -2 \leq u(t,x) \leq 2 \qquad \forall (t,x) \in [0,4] \times B_3 \]
+then 
+\[ \osc_{[3,4] \times B_1} u \leq 4-\lambda_0. \]
+\end{lemma}
+
+The oscillation will either decrease from above or below, depending whether $\abs{\{u \leq 0\} \cap [1,4]\times B_2\}}$ is more or less than $\frac{\abs{[1,4]\times B_2}}{2}$.  We can assume without loss of generality that it is greater, and otherwise we can simply apply the following argument to $-u$.  
+
+Consider the sequence of functions $u_0 = u$ and $u_k := 2u_{k-1} - 2$.  Note that each $u_k$ will satisfy assumptions \eqref{intro-DG2 assumption Linfty} and \eqref{intro-DG2 assumption below} of the second De Giorgi lemma.  
+
+Assume that for some $k_0$, the function $u_{k_0}$ satisfies the assumption \eqref{intro-DG2 assumption above}.  In particular, because of the way the sequence $u_k$ is constructed, this means that $u_k$ satisfies \eqref{intro-DG2 assumption above} for all $0 \leq k \leq k_0$.  Therefore we can apply the second De Giorgi lemma and find that 
+\[ \abs{\{0 \leq u_k \leq 1\} \cap [1,4] \times B_2} \geq \mu_0 \qquad \forall 0 \leq k \leq k_0. \]
+Because each of these sets are disjoint by construction, and because they are all contained in $[1,4]\times B_2$ which has finite measure, we find that our assumption on $k_0$ cannot hold for $k_0 = \abs{[1,4]\times B_2} / \mu_0$.  For this $k_0$, we conclude that $u_{k_0}$ does not satisfy \eqref{intro-DG2 assumption above}.  
+
+We can now apply the first De Giorgi lemma to $u_{k_0+1}$ and conclude that $u_{k_0+1}(t,x) \leq 1$ for $(t,x) \in [3,4]\times B_1$, or equivalently $u(t,x) \leq \lambda_0$ for some $\lambda_0$ depending on $k_0$.  
+
+\vskip.3cm
+
+A function $g$ is H\"{o}lder continuous with exponent $\alpha$ at a point $y_0$ if and only if
+\[ \osc_{|y-y_0| \leq r} g(y) \leq C r^\alpha. \]
+Therefore, by applying the oscillation lemma to dilations of $u$, we can easily conclude that $u$ is H\"{o}lder continuous.  
+
+Because the constant $\mu_0$ in the second De Giorgi lemma is obtained by a compactness argument, none of the constants obtained thereafter can be explicit.  Most notable, the exponent $\alpha$ is not explicit.  Therefore it is often desirable to obtain the second De Giorgi lemma by a more constructive argument, as in \cite{Gu.quantitative}.  
+
+\section{Main Results and Outline}
 
 
-\section{Research Statement Intro}
+%
+%
+%
+%\begin{theorem} \label{thm:intro-DG toy theorem}
+%For any $T > 0$, there exists a constant $C > 0$ and $\alpha \in (0,1)$ so that all solutions $u$ to \eqref{eq:intro-parabolic} will satisfy 
+%\[ \norm{u}_{L^\infty((T,\infty)\times\R^d)} \leq C \norm{u(0,\cdot)}_{L^2(\R^d)} \]
+%and
+%\[ \norm{u}_{C^\alpha((2T,\infty)\times\R^d)} \leq C \norm{u}_{L^\infty((T,\infty)\times\R^d)}. \]
+%
+%The constants $\alpha$ and $C$ depend on $\lambda$ and on $f$ and $b$ and $d$, as well as $T$.  
+%\end{theorem}
+%
+%We will prove this well-known theorem using the De Giorgi method.  
+%
+%\begin{theorem}
+%Energy Inequality
+%\end{theorem}
+%
+%\begin{proof}
+%For any $s \in [-1,0]$, let $\eta_s:[-2,0]\to \R$ be given by 
+%\[ \eta_s(t) = \begin{cases}
+%t+2 & t \in [-2,-1], \\
+%1 & t \in [-1,s], \\
+%0 & t \in (s,0].
+%\end{cases} \]
+%Let $\varphi: \R^d\to\R$ be a smooth function which is identically 1 on $B_1$ and identically zero on the complement of $B_2$, satisfying $\norm{\grad\varphi}_{L^\infty} \leq 2$.  
+%Since $u \in L^2(H^1)$ by assumption, we can multiply \eqref{eq:intro-parabolic} by the test function $\eta_s(t) \varphi(x)^2 (u-k)_+$ to obtain
+%\begin{equation} \label{intro-integrate equation against (u-k)_+} 
+%\frac{1}{2} \iint [(u-k)_+ \varphi]^2 (-\eta_s') + \iint \eta_s \grad [\varphi^2 (u-k)_+] A \grad(u-k)_+ = \iint \eta_s \varphi^2(u-k)_+ b \cdot \grad(u-k)_+ + \iint \eta_s \varphi^2 (u-k)_+ f. 
+%\end{equation}
+%
+%The left hand side is bounded
+%\begin{equation} \label{intro-right hand side of energy} \begin{aligned} 
+%\frac{1}{2} \iint [(u-k)_+ \varphi]^2 (-\eta_s') + \iint \eta_s \grad [\varphi^2 (u-k)_+] A \grad(u-k)_+ &\geq \frac{1}{2}\int [\varphi (u-k)_+]^2|_{t=s} \,dx + 2 \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi (u-k)_+] - \frac{1}{2} \int_{-2}^{-1} \int [(u-k)_+ \varphi]^2 - 2 \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi] (u-k)_+ 
+%\\ &\geq \frac{1}{2}\int [\varphi (u-k)_+]^2|_{t=s} \,dx + \iint \eta_s \grad[\varphi (u-k)_+] A \grad[\varphi (u-k)_+] - \frac{1}{2} \int_{-2}^{-1} \int [(u-k)_+ \varphi]^2 - \iint \eta_s (u-k)_+^2 \grad\varphi A \grad\varphi
+%\\ & \geq \frac{1}{2}\int_{B_1} (u-k)_+^2|_{t=s} \,dx + \lambda \int_{-1}^s \int_{B_1} |\grad(u-k)_+|^2 - \frac{1}{2} \int_{-2}^{-1} \int_{B_2} (u-k)_+^2 - \lambda\n 2 \int_{-2}^0 \int_{B_2} (u-k)_+^2.
+%\end{aligned} \end{equation}
+%
+%Define $p^*$ such that $\frac{1}{p} + \frac{1}{p^*} = 1$.  The right hand side of \eqref{intro-integrate equation against (u-k)_+} is bounded
+%\begin{equation*} \begin{aligned}
+%\iint \iint \eta_s \varphi^2 (u-k)_+ f 
+%&\leq \norm{f}_{L^p} \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*}.
+%\end{aligned} \end{equation*}
+%By combining this with \eqref{intro-integrate equation against (u-k)_+} and \eqref{intro-right hand side of energy}, we obtain
+%\[ \frac{1}{2}\int_{B_1} (u-k)_+^2|_{t=s} \,dx + \lambda \int_{-1}^s \int_{B_1} |\grad(u-k)_+|^2 \leq \frac{1}{2} \int_{-2}^{-1} \int_{B_2} (u-k)_+^2 + \lambda\n 2 \int_{-2}^0 \int_{B_2} (u-k)_+^2 + \norm{f}_{L^p} \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*}. \]
+%Taking the supremum of the left hand side over all $s \in [-1,0]$, and recalling that all of our integrands are non-negative, we obtain that in particular
+%\[ \sup_{t \in [-1,0]} \int_{B_1} (u-k)_+^2 \,dx + \int_{-1}^0 \int_{B_1} |\grad(u-k)_+|^2 \leq C\paren{\lambda, \norm{f}_{L^p}} \paren{ \int_{-2}^{0} \int_{B_2} (u-k)_+^2 + \paren{ \int_{-2}^0 \int_{B_2} (u-k)_+^{p^*} }^{1/p^*} }. \]
+%
+%
+%\end{proof}
+%
+%\begin{theorem}
+%There exists a constant $\delta_0$ such that any solution which satisfies
+%\[ \int_{-2}^0 \int_{B_2} (u)_+^2 \,dxdt \leq \delta_0 \]
+%will also satisfy $u \leq 1$ on $[-1,0]\times B_1$.  
+%\end{theorem}
+%
+%\begin{proof}
+%We consider the sequence of truncated functions $u_k := (u-1 + 2^{-k})_+$ and the sequence of regions $Q_k := [-1-2^{-k},0] \times B_{1 + 2^{-k}}$.  Note that $u_0 = (u)_+$ and, in the limit, $u_\infty = (u-1)_+$, while $Q_0 = [-2,0]\times B_2$ and, in the limit, $Q_\infty = [-1,0]\times B_1$. 
+%
+%For each truncated function, we consider the energy
+%\[ \E_k = \sup_{[-1-2^{-k},0]} \int u_k^2 + \iint_{Q_k} \abs{\grad u_k}^2. \]
+%
+%We wish to show that $\E_k$ bounds some Lebesgue norm of $u_k$, using a combination of Sobolev embedding and Riesz-Thorin interpolation.  To that end, consider the function $m(t) := \int_{B_{1+2^{-k}}} u_k$ (the spatial average of $u_k$), and note that $0 \leq m(t) \leq \sqrt{|B_2|} \E_k^{1/2}$ by H\"{o}lder's inequality.  
+%
+%By the Sobolev embedding, we know that 
+%\begin{align*} 
+%\int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} u_k^{\frac{2d}{d-2}} }^{\frac{d-2}{2d}} 
+%&\leq \norm{ \grad u_k}_{L^1([-1-2^{-k},0]; L^2(B_{1+2^{-k}}))} + \int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} m^{\frac{2d}{d-2}} }^{\frac{d-2}{2d}}
+%\\ &\leq \sqrt{1+2^{-k}} \norm{ \grad u_k}_{L^2(Q_k)} + m(t) (1+2^{-k}\int_{-1-2^{-k}}^0 \paren{ \int_{B_{1+2^{-k}}} 1 }^{\frac{d-2}{2d} }
+%\\ &\leq C \E_k^{1/2}.
+%\end{align*}
+%The constant $C$ here depends only on the dimension.  The quantity $\E_k^{1/2}$ then controls both the $L^1\paren{ L^{2d/(d-2)} }$ and the $L^\infty\paren{L^2}$ norm of $u_k$ over the region $Q_k$.  By interpolation, we conclude that for any $q_1 \in (0,1)$, $q_2 \in (1/2-1/d, 1/2)$ satisfying
+%\[ \frac{2}{d} \frac{1}{q_1} + 2 \frac{1}{q_2} = 1, \]
+%the quantity $\E_k^{1/2}$ also controls the $L^{q_1}\paren{L^{q_2}}$ norm of $u_k$ on $Q_k$.  This equation represents the line segment between $(1,1/2-1/d)$ and $(0,1/2)$.  Simply because $1/2 - 1/d$ is less than $1/2$, we know that there must exist a point on this line segment such that $q_1 = q_2$ called $(q,q)$ with $q = 2 + \frac{2}{d}$.  
+%
+%We conclude that 
+%\begin{equation} \label{intro-lower bound on energy E_k}
+%\iint_{Q_k} u_k^q \leq \E_k^{q/2}. 
+%\end{equation}
+%Note that, whatever the value of $d$, we have $q/2 > 1$.  We have shown that the energy $\E_k$ has superlinear control on some Lebesgue norm of $u_k$.  
+%
+%\vskip.3cm
+%
+%Now that we have used Sobolev embedding to bound $\E_k$ from below, we can use the energy inequality to bound it from above.  First, define the indicator functions $\chi_k := \indic{u_k > 0}$ so that $u_k = \chi_k \paren{u_{k-1} - 2^{-k-1} }$ and 
+%\[ 2^{-k-1} \chi_k = \chi_k u_{k-1} - u_k \leq u_{k-1}. \]
+%We have by the energy inequality \eqref{eq:intro-energy inequality}, assuming $p^* \leq q$, 
+%\begin{align*} 
+%\E_k &\leq C 2^k \bracket{ \iint_{Q_{k-1}} u_k^2 + \paren{ \iint_{Q_{k-1}} u_k^{p^*} }^{1/p^*} }
+%\\ &= C^k \bracket{ \iint_{Q_{k-1}} u_k^2 \chi_k^{q-2} + \paren{ \iint_{Q_{k-1}} u_k^{p^*} \chi_k^{q - p*} }^{1/p^*} }
+%\\ &\leq C^k \bracket{ \iint_{Q_{k-1}} u_{k-1}^2 (2^{k+1} u_{k-1})^{q-2} + \paren{ \iint_{Q_{k-1}} u_{k-1}^{p^*} (2^{k+1} u_{k-1})^{q - p*} }^{1/p^*} }
+%\\ &\leq C^k \bracket{ \iint_{Q_{k-1}} u_{k-1}^q + \paren{ \iint_{Q_{k-1}} u_{k-1}^q }^{1/p^*} }.
+%\end{align*}
+%By combining this inequality with \eqref{intro-lower bound on energy E_k}, we finally arrive at a recursive inequality for the sequence $\E_k$:
+%\[ \E_k \leq C^k \bracket{ \E_{k-1}^{q/2} + \E_{k-1}^{q/(2p^*)} }. \]
+%
+%\end{proof}
+%
+%This is too long.  
+%
+%
+%\section{Research Statement Intro}
 
 
 
