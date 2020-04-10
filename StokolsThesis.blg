@@ -2,50 +2,57 @@ This is BibTeX, Version 0.99d (MiKTeX 2.9.7380 64-bit)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: StokolsThesis.aux
 A level-1 auxiliary file: chapter-intro.aux
+A level-1 auxiliary file: chapter-HamJac.aux
+A level-1 auxiliary file: chapter-CCVrewrite.aux
+A level-1 auxiliary file: chapter-kinetic.aux
+A level-1 auxiliary file: chapter-SQG.aux
+A level-1 auxiliary file: chapter-conservation.aux
 A level-1 auxiliary file: appendix.aux
 The style file: alpha.bst
 Database file #1: StokolsThesis.bib
 Warning--there's a number but no volume in CoIg.fraclap
 Warning--empty journal in Ka
-You've used 58 entries,
+Warning--can't use both author and editor fields in Se
+Warning--empty year in StVa.higher
+You've used 109 entries,
             2543 wiz_defined-function locations,
-            958 strings with 13181 characters,
-and the built_in function-call counts, 26200 in all, are:
-= -- 2862
-> -- 921
-< -- 42
-+ -- 297
-- -- 292
-* -- 1685
-:= -- 3876
-add.period$ -- 178
-call.type$ -- 58
-change.case$ -- 335
-chr.to.int$ -- 57
-cite$ -- 60
-duplicate$ -- 1244
-empty$ -- 1880
-format.name$ -- 372
-if$ -- 5681
-int.to.chr$ -- 2
+            1301 strings with 20875 characters,
+and the built_in function-call counts, 47738 in all, are:
+= -- 5113
+> -- 1860
+< -- 66
++ -- 620
+- -- 603
+* -- 3343
+:= -- 7349
+add.period$ -- 339
+call.type$ -- 109
+change.case$ -- 644
+chr.to.int$ -- 104
+cite$ -- 113
+duplicate$ -- 2066
+empty$ -- 3449
+format.name$ -- 747
+if$ -- 10069
+int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 58
-newline$ -- 291
-num.names$ -- 174
-pop$ -- 261
+missing$ -- 113
+newline$ -- 549
+num.names$ -- 327
+pop$ -- 480
 preamble$ -- 1
-purify$ -- 395
+purify$ -- 759
 quote$ -- 0
-skip$ -- 1254
+skip$ -- 1946
 stack$ -- 0
-substring$ -- 1880
-swap$ -- 462
-text.length$ -- 42
-text.prefix$ -- 22
+substring$ -- 3402
+swap$ -- 590
+text.length$ -- 66
+text.prefix$ -- 36
 top$ -- 0
-type$ -- 456
-warning$ -- 2
-while$ -- 243
-width$ -- 61
-write$ -- 756
-(There were 2 warnings)
+type$ -- 848
+warning$ -- 4
+while$ -- 473
+width$ -- 114
+write$ -- 1430
+(There were 4 warnings)

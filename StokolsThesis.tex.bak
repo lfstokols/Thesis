@@ -393,13 +393,15 @@ This is my abstract.  I need to write the abstract.
 
 \include{chapter-intro}
 
-%\include{chapter-HamJac}
+\include{chapter-HamJac}
 
-%\include{chapter-kinetic}
+\include{chapter-CCVrewrite}
 
-%\include{chapter-SQG}
+\include{chapter-kinetic}
 
-%\include{chapter-conservation}
+\include{chapter-SQG}
+
+\include{chapter-conservation}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

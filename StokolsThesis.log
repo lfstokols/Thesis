@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  8 APR 2020 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  9 APR 2020 16:05
 entering extended mode
 **./StokolsThesis.tex
 (StokolsThesis.tex
@@ -247,8 +247,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count272
 \l__pdf_internal_box=\box48
 ) (StokolsThesis.aux (chapter-intro.aux) (chapter-HamJac.aux)
-(chapter-kinetic.aux) (chapter-SQG.aux) (chapter-conservation.aux)
-(appendix.aux))
+(chapter-CCVrewrite.aux) (chapter-kinetic.aux) (chapter-SQG.aux)
+(chapter-conservation.aux) (appendix.aux))
 \openout1 = `StokolsThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 322.
@@ -318,14 +318,7 @@ File: uesint.fd
 )
 [6
 
-]
-
-LaTeX Warning: Reference `ch:kinetic' on page 191 undefined on input line 40.
-
-
-LaTeX Warning: Reference `ch:SQG' on page 195 undefined on input line 41.
-
-)
+])
 \tf@toc=\write4
 \openout4 = `StokolsThesis.toc'.
 
@@ -335,12 +328,7 @@ LaTeX Warning: Reference `ch:SQG' on page 195 undefined on input line 41.
 
  [8
 
-] (StokolsThesis.lof
-
-LaTeX Warning: Reference `thm:DG2.kinetic' on page 80 undefined on input line 4
-.
-
-)
+] (StokolsThesis.lof)
 \tf@lof=\write6
 \openout6 = `StokolsThesis.lof'.
 
@@ -387,143 +375,48 @@ Overfull \hbox (29.64882pt too wide) in paragraph at lines 244--245
 w, de-pend-ing whether $[]$
  []
 
-[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]) [20]
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18]) [19]
 \openout2 = `chapter-HamJac.aux'.
 
  (chapter-HamJac.tex
 Chapter 2.
-[21
+[20
 
 
 
-]
-
-LaTeX Warning: Citation `Ba.viscosity' on page 22 undefined on input line 127.
-
-
-LaTeX Warning: Citation `LaLi.nonlinear' on page 22 undefined on input line 130
-.
-
-
-LaTeX Warning: Citation `Ba.hamjac' on page 22 undefined on input line 132.
-
-
-LaTeX Warning: Citation `DoLePo' on page 22 undefined on input line 132.
-
-[22]
-
-LaTeX Warning: Citation `LaLi.meanfield' on page 23 undefined on input line 134
-.
-
-[23] [24] [25] [26] [27] [28] [29]
+] [21] [22] [23] [24] [25] [26] [27] [28]
 LaTeX Font Info:    Trying to load font information for U+eus on input line 302
 .
 
 ("C:\Users\lfsto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueus.fd"
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [30] [31] [32] [33] [34] [35] [36] [37] [38]
+) [29] [30] [31] [32] [33] [34] [35] [36] [37]
 Overfull \hbox (1.543pt too wide) detected at line 553
 []
  []
 
-[39] [40] [41] [42]
+[38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52]
+[53]) [54]
+\openout2 = `chapter-CCVrewrite.aux'.
 
-LaTeX Warning: Citation `Cr' on page 43 undefined on input line 644.
-
-
-LaTeX Warning: Citation `Ju' on page 43 undefined on input line 644.
-
-[43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53]) [54]
-\openout2 = `chapter-kinetic.aux'.
-
-
-(chapter-kinetic.tex
+ (chapter-CCVrewrite.tex
 Chapter 3.
-
-LaTeX Warning: Citation `Za' on page 55 undefined on input line 140.
-
-
-LaTeX Warning: Citation `HaMa' on page 55 undefined on input line 140.
-
-
-LaTeX Warning: Citation `Me' on page 55 undefined on input line 140.
-
-
-LaTeX Warning: Citation `MeMiMo' on page 55 undefined on input line 140.
-
 [55
 
 
 
-]
+] [56] [57] [58] [59]) [60]
+\openout2 = `chapter-kinetic.aux'.
 
-LaTeX Warning: Citation `AlMoUkXuYa' on page 56 undefined on input line 148.
-
-
-LaTeX Warning: Citation `CaSiSn' on page 56 undefined on input line 148.
-
-[56]
-
-LaTeX Warning: Citation `LeMoPr' on page 57 undefined on input line 154.
+ (chapter-kinetic.tex
+Chapter 4.
+[61
 
 
-LaTeX Warning: Citation `MoXu' on page 57 undefined on input line 154.
 
-
-LaTeX Warning: Citation `Li' on page 57 undefined on input line 154.
-
-
-LaTeX Warning: Citation `MoXu' on page 57 undefined on input line 154.
-
-
-LaTeX Warning: Citation `ImMo' on page 57 undefined on input line 158.
-
-[57]
-
-LaTeX Warning: Citation `GoPeSe' on page 58 undefined on input line 160.
-
-
-LaTeX Warning: Citation `DiLiMe' on page 58 undefined on input line 160.
-
-
-LaTeX Warning: Citation `DePe' on page 58 undefined on input line 160.
-
-
-LaTeX Warning: Citation `LeMoPr' on page 58 undefined on input line 162.
-
-
-LaTeX Warning: Citation `MoXu' on page 58 undefined on input line 162.
-
-
-LaTeX Warning: Citation `Li' on page 58 undefined on input line 162.
-
-
-LaTeX Warning: Citation `CaVa.sqg' on page 58 undefined on input line 166.
-
-
-LaTeX Warning: Citation `CaChVa' on page 58 undefined on input line 166.
-
-
-LaTeX Warning: Citation `CaChVa' on page 58 undefined on input line 166.
-
-[58] [59]
-
-LaTeX Warning: Citation `CaChVa' on page 60 undefined on input line 199.
-
-[60]
-
-LaTeX Warning: Citation `MoXu' on page 61 undefined on input line 205.
-
-[61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73]
-
-LaTeX Warning: Citation `CaSi.pointwise' on page 74 undefined on input line 534
-.
-
-
-LaTeX Warning: Citation `MoXu' on page 74 undefined on input line 555.
-
-[74] [75] [76] [77] [78]
-<NFP-diagram-Q-3.pdf, id=298, 438.59938pt x 580.49704pt>
+] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75]
+[76] [77] [78] [79] [80] [81] [82] [83] [84]
+<NFP-diagram-Q-3.pdf, id=317, 438.59938pt x 580.49704pt>
 File: NFP-diagram-Q-3.pdf Graphic file (type pdf)
 <use NFP-diagram-Q-3.pdf>
 Package pdftex.def Info: NFP-diagram-Q-3.pdf  used on input line 705.
@@ -532,152 +425,18 @@ Package pdftex.def Info: NFP-diagram-Q-3.pdf  used on input line 705.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[79] [80 <./NFP-diagram-Q-3.pdf>] [81] [82] [83] [84]
-
-LaTeX Warning: Citation `St.book' on page 85 undefined on input line 833.
-
-[85] [86] [87]
-
-LaTeX Warning: Citation `CaChVa' on page 88 undefined on input line 915.
-
-
-LaTeX Warning: Citation `BaKa' on page 88 undefined on input line 915.
-
-[88] [89]
-
-LaTeX Warning: Citation `CaSi.pointwise' on page 90 undefined on input line 983
-.
-
-[90] [91] [92]
-
-LaTeX Warning: Citation `CaChVa' on page 93 undefined on input line 1072.
-
-[93] [94] [95] [96] [97] [98]) [99]
+[85] [86 <./NFP-diagram-Q-3.pdf>] [87] [88] [89] [90] [91] [92] [93] [94]
+[95] [96] [97] [98] [99] [100] [101] [102] [103] [104]) [105]
 \openout2 = `chapter-SQG.aux'.
 
  (chapter-SQG.tex
-Chapter 4.
+Chapter 5.
+[106
 
-LaTeX Warning: Citation `GaHePiSw' on page 100 undefined on input line 161.
 
-[100
 
-
-
-]
-
-LaTeX Warning: Citation `Re' on page 101 undefined on input line 220.
-
-
-LaTeX Warning: Citation `CoCoWu' on page 101 undefined on input line 220.
-
-
-LaTeX Warning: Citation `CoWu' on page 101 undefined on input line 220.
-
-
-LaTeX Warning: Citation `DoPa' on page 101 undefined on input line 220.
-
-
-LaTeX Warning: Citation `CaVa.sqg' on page 101 undefined on input line 221.
-
-
-LaTeX Warning: Citation `KiNa.variations' on page 101 undefined on input line 2
-21.
-
-[101]
-
-LaTeX Warning: Citation `StVa.higher' on page 102 undefined on input line 232.
-
-[102]
-
-LaTeX Warning: Citation `CaVa.sqg' on page 103 undefined on input line 235.
-
-
-LaTeX Warning: Citation `CaChVa.nio' on page 103 undefined on input line 235.
-
-
-LaTeX Warning: Citation `AlCaVa' on page 103 undefined on input line 235.
-
-
-LaTeX Warning: Citation `NoVa.qg' on page 103 undefined on input line 235.
-
-
-LaTeX Warning: Citation `CaVa.sqg' on page 103 undefined on input line 249.
-
-
-LaTeX Warning: Citation `NoVa.qg' on page 103 undefined on input line 249.
-
-[103]
-
-LaTeX Warning: Citation `Zh' on page 104 undefined on input line 251.
-
-
-LaTeX Warning: Citation `BeZh' on page 104 undefined on input line 251.
-
-
-LaTeX Warning: Citation `BuDuYa' on page 104 undefined on input line 251.
-
-[104]
-
-LaTeX Warning: Citation `CaVa.sqg' on page 105 undefined on input line 282.
-
-
-LaTeX Warning: Citation `NoVa.qg' on page 105 undefined on input line 282.
-
-
-LaTeX Warning: Citation `CaVa.sqg' on page 105 undefined on input line 282.
-
-
-LaTeX Warning: Citation `NoVa.qg' on page 105 undefined on input line 282.
-
-[105]
-
-LaTeX Warning: Citation `CaVa.sqg' on page 106 undefined on input line 295.
-
-
-LaTeX Warning: Citation `NoVa.qg' on page 106 undefined on input line 295.
-
-
-LaTeX Warning: Citation `CaSt' on page 106 undefined on input line 295.
-
-
-LaTeX Warning: Citation `StTo' on page 106 undefined on input line 295.
-
-
-LaTeX Warning: Citation `CaSi.extension' on page 106 undefined on input line 29
-5.
-
-[106]
-
-LaTeX Warning: Citation `CaKoNi' on page 107 undefined on input line 299.
-
-[107] [108]
-
-LaTeX Warning: Citation `CaSt' on page 109 undefined on input line 336.
-
-
-LaTeX Warning: Citation `CaSt' on page 109 undefined on input line 356.
-
-
-LaTeX Warning: Citation `CaSt' on page 109 undefined on input line 358.
-
-[109]
-
-LaTeX Warning: Citation `CaSt' on page 110 undefined on input line 365.
-
-[110] [111] [112] [113]
-
-LaTeX Warning: Citation `CaSt' on page 114 undefined on input line 470.
-
-[114]
-
-LaTeX Warning: Citation `JeKe' on page 115 undefined on input line 487.
-
-[115]
-
-LaTeX Warning: Citation `JeKe' on page 116 undefined on input line 521.
-
-[116] [117] [118]
+] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116] [117]
+[118] [119] [120] [121] [122] [123] [124]
 Underfull \hbox (badness 10000) in paragraph at lines 584--585
 []\OT1/cmr/m/it/12 Then for any smooth non-negative func-tion $\OT1/cmr/m/n/12 
 	 \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 ([0\OML/cmm/m/it/12 ; 
@@ -685,7 +444,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 584--585
 r/m/n/12 )$ \OT1/cmr/m/it/12 sat-is-fy-ing
  []
 
-[119] [120] [121] [122] [123]
+[125] [126] [127] [128] [129]
 Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
@@ -702,11 +461,8 @@ m/n/12 2 \U/msb/m/n/12 R[] \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 x \OMS/cmsy/m/n/
  x\OT1/cmr/m/n/12 ) :=
  []
 
-[124] [125] [126] [127] [128] [129] [130]
-
-LaTeX Warning: Citation `FMP' on page 131 undefined on input line 868.
-
-[131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141]
+[130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141]
+[142] [143] [144] [145] [146] [147]
 Underfull \hbox (badness 1748) in paragraph at lines 1148--1149
 []\OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12   \OT1/cmr/m/n/12 : \U/msb/m/n/12 R[] \
 OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$ \OT1/cmr/m/n/12 be a smooth func-tion which 
@@ -714,40 +470,17 @@ van-ishes on $\OML/cmm/m/it/12 B[]$ \OT1/cmr/m/n/12 such that $\OML/cmm/m/it/12
   \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 2 +
  []
 
-[142] [143] [144] [145] [146] [147] [148] [149] [150] [151] [152] [153]
-
-LaTeX Warning: Citation `CaSt' on page 154 undefined on input line 1442.
-
-[154] [155] [156]
-
-LaTeX Warning: Citation `BaChDa' on page 157 undefined on input line 1511.
-
-[157] [158] [159] [160]) [161]
+[148] [149] [150] [151] [152] [153] [154] [155] [156] [157] [158] [159]
+[160] [161] [162] [163] [164] [165] [166]) [167]
 \openout2 = `chapter-conservation.aux'.
 
  (chapter-conservation.tex
-Chapter 5.
-[162
+Chapter 6.
+[168
 
 
 
-] [163]
-
-LaTeX Warning: Citation `Va.entropy' on page 164 undefined on input line 162.
-
-
-LaTeX Warning: Citation `Va.recent' on page 164 undefined on input line 162.
-
-
-LaTeX Warning: Citation `BrLiYa' on page 164 undefined on input line 176.
-
-
-LaTeX Warning: Citation `AdGhVG' on page 164 undefined on input line 176.
-
-
-LaTeX Warning: Citation `Go' on page 164 undefined on input line 176.
-
-[164] [165] [166] [167] [168] [169] [170] [171]
+] [169] [170] [171] [172] [173] [174] [175] [176] [177]
 Overfull \hbox (13.7857pt too wide) detected at line 366
 [] [][] \OT1/cmr/m/n/12 + (1 + \OML/cmm/m/it/12 \OT1/cmr/m/n/12 )   [][]   \OM
 L/cmm/m/it/12 W[]dx \OT1/cmr/m/n/12 + [] [][]   \OML/cmm/m/it/12 W[]dx \OT1/cmr
@@ -758,80 +491,71 @@ T1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OMS/cms
 y/m/n/12 j\OML/cmm/m/it/12 @[]W\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 dx
  []
 
-[172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183]
-[184] [185]
-
-LaTeX Warning: Citation `Se' on page 186 undefined on input line 744.
-
-[186] [187] [188]) [189]
+[178] [179] [180] [181] [182] [183] [184] [185] [186] [187] [188] [189]
+[190] [191] [192] [193] [194]) [195]
 Appendix.
-[190
+[196
 
 
 ]
 \openout2 = `appendix.aux'.
 
- (appendix.tex [191
+ (appendix.tex [197
 
 ]
-<NFP-diagram-Cone.pdf, id=681, 550.0066pt x 347.84894pt>
+<NFP-diagram-Cone.pdf, id=700, 550.0066pt x 347.84894pt>
 File: NFP-diagram-Cone.pdf Graphic file (type pdf)
 <use NFP-diagram-Cone.pdf>
 Package pdftex.def Info: NFP-diagram-Cone.pdf  used on input line 43.
 (pdftex.def)             Requested size: 252.94499pt x 159.9753pt.
- [192 <./NFP-diagram-Cone.pdf>] [193] [194] [195]
-[196] [197] [198] [199] [200]) [201] (StokolsThesis.bbl [202
+ [198 <./NFP-diagram-Cone.pdf>] [199] [200] [201]
+[202] [203] [204] [205] [206]) [207] (StokolsThesis.bbl [208
 
 
-] [203] [204]
-[205] [206] [207]) [208] (StokolsThesis.aux (chapter-intro.aux)
-(chapter-HamJac.aux) (chapter-kinetic.aux) (chapter-SQG.aux)
-(chapter-conservation.aux) (appendix.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] [209] [210]
+[211] [212] [213] [214] [215] [216] [217] [218] [219]) [220] (StokolsThesis.aux
+(chapter-intro.aux) (chapter-HamJac.aux) (chapter-CCVrewrite.aux)
+(chapter-kinetic.aux) (chapter-SQG.aux) (chapter-conservation.aux)
+(appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 3786 strings out of 480897
- 53456 string characters out of 2898199
- 301585 words of memory out of 3000000
- 19562 multiletter control sequences out of 15000+200000
+ 3853 strings out of 480897
+ 54299 string characters out of 2898199
+ 300374 words of memory out of 3000000
+ 19622 multiletter control sequences out of 15000+200000
  544768 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,16n,27p,1442b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcrm1200.pk> <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/es
-int/dpi720\esint10.pk><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lfsto/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lfsto/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb>
-<C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-mextra/cmex8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lfsto/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lfsto/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lfs
-to/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
-:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmss8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/lfsto/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lfsto/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
-s/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.
-pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmti8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/euler/eusm10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfsto/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on StokolsThesis.pdf (217 pages, 873868 bytes).
+ <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\tcrm1200.pk> <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/l
+jfour/public/esint/dpi720\esint10.pk><C:/Users/lfsto/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/lfsto/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lfsto
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cme
+xtra/cmex7.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cmextra/cmex8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lfsto/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lfsto/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
+lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr6.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lfsto/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/lfsto/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Us
+ers/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
+12.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti7.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmti8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/lfsto/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfst
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb>
+Output written on StokolsThesis.pdf (229 pages, 897899 bytes).
 PDF statistics:
- 839 PDF objects out of 1000 (max. 8388607)
+ 877 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

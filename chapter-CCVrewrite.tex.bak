@@ -1,0 +1,202 @@
+\chapter{Alternative Formulation of Isoperimetric Lemma} \label{ch:CCVrewrite}
+
+%\documentclass[11pt]{article}
+%\usepackage{amsmath,amssymb,amsthm}
+%\usepackage{graphicx,mathtools,mathrsfs}
+%\usepackage[margin=1in]{geometry}
+%\usepackage{fancyhdr}
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{5pt plus 1pt}
+%\setlength{\headheight}{13.6pt}
+%\newcommand\question[2]{\vspace{.25in}\hrule\textbf{#1: #2}\vspace{.5em}\hrule\vspace{.10in}}
+%\renewcommand\part[1]{\vspace{.10in}\textbf{(#1)}}
+%\pagestyle{fancyplain}
+%
+%
+%%-------------------------------------------<commands>--------------------------------------------------------
+%
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\Q}{\mathbb{Q}}
+%\newcommand{\C}{\mathbb{C}}
+%\newcommand{\Prj}{\mathbb{P}}
+%\newcommand{\F}{\mathcal{F}}
+%\newcommand{\A}{\mathbb{A}}
+%\newcommand{\T}{\mathbb{T}}
+%\newcommand{\E}{\mathbb{E}}
+%
+%\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+%\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+%\newcommand{\chevron}[1]{\langle #1 \rangle}
+%\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\newcommand{\paren}[1]{\left( #1 \right)}
+%\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+%
+%\DeclareMathOperator{\id}{id}
+%\DeclareMathOperator{\convex}{conv}
+%\DeclareMathOperator{\image}{Im}
+%\DeclareMathOperator{\im}{Im}
+%\DeclareMathOperator{\coker}{coker}
+%\DeclareMathOperator{\supp}{supp}
+%\DeclareMathOperator{\trace}{tr}
+%\DeclareMathOperator{\lspan}{span}
+%\DeclareMathOperator{\conv}{conv} % stands for conv, as in convex hull
+%\DeclareMathOperator{\Int}{int} % stands for int, as in interior of a set
+%\DeclareMathOperator{\sign}{sign}
+%\DeclareMathOperator{\ran}{ran}
+%\DeclareMathOperator{\rank}{rank}
+%%\DeclareMathOperator{\dim}{dim}
+%\newcommand{\dom}{\operatorname{dom}}
+%\newcommand{\cod}{\operatorname{cod}}
+%\newcommand{\Hom}{\operatorname{hom}}
+%\newcommand{\Ob}{\operatorname{Ob}}
+%\newcommand{\cl}{\operatorname{cl}}
+%
+%\newcommand{\del}{\partial}
+%\newcommand{\pvec}[2]{\frac{\partial #1}{\partial #2}}
+%\newcommand{\grad}{\nabla}
+%\newcommand{\D}[1]{\frac{d}{d #1}}
+%
+%\newcommand{\into}{\hookrightarrow}
+%\newcommand{\onto}{\twoheadrightarrow}
+%\newcommand{\isom}{\cong}
+%\newcommand{\rest}{{\upharpoonright}}
+%\newcommand{\weakly}{\rightharpoonup}
+%
+%
+%\newcommand{\ith}{^\mathrm{th}}
+%\newcommand{\n}{^{-1}}
+%
+%\newcount\colveccount
+%\newcommand*\colvec[1]{
+%        \global\colveccount#1
+%        \begin{bmatrix}
+%        \colvecnext
+%}
+%\def\colvecnext#1{
+%        #1
+%        \global\advance\colveccount-1
+%        \ifnum\colveccount>0
+%                \\
+%                \expandafter\colvecnext
+%        \else
+%                \end{bmatrix}
+%        \fi
+%}
+%-------------------------------------------</commands>--------------------------------------------------------
+
+
+%\begin{document}\raggedright
+%
+%\author{Logan Stokols}
+%\title{CCV 2nd De Giorgi rewrite}
+%\maketitle
+
+This chapter is based on chapter 4 of \cite{CaChVa.nio}, in which is proven an isoperimetric inequality for the equation
+\begin{equation} \label{eq:CCV-main}
+\del_t w + \int w(\cdot) w(y) K(\cdot,y) \,dy = 0 
+\end{equation}
+where $K$ satisfies
+\begin{equation} \label{CCV-coercivity for K} \indic{|x-y| \leq 3} \frac{1-s/2}{\Lambda} |x-y|^{-(d+s)} \leq K(x,y) \leq (1-s/2)\Lambda |x-y|^{-(d+s)}. \end{equation}
+This singular integral operator is comparable to $(-\Laplace)^s$, where $s$ is a parameter in $(0,1)$.  The natural energy inequality for this equation shows that $(w-k)_+$ will generally be an element of $H^{s/2}$.  However, because in general functions in $H^{s/2}$ are allowed to have jump discontinuities for $s \leq 1$, the method outlined in chapter~\ref{ch:intro} is not suitable.  That method relies pivotally on the fact that $H^1$ functions cannot have jump discontinuities, and so fails whenever the dissipation of an equation is driven by $(-\Laplace)^s$ with $s < 1$.  
+
+Lemma 4.1 in \cite{CaChVa.nio} states
+\begin{lemma}[Isoperimetric Inequality for \cite{CaChVa.nio}]
+Let $\Lambda$ be the given constant in condition \eqref{CCV-coercivity for K} and $\delta$ the constant defined in Corollary 3.3 of \cite{CaChVa.nio}.  Then, there exists $\mu > 0$, $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $d$, $\Lambda$, and $s$, such that for any solution $w:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying
+\[ w(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, \]
+\[ \abs{\{w < \phi_0\} \cap (-3,-2)\times B_1} \geq \mu, \]
+then we have either
+\[ \abs{\{w > \phi_2\} \cap (-2,0)\times \R^d} \leq \delta, \]
+or
+\[ \abs{\{\phi_0 < w < \phi_2\} \cap (-3,0)\times \R^d} \geq \gamma. \]
+\end{lemma}
+
+We will assume for contradiction that we have some function $u$ satisfying all the hypotheses but such that 
+\[ |{u > \phi_2} \cap ((-2, 0) \times R^N )| \geq \delta \] 
+and \[ |{\phi_0 < u < \phi_2} \cap ((-3,0) \times \R^N )| \leq \gamma, \]
+where $\gamma$ is a constant that we will set later.  
+
+Define functions 
+\begin{align*}
+m(t) &= |\{x\in B_2: u(x,t) \leq 0\}| \\
+g(t) &= |\{x\in B_2: 0 < u(x,t) <1-\lambda\}| \\
+d(t) &= |\{x\in B_2: 1-\lambda \leq u(x,t)\}|.
+\end{align*}
+
+And also the functions
+\begin{align*}
+H(t) &= \int u_+(t,x)^2 \,dx
+\\ E(t) &= \iint u_+(t,x) w_-(t,y) K(x,y) \,dxdy.
+\end{align*}
+
+The energy inequality easily gives us that $\frac{d}{dt}H$ and $\int_{-3}^0 E \,dt$ are both bounded above by $C_1 \lambda^2$.  This calculation is in CCV.  
+
+In the classical case, we take a limit to make $g(t)=0$ for all $t$.  Then $m(t)d(t)=0$ for all $t$ because the energy $\int |Du_+|^2 \,dx$ is finite at every $t$.  In the less classical case, we still assume that $g$ is very small at almost all $t$.  It isn't true that $m(t)d(t)=0$ whenever $E(t)$ is finite, but it is true that if $m(t)$ and $d(t)$ are both bigger than some constant, then $E(t)$ must be bigger than some constant as well, which is similar.  
+
+
+
+%We will show that at times where both $d$ and $m$ are simultaneously "big", there must be lots of energy.  But at times where $d$ (resp. $m$) and $g$ are both small, the function $H_\lambda$ must be small (resp. big).  Therefore it will be useful to find times where $d$ (or $m$), $g$, and the energy are all small.  If we can show that all three happen simultaneously on a set of positive measure, then we've shown the first two of our three crucial properties.  But we have straightforward bounds on the integrals of all these quantities, so we just make the bounds small and we are done.  
+
+We know that each function $m,g,d$ is pointwise between 0 and $|B_2|$, and we have constraints on the integrals
+\[ \int_{-3}^{-2} m \geq \mu, \quad \int_{-2}^0 d \geq \delta, \textrm{ and } \int_{-3}^0 g \leq \gamma. \]
+Therefore we can define constants $\mu_0$, $\delta_0$ such that 
+\begin{align*}
+|[-3,-2] \cap \{m(t) \geq \mu_0\}| &\geq 0.99 \\
+|[-2,0] \cap \{d(t) \geq \delta_0\}| &\geq 1.99 \\ \quad
+|[-3,0] \cap \{g(t) \geq \gamma_0\}| &\leq .01,
+\end{align*}
+with the additional constraint (it'll make sense later)
+\[ \mu_0 + 4 \delta_0 + 5 \gamma_0 \leq |B_2|/2.\]  These constraints also inform our choice of $\gamma$, of course.  
+
+%[Note: we need $\gamma_0$ to be small enough for some purpose, and we then define $\gamma$ small enough to make the above true anyways.  But I can't remember the constraint on $\gamma_0$, so we write just this for now.]
+%Come back here later and say what else we need about $\gamma_0$, $\delta_0$, $\mu_0$.  
+
+%We're going to define a $\gamma_0$ and calculate how often $g \leq \gamma_0$, but first we need to know what constitutes "small enough."  
+%If at a certain time $d \leq \delta_0$ and $g \leq \gamma_0$, then certainly $H \leq \sqrt{\delta_0 + \gamma_0}$.  And at times when $m \leq \mu_0$ and $g \leq \gamma_0$, then $H \geq (1-\lambda)\sqrt{|B_2| - (\mu_0 + \gamma_0)}$ [that doesn't seem quite right]...
+
+%I'm beginning to see why this is so incomprehensible when Luis does it.  It's because it's inherently detail-heavy.  Can I at least get it to a position where people can try to apply it to their own situations?  
+
+Now we argue that $m$ and $d$ are largely "disjoint."  If at some time $t$, we have
+\[ m(t) \geq \mu_0, \qquad d(t) \geq \delta_0,\]
+then
+\begin{align*}
+E(t) &= \iint u_+(x)u_-(y)K(x,y) \,dxdy 
+\\ &\geq \iint u_+(x)u_-(y)\chi_{\{B_2\}}(y) K(x,y) \,dxdy
+\\ &\geq \iint u_+(x) u_-(y)\chi_{\{B_2\}}(y) 4^{-n-s}
+\\ &\geq C \int u_+(x) \,dx \int_{B_2} u_-(y)\,dy
+\\ &\geq C (\delta_0 \lambda) (\mu_0 (1-2\lambda))
+\\ &\geq C_5 \lambda,
+\end{align*}
+where $C_5$ depends on $\mu_0$ and $\delta_0$.  The moral is, because our energy is nonlocal, we don't need to rely on jump discontinuities.  The above calculation is the equivalent of "no jump discontinuities with finite energy", but much more quantitative and not particularly difficult.  
+
+Remember that $\int_{-3}^0 E \,dt \leq C_1 \lambda^2$, so by Chebyshev, 
+\[ |[-3,0] \cap \{E(t) \geq C_5 \lambda\}| (C_5 \lambda) \leq C_1 \lambda^2.\]  If we take $\lambda$ sufficiently small, then 
+\[ |[-3,0] \cap \{E(t) \geq C_5 \lambda\}| \leq .01.\] 
+
+But of course, 
+\[ \{m \geq \mu_0\} \cap \{d \geq \delta_0\} \subseteq \{E \geq C_5 \lambda\}.\]  
+Therefore we have the "early" and "late" sets
+\[ \big| [-3,-2] \cap \{d \leq \delta_0\} \cap \{g \leq \gamma_0\} \big| = \big| A_e \big| \geq 0.95,\]
+\[ \big| [-2,0] \cap \{m \leq \mu_0\} \cap \{g \leq \gamma_0\} \big| = \big| A_l \big| \geq 1.95.\]  
+These are the good sets, the sets where $H$ is large and small respectively, and everything up till now was to show that these sets have non-zero measure.  
+
+Next, we'll want to show what good properties $A_e$ and $A_l$ have.  We can calculate $H$ directly,
+\begin{align*} H(t) &\leq (2\lambda)^2 (\delta_0 + \gamma_0) \qquad \forall t \in A_e, \\
+H(t) &\geq \lambda^2 (|B_2| - \mu_0 - \gamma_0) \qquad \forall t \in A_l.\end{align*}
+What matters is the difference between these two values, and specifically it's very important that for $s \in A_e$, $t \in A_l$, we have $H(t) - H(s) \geq 0$.  
+\[ H(t) - H(s) \geq \lambda^2 (|B_2| - \mu_0 - \gamma_0) - (2\lambda)^2 (\delta_0 + \gamma_0) = \lambda^2 (|B_2| - \mu_0 - 4 \delta_0 - 5 \gamma_0) > \frac{|B_2|}{2}\lambda^2.\]
+
+Since $H$ increases some fixed amount and has a bounded slope, it must take time to do it.  Namely, there is a set 
+\[ D = \{t \in [-3,0] : (2\lambda)^2 (\delta_0 + \gamma_0) < H(t) < \lambda^2 (|B_2| - \mu_0 - \gamma_0) \} \]
+of times where $H$ is between its maximum value in $A_e$ and its minimum value in $A_l$.  This set has a positive measure, independent of $\lambda$, it has measure at least
+\[ |D| \geq \frac{|B_2|\lambda^2/2}{C_1 \lambda^2} = \frac{|B_2|}{2 C_1}. \]
+
+So, at first $d$ and $g$ are small (in $A_e$), later $g$ and $m$ are small (in $A_l$), and these facts put strong constraints on $H$.  In between (in $D$), $H$ doesn't satisfy these constraints, so at all times in $D$ either $g$ must be big, or else neither $d$ nor $m$ can be small.  But when $d$ and $m$ are both big then $E$ is big as well.  So at all times in $D$, either $g > \gamma_0$, or $E > C_5 \lambda$.  
+
+So take $\lambda$ and $\gamma$ small enough that 
+\[ |\{g > \gamma_0\}| + |\{ E > C_5 \lambda \}| < \frac{|B_2|}{2C_1}.\]  
+
+This is a contradiction.  
+
+
