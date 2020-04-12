@@ -1,4 +1,4 @@
-\chapter{Alternative Formulation of Isoperimetric Lemma} \label{ch:CCVrewrite}
+\section{Isoperimetric Inequality for low-order diffusion} \label{ch:CCVrewrite}
 
 %\documentclass[11pt]{article}
 %\usepackage{amsmath,amssymb,amsthm}
@@ -95,108 +95,300 @@
 
 This chapter is based on chapter 4 of \cite{CaChVa.nio}, in which is proven an isoperimetric inequality for the equation
 \begin{equation} \label{eq:CCV-main}
-\del_t w + \int w(\cdot) w(y) K(\cdot,y) \,dy = 0 
+\del_t u + \int [u(y) - u(\cdot)] K(t,\cdot,y) \,dy = 0 
 \end{equation}
-where $K$ satisfies
-\begin{equation} \label{CCV-coercivity for K} \indic{|x-y| \leq 3} \frac{1-s/2}{\Lambda} |x-y|^{-(d+s)} \leq K(x,y) \leq (1-s/2)\Lambda |x-y|^{-(d+s)}. \end{equation}
+where $K$ satisfies $K(t,x,y) = K(t,y,x)$ for all $y \neq x$ and 
+\begin{equation} \label{CCV-coercivity for K} \indic{|x-y| \leq 3} \frac{1-s/2}{\Lambda} |x-y|^{-(d+s)} \leq K(t,x,y) \leq (1-s/2)\Lambda |x-y|^{-(d+s)}. \end{equation}
 This singular integral operator is comparable to $(-\Laplace)^s$, where $s$ is a parameter in $(0,1)$.  The natural energy inequality for this equation shows that $(w-k)_+$ will generally be an element of $H^{s/2}$.  However, because in general functions in $H^{s/2}$ are allowed to have jump discontinuities for $s \leq 1$, the method outlined in chapter~\ref{ch:intro} is not suitable.  That method relies pivotally on the fact that $H^1$ functions cannot have jump discontinuities, and so fails whenever the dissipation of an equation is driven by $(-\Laplace)^s$ with $s < 1$.  
+
+
+
+As in \cite{CaChVa.nio}, we will use the notation
+\begin{align*}
+B[u,v] &:= \int_{\R^d} \int_{\R^d} K(t,x,y) [u(x)-u(y)] [v(x)-v(y)] \,dxdy, \\
+\psi_1(x) &:= 1 + (|x|^{s/2} - 1)_+, \\
+\psi_\lambda(x) &:= \paren{|x| - \lambda^{-4/s} }_+^{s/4} - 1)_+, \\
+F(x) &:= \sup(-1, \inf(0, |x|^2 - 9), \\
+\phi_0 &= 1 + \psi_\lambda + F, \\
+\phi_1 &= 1 + \psi_\lambda + \lambda F.
+\end{align*}
+Note that 
+\[ 0 \leq \psi_{\lambda_1}(x) \leq \psi_{\lambda_2}(x) \leq \psi_1(x) \]
+for $\lambda_1 < \lambda_2$, and for $\lambda$ sufficiently small we have $\psi_\lambda(x) \equiv 0$ for $|x| \leq 3$.  The function $F$ is non-positive, compactly supported in $B_3(0)$, and equal to $-1$ in $B_2$.  Therefore $\phi_0$ vanishes on $B_2(0)$.  
+
+It is proven in \cite{CaChVa.nio} that for $u$ solving \eqref{eq:CCV-main} with $u(x) \leq \psi_1(x)$ for all $|x|\leq 3$, we have
+\begin{equation} \label{CCV-energy inequality generic}
+\ddt \int (u - \psi)_+^2 + \norm{(u-\psi)_+}^2_{H^{s/2}(\R^d)} - B[(u-\psi)_+,(u-\psi)_-] \leq C \bracket{\int (u-\psi)_+^2 + \iint \indic{u-\psi_1 > 0}(x)[\psi(y)-\psi(x)]^2 \,dxdy }
+\end{equation}
+
+
 
 Lemma 4.1 in \cite{CaChVa.nio} states
 \begin{lemma}[Isoperimetric Inequality for \cite{CaChVa.nio}]
-Let $\Lambda$ be the given constant in condition \eqref{CCV-coercivity for K} and $\delta$ the constant defined in Corollary 3.3 of \cite{CaChVa.nio}.  Then, there exists $\mu > 0$, $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $d$, $\Lambda$, and $s$, such that for any solution $w:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying
-\[ w(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, \]
-\[ \abs{\{w < \phi_0\} \cap (-3,-2)\times B_1} \geq \mu, \]
-then we have either
-\[ \abs{\{w > \phi_2\} \cap (-2,0)\times \R^d} \leq \delta, \]
-or
-\[ \abs{\{\phi_0 < w < \phi_2\} \cap (-3,0)\times \R^d} \geq \gamma. \]
+Let $\Lambda$ be the given constant in condition \eqref{CCV-coercivity for K} and $\delta$ the constant defined in Corollary 3.3 of \cite{CaChVa.nio}.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $d$, $\Lambda$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying
+\begin{equation} \label{CCV-pointwise bound}
+u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, 
+\end{equation}
+\[ \abs{\{u < \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
+and
+\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta. \]
+Then
+\[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} \geq \gamma. \]
 \end{lemma}
+Note that this statement is slightly reformulated from that found in \cite{CaChVa.nio} for simpler notation in the following proof.  Where they differ, the formulation given here makes a slightly stronger claim than the original.  
 
-We will assume for contradiction that we have some function $u$ satisfying all the hypotheses but such that 
-\[ |{u > \phi_2} \cap ((-2, 0) \times R^N )| \geq \delta \] 
-and \[ |{\phi_0 < u < \phi_2} \cap ((-3,0) \times \R^N )| \leq \gamma, \]
-where $\gamma$ is a constant that we will set later.  
+\begin{proof}
+Suppose for contradiction that this lemma were false.  Then there would exist a sequence $u_k$ of solutions to \eqref{eq:CCV-main} satisfying 
+\begin{equation} \label{CCV-pointwise bound k}
+u(t,x) \leq 1 + \psi_{1/k}(x) \qquad \textrm{on } [-3,0]\times\R^d, 
+\end{equation}
+\[ \abs{\{u < 0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
+and
+\[ \abs{\{u > 1 + (1/k)F\} \cap (-2,0)\times B_3} \leq \delta, \]
+but
+\[ \abs{\{\phi_0 < u < 1 + (1/k)F\} \cap (-3,0)\times B_3} \leq 1/k. \]
 
+Consider the sequence $w_k := (u_k - \phi_0)_+$.  By \eqref{CCV-pointwise bound k}, we know $w_k = (u_k - \psi_1 - F)_+$ because both vanish on $|x|>3$.  Using \eqref{CCV-energy inequality generic}, we see that $\ddt \int $
+\end{proof}
+
+\begin{proof}
 Define functions 
 \begin{align*}
-m(t) &= |\{x\in B_2: u(x,t) \leq 0\}| \\
-g(t) &= |\{x\in B_2: 0 < u(x,t) <1-\lambda\}| \\
-d(t) &= |\{x\in B_2: 1-\lambda \leq u(x,t)\}|.
+B(t) &= |\{x\in B_1: u(x,t) \leq \phi_0(x)\}| \\
+M(t) &= |\{x\in \R^d: \phi_0 < u(x,t) < \phi_1 \}| \\
+T(t) &= |\{x\in \R^d: \phi_1 < u(x,t)\}|.
+\end{align*}
+T, M, and B stand for top, middle, and bottom.  Clearly $M(t) + B(t) + T(t) \geq |B_1|$.  By assumption, we must have $\int_{-3}^{-2} B(t)dt \geq |B_1|$ and $\int_{-2}^0 T(t)dt \geq \delta$.  From the assumption \eqref{CCV-pointwise bound} we know that $M(t), T(t) \leq |B_3|$ and of course $B(t) \leq |B_1|$ for all $t \in [-3,0]$.  By Chebyshev's inequality, we can find small constants $\beta$ and $\tau$ such that
+\begin{equation} \label{CCV-big 99percent of the time}\begin{aligned}
+\abs{[-3,-2] \cap \{B(t) > \beta\}} &\geq 0.99, \\
+|[-2,0] \cap \{T(t) > \tau\}| &\geq 1.99.
+%\\ |[-3,0] \cap \{g(t) \geq \gamma_0\}| &\leq .01,
+\end{aligned} \end{equation}
+
+Define some arbitrary constant $\gamma_0$ such that
+\begin{equation} \label{CCV-asssumption on gamma_0}
+4\tau + \gamma_0 < |B_1| - \beta - \gamma_0.
+\end{equation}
+Without loss of generality, we can assume
+\begin{equation} \label{CCV-big 99percent M}
+\abs{[-3,0] \cap \{M(t) > \gamma_0\}} \geq 2.99 
+\end{equation}
+because otherwise, we could take $\gamma = .01\gamma_0$ and the proof would be complete.  
+
+\vskip.3cm
+
+Define 
+\[ \phi_{1/2}:= 1 + \psi_\lambda + 2 \lambda F. \]
+This is an intermidiary cutoff $\phi_0 \leq \phi_{1/2} \leq \phi_1$.  By the assumption \eqref{CCV-pointwise bound}, we know that 
+\[ \paren{u-\phi_{1/2}}_+ \leq -2\lambda F. \]
+
+One can calculate that
+\[ \iint \indic{u > \phi_{1/2}}(x) [\phi_{1/2}(y)-\phi_{1/2}(x)]^2 K(t,x,y) \]
+\[ \leq C \iint \indic{B_3}(x) [\psi_\lambda(y)-\psi_\lambda(x)]^2 K(t,x,y) + \iint [2\lambda F(x)-2 \lambda F(y)]^2 K(t,x,y) \leq C \lambda^2 \]
+and that
+\begin{align*} 
+\int \paren{u-\phi_{1/2}}_+^2 &\leq C \int (2\lambda F)^2
+\\ &\leq C \lambda^2.
 \end{align*}
 
-And also the functions
+Therefore, by the energy inequality \eqref{CCV-energy inequality generic}, 
+\begin{equation} \label{CCV-derivative bound} \ddt \int \paren{u-\phi_{1/2}}_+ \,dx \leq C \lambda^2 \end{equation}
+and
+\begin{equation} \label{CCV-energy inequality lambda^2}
+- \int_{-3}^0 B\bracket{\paren{u-\phi_{1/2}}_+, \paren{u-\phi_{1/2}}_-} \,dt \leq C \lambda^2.
+\end{equation}
+
+On the other hand, for any fixed $t \in [-3,0]$, the good term is bounded below
+\begin{align*} 
+-B\bracket{\paren{u-\phi_{1/2}}_+, \paren{u-\phi-{1/2}}_-} &= 2 \iint \paren{u-\phi_{1/2}}_+(x) \paren{u-\phi_{1/2}}_-(y) K(x,y)
+\\ & \geq \iint\limits_{x,y \in B_3} \paren{u-\phi_{1/2}}_+(x) \paren{u-\phi_{1/2}}_-(y) 6^{-d-2s}
+\\ &= C \int_{B_3} \paren{u-\phi_{1/2}}_+ \,dx \int_{B_3} \paren{u-\phi_{1/2}}_- \,dx
+\\ &\geq C \int_{u > \phi_1} \lambda F \,dx \int_{x \in B_1, u \leq \phi_0} (1-\lambda) F \,dx
+\\ &\geq C \lambda \int_{u > \phi_1} F \,dx \int_{x \in B_1, u \leq \phi_0} F \,dx.
+\end{align*}
+
+Therefore, combining this with \eqref{CCV-energy inequality lambda^2} and dividing by $\lambda$, we see that
+\begin{equation} \label{CCV-integlar form of interaction bound} \int_{-3}^0 \paren{ \int_{u > \phi_1} F \,dx \int_{x \in B_1, u \leq \phi_0} F \,dx }\,dt \leq C \lambda. \end{equation}
+Note that $\int_{u > \phi_1} F$ is bounded below by a strictly monotone-increasing function of $T(t)$, and similarly for $\int_{x \in B_1, u \leq \phi_0} F$.  Therefore the above inequality shows that $T(t)$ and $D(t)$ cannot both be large at the same time.  
+%In particular, there exists a quantity $e$ such that, if $T(t) \geq \tau$ and $B(t) \geq \beta$, then 
+
+This is an integral bound, however, not a pointwise-in-time bound, so there may exist a singular set
+\[ S := \{ t \in [-3,0]: T(t)>\tau \textrm{ and } B(t)> \beta\}. \]
+However, for any $\beta$ and $\tau$ fixed, because of \eqref{CCV-integlar form of interaction bound}, Chebyshev's inequality, and the fact that $T(t)$ and $D(t)$ bound the integrals, we can make this singular set arbitrarily small by taking $\lambda$ very small
+\begin{equation} \label{CCV-small measure of overlap} 
+|S| = o(\lambda).
+\end{equation}
+
+
+\vskip.3cm
+
+Now we consider the function
+\[ H(t) := \int \paren{u(t,x) - \phi_{1/2}(x)}_+^2 \,dx. \]
+Recall from \eqref{CCV-derivative bound} that $H'(t) \leq C \lambda^2$.  
+
+By dividing up the support of $\paren{u-\phi_{1/2}}_+$ into the regions $\{u \leq \phi_0\}$, $\{\phi_0 < u < \phi_1\}$, and $\{\phi_1 \leq u\}$, we see that
+\[ \int_{u \leq \phi_0} \paren{u-\phi_{1/2}}_+ = 0 \]
+\[ 0 \leq \int_{\phi_0 < u < \phi_1} \paren{u-\phi_{1/2}}_+ \leq \lambda^2 M(t), \]
+\[ \lambda^2 \bracket{|B_1| - M(t) - B(t)} \leq \lambda^2 T(t) \leq \int_{\phi_1 \leq u} \paren{u-\phi_{1/2}}_+ \leq (2\lambda)^2 T(t). \]
+
+Thus 
+\[ \lambda^2[|B_1|-M(t)-B(t)] \leq H(t) \leq \lambda^2 [4 T(t) + M(t)]. \]
+
+%Let $\gamma_0 > 0$ be a small constant, and assume $\tau$, $\beta$, and $\gamma_0$ are small enough that $4\tau + \gamma_0 < |B_1|-\beta-\gamma_0$.  
+Then we can divide $[-3,0]$ into three sets,
 \begin{align*}
-H(t) &= \int u_+(t,x)^2 \,dx
-\\ E(t) &= \iint u_+(t,x) w_-(t,y) K(x,y) \,dxdy.
+H_0 &:= \{t: T(t) \leq \tau, M(t) \leq \gamma_0 \} \subseteq \{t: H(t) \leq \lambda^2 [4\tau + \gamma_0] \}, \\
+H_1 &:= \{t: B(t) \leq \beta, M(t) \leq \gamma_0 \} \subseteq \{t: \lambda^2[|B_1|-\beta-\gamma_0] \leq H(t) \}, \\
+H_{1/2} &:= \{t: \lambda^2[4\tau + \gamma_0] < H(t) < \lambda^2[|B_1|-\beta-\gamma_0] \} \subseteq \{t: M(t) > \gamma_0 \textrm{ or } \paren{T(t) > \tau, B(t) > \beta} \}.
 \end{align*}
 
-The energy inequality easily gives us that $\frac{d}{dt}H$ and $\int_{-3}^0 E \,dt$ are both bounded above by $C_1 \lambda^2$.  This calculation is in CCV.  
+%The set $H_{1/2}$ cannot have large measure.  
+%\[ H_{1/2} \subseteq \]
 
-In the classical case, we take a limit to make $g(t)=0$ for all $t$.  Then $m(t)d(t)=0$ for all $t$ because the energy $\int |Du_+|^2 \,dx$ is finite at every $t$.  In the less classical case, we still assume that $g$ is very small at almost all $t$.  It isn't true that $m(t)d(t)=0$ whenever $E(t)$ is finite, but it is true that if $m(t)$ and $d(t)$ are both bigger than some constant, then $E(t)$ must be bigger than some constant as well, which is similar.  
+Our goal now is to show that $H_{1/2}$ has large measure.  To prove this, we will use the fact that $H'$ is bounded and $H_0$, $H_1$ are non-empty.  
 
+The set $H_0 \cap [-3,-2]$ is nonempty, because 
+\[ H_0 \supseteq [-3,-2] \cap \{B(t)> \beta\} \cap S^\complement \cap \{M(t) > \gamma_0\}^\complement. \]
+But by the assumptions \eqref{CCV-big 99percent of the time}, \eqref{CCV-big 99percent M}, and \eqref{CCV-small measure of overlap} we can say $|H_0| \geq .99-.01-|S| > 0$ for $\lambda$ sufficiently small.  
+We argue similarly for 
+\[ H_1 \supseteq [-2,0] \cap \{T(t) > \tau\} \cap S^\complement \cap \{M(t) > \gamma_0\}^\complement \]
+that $H_1 \cap [-2,0] \neq \emptyset$.  
 
+We have shown that there exist points $s \in H_0$ and $t \in H_1$ such that $s < t$.  Because $H' \leq C \lambda^2$ by \eqref{CCV-derivative bound}, we know by elementary calculus that
+\[ \abs{H_{1/2}} \geq \frac{\lambda^2[|B_1|-\beta-\gamma_0] - \lambda^2[4\tau+\gamma_0]}{\sup H'} \geq \frac{\lambda^2[|B_1| - \beta - 4\tau - 2\gamma_0]}{C \lambda^2} = \bar{C}. \]
+Note that $\bar{C}$ depends on $\beta$, $\tau$, and $\gamma_0$ but not on $\lambda$.  
 
-%We will show that at times where both $d$ and $m$ are simultaneously "big", there must be lots of energy.  But at times where $d$ (resp. $m$) and $g$ are both small, the function $H_\lambda$ must be small (resp. big).  Therefore it will be useful to find times where $d$ (or $m$), $g$, and the energy are all small.  If we can show that all three happen simultaneously on a set of positive measure, then we've shown the first two of our three crucial properties.  But we have straightforward bounds on the integrals of all these quantities, so we just make the bounds small and we are done.  
-
-We know that each function $m,g,d$ is pointwise between 0 and $|B_2|$, and we have constraints on the integrals
-\[ \int_{-3}^{-2} m \geq \mu, \quad \int_{-2}^0 d \geq \delta, \textrm{ and } \int_{-3}^0 g \leq \gamma. \]
-Therefore we can define constants $\mu_0$, $\delta_0$ such that 
-\begin{align*}
-|[-3,-2] \cap \{m(t) \geq \mu_0\}| &\geq 0.99 \\
-|[-2,0] \cap \{d(t) \geq \delta_0\}| &\geq 1.99 \\ \quad
-|[-3,0] \cap \{g(t) \geq \gamma_0\}| &\leq .01,
-\end{align*}
-with the additional constraint (it'll make sense later)
-\[ \mu_0 + 4 \delta_0 + 5 \gamma_0 \leq |B_2|/2.\]  These constraints also inform our choice of $\gamma$, of course.  
-
-%[Note: we need $\gamma_0$ to be small enough for some purpose, and we then define $\gamma$ small enough to make the above true anyways.  But I can't remember the constraint on $\gamma_0$, so we write just this for now.]
-%Come back here later and say what else we need about $\gamma_0$, $\delta_0$, $\mu_0$.  
-
-%We're going to define a $\gamma_0$ and calculate how often $g \leq \gamma_0$, but first we need to know what constitutes "small enough."  
-%If at a certain time $d \leq \delta_0$ and $g \leq \gamma_0$, then certainly $H \leq \sqrt{\delta_0 + \gamma_0}$.  And at times when $m \leq \mu_0$ and $g \leq \gamma_0$, then $H \geq (1-\lambda)\sqrt{|B_2| - (\mu_0 + \gamma_0)}$ [that doesn't seem quite right]...
-
-%I'm beginning to see why this is so incomprehensible when Luis does it.  It's because it's inherently detail-heavy.  Can I at least get it to a position where people can try to apply it to their own situations?  
-
-Now we argue that $m$ and $d$ are largely "disjoint."  If at some time $t$, we have
-\[ m(t) \geq \mu_0, \qquad d(t) \geq \delta_0,\]
-then
-\begin{align*}
-E(t) &= \iint u_+(x)u_-(y)K(x,y) \,dxdy 
-\\ &\geq \iint u_+(x)u_-(y)\chi_{\{B_2\}}(y) K(x,y) \,dxdy
-\\ &\geq \iint u_+(x) u_-(y)\chi_{\{B_2\}}(y) 4^{-n-s}
-\\ &\geq C \int u_+(x) \,dx \int_{B_2} u_-(y)\,dy
-\\ &\geq C (\delta_0 \lambda) (\mu_0 (1-2\lambda))
-\\ &\geq C_5 \lambda,
-\end{align*}
-where $C_5$ depends on $\mu_0$ and $\delta_0$.  The moral is, because our energy is nonlocal, we don't need to rely on jump discontinuities.  The above calculation is the equivalent of "no jump discontinuities with finite energy", but much more quantitative and not particularly difficult.  
-
-Remember that $\int_{-3}^0 E \,dt \leq C_1 \lambda^2$, so by Chebyshev, 
-\[ |[-3,0] \cap \{E(t) \geq C_5 \lambda\}| (C_5 \lambda) \leq C_1 \lambda^2.\]  If we take $\lambda$ sufficiently small, then 
-\[ |[-3,0] \cap \{E(t) \geq C_5 \lambda\}| \leq .01.\] 
-
-But of course, 
-\[ \{m \geq \mu_0\} \cap \{d \geq \delta_0\} \subseteq \{E \geq C_5 \lambda\}.\]  
-Therefore we have the "early" and "late" sets
-\[ \big| [-3,-2] \cap \{d \leq \delta_0\} \cap \{g \leq \gamma_0\} \big| = \big| A_e \big| \geq 0.95,\]
-\[ \big| [-2,0] \cap \{m \leq \mu_0\} \cap \{g \leq \gamma_0\} \big| = \big| A_l \big| \geq 1.95.\]  
-These are the good sets, the sets where $H$ is large and small respectively, and everything up till now was to show that these sets have non-zero measure.  
-
-Next, we'll want to show what good properties $A_e$ and $A_l$ have.  We can calculate $H$ directly,
-\begin{align*} H(t) &\leq (2\lambda)^2 (\delta_0 + \gamma_0) \qquad \forall t \in A_e, \\
-H(t) &\geq \lambda^2 (|B_2| - \mu_0 - \gamma_0) \qquad \forall t \in A_l.\end{align*}
-What matters is the difference between these two values, and specifically it's very important that for $s \in A_e$, $t \in A_l$, we have $H(t) - H(s) \geq 0$.  
-\[ H(t) - H(s) \geq \lambda^2 (|B_2| - \mu_0 - \gamma_0) - (2\lambda)^2 (\delta_0 + \gamma_0) = \lambda^2 (|B_2| - \mu_0 - 4 \delta_0 - 5 \gamma_0) > \frac{|B_2|}{2}\lambda^2.\]
-
-Since $H$ increases some fixed amount and has a bounded slope, it must take time to do it.  Namely, there is a set 
-\[ D = \{t \in [-3,0] : (2\lambda)^2 (\delta_0 + \gamma_0) < H(t) < \lambda^2 (|B_2| - \mu_0 - \gamma_0) \} \]
-of times where $H$ is between its maximum value in $A_e$ and its minimum value in $A_l$.  This set has a positive measure, independent of $\lambda$, it has measure at least
-\[ |D| \geq \frac{|B_2|\lambda^2/2}{C_1 \lambda^2} = \frac{|B_2|}{2 C_1}. \]
-
-So, at first $d$ and $g$ are small (in $A_e$), later $g$ and $m$ are small (in $A_l$), and these facts put strong constraints on $H$.  In between (in $D$), $H$ doesn't satisfy these constraints, so at all times in $D$ either $g$ must be big, or else neither $d$ nor $m$ can be small.  But when $d$ and $m$ are both big then $E$ is big as well.  So at all times in $D$, either $g > \gamma_0$, or $E > C_5 \lambda$.  
-
-So take $\lambda$ and $\gamma$ small enough that 
-\[ |\{g > \gamma_0\}| + |\{ E > C_5 \lambda \}| < \frac{|B_2|}{2C_1}.\]  
-
-This is a contradiction.  
+Recall that $H_{1/2} \subseteq \{M(t) > \gamma_0\} \cup S$.  Therefore
+\[ \bar{C} \leq \abs{\{M(t) > \gamma_0\}} - |S|. \]
+Because $|S|$ is arbitrarily small by \eqref{CCV-small measure of overlap}, and because
+\[ \abs{\{phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} = \int_{-3}^0 M(t) \,dt \geq \gamma_0 \abs{\{M(t) > \gamma_0\}}, \]
+the proof is complete.  
 
 
+%Because $H'(t) \leq C \lambda^2$ by \eqref{CCV-derivative bound} for all $t \in [-3,0]$, for any points $s < t$ such that $H(s) \leq \lambda^2[4\tau + \gamma_0]$ and $\lambda^2[|B_1|-\beta-\gamma_0] \leq H(t)$, we know that for some $x \in [s,t]$
+%\[ t-s = \frac{H(t) - H(s)}{H'(x)} \geq \frac{\lambda^2[|B_1| - \beta - 4\tau - 2\gamma_0]}{C \lambda^2} = \bar{C}. \]
+%Note that $\bar{C}$ depends on $\beta$, $\tau$, and $\gamma_0$ but not on $\lambda$.  Because this is true for all such $s$ and $t$, no point of 
+
+
+
+%Thus for $t \in A_e$ we have $H(t) \leq \lambda^2 [4\tau + M(t)]$, and for $t \in A_l$ we have $H(t) \geq \lambda^2[|B_1| - M(t) - \beta]$.  
+%
+%
+%
+%
+%From this and \eqref{CCV-big 99percent of the time}, we see that there exist two sets, called the ``early'' and ``late'' sets $A_e$ and $A_l$
+%\begin{align*}
+%A_e &:= [-3,-2] \cap \{B \geq \beta\} \cap \{T \leq \tau\}, \\
+%A_l &:= [-2,0] \cap \{B \leq \beta\} \cap \{T \geq \tau\}
+%\end{align*}
+%with the property that $|A_e| \geq 0.98$ and $|A_l| \geq 1.98$.  
+%
+%Take $\gamma_0$ small enough that $\lambda^2 [4\tau + \gamma_0] < \lambda^2[|B_1| - \gamma_0 - \beta]$.  If $M(t) < \gamma_0$ in at least one point $s \in A_e$ and atleast one point $t \in A_l$, then $H(s) < H(t)$ and so there must exist a set
+%Suppose that $M(s) < \gamma_0$ at some point $s \in A_e$ and $M(t) < \gamma_0$ at some point $t \in A_l$.  Then 
+%\[ \abs{[-3,0] \cap \{\lambda^2[4\tau+\gamma_0] < H < \lambda^2[|B_1|-\beta-\gamma_0 \}} \geq \frac{\lambda^2[|B_1|-\beta-\gamma_0] - \lambda^2[4\tau+\gamma_0]}{sup_{[-3,0]} H'} \geq C(|B_1|-\beta-4\tau-2\gamma_0). \]
+%
+%
+%
+%\[ H(t) \leq 2\lambda \tau + \lambda M(t) \]
+%and for $t \in A_l$, 
+%
+%
+%
+%Now we see that $B(t)$
+%
+%
+% there does not exist any $t \in [-3,0]$ such that $T(t) > \tau$ and $B(t) > \beta$.  From \eqref{CCV-big 99percent of the time}, we see immediately that 
+%
+%
+%
+%
+%
+%
+%We will assume for contradiction that we have some function $u$ satisfying all the hypotheses but such that 
+%\[ |{u > \phi_2} \cap ((-2, 0) \times R^N )| \geq \delta \] 
+%and \[ |{\phi_0 < u < \phi_2} \cap ((-3,0) \times \R^N )| \leq \gamma, \]
+%where $\gamma$ is a constant that we will set later.  
+%
+%Define functions 
+%\begin{align*}
+%m(t) &= |\{x\in B_2: u(x,t) \leq 0\}| \\
+%g(t) &= |\{x\in B_2: 0 < u(x,t) <1-\lambda\}| \\
+%d(t) &= |\{x\in B_2: 1-\lambda \leq u(x,t)\}|.
+%\end{align*}
+%
+%And also the functions
+%\begin{align*}
+%H(t) &= \int u_+(t,x)^2 \,dx
+%\\ E(t) &= \iint u_+(t,x) w_-(t,y) K(x,y) \,dxdy.
+%\end{align*}
+%
+%The energy inequality easily gives us that $\frac{d}{dt}H$ and $\int_{-3}^0 E \,dt$ are both bounded above by $C_1 \lambda^2$.  This calculation is in CCV.  
+%
+%In the classical case, we take a limit to make $g(t)=0$ for all $t$.  Then $m(t)d(t)=0$ for all $t$ because the energy $\int |Du_+|^2 \,dx$ is finite at every $t$.  In the less classical case, we still assume that $g$ is very small at almost all $t$.  It isn't true that $m(t)d(t)=0$ whenever $E(t)$ is finite, but it is true that if $m(t)$ and $d(t)$ are both bigger than some constant, then $E(t)$ must be bigger than some constant as well, which is similar.  
+%
+%
+%
+%%We will show that at times where both $d$ and $m$ are simultaneously "big", there must be lots of energy.  But at times where $d$ (resp. $m$) and $g$ are both small, the function $H_\lambda$ must be small (resp. big).  Therefore it will be useful to find times where $d$ (or $m$), $g$, and the energy are all small.  If we can show that all three happen simultaneously on a set of positive measure, then we've shown the first two of our three crucial properties.  But we have straightforward bounds on the integrals of all these quantities, so we just make the bounds small and we are done.  
+%
+%We know that each function $m,g,d$ is pointwise between 0 and $|B_2|$, and we have constraints on the integrals
+%\[ \int_{-3}^{-2} m \geq \mu, \quad \int_{-2}^0 d \geq \delta, \textrm{ and } \int_{-3}^0 g \leq \gamma. \]
+%Therefore we can define constants $\mu_0$, $\delta_0$ such that 
+%\begin{align*}
+%|[-3,-2] \cap \{m(t) \geq \mu_0\}| &\geq 0.99 \\
+%|[-2,0] \cap \{d(t) \geq \delta_0\}| &\geq 1.99 \\ \quad
+%|[-3,0] \cap \{g(t) \geq \gamma_0\}| &\leq .01,
+%\end{align*}
+%with the additional constraint (it'll make sense later)
+%\[ \mu_0 + 4 \delta_0 + 5 \gamma_0 \leq |B_2|/2.\]  These constraints also inform our choice of $\gamma$, of course.  
+%
+%%[Note: we need $\gamma_0$ to be small enough for some purpose, and we then define $\gamma$ small enough to make the above true anyways.  But I can't remember the constraint on $\gamma_0$, so we write just this for now.]
+%%Come back here later and say what else we need about $\gamma_0$, $\delta_0$, $\mu_0$.  
+%
+%%We're going to define a $\gamma_0$ and calculate how often $g \leq \gamma_0$, but first we need to know what constitutes "small enough."  
+%%If at a certain time $d \leq \delta_0$ and $g \leq \gamma_0$, then certainly $H \leq \sqrt{\delta_0 + \gamma_0}$.  And at times when $m \leq \mu_0$ and $g \leq \gamma_0$, then $H \geq (1-\lambda)\sqrt{|B_2| - (\mu_0 + \gamma_0)}$ [that doesn't seem quite right]...
+%
+%%I'm beginning to see why this is so incomprehensible when Luis does it.  It's because it's inherently detail-heavy.  Can I at least get it to a position where people can try to apply it to their own situations?  
+%
+%Now we argue that $m$ and $d$ are largely "disjoint."  If at some time $t$, we have
+%\[ m(t) \geq \mu_0, \qquad d(t) \geq \delta_0,\]
+%then
+%\begin{align*}
+%E(t) &= \iint u_+(x)u_-(y)K(x,y) \,dxdy 
+%\\ &\geq \iint u_+(x)u_-(y)\chi_{\{B_2\}}(y) K(x,y) \,dxdy
+%\\ &\geq \iint u_+(x) u_-(y)\chi_{\{B_2\}}(y) 4^{-n-s}
+%\\ &\geq C \int u_+(x) \,dx \int_{B_2} u_-(y)\,dy
+%\\ &\geq C (\delta_0 \lambda) (\mu_0 (1-2\lambda))
+%\\ &\geq C_5 \lambda,
+%\end{align*}
+%where $C_5$ depends on $\mu_0$ and $\delta_0$.  The moral is, because our energy is nonlocal, we don't need to rely on jump discontinuities.  The above calculation is the equivalent of "no jump discontinuities with finite energy", but much more quantitative and not particularly difficult.  
+%
+%Remember that $\int_{-3}^0 E \,dt \leq C_1 \lambda^2$, so by Chebyshev, 
+%\[ |[-3,0] \cap \{E(t) \geq C_5 \lambda\}| (C_5 \lambda) \leq C_1 \lambda^2.\]  If we take $\lambda$ sufficiently small, then 
+%\[ |[-3,0] \cap \{E(t) \geq C_5 \lambda\}| \leq .01.\] 
+%
+%But of course, 
+%\[ \{m \geq \mu_0\} \cap \{d \geq \delta_0\} \subseteq \{E \geq C_5 \lambda\}.\]  
+%Therefore we have the "early" and "late" sets
+%\[ \big| [-3,-2] \cap \{d \leq \delta_0\} \cap \{g \leq \gamma_0\} \big| = \big| A_e \big| \geq 0.95,\]
+%\[ \big| [-2,0] \cap \{m \leq \mu_0\} \cap \{g \leq \gamma_0\} \big| = \big| A_l \big| \geq 1.95.\]  
+%These are the good sets, the sets where $H$ is large and small respectively, and everything up till now was to show that these sets have non-zero measure.  
+%
+%Next, we'll want to show what good properties $A_e$ and $A_l$ have.  We can calculate $H$ directly,
+%\begin{align*} H(t) &\leq (2\lambda)^2 (\delta_0 + \gamma_0) \qquad \forall t \in A_e, \\
+%H(t) &\geq \lambda^2 (|B_2| - \mu_0 - \gamma_0) \qquad \forall t \in A_l.\end{align*}
+%What matters is the difference between these two values, and specifically it's very important that for $s \in A_e$, $t \in A_l$, we have $H(t) - H(s) \geq 0$.  
+%\[ H(t) - H(s) \geq \lambda^2 (|B_2| - \mu_0 - \gamma_0) - (2\lambda)^2 (\delta_0 + \gamma_0) = \lambda^2 (|B_2| - \mu_0 - 4 \delta_0 - 5 \gamma_0) > \frac{|B_2|}{2}\lambda^2.\]
+%
+%Since $H$ increases some fixed amount and has a bounded slope, it must take time to do it.  Namely, there is a set 
+%\[ D = \{t \in [-3,0] : (2\lambda)^2 (\delta_0 + \gamma_0) < H(t) < \lambda^2 (|B_2| - \mu_0 - \gamma_0) \} \]
+%of times where $H$ is between its maximum value in $A_e$ and its minimum value in $A_l$.  This set has a positive measure, independent of $\lambda$, it has measure at least
+%\[ |D| \geq \frac{|B_2|\lambda^2/2}{C_1 \lambda^2} = \frac{|B_2|}{2 C_1}. \]
+%
+%So, at first $d$ and $g$ are small (in $A_e$), later $g$ and $m$ are small (in $A_l$), and these facts put strong constraints on $H$.  In between (in $D$), $H$ doesn't satisfy these constraints, so at all times in $D$ either $g$ must be big, or else neither $d$ nor $m$ can be small.  But when $d$ and $m$ are both big then $E$ is big as well.  So at all times in $D$, either $g > \gamma_0$, or $E > C_5 \lambda$.  
+%
+%So take $\lambda$ and $\gamma$ small enough that 
+%\[ |\{g > \gamma_0\}| + |\{ E > C_5 \lambda \}| < \frac{|B_2|}{2C_1}.\]  
+%
+%This is a contradiction.  
+
+\end{proof}

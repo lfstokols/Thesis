@@ -366,15 +366,15 @@ Let $\eta, A: \R \to \R$ be any uniformly convex functions with continuous third
 
 If $s:\R \to \R$ is a shock solution to \eqref{eq:cons} with $\norm{s}_{L^\infty} \leq \eps$, then there exists a weight function $a:\R \to (0,2)$ such that $s$ is $L^2$-type stable up to a shift.  Moreover, $\norm{a-1}_{L^\infty}$ can be made arbitrarilly small by taking $\eps$ sufficiently small.  
 \end{theorem}
-Because this result holds 
+Because this result holds independently of the strength of dissipation $\nu$, the result will apply also to vanishing viscosity limit solutions to the equivalent hyperbolic conservation law.  
 
-I used the relative entropy method.  I was able to handle a wider variety of nonlinear viscosities by utilizing $\eta$ (the function appearing in the dissipative term) as the entropy.  My proof only uses one entropy for each equation, which is important if a technique is expected to generalize to systems; conservation systems typically only have a single entropy.  The result is also independent of the strength of the viscosity, meaning it is suitable for vanishing viscosity limits.  
+We use the relative entropy method.  We are able to handle a wider variety of nonlinear viscosities by utilizing $\eta$ (the function appearing in the dissipative term) as the entropy.  This proof only uses one entropy for each equation, which is important if a technique is expected to generalize to systems; conservation systems typically only have a single entropy.  
 
-As in previous $L^2$-type estimates, I broke up the solution $u$ into a part which is $L^\infty$ close to $s$ and an error term which may be large in $L^\infty$.  The close part is handled similarly to the existing literature, while for the error term I had to make careful use of the relationship between the dissipative term and the mass density of the derivative of the weight function $a$.  
+As in previous $L^2$-type estimates, we break up the solution $u$ into a part which is $L^\infty$ close to $s$ and an error term which may be large in $L^\infty$.  The close part is handled similarly to the existing literature, while for the error term we need to make careful use of the relationship between the dissipative term and the mass density of the derivative of the weight function $a$.  
 
 %This result is part of a rich ongoing program.  Open problems include expansions to multiple independent variables and more general flux and viscosities (particularly with higher growth rates at infinity).  This technique has already been applied to systems of conservation laws in \cite{KaVa.navier}, so this new result may translate also to the system case.  There is a possibility to handle multiple shocks in superposition, though in the viscous case there is significant work to be done understanding how shocks interact as they cross one another; recall that the relative motion of shocks is complex due to the Rankine-Hugoniot condition and the presence of artificial shifts.  
 
 
 \vskip.3cm
 
-Throughout this work, $C$ will represent arbitrary constants which may change from line to line.  The function space $\Ctest$ contains smooth functions with compact support.  We will use the notation $(x)_+ := \max(0,x)$.  When the parentheses are ommited, the subscript~$+$ is merely a label. 
+\textbf{Notation. } Throughout this work, $C$ will represent arbitrary constants which may change from line to line.  The function space $\Ctest$ contains smooth functions with compact support.  We will use the notation $(x)_+ := \max(0,x)$.  When the parentheses are ommited, the subscript~$+$ is merely a label. 

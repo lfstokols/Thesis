@@ -13,27 +13,27 @@
 \contentsline {section}{\numberline {2.4}De Giorgi's second lemma}{35}%
 \contentsline {section}{\numberline {2.5}Transporting improvement forwards in time}{41}%
 \contentsline {section}{\numberline {2.6}Proof of the main theorem}{44}%
-\contentsline {chapter}{Chapter 3.\hspace *{1em}Alternative Formulation of Isoperimetric Lemma}{55}%
-\contentsline {chapter}{Chapter 4.\hspace *{1em}kinetic}{61}%
-\contentsline {section}{\numberline {4.1}Introduction}{61}%
-\contentsline {section}{\numberline {4.2}Preliminary Lemmas}{68}%
-\contentsline {section}{\numberline {4.3}First De Giorgi Lemma}{77}%
-\contentsline {section}{\numberline {4.4}Second De Giorgi Lemma}{85}%
-\contentsline {section}{\numberline {4.5}H\"{o}lder Continuity}{99}%
-\contentsline {chapter}{Chapter 5.\hspace *{1em}SQG}{106}%
-\contentsline {section}{\numberline {5.1}Preliminaries}{106}%
-\contentsline {section}{\numberline {5.2}Properties of the Fractional Dirichlet Laplacian}{115}%
-\contentsline {section}{\numberline {5.3}Existence of suitable solutions}{124}%
-\contentsline {section}{\numberline {5.4}Littlewood-Paley Theory}{135}%
-\contentsline {section}{\numberline {5.5}De Giorgi Estimates}{141}%
-\contentsline {section}{\numberline {5.6}A Decrease in Oscillation}{153}%
-\contentsline {section}{\numberline {5.7}H\"{o}lder Continuity}{159}%
-\contentsline {chapter}{Chapter 6.\hspace *{1em}conservation}{168}%
-\contentsline {section}{\numberline {6.1}Time derivative}{172}%
-\contentsline {section}{\numberline {6.2}Lemmas}{176}%
-\contentsline {section}{\numberline {6.3}Functional Estimates}{182}%
-\contentsline {section}{\numberline {6.4}Proof of Main Theorem}{192}%
-\contentsline {chapter}{Appendix}{196}%
-\contentsline {section}{\numberline {0.1}Technical Lemmas for Chapter 4\hbox {}}{197}%
-\contentsline {section}{\numberline {0.2}Technical Lemmas for Chapter 5\hbox {}}{201}%
-\contentsline {chapter}{Bibliography}{208}%
+\contentsline {chapter}{Chapter 3.\hspace *{1em}kinetic}{55}%
+\contentsline {section}{\numberline {3.1}Introduction}{55}%
+\contentsline {section}{\numberline {3.2}Preliminary Lemmas}{62}%
+\contentsline {section}{\numberline {3.3}First De Giorgi Lemma}{71}%
+\contentsline {section}{\numberline {3.4}Second De Giorgi Lemma}{79}%
+\contentsline {section}{\numberline {3.5}H\"{o}lder Continuity}{93}%
+\contentsline {chapter}{Chapter 4.\hspace *{1em}SQG}{100}%
+\contentsline {section}{\numberline {4.1}Preliminaries}{100}%
+\contentsline {section}{\numberline {4.2}Properties of the Fractional Dirichlet Laplacian}{109}%
+\contentsline {section}{\numberline {4.3}Existence of suitable solutions}{118}%
+\contentsline {section}{\numberline {4.4}Littlewood-Paley Theory}{129}%
+\contentsline {section}{\numberline {4.5}De Giorgi Estimates}{135}%
+\contentsline {section}{\numberline {4.6}A Decrease in Oscillation}{147}%
+\contentsline {section}{\numberline {4.7}H\"{o}lder Continuity}{153}%
+\contentsline {chapter}{Chapter 5.\hspace *{1em}conservation}{162}%
+\contentsline {section}{\numberline {5.1}Time derivative}{166}%
+\contentsline {section}{\numberline {5.2}Lemmas}{170}%
+\contentsline {section}{\numberline {5.3}Functional Estimates}{176}%
+\contentsline {section}{\numberline {5.4}Proof of Main Theorem}{186}%
+\contentsline {chapter}{Appendices}{190}%
+\contentsline {section}{\numberline {.1}Isoperimetric Inequality for low-order diffusion}{191}%
+\contentsline {section}{\numberline {.2}Technical Lemmas for Chapter 3\hbox {}}{198}%
+\contentsline {section}{\numberline {.3}Technical Lemmas for Chapter 4\hbox {}}{202}%
+\contentsline {chapter}{Bibliography}{209}%
