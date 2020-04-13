@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  12 APR 2020 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  13 APR 2020 01:54
 entering extended mode
 **./StokolsThesis.tex
 (StokolsThesis.tex
@@ -515,11 +515,11 @@ Package pdftex.def Info: NFP-diagram-Cone.pdf  used on input line 43.
 (chapter-HamJac.aux) (chapter-kinetic.aux) (chapter-SQG.aux)
 (chapter-conservation.aux) (chapter-CCVrewrite.aux) (appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 3865 strings out of 480897
- 54610 string characters out of 2898199
- 300514 words of memory out of 3000000
- 19634 multiletter control sequences out of 15000+200000
- 544768 words of font info for 72 fonts, out of 3000000 for 9000
+ 3883 strings out of 480897
+ 54860 string characters out of 2898199
+ 300502 words of memory out of 3000000
+ 19649 multiletter control sequences out of 15000+200000
+ 548261 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,16n,27p,1442b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users
@@ -550,7 +550,7 @@ pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/euler/eusm10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfsto/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on StokolsThesis.pdf (231 pages, 906634 bytes).
+Output written on StokolsThesis.pdf (231 pages, 907562 bytes).
 PDF statistics:
  883 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
