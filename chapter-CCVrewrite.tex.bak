@@ -306,140 +306,124 @@ In chapter~\ref{ch:kinetic}, we utilize the approach outlined above, using a com
 %-------------%-------------%  Proof with compactness   %-------------%-------------%-------------%-------------
 %-------------%-------------%-------------%-------------%-------------%-------------%-------------%-------------
 
-%\begin{lemma}[Isoperimetric Inequality for \cite{CaChVa.nio}]
-%Let $\Lambda$ be the given constant in condition \eqref{CCV-coercivity for K} and $\delta$ the constant defined in Corollary 3.3 of \cite{CaChVa.nio}, and let $X$ be a compact subset of $L^2([-3,0]\times\R^d)$.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $d$, $\Lambda$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying $u \in X$ and 
-%\begin{equation} \label{CCV-pointwise bound}
-%u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, 
-%\end{equation}
-%\[ \abs{\{u < \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
-%and
-%\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta. \]
-%Then
-%\[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} \geq \gamma. \]
-%\end{lemma}
-%Note that this statement is slightly reformulated from that found in \cite{CaChVa.nio} for simpler notation in the following proof.  Where they differ, the formulation given here makes a slightly stronger claim than the original.  
-%
-%\begin{proof}
-%Suppose that the lemma is false.  Then there must exist a sequence of solutions $u_k \in X$ which satisfy
-%\begin{equation} \label{CCV-pointwise bound k}
-%u(t,x) \leq 1 + \psi_{1/k}(x) \qquad \textrm{on } [-3,0]\times\R^d, 
-%\end{equation}
-%\[ \abs{\{u < 0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
-%and
-%\[ \abs{\{u > 1 + (1/k)F\} \cap (-2,0)\times B_3} \leq \delta, \]
-%but
-%\[ \abs{\{\phi_0 < u < 1 + (1/k)F\} \cap (-3,0)\times B_3} \leq 1/k. \]
-%
-%Since $u_k \in X$ a compact set, we have $u_k \to u_\infty$ converging up to a subsequence in $L^2([-3,0]\times\R^d)$.  
-%
-%%Consider the sequence $w_k := (u_k - \phi_0)_+$.  By \eqref{CCV-pointwise bound k}, we know $w_k = (u_k - \psi_1 - F)_+$ because both vanish on $|x|>3$.  Using \eqref{CCV-energy inequality generic}, we see that $\ddt \int $
-%
-%Define the following set-valued functions:
-%\begin{align*}
-%A_0(t) &= \{x\in B_1: u_\infty(x,t) \leq \phi_0(x)\} \\
-%A_{1/2}(t) &= \{x\in \R^d: \phi_0 < u_\infty(x,t) < \phi_1 \} \\
-%A_1(t) &= \{x\in \R^d: \phi_1 \leq u_\infty(x,t)\}.
-%\end{align*}
-%Clearly $A_{1/2}(t) = 0$ for all $t \in [-3,0]$.  Moreover, $|A_0(t)| + |A_1(t)| \geq |B_1|$ for all $t$.  By assumption, we must have $\int_{-3}^{-2} |A_0(t)|dt \geq |B_1|$ and $\int_{-2}^0 |A_1(t)|dt \geq \delta$.  From the assumption \eqref{CCV-pointwise bound} we know that $A_1(t) \subseteq B_3$ and of course $A_0(t) \subseteq B_1$ for all $t \in [-3,0]$.  
-%
-%By Chebyshev's inequality, for any $\alpha$ sufficiently small we have
-%\begin{equation} \label{CCV-big 99percent of the time k}\begin{aligned}
-%\abs{[-3,-2] \cap \{|A_0| > \alpha\}} &\geq 0.99, \\
-%|[-2,0] \cap \{|A_1| > \alpha\}| &\geq 1.99.
-%\end{aligned} \end{equation}
-%Choose one such $\alpha$, small enough that
-%\begin{equation} \label{CCV-asssumption on gamma_0 k}
-%5 \alpha< |B_1|.  
-%\end{equation}
-%
-%\vskip.3cm
-%
-%Let $\theta > 0$ and define
-%\[ \phi_{1/2}:= 1 + \theta F. \]
-%By the assumption \eqref{CCV-pointwise bound k}, and the fact that $\psi_{1/k} \to 0$ pointwise, we know that
-%\[ \paren{u_{\infty}-\phi_{1/2}}_+ \leq -\theta F. \]
-%
-%One can calculate that
-%\[ \iint [\phi_{1/2}(y)-\phi_{1/2}(x)]^2 K(t,x,y) = C \lambda^2  \]
-%%\[ \leq C \iint \indic{B_3}(x) [\psi_{1/3}(y)-\psi_\lambda(x)]^2 K(t,x,y) + \iint [2\lambda F(x)-2 \lambda F(y)]^2 K(t,x,y) \leq C \lambda^2 \]
-%and that
-%\begin{align*} 
-%\int \paren{u_\infty-\phi_{1/2}}_+^2 &\leq C \int (2\lambda F)^2
-%\\ &\leq C \lambda^2.
-%\end{align*}
-%
-%Therefore, by the energy inequality \eqref{CCV-energy inequality generic}, 
-%\begin{equation} \label{CCV-derivative bound} \ddt \int \paren{u_\infty-\phi_{1/2}}_+ \,dx \leq C \lambda^2 \end{equation}
-%and
-%\begin{equation} \label{CCV-energy inequality lambda^2}
-%- \int_{-3}^0 B\bracket{\paren{u_\infty-\phi_{1/2}}_+, \paren{u_\infty-\phi_{1/2}}_-} \,dt \leq C \lambda^2.
-%\end{equation}
-%
-%On the other hand, for any fixed $t \in [-3,0]$, the good term is bounded below
-%\begin{align*} 
-%-B\bracket{\paren{u-\phi_{1/2}}_+, \paren{u-\phi-{1/2}}_-} &= 2 \iint \paren{u-\phi_{1/2}}_+(x) \paren{u-\phi_{1/2}}_-(y) K(x,y)
-%\\ & \geq \iint\limits_{x,y \in B_3} \paren{u-\phi_{1/2}}_+(x) \paren{u-\phi_{1/2}}_-(y) 6^{-d-2s}
-%\\ &= C \int_{B_3} \paren{u-\phi_{1/2}}_+ \,dx \int_{B_3} \paren{u-\phi_{1/2}}_- \,dx
-%\\ &\geq C \int_{A_1} \lambda F \,dx \int_{A_0} (1-\lambda) F \,dx
-%\\ &\geq C \lambda \int_{A_1} F \,dx \int_{A_0} F \,dx.
-%\end{align*}
-%
-%Therefore, combining this with \eqref{CCV-energy inequality lambda^2} and dividing by $\lambda$, we see that
-%\begin{equation} \label{CCV-integlar form of interaction bound} \int_{-3}^0 \paren{ \int_{A_1} F \,dx \int_{A_0} F \,dx }\,dt \leq C \lambda. \end{equation}
-%Note that for any $E \subseteq B_3$, $\int_E F \geq f(|E|)$ for some monotone-increasing function $f$.%, with $f(0) = 0$.  
-%Therefore the above inequality shows that $|A_0(t)|$ and $|A_1(t)|$ cannot both be large at the same time.  
-%%In particular, there exists a quantity $e$ such that, if $T(t) \geq \tau$ and $B(t) \geq \beta$, then 
-%This is an integral bound, however, not a pointwise-in-time bound, so there may exist a singular set
-%\[ S := \{ t \in [-3,0]: |A_1|>\alpha \textrm{ and } A_0 > \alpha\}. \]
-%However, for $\alpha$ fixed, because of \eqref{CCV-integlar form of interaction bound}, Chebyshev's inequality, and the fact that $f$ is monotone increasing, we can make this singular set arbitrarily small by taking $\lambda$ very small.  In little-o notation,
-%\begin{equation} \label{CCV-small measure of overlap} 
-%|S| = o(\lambda).
-%\end{equation}
-%
-%
-%\vskip.3cm
-%
-%Now we consider the function
-%\[ H(t) := \int \paren{u(t,x) - \phi_{1/2}(x)}_+^2 \,dx. \]
-%Recall from \eqref{CCV-derivative bound} that $H'(t) \leq C \lambda^2$.  
-%
-%By dividing up the support of $\paren{u-\phi_{1/2}}_+$ into the regions $\{u \leq \phi_0\}$, $A_{1/2}$, and $A_1$, we see that
-%\[ \int_{u \leq \phi_0} \paren{u-\phi_{1/2}}_+ = 0 \]
-%\[ 0 \leq \int_{A_{1/2}} \paren{u-\phi_{1/2}}_+ \leq \lambda^2 |A_{1/2}|, \]
-%\[ \lambda^2 \bracket{|B_1| - |A_{1/2}| - |A_0|} \leq \lambda^2 |A_1| \leq \int_{\phi_1 \leq u} \paren{u-\phi_{1/2}}_+ \leq (2\lambda)^2 |A_1|. \]
-%
-%Thus 
-%\[ \lambda^2[|B_1| - |A_0| - |A_{1/2}|] \leq H(t) \leq \lambda^2 [4 |A_1| + |A_{1/2}|]. \]
-%
-%%Let $\gamma_0 > 0$ be a small constant, and assume $\tau$, $\beta$, and $\gamma_0$ are small enough that $4\tau + \gamma_0 < |B_1|-\beta-\gamma_0$.  
-%Then we can divide $[-3,0]$ into three sets,
-%\begin{align*}
-%H_0 &:= \{t: |A_1(t)|, |A_{1/2}(t)| \leq \alpha \} \subseteq \{t: H(t) \leq \lambda^2 5 \alpha \}, \\
-%H_1 &:= \{t: |A_0(t)|, |A_{1/2}(t)| \leq \alpha \} \subseteq \{t: \lambda^2[|B_1|-2\alpha] \leq H(t) \}, \\
-%H_{1/2} &:= \{t: \lambda^2 5 \alpha < H(t) < \lambda^2[|B_1|-2\alpha] \} \subseteq \{t: |A_{1/2}(t)| > \alpha \textrm{ or } \paren{|A_1(t)|, |A_0(t)| > \alpha} \}.
-%\end{align*}
-%Note that $\lambda^2 5 \alpha < \lambda^2[|B_1|-2\alpha]$ by \eqref{CCV-asssumption on gamma_0}.  
-%
-%%The set $H_{1/2}$ cannot have large measure.  
-%%\[ H_{1/2} \subseteq \]
-%
-%Our goal now is to show that $H_{1/2}$ has large measure.  To prove this, we will use the fact that $H'$ is bounded and $H_0$, $H_1$ are non-empty.  
-%
-%The set $H_0 \cap [-3,-2]$ is nonempty, because 
-%\[ H_0 \supseteq [-3,-2] \cap \{A_0 > \alpha \} \cap S^\complement \cap \{A_{1/2} > \alpha \}^\complement. \]
-%But by the assumptions \eqref{CCV-big 99percent of the time}, \eqref{CCV-big 99percent M}, and \eqref{CCV-small measure of overlap} we can say $|H_0| \geq .99-.01-|S| > 0$ for $\lambda$ sufficiently small.  
-%We argue similarly for 
-%\[ H_1 \supseteq [-2,0] \cap \{A_1 > \alpha \} \cap S^\complement \cap \{A_{1/2} > \alpha \}^\complement \]
-%that $H_1 \cap [-2,0] \neq \emptyset$.  
-%
-%We have shown that there exist points $s \in H_0$ and $t \in H_1$ such that $s < t$.  Because $H' \leq C \lambda^2$ by \eqref{CCV-derivative bound}, we know by elementary calculus that
-%\[ \abs{H_{1/2}} \geq \frac{\lambda^2[|B_1|-2\alpha] - \lambda^2 5 \alpha }{\sup H'} \geq \frac{\lambda^2[|B_1| - 7\alpha }{C \lambda^2} = \bar{C}. \]
-%Note that $\bar{C}$ depends on $\alpha$ but not on $\lambda$.  
-%
-%Recall that $H_{1/2} \subseteq \{A_{1/2} > \alpha \} \cup S$.  Therefore
-%\[ \abs{\{A_{1/2} > \alpha\}} \geq \bar{C} - |S|. \]
-%Because $|S|$ is arbitrarily small by \eqref{CCV-small measure of overlap}, and because
-%\[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} = \int_{-3}^0 |A_{1/2}(t)| \,dt \geq \alpha \abs{\{|A_{1/2} > \alpha \}}, \]
-%the proof is complete.  
-%
-%\end{proof}
+\begin{lemma}[Isoperimetric Inequality for \cite{CaChVa.nio}]
+Let $\Lambda$ be the given constant in condition \eqref{CCV-coercivity for K} and $\delta$ the constant defined in Corollary 3.3 of \cite{CaChVa.nio}, and let $X$ be a compact subset of $L^2([-3,0]\times\R^d)$.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $d$, $\Lambda$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying $u \in X$ and 
+\begin{equation} \label{CCV-pointwise bound}
+u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, 
+\end{equation}
+\[ \abs{\{u < \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
+and
+\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta. \]
+Then
+\[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} \geq \gamma. \]
+\end{lemma}
+Note that this statement is slightly reformulated from that found in \cite{CaChVa.nio} for simpler notation in the following proof.  Where they differ, the formulation given here makes a slightly stronger claim than the original.  
+
+\begin{proof}
+Suppose that the lemma is false.  Then there must exist a sequence of solutions $u_k \in X$ which satisfy
+\begin{equation} \label{CCV-pointwise bound k}
+u(t,x) \leq 1 + \psi_{1/k}(x) \qquad \textrm{on } [-3,0]\times\R^d, 
+\end{equation}
+\[ \abs{\{u < 0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
+and
+\[ \abs{\{u > 1 + (1/k)F\} \cap (-2,0)\times B_3} \leq \delta, \]
+but
+\[ \abs{\{\phi_0 < u < 1 + (1/k)F\} \cap (-3,0)\times B_3} \leq 1/k. \]
+
+Since $u_k \in X$ a compact set, we have $u_k \to u_\infty$ converging up to a subsequence in $L^2([-3,0]\times\R^d)$.  Notice that for any $(t,x) \in [-3,0]\times B_3$ either $u_\infty(t,x) \leq 1-F(x)$ or else $u_\infty(t,x) = 1$.  
+
+%Consider the sequence $w_k := (u_k - \phi_0)_+$.  By \eqref{CCV-pointwise bound k}, we know $w_k = (u_k - \psi_1 - F)_+$ because both vanish on $|x|>3$.  Using \eqref{CCV-energy inequality generic}, we see that $\ddt \int $
+
+Define the following set-valued functions:
+\begin{align*}
+A_0(t) &= \{x\in B_1: u_\infty(x,t) \leq \phi_0(x)\} \\
+A_{1/2}(t) &= \{x\in \R^d: \phi_0 < u_\infty(x,t) < \phi_1 \} \\
+A_1(t) &= \{x\in \R^d: 1 \leq u_\infty(x,t)\}.
+\end{align*}
+Clearly $A_{1/2}(t) = 0$ for all $t \in [-3,0]$.  Moreover, $|A_0(t)| + |A_1(t)| \geq |B_1|$ for all $t$.  By assumption, we must have $\int_{-3}^{-2} |A_0(t)|dt \geq |B_1|$ and $\int_{-2}^0 |A_1(t)|dt \geq \delta$.  From the assumption \eqref{CCV-pointwise bound} we know that $A_1(t) \subseteq B_3$ and of course $A_0(t) \subseteq B_1$ for all $t \in [-3,0]$.  
+
+By Chebyshev's inequality, for any $\alpha$ sufficiently small we have
+\begin{equation} \label{CCV-big 99percent of the time k}\begin{aligned}
+\abs{[-3,-2] \cap \{|A_0| > \alpha\}} &\geq 0.99, \\
+|[-2,0] \cap \{|A_1| > \alpha\}| &\geq 1.99.
+\end{aligned} \end{equation}
+Choose one such $\alpha$, small enough that
+\begin{equation} \label{CCV-asssumption on gamma_0 k}
+5 \alpha< |B_1|.  
+\end{equation}
+
+\vskip.3cm
+
+Let $\theta > 0$ and define
+\[ \phi_{1/2}:= \psi_\theta + \theta F. \]
+Because $\phi_0 \leq \phi_{1/2}$ for $k$ sufficiently large, we know that $u_\infty \geq \phi_{1/2}$ only when $u_\infty = 1$.  Therefore
+\[ \paren{u_{\infty}-\phi_{1/2}}_+ = - \theta F \indic{A_1}. \]
+
+One can calculate that
+\[ \iint [\phi_{1/2}(y)-\phi_{1/2}(x)]^2 K(t,x,y) = C \theta^2  \]
+%\[ \leq C \iint \indic{B_3}(x) [\psi_{1/3}(y)-\psi_\lambda(x)]^2 K(t,x,y) + \iint [2\lambda F(x)-2 \lambda F(y)]^2 K(t,x,y) \leq C \lambda^2 \]
+and that for any $k$ sufficiently large
+\begin{align*} 
+\int \paren{u_k-\phi_{1/2}}_+^2 &\leq C \int (\theta F)^2
+\\ &= C \theta^2.
+\end{align*}
+
+Therefore, by the energy inequality \eqref{CCV-energy inequality generic}, for all $k$ sufficiently large we have
+\[ \ddt \int \paren{u_k-\phi_{1/2}}_+ \,dx \leq C \theta^2 \]
+which implies, since $u_k \to u_\infty$ in $L^2$,
+\begin{equation} \label{CCV-derivative bound limit} 
+\ddt \int \paren{u_\infty-\phi_{1/2}}_+ \,dx \leq C \theta^2.
+\end{equation}
+In the same manner, we know
+\begin{equation} \label{CCV-energy inequality good term k}
+- \int_{-3}^0 B\bracket{\paren{u_k-\phi_{1/2}}_+, \paren{u_k-\phi_{1/2}}_-} \,dt \leq C \theta^2.
+\end{equation}
+
+On the other hand, for any fixed $t \in [-3,0]$ and $k$ sufficiently large, the good term is bounded below
+\begin{align*} 
+-B\bracket{\paren{u_k-\phi_{1/2}}_+, \paren{u_k-\phi-{1/2}}_-} &= 2 \iint \paren{u_k-\phi_{1/2}}_+(x) \paren{u_k-\phi_{1/2}}_-(y) K(x,y)
+\\ & \geq \iint\limits_{x,y \in B_3} \paren{u_k-\phi_{1/2}}_+(x) \paren{u_k-\phi_{1/2}}_-(y) 6^{-d-2s}
+\\ &= C \int_{B_3} \paren{u_k-\phi_{1/2}}_+ \,dx \int_{B_3} \paren{u_k-\phi_{1/2}}_- \,dx.  
+%\\ &\geq C \int_{A_1} \lambda |F| \,dx \int_{A_0} (1-\lambda) |F| \,dx
+%\\ &\geq C \lambda \int_{A_1} |F| \,dx \int_{A_0} |F| \,dx.
+\end{align*}
+
+Because $u_k \to u_\infty$ strongly in $L^2$, we can take a limit of this bilinear expression and obtain, using \eqref{CCV-energy inequality good term k},
+\begin{equation}
+\int_{-3}^0 \paren{ \int_{B_3} \paren{u_\infty-\phi_{1/2}}_+ \,dx \int_{B_3} \paren{u_\infty-\phi_{1/2}}_- \,dx} \leq C \theta^2.  
+\end{equation} 
+
+Note that
+\[ \int_{B_3} \paren{u_\infty-\phi_{1/2}}_+ = \theta \int_{A_1} |F| \geq \theta f(|A_1|) \]
+for $f$ some explicit monotone-increasing function, and similarly
+\[ \int_{B_3} \paren{u_\infty-\phi-{1/2}}_- \geq (1-\theta) \int_{A_0} |F| \geq f(|A_0|). \]
+
+Therefore, we have $\int_{-3}^0 f(|A_1|) f(|A_0|) \,dt \leq C \theta$ and we conclude that $|A_1|$ and $|A_0|$ are not often simultaneously large, especially as $\theta$ decreases.  Explicitly, if we define a set of singular times
+\[ S := \{ t \in [-3,0]: |A_1|>\alpha \textrm{ and } A_0 > \alpha\} \]
+then, in little-o notation,
+\begin{equation} \label{CCV-small measure of overlap limit} 
+|S| = o(\theta).
+\end{equation}
+
+
+\vskip.3cm
+
+Now we consider the function
+\[ H(t) := \int \paren{u_\infty(t,x) - \phi_{1/2}(x)}_+^2 \,dx = \theta^2 \int_{A_1(t)} F(x)^2 \,dx. \]
+Recall from \eqref{CCV-derivative bound limit} that $H'(t) \leq C \theta^2$.  
+
+Because $|A_0| + |A_1| \geq |B_1|$ and $F(x)^2 \in [0,1]$ for all $x$,
+\[ \theta^2[|B_1| - |A_0(t)|] \leq H(t) \leq \theta^2 |A_1(t)|. \]
+In particular, if $|A_1| < \alpha$ then $H(t) \leq \theta^2 \alpha$, and if $|A_0| < \alpha$ then $H(t) \geq \theta^2[|B_1|-\alpha]$.  By assumption \eqref{CCV-asssumption on gamma_0 k}, $\theta^2 \alpha < \theta^2 [|B_1|-\alpha]$.  
+
+Therefore $H(t)$ can only be in the range $(\theta^2 \alpha, \theta^2[|B_1|-\alpha])$ when $|A_0(t)|$ and $|A_1(t)|$ are both greater than $\alpha$, i.e. when $t \in S$.  As we have seen in \eqref{CCV-small measure of overlap limit}, this set shrinks to zero measure as $\theta \to 0$.  
+
+By \eqref{CCV-big 99percent of the time}, there exist points $s \in [-3,-2]$ such that $|A_0(s)|>\alpha$ and hence $H(s) \leq $
+
+By \eqref{CCV-big 99percent of the time k} and \eqref{CCV-small measure of overlap limit}, there exists a point $s \in [-3,-2]$ such that $H(s) \leq \theta^2 \alpha$ because
+\[ \{H \leq \theta^2 \alpha \} \supseteq \{|A_1| \leq \alpha|\} \supseteq [-3,-2] \cap \{|A_0| > \alpha\} \cap S^\complement. \]
+Simalarly, there exists a point $t \in [-2,0]$ such that $H(t) \geq \theta^2 [|B_1|-\alpha]$.  Because $H' \leq C \lambda^2$ by \eqref{CCV-derivative bound}, we know by elementary calculus that
+\[ |S| \geq \abs{\{H \in (\theta^2 \alpha, \theta^2[|B_1|-\alpha)} \geq \frac{\theta^2[|B_1|-\alpha] - \theta^2 \alpha }{\sup H'} \geq \frac{\theta^2[|B_1| - 2\alpha] }{C \theta^2} = \bar{C}. \]
+The constant $\bar{C}$ does not depend on $\theta$, so this cannot possibly be true for all $\theta$.  This is a contradiction.  
+
+\end{proof}
