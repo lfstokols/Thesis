@@ -34,6 +34,6 @@
 \contentsline {section}{\numberline {5.4}Proof of Main Theorem}{186}%
 \contentsline {chapter}{Appendices}{190}%
 \contentsline {section}{\numberline {.1}Isoperimetric Inequality for low-order diffusion}{191}%
-\contentsline {section}{\numberline {.2}Technical Lemmas for Chapter 3\hbox {}}{198}%
-\contentsline {section}{\numberline {.3}Technical Lemmas for Chapter 4\hbox {}}{202}%
-\contentsline {chapter}{Bibliography}{209}%
+\contentsline {section}{\numberline {.2}Technical Lemmas for Chapter 3\hbox {}}{199}%
+\contentsline {section}{\numberline {.3}Technical Lemmas for Chapter 4\hbox {}}{203}%
+\contentsline {chapter}{Bibliography}{210}%

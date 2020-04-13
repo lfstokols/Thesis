@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  12 APR 2020 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  12 APR 2020 23:53
 entering extended mode
 **./StokolsThesis.tex
 (StokolsThesis.tex
@@ -485,7 +485,7 @@ Appendices.
  (chapter-CCVrewrite.tex [191
 
 ]
-Overfull \hbox (64.98242pt too wide) detected at line 122
+Overfull \hbox (64.98242pt too wide) detected at line 124
 [] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12  \
 OT1/cmr/m/n/12 )[] + [][] \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 
 [(\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12  \OT1/cmr/m/n/12 )[]\O
@@ -493,32 +493,32 @@ ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cm
 m/m/it/12  \OT1/cmr/m/n/12 )[]] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 C []
  []
 
-[192] [193] [194] [195] [196]) [197]
+[192] [193] [194] [195] [196] [197]) [198]
 \openout2 = `appendix.aux'.
 
- (appendix.tex [198
+ (appendix.tex [199
 
 
 ]
-<NFP-diagram-Cone.pdf, id=703, 550.0066pt x 347.84894pt>
+<NFP-diagram-Cone.pdf, id=706, 550.0066pt x 347.84894pt>
 File: NFP-diagram-Cone.pdf Graphic file (type pdf)
 <use NFP-diagram-Cone.pdf>
 Package pdftex.def Info: NFP-diagram-Cone.pdf  used on input line 43.
 (pdftex.def)             Requested size: 252.94499pt x 159.9753pt.
- [199 <./NFP-diagram-Cone.pdf>] [200] [201] [202] [203] [204] [205] [206] [207]
-) [208]
-(StokolsThesis.bbl [209
+ [200 <./NFP-diagram-Cone.pdf>] [201] [202] [203] [204] [205] [206] [207] [208]
+) [209]
+(StokolsThesis.bbl [210
 
 
-] [210] [211] [212] [213] [214] [215] [216] [217]
-[218] [219] [220]) [221] (StokolsThesis.aux (chapter-intro.aux)
+] [211] [212] [213] [214] [215] [216] [217] [218]
+[219] [220] [221]) [222] (StokolsThesis.aux (chapter-intro.aux)
 (chapter-HamJac.aux) (chapter-kinetic.aux) (chapter-SQG.aux)
 (chapter-conservation.aux) (chapter-CCVrewrite.aux) (appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 3866 strings out of 480897
- 54633 string characters out of 2898199
- 300527 words of memory out of 3000000
- 19635 multiletter control sequences out of 15000+200000
+ 3865 strings out of 480897
+ 54610 string characters out of 2898199
+ 300514 words of memory out of 3000000
+ 19634 multiletter control sequences out of 15000+200000
  544768 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,16n,27p,1442b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -550,9 +550,9 @@ pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/euler/eusm10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfsto/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on StokolsThesis.pdf (230 pages, 905253 bytes).
+Output written on StokolsThesis.pdf (231 pages, 906634 bytes).
 PDF statistics:
- 880 PDF objects out of 1000 (max. 8388607)
+ 883 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
