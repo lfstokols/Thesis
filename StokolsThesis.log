@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  13 APR 2020 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  14 APR 2020 02:28
 entering extended mode
 **./StokolsThesis.tex
 (StokolsThesis.tex
@@ -248,11 +248,7 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__pdf_internal_box=\box48
 ) (StokolsThesis.aux (chapter-intro.aux) (chapter-HamJac.aux)
 (chapter-kinetic.aux) (chapter-SQG.aux) (chapter-conservation.aux)
-(chapter-CCVrewrite.aux
-
-LaTeX Warning: Label `CCV-pointwise bound' multiply defined.
-
-) (appendix.aux))
+(chapter-CCVrewrite.aux) (appendix.aux))
 \openout1 = `StokolsThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 322.
@@ -489,7 +485,7 @@ Appendices.
  (chapter-CCVrewrite.tex [191
 
 ]
-Overfull \hbox (64.98242pt too wide) detected at line 124
+Overfull \hbox (64.98242pt too wide) detected at line 129
 [] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12  \
 OT1/cmr/m/n/12 )[] + [][] \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 
 [(\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12   \OML/cmm/m/it/12  \OT1/cmr/m/n/12 )[]\O
@@ -517,47 +513,44 @@ Package pdftex.def Info: NFP-diagram-Cone.pdf  used on input line 43.
 ] [215] [216] [217]
 [218] [219] [220] [221] [222] [223] [224] [225]) [226] (StokolsThesis.aux
 (chapter-intro.aux) (chapter-HamJac.aux) (chapter-kinetic.aux) (chapter-SQG.aux
-) (chapter-conservation.aux) (chapter-CCVrewrite.aux) (appendix.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+) (chapter-conservation.aux) (chapter-CCVrewrite.aux) (appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 3889 strings out of 480897
- 55045 string characters out of 2898199
- 300619 words of memory out of 3000000
- 19655 multiletter control sequences out of 15000+200000
+ 3890 strings out of 480897
+ 55067 string characters out of 2898199
+ 300590 words of memory out of 3000000
+ 19656 multiletter control sequences out of 15000+200000
  548261 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,16n,27p,2022b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcrm1200.pk> <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/es
-int/dpi720\esint10.pk><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lfsto/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lfsto/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb>
-<C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-mextra/cmex8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lfsto/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lfsto/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lfs
-to/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
-:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmss8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/lfsto/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lfsto/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
-s/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.
-pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmti8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/euler/eusm10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfsto/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on StokolsThesis.pdf (235 pages, 919223 bytes).
+ 30i,16n,27p,1877b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Use
+rs\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.p
+k> <C:\Users\lfsto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/esint/dpi720
+\esint10.pk><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbsy10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lfsto/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lfsto/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/
+lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cme
+x8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lfsto/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lfsto/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/lf
+sto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmss8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lfsto/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/lfsto/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Us
+ers/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
+8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/euler/eusm10.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfsto/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on StokolsThesis.pdf (235 pages, 918541 bytes).
 PDF statistics:
  896 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

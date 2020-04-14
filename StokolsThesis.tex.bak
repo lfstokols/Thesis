@@ -365,7 +365,7 @@ I wish to thank the multitudes of people who helped me.  \ldots
 %
 \utabstract
 \indent
-The De Giorgi method was developed in 1957 for showing continuity of non-linear elliptic problems.  In this work we will apply generalizations of that method to a variety of degenerate problems.  Such problems include first-order equations with negative viscosity, hypoelliptic equations which are elliptic in certain directions and hyperbolic in others, and transport-diffusion equations for which the diffusion and transport are equal in strength and the diffusion degenerates near the boundary.  We will also consider another problem in which energy techniques from elliptic theory can be brought to bear on a hyperbolic problem, namely the stability of shocks to conservation laws.  
+The De Giorgi method was developed in 1957 for showing continuity of non-linear elliptic problems.  In this work we will apply generalizations of that method to a variety of degenerate problems.  Such problems include first-order equations with negative viscosity, hypoelliptic equations including the nonlocal Focker-Planck equation, and transport-diffusion equations with boundary, for which the diffusion is of critical order and degenerates near the boundary.  We will also consider a separate problem in which energy techniques can be brought to bear on a hyperbolic problem, namely the stability of shocks to conservation laws.  
 
 
 

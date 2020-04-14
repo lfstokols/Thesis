@@ -93,19 +93,24 @@
 %\title{CCV 2nd De Giorgi rewrite}
 %\maketitle
 
-This chapter is based on chapter 4 of \cite{CaChVa.nio}, in which is proven an isoperimetric inequality for the equation
+The proof of the isoperimetric inequality outlined in section~\ref{sec:intro-DG outline} relies crucially on the fact that functions with finite $H^1$ norm cannot have jump discontinuities.  For the fractional heat equation
 \begin{equation} \label{eq:CCV-main}
-\del_t u + \int [u(y) - u(\cdot)] K(t,\cdot,y) \,dy = 0 
+\del_t u + (-\Laplace)^{s/2} u = 0,
 \end{equation}
-where $K$ satisfies $K(t,x,y) = K(t,y,x)$ for all $y \neq x$ and 
+this proof breaks down when $s < 1$.  This is because the natural energy inequality for this equation shows that solutions are in $H^{s/2}$, and elements of $H^{s/2}$ can have jump discontinuities whenever $s < 1$.  For example, $\indic{|x|<1} \in H^{1/4}$.  However, solutions to these low-order heat equations are in fact H\"{o}lder continuous.  This is shown, for example, by Caffarelli, Chan, and Vasseur in \cite{CaChVa.nio} using the De Giorgi method.  The technique they use is based instead on the nonlocality of $(-\Laplace)^{s/2}$.  In fact, the technique will work for any $s \in (0,2)$.  
+
+This technique originated in the work of Bass and Kassmann in \cite{BaKa}, before being used in \cite{CaChVa.nio} and later in \cite{St.hypo} (which is contained in the present work as chapter~\ref{ch:kinetic}, c.f. proposition \eqref{thm:DG2.kinetic} step 3).  
+
+Because this technique has the potential to be utilized in a wide variety of circumstances, we will present two versions of the method in its simplest possible context.  
+
+\vskip.3cm
+
+Recall that
 \begin{equation} \label{CCV-coercivity for K} 
-\indic{|x-y| \leq 3} \frac{1-s/2}{\Lambda} |x-y|^{-(d+s)} \leq K(t,x,y) \leq (1-s/2)\Lambda |x-y|^{-(d+s)}. 
+(-\Laplace)^{s/2} u(x) := \int c_{d,s} \frac{[u(x)-u(y)]}{|x-y|^{d+s}} \,dy.
 \end{equation}
-This singular integral operator is comparable to $(-\Laplace)^s$, where $s$ is a parameter in $(0,1)$.  The natural energy inequality for this equation shows that $(w-k)_+$ will generally be an element of $H^{s/2}$.  However, because in general functions in $H^{s/2}$ are allowed to have jump discontinuities for $s \leq 1$, the method outlined in chapter~\ref{ch:intro} is not suitable.  That method relies pivotally on the fact that $H^1$ functions cannot have jump discontinuities, and so fails whenever the dissipation of an equation is driven by $(-\Laplace)^s$ with $s < 1$.  
 
-This fundamentally nonlocal proof of the isoperimetric inequality was first used by Bass and Kassmann in \cite{BaKa}, and thereafter by Caffarelli, Chan, and Vasseur in \cite{CaChVa.nio}, and by the author in \cite{St.hypo}.  Because this technique has the potential to be utilized in a wide variety of circumstances, we will present a new formulation of the technique in the simplest possible context.  
-
-As in \cite{CaChVa.nio}, we will use the notation
+We will use the following notation, modelled after \cite{CaChVa.nio}:
 \begin{align*}
 B[u,v] &:= \int_{\R^d} \int_{\R^d} K(t,x,y) [u(x)-u(y)] [v(x)-v(y)] \,dxdy, \\
 %\psi_1(x) &:= 1 + (|x|^{s/2} - 1)_+, \\
@@ -123,21 +128,21 @@ It is proven in \cite{CaChVa.nio} that for $u$ solving \eqref{eq:CCV-main} with 
 \ddt \int (u - \psi)_+^2 + \norm{(u-\psi)_+}^2_{H^{s/2}(\R^d)} - B[(u-\psi)_+,(u-\psi)_-] \leq C \bracket{\int (u-\psi)_+^2 + \iint \indic{u-\psi_1 > 0}(x)[\psi(y)-\psi(x)]^2 \,dxdy }
 \end{equation}
 
-
-
-Lemma 4.1 in \cite{CaChVa.nio} states
+The following lemma is equivalent to Lemma 4.1 in \cite{CaChVa.nio}.  
 \begin{lemma}[Isoperimetric Inequality for \cite{CaChVa.nio}]
-Let $\Lambda$ be the given constant in condition \eqref{CCV-coercivity for K} and $\delta$ the constant defined in Corollary 3.3 of \cite{CaChVa.nio}.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $d$, $\Lambda$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying
+Let $\delta>0$ be a constant, $s \in (0,2)$ and $d \in \N$.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $\delta$, $d$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying
 \begin{equation} \label{CCV-pointwise bound}
 u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, 
 \end{equation}
 \[ \abs{\{u < \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
 and
-\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta. \]
-Then
+\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta, \]
+we have
 \[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} \geq \gamma. \]
 \end{lemma}
-Note that this statement is slightly reformulated from that found in \cite{CaChVa.nio} for simpler notation in the following proof.  Where they differ, the formulation given here makes a slightly stronger claim than the original.  
+%Note that this statement is slightly reformulated from that found in \cite{CaChVa.nio} for simpler notation in the following proof.  Where they differ, the formulation given here makes a slightly stronger claim than the original.  
+
+The proof follows three steps: first we consider, at each time-slice, the sets where $u$ is above $\phi_1$, below $\phi_0$, and between the two.  Second we use an intermediate cutoff between $\phi_0$ and $\phi_1$, together with the energy inequality, to show that the derivative of a certain function $H$ is bounded above, and also the energy $B[u_+,u_-]$ corresponding to the interaction between small and large values of $u$ is bounded above.  Third, we combine these facts to find a large set of times where $u$ is between $\phi_0$ and $\phi_1$.  
 
 \begin{proof}
 Define the following set-valued functions:
@@ -214,12 +219,12 @@ Now we consider the function
 \[ H(t) := \int \paren{u(t,x) - \phi_{1/2}(x)}_+^2 \,dx. \]
 Recall from \eqref{CCV-derivative bound} that $H'(t) \leq C \lambda^2$.  
 
-By dividing up the support of $\paren{u-\phi_{1/2}}_+$ into the regions $\{u \leq \phi_0\}$, $A_{1/2}$, and $A_1$, we see that
-\[ \int_{u \leq \phi_0} \paren{u-\phi_{1/2}}_+ = 0 \]
-\[ 0 \leq \int_{A_{1/2}} \paren{u-\phi_{1/2}}_+ \leq \lambda^2 |A_{1/2}|, \]
-\[ \lambda^2 \bracket{|B_1| - |A_{1/2}| - |A_0|} \leq \lambda^2 |A_1| \leq \int_{\phi_1 \leq u} \paren{u-\phi_{1/2}}_+ \leq (2\lambda)^2 |A_1|. \]
-
-Thus 
+By dividing up the support of $\paren{u-\phi_{1/2}}_+$ into the regions $A_0$, $A_{1/2}$, $A_1$, and $\{u \leq \phi_0\} \setminus B_1$, we see that
+%\[ \int_{u \leq \phi_0} \paren{u-\phi_{1/2}}_+ = 0 \]
+%\[ 0 \leq \int_{A_{1/2}} \paren{u-\phi_{1/2}}_+ \leq \lambda^2 |A_{1/2}|, \]
+%\[ \lambda^2 \bracket{|B_1| - |A_{1/2}| - |A_0|} \leq \lambda^2 |A_1| \leq \int_{\phi_1 \leq u} \paren{u-\phi_{1/2}}_+ \leq (2\lambda)^2 |A_1|. \]
+%
+%Thus 
 \[ \lambda^2[|B_1| - |A_0| - |A_{1/2}|] \leq H(t) \leq \lambda^2 [4 |A_1| + |A_{1/2}|]. \]
 
 %Let $\gamma_0 > 0$ be a small constant, and assume $\tau$, $\beta$, and $\gamma_0$ are small enough that $4\tau + \gamma_0 < |B_1|-\beta-\gamma_0$.  
@@ -262,21 +267,7 @@ the proof is complete.
 
 
 
-%This proof can be simplified under the additional assumption that $\norm{\del_t u}_{L^2}$ is bounded.  
-%
-%\begin{proof}
-%Suppose for contradiction that this lemma were false.  Then there would exist a sequence $u_k$ of solutions to \eqref{eq:CCV-main} satisfying 
-%\begin{equation} \label{CCV-pointwise bound k}
-%u(t,x) \leq 1 + \psi_{1/k}(x) \qquad \textrm{on } [-3,0]\times\R^d, 
-%\end{equation}
-%\[ \abs{\{u < 0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
-%and
-%\[ \abs{\{u > 1 + (1/k)F\} \cap (-2,0)\times B_3} \leq \delta, \]
-%but
-%\[ \abs{\{\phi_0 < u < 1 + (1/k)F\} \cap (-3,0)\times B_3} \leq 1/k. \]
-%
-%Consider the sequence $w_k := (u_k - \phi_0)_+$.  By \eqref{CCV-pointwise bound k}, we know $w_k = (u_k - \psi_1 - F)_+$ because both vanish on $|x|>3$.  Using \eqref{CCV-energy inequality generic}, we see that $\ddt \int $
-%\end{proof}
+Note that the above proof is constructive, i.e. $\gamma$ and $\lambda$ can in principle be calculated explicitly.  
 
 Compare this proof to the standard De Giorgi argument, applicable when $s > 1$.  
 
@@ -286,38 +277,23 @@ Such a result is usually utilized in a proof of an isoperimetric inequality for 
 
 Using such a compactness result, and with such a strengthened assumption, we could assume for contradiction that no such $\gamma$ exists, then find a limit function $u_\infty$ which would have all the properties of $u$ used in this proof, but with the additional property that $A_{1/2}(t) = \emptyset$ for all $t \in [-3,0]$.  
 
-In the case $s > 1$, because $H^{s/2}$ functions cannot have jump discontinuities, we would immediately conclude that $S = \emptyset$ as well.  This would of course simplify the proof significantly.  Even for $s > 1$, the constructive proof is valid.  
+In the case $s > 1$, because $H^{s/2}$ functions cannot have jump discontinuities, we would immediately conclude that $S = \emptyset$ as well.  This would of course simplify the proof significantly.  However, because compactness is used, the proof is no longer constructive.  
 
-In chapter~\ref{ch:kinetic}, we utilize the approach outlined above, using a compactness result to show $A_{1/2}(t) = 0$ for all $t$.  
-
-
-
-
-
-
-
-
-
-
-
-
+In chapter~\ref{ch:kinetic}, this combined approach in used to prove the isoperimetric inequality.  To illustrate the method, we apply this method below to prove a toy lemma.  
 
 %-------------%-------------%-------------%-------------%-------------%-------------%-------------%-------------
 %-------------%-------------%  Proof with compactness   %-------------%-------------%-------------%-------------
 %-------------%-------------%-------------%-------------%-------------%-------------%-------------%-------------
 
-\begin{lemma}[Isoperimetric Inequality for \cite{CaChVa.nio}]
-Let $\Lambda$ be the given constant in condition \eqref{CCV-coercivity for K} and $\delta$ the constant defined in Corollary 3.3 of \cite{CaChVa.nio}, and let $X$ be a compact subset of $L^2([-3,0]\times\R^d)$.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $d$, $\Lambda$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying $u \in X$ and 
-\begin{equation} \label{CCV-pointwise bound}
-u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, 
-\end{equation}
+\begin{lemma}[Isoperimetric Inequality]
+Let $\delta>0$ be a constant, $s \in (0,2)$, $d \in \N$, and let $X$ be a compact subset of $L^2([-3,0]\times\R^d)$.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $\delta$, $d$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying $u \in X$, 
+\[ u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, \]
 \[ \abs{\{u < \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
 and
-\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta. \]
-Then
+\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta, \]
+we have
 \[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} \geq \gamma. \]
 \end{lemma}
-Note that this statement is slightly reformulated from that found in \cite{CaChVa.nio} for simpler notation in the following proof.  Where they differ, the formulation given here makes a slightly stronger claim than the original.  
 
 \begin{proof}
 Suppose that the lemma is false.  Then there must exist a sequence of solutions $u_k \in X$ which satisfy
@@ -330,17 +306,17 @@ and
 but
 \[ \abs{\{\phi_0 < u < 1 + (1/k)F\} \cap (-3,0)\times B_3} \leq 1/k. \]
 
-Since $u_k \in X$ a compact set, we have $u_k \to u_\infty$ converging up to a subsequence in $L^2([-3,0]\times\R^d)$.  Notice that for any $(t,x) \in [-3,0]\times B_3$ either $u_\infty(t,x) \leq 1-F(x)$ or else $u_\infty(t,x) = 1$.  
+Since $u_k \in X$ a compact set, we have $u_k \to u_\infty$ converging up to a subsequence in $L^2([-3,0]\times\R^d)$.  Notice that for any $(t,x) \in [-3,0]\times B_3$ either $u_\infty(t,x) \leq 1+F(x)$ or else $u_\infty(t,x) = 1$.  
 
 %Consider the sequence $w_k := (u_k - \phi_0)_+$.  By \eqref{CCV-pointwise bound k}, we know $w_k = (u_k - \psi_1 - F)_+$ because both vanish on $|x|>3$.  Using \eqref{CCV-energy inequality generic}, we see that $\ddt \int $
 
 Define the following set-valued functions:
 \begin{align*}
-A_0(t) &= \{x\in B_1: u_\infty(x,t) \leq \phi_0(x)\} \\
-A_{1/2}(t) &= \{x\in \R^d: \phi_0 < u_\infty(x,t) < \phi_1 \} \\
-A_1(t) &= \{x\in \R^d: 1 \leq u_\infty(x,t)\}.
+A_0(t) &= \{x\in B_1: u_\infty(x,t) \leq 0\} \\
+%A_{1/2}(t) &= \{x\in \R^d: 1+F < u_\infty(x,t) < 1 \} \\
+A_1(t) &= \{x\in B_3: u_\infty(x,t) = 1 \}.
 \end{align*}
-Clearly $A_{1/2}(t) = 0$ for all $t \in [-3,0]$.  Moreover, $|A_0(t)| + |A_1(t)| \geq |B_1|$ for all $t$.  By assumption, we must have $\int_{-3}^{-2} |A_0(t)|dt \geq |B_1|$ and $\int_{-2}^0 |A_1(t)|dt \geq \delta$.  From the assumption \eqref{CCV-pointwise bound} we know that $A_1(t) \subseteq B_3$ and of course $A_0(t) \subseteq B_1$ for all $t \in [-3,0]$.  
+Clearly we have $|A_0(t)| + |A_1(t)| \geq |B_1|$ for all $t$.  By assumption, we must have $\int_{-3}^{-2} |A_0(t)|dt \geq |B_1|$ and $\int_{-2}^0 |A_1(t)|dt \geq \delta$.  
 
 By Chebyshev's inequality, for any $\alpha$ sufficiently small we have
 \begin{equation} \label{CCV-big 99percent of the time k}\begin{aligned}
@@ -349,7 +325,7 @@ By Chebyshev's inequality, for any $\alpha$ sufficiently small we have
 \end{aligned} \end{equation}
 Choose one such $\alpha$, small enough that
 \begin{equation} \label{CCV-asssumption on gamma_0 k}
-5 \alpha< |B_1|.  
+2 \alpha< |B_1|.  
 \end{equation}
 
 \vskip.3cm
@@ -384,8 +360,6 @@ On the other hand, for any fixed $t \in [-3,0]$ and $k$ sufficiently large, the 
 -B\bracket{\paren{u_k-\phi_{1/2}}_+, \paren{u_k-\phi-{1/2}}_-} &= 2 \iint \paren{u_k-\phi_{1/2}}_+(x) \paren{u_k-\phi_{1/2}}_-(y) K(x,y)
 \\ & \geq \iint\limits_{x,y \in B_3} \paren{u_k-\phi_{1/2}}_+(x) \paren{u_k-\phi_{1/2}}_-(y) 6^{-d-2s}
 \\ &= C \int_{B_3} \paren{u_k-\phi_{1/2}}_+ \,dx \int_{B_3} \paren{u_k-\phi_{1/2}}_- \,dx.  
-%\\ &\geq C \int_{A_1} \lambda |F| \,dx \int_{A_0} (1-\lambda) |F| \,dx
-%\\ &\geq C \lambda \int_{A_1} |F| \,dx \int_{A_0} |F| \,dx.
 \end{align*}
 
 Because $u_k \to u_\infty$ strongly in $L^2$, we can take a limit of this bilinear expression and obtain, using \eqref{CCV-energy inequality good term k},
