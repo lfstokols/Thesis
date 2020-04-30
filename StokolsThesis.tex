@@ -11,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\documentclass[12pt]{report}	% The documentclass must be ``report''.
+\documentclass[11pt]{report}	% The documentclass must be ``report''.
 %\bibliographystyle{plain}
 
 \usepackage{utdiss2}  		% Dissertation package style file.
@@ -56,123 +56,7 @@
 %%%%%%%%%	Macros	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\Prj}{\mathbb{P}}
-\newcommand{\F}{\mathbb{F}}
-\newcommand{\A}{\mathbb{A}}
-\newcommand{\Four}{\mathcal{F}}
-\newcommand{\T}{\mathbb{T}}
-\newcommand{\E}{\mathcal{E}}
-\newcommand{\M}{\mathcal{M}}
-\renewcommand{\L}{\mathcal{L}}
-\newcommand{\eps}{\varepsilon}
-\newcommand{\varq}{\sigma}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
-\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
-\newcommand{\chevron}[1]{\langle #1 \rangle}
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand{\paren}[1]{\left( #1 \right)}
-\newcommand{\bracket}[1]{\left[ #1 \right]}
-\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\DeclareMathOperator{\id}{id}
-\DeclareMathOperator{\convex}{conv}
-\DeclareMathOperator{\image}{Im}
-\DeclareMathOperator{\im}{Im}
-\DeclareMathOperator{\coker}{coker}
-\DeclareMathOperator{\supp}{supp}
-\DeclareMathOperator{\trace}{tr}
-\DeclareMathOperator{\lspan}{span}
-\DeclareMathOperator{\conv}{conv} % stands for conv, as in convex hull
-\DeclareMathOperator{\Int}{int} % stands for int, as in interior of a set
-\DeclareMathOperator{\sign}{sign}
-\DeclareMathOperator{\ran}{ran}
-\DeclareMathOperator{\rank}{rank}
-%\DeclareMathOperator{\dim}{dim}
-\newcommand{\dom}{\operatorname{dom}}
-\newcommand{\cod}{\operatorname{cod}}
-\newcommand{\Hom}{\operatorname{hom}}
-\newcommand{\Ob}{\operatorname{Ob}}
-\newcommand{\cl}{\operatorname{cl}}
-\DeclareMathOperator{\BMO}{BMO}
-\DeclareMathOperator{\sgn}{sign}
-\DeclareMathOperator{\osc}{osc}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\del}{\partial}
-\newcommand{\pvec}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\grad}{\nabla}
-\newcommand{\ddt}{\frac{d}{dt}}
-\renewcommand{\div}{\operatorname{div}}
-\newcommand{\Laplace}{\Delta}
-\newcommand{\kinet}{\bracket{\del_t + v\cdot \grad_x}}
-\newcommand{\bessel}{\paren{1-\Laplace_v}}
-\newcommand{\loc}{\text{loc}}
-\newcommand{\Lip}{\text{Lip}}
-%\newcommand{\BMO}{\text{BMO}}
-\renewcommand{\Re}{\operatorname{Re}}
-\newcommand{\ddz}{\frac{d}{dz}}
-\newcommand{\strokedint}{\fint}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\into}{\hookrightarrow}
-\newcommand{\onto}{\twoheadrightarrow}
-\newcommand{\isom}{\cong}
-\newcommand{\rest}{{\upharpoonright}}
-\newcommand{\weakly}{\rightharpoonup}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\ith}{^\mathrm{th}}
-\newcommand{\n}{^{-1}}
-\newcommand{\half}{\frac{1}{2}}
-\newcommand{\transpose}{\intercal}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\indic}[1]{\chi_{\{#1\}}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\newcommand{\eigen}[1]{\eta_{#1}} %my eigenfunctions
-\newcommand{\Ctest}{C_c^\infty}
-\newcommand{\test}{\mathcal{D}}
-
-\newcommand{\ulow}{u_\ell}
-\newcommand{\uhigh}{u_h}
-\newcommand{\ulowth}[1]{\ulow^{#1}}
-\newcommand{\uhighth}[1]{\uhigh^{#1}}
-
-\newcommand{\Gammal}{\Gamma_\ell}
-
-\newcommand{\HD}{\mathcal{H}}
-\newcommand{\HDint}[2]{\int \abs{\Lambda^{#1} #2}^2}
-\newcommand{\HDinth}[1]{\HDint{1/2}{#1}}
-
-\newcommand{\Ccalib}{\kappa}
-\newcommand{\Cgamma}{C_\mathit{pth}}
-\newcommand{\Comega}{C_\mathit{dmn}}
-\newcommand{\Csuit}{C^\ast}
-
-\newcommand{\Rom}[1]{\MakeUppercase{\romannumeral #1}}
-
-\newcounter{step_count}[section]
-\newcommand{\step}[1]{\stepcounter{step_count} \smallskip \noindent{\textbf{Step \arabic{step_count}:} #1}}
-
-\newcommand{\spo}{s_-}
-\newcommand{\sne}{s_+}
-\newcommand{\yn}{y_-}
-\newcommand{\yp}{y_+}
-
-\newcommand{\Qext}{{Q_\textrm{ext}}}
-\newcommand{\Qint}{{Q_\textrm{int}}}
-\newcommand{\Qearly}{{Q_\textrm{early}}}
-\newcommand{\Qlate}{{Q_\textrm{late}}}
-\newcommand{\Rall}{\R\times\R^n\times\R^n}
-%\newcommand{\Ctest}{C_c^\infty}
-
-\newcommand{\sourceexp}{{r}}
-\newcommand{\txexp}{{p_1}}
-\newcommand{\vexp}{{p_2}}
+\include{Macros}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%	\End Macros	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -225,7 +109,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %\singlespacing
-%\oneandonehalfspacing
+\oneandonehalfspacing
 
 %\singlespacequote
 \oneandonehalfspacequote
@@ -313,7 +197,7 @@
 \makeatother		% Ends sections where @ is considered a letter.
 			% Now @ cannot be used in commands.
 
-\makeindex    % Make the index
+%\makeindex    % Make the index
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		The document starts here.			     %
@@ -354,7 +238,13 @@
 
 \begin{acknowledgments}		% Optional
 \index{Acknowledgments@\emph{Acknowledgments}}%
-I wish to thank the multitudes of people who helped me.  \ldots
+Thank you to my committee, and especially to my advisor Alexis Vasseur who has been a better mentor than I could have hoped for.  He has kept me on the right path at all times and shown me how to be a better mathematician.  
+
+Thank you to my family, Mark and Niki and Caleb and Max, for their love and support over the years.  
+
+Thank you to the UT Math community, the many graduate students who kept me sane along the way. Thank you especially to Matt Novack, Sean Carney, Dan Weser, Andy Ma, Nick Bhattacharya, and Matt Rosenzweig, Sam Krupa, and Will Golding for being excellent resources as I struggled to learn what PDE are and how in the hell they work.  
+
+Before arriving at UT, many people helped to foster my love of mathematics.  Thank you to my aunt Sindi Miller, who answered all of my questions when I was just beginning to enter the world of higher math.  Thank you to Jenny Harrison, my undergraduate advisor, who gave me so much encouragement and invited me into the vibrant and dramatic world of professional mathematics. Thank you to my high school geometry teacher Mrs. Williams who encouraged me to learn beyond the curriculum and recommended I read the life-changing book Euclid's Elements, and Dr. Alfonso Castro of Harvey Mudd who didn't brush me off when I contacted him as a high school student.  
 \end{acknowledgments}
 
 
@@ -372,8 +262,8 @@ The De Giorgi method was developed in 1957 for showing continuity of non-linear 
 \tableofcontents   % Table of Contents will be automatically
                    % generated and placed here.
 
-\listoftables      % List of Tables and List of Figures will be placed
-\listoffigures     % here, if applicable.
+%\listoftables      % List of Tables and List of Figures will be placed
+%\listoffigures     % here, if applicable.
 
 
 
@@ -411,7 +301,7 @@ The De Giorgi method was developed in 1957 for showing continuity of non-linear 
 % If you have only one appendix, use the command \appendix instead
 % of \appendices.
 %
-\appendices
+\appendix
 %\index{Appendices@\emph{Appendices}}%
 %
 \include{chapter-CCVrewrite}

@@ -1,4 +1,4 @@
-\chapter{conservation} \label{ch:conservation}
+\chapter{$L^2$-type Contraction of Shocks for Large Family of Scalar Conservation Laws} \label{ch:conservation}
 
 %\documentclass[11pt]{amsart}
 %\usepackage{amssymb,amsbsy,upref,epsf,MnSymbol}
@@ -120,6 +120,8 @@
 %\end{abstract}
 %
 %\maketitle \centerline{\date}
+
+\section{Introduction}
 
 This paper will consider 1D scalar dissipative conservation equations of the form
 \begin{equation} \label{eq:main} 
