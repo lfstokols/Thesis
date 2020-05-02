@@ -166,9 +166,9 @@
 % is a graphic format that can be processed by latex or pdflatex,
 % resp., then you can add a logo as follows:
 
-% \pgfdeclareimage[height=0.5cm]{uni_primary}{uni_primary.jpg}
-% \logo{\pgfuseimage{uni_primary}}
-% \newcommand{\nologo}{\setbeamertemplate{logo}{}}
+ \pgfdeclareimage[height=0.5cm]{uni_primary}{uni_primary.jpg}
+ \logo{\pgfuseimage{uni_primary}}
+ \newcommand{\nologo}{\setbeamertemplate{logo}{}}
 
 
 
@@ -430,7 +430,7 @@ Proof of H\"{o}lder continuity uses recursion
 \vskip.3cm
 apply two De Giorgi lemmas to rescaled solutions
 
-\includegraphics[scale=5cm]{Oscillation and Continuity.png}
+\includegraphics{Oscillation_and_Continuity}
 \end{frame}
 
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
@@ -438,13 +438,14 @@ apply two De Giorgi lemmas to rescaled solutions
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
 
 \begin{frame}{Superquadratic Hamilton-Jacobi Equation}
+\pause
 
-\[ \del_t u + |\grad u|^p - \eps \Laplace u = 0, \qquad \eps \in {0,1,-1} \]
+\[\textrm{e.g.} \qquad \del_t u + |\grad u|^p - \eps \Laplace u = 0, \qquad \eps \in \{0,1,-1\} \]
 
 \begin{itemize}
 \item First considered by Lasry and Lions ('89), Schwab ('13) [homogenization]
 \item Best known results Cardaliaguet ('09), Cannarsa and Cardaliaguet ('10), Cardaliaguet and Silvestre ('12)
-\item $\eps = 0$ cusps form, but solutions remain continuous
+\item $\eps = 0$ singularities can form, but solutions always continuous
 \item For $p > 2$, continuous even for $\eps = -1$ [first order drives regularization]
 \item Chan and Vasseur ('17) use De Giorgi for $\eps = 0$
 \end{itemize}
@@ -453,19 +454,19 @@ apply two De Giorgi lemmas to rescaled solutions
 
 %-----------------------------------------------------
 
-\begin{frame}{Superquadratic Hamilton-Jacobi}
+\begin{frame}{Superquadratic Hamilton-Jacobi Equation}
 \[ \del_t u = H\paren{t,x,u,\grad u, D^2 u}, \]
 \[ \Lambda\n |\grad u|^p - \div\paren{A \grad u} - f \leq H\paren{t,x,u,\grad u, D^2 u} \leq \Lambda |\grad u|^p - \Lambda m^-(D^2 u) + \Lambda \]
 $p > 2$, $A$ bounded unsigned matrix, $f \in L^q$, $m^-$ returns lowest negative eigenvalue
 
-\begin{theorem}
+\begin{theorem}[S., Vasseur [CMS, '18{]}]
 Solutions (in appropriate weak sense) regularize from $L^\infty(\R^+\times\R^n)$ into $C^\alpha([\eps,\infty)\times \R^n)$
 \end{theorem}
 \end{frame}
 
 %-----------------------------------------------------
 
-\begin{frame}{Proof of Superquadratic Hamilton-Jacobi}
+\begin{frame}{Superquadratic Hamilton-Jacobi: Proof}
 \begin{itemize}
 \item De Giorgi method
 \item Adapted technique of Chan, Vasseur, overcome second-order term
@@ -476,16 +477,17 @@ Solutions (in appropriate weak sense) regularize from $L^\infty(\R^+\times\R^n)$
 
 %-----------------------------------------------------
 
-\begin{frame}{Superquadratic Hamilton Jacobi}
-Begin with $p > 2$,
+\begin{frame}{Superquadratic Hamilton-Jacobi: Proof excerpt}
+\pause
+Consider
 \[ \del_t u + \abs{\grad u}^p + \Laplace u = 0. \]
-
+\pause
 Using $\varphi(t,x) (u-k)_+$ as test function, obtain energy inequality
 \[ \sup_{[-1,0]} \int_{B_1} (u-k)_+^2 + \int_{-1}^0 \int_{B_1} (u-k)_+ \abs{\grad (u-k)_+}^p \]
 \[ \lesssim \int_{-2}^0 \int_{B_2} (u-k)_+^2 + \int_{-2}^0 \int_{B_2} \abs{\grad (u-k)_+}^2 \]
-
-Want to show, for some $q > 2$, on $Q_1 = [-1,0]\times B_1$,
-\[ \norm{(u-1)_+}_{L^q(Q_1)} \lesssim \norm{(u)_+}_{L^\infty(L^2)(Q_1)} + \norm{(u)_+ |\grad (u)_+|^p}_{L^1(Q_1)}. \]
+\pause
+Want to show, on $Q_1 = [-1,0]\times B_1$, for some $q > 2$
+\[ \norm{(u-1)_+}_{L^q(Q_1)} \lesssim \norm{(u)_+}_{L^\infty_t(L^2_x)(Q_1)} + \norm{(u)_+ |\grad (u)_+|^p}_{L^1(Q_1)}. \]
 %\[ \int_{-1}^0 \int_{B_1} (u-1)_+^q \leq \paren{\sup_{[-1,0]} \int_{B_1} (u-k)_+^2 + \int_{-1}^0 \int_{B_1} (u-k)_+ \abs{\grad (u-k)_+}^p}^{1+\eps}. \]
 %\[ \iint\limits_{Q_1} (u-1)_+^q \leq \paren{ {\sup \int}\limits_{Q_2} (u)_+^2 + \iint\limits_{Q_2}} \]
 
@@ -493,15 +495,15 @@ Want to show, for some $q > 2$, on $Q_1 = [-1,0]\times B_1$,
 
 %-----------------------------------------------------
 
-\begin{frame}
-Works if we have coercivity!
+\begin{frame}{Superquadratic Hamilton-Jacobi: Proof excerpt}
+Coercivity when $u$ large
 \vskip.3cm
-
+\pause
 Strategy: consider two regions, $u$ small and $u$ big \begin{itemize}
 \item $u$ small $\Rightarrow$ $L^q$ norm small
 \item $u$ big $\Rightarrow$ coercivity $\Rightarrow$ $L^q$ norm small
 \end{itemize}
-
+\pause
 Implementation:
 \begin{itemize}
 \item $\norm{\grad (u-1)_+}_{L^p}^p \leq \norm{u_+ |\grad u_+|^p}_{L^1}$
@@ -516,7 +518,8 @@ Implementation:
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
 
 \begin{frame}{Hypoelliptic Fokker-Planck}
-\[ \bracket{\del_t + v\cdot\grad_x} f + \paren{-\Laplace_v}^s f = 0 \]
+\pause
+\[\textrm{e.g.} \qquad \bracket{\del_t + v\cdot\grad_x} f + \paren{-\Laplace_v}^s f = 0 \]
 
 \begin{itemize}
 \item Rarefied gas, neutral particles in plasma
@@ -530,9 +533,9 @@ Implementation:
 
 \begin{frame}{Hypoelliptic Fokker-Planck}
 \[ \bracket{\del_t + v\cdot\grad_x} f = \int K [f(w)-f(v)] \,dw + \sigma \]
-$K$ symmetric (in $(v,w)\mapsto(w,v)$ and $(v,v+w)\mapsto(v,v-w)$ senses), $K \approx |v-w|^{-(n+2s)}$, $s \in (0,1)$
+$K \approx |v-w|^{-(n+2s)}$, $s \in (0,1)$, $K$ symmetric in $(v,w)\mapsto(w,v)$ and in $(v,v+y)\mapsto(v,v-y)$
 
-\begin{theorem}
+\begin{theorem}[S. [SIMA, '19{]}]
 For $f$ solution, $f \in L^\infty \cap L^2_{t,x}(H^s_v)$, $\sigma \in L^2 \cap L^r$ for $r >> 1$, 
 there exists $\alpha \in (0,1)$ depending on kernel, $C > 0$ depending on domain and kernel s.t.
 \[ \norm{f}_{C^\alpha([\eps,\infty)\times\R^n\times B_1)} \leq C \paren{\norm{f}_{L^\infty} + \norm{\sigma}_{L^r}}. \]
@@ -542,7 +545,7 @@ there exists $\alpha \in (0,1)$ depending on kernel, $C > 0$ depending on domain
 
 %-----------------------------------------------------
 
-\begin{frame}{Proof of Hypoelliptic Fokker-Planck}
+\begin{frame}{Hypoelliptic Fokker-Planck: Proof}
 \begin{itemize}
 \item De Giorgi method 
 \item No distinction between $s \geq 1/2$, $s < 1/2$
@@ -553,8 +556,9 @@ there exists $\alpha \in (0,1)$ depending on kernel, $C > 0$ depending on domain
 
 %-----------------------------------------------------
 
-\begin{frame}{Hypoelliptic Equation}
-Begin with $\Lambda = (-\Laplace_v)^{1/2}$, $s \in (0,1)$,
+\begin{frame}{Hypoelliptic Fokker-Planck: Proof excerpt}
+\pause
+Consider $\Lambda = (-\Laplace_v)^{1/2}$, $s \in (0,1)$,
 \[ \del_t f + v\cdot\grad_x f + \Lambda^{2s} f = 0. \]
 
 Note diffusion in $v$ but not $x$!
@@ -567,7 +571,7 @@ on LHS
 %-----------------------------------------------------
 
 \begin{frame}{Averaging Lemma}
-Lemma (Bezard, 94): for $\alpha = 1/(2(1+m))$, $\Omega \Subset \bar{\Omega} \subseteq \R^+ \times \R^n$, and $f,g \in L^2(\bar{\Omega} \times \R^n)$, $f$ compactly supported, we have
+Lemma (B\'{e}zard, 94): for $\alpha = 1/(2(1+m))$, $\Omega \Subset \bar{\Omega} \subseteq \R^+ \times \R^n$, and $f,g \in L^2(\bar{\Omega} \times \R^n)$, $f$ compactly supported, we have
 \[ \bracket{\del_t + v\cdot\grad_x} f = g \]
 implies
 \[ \norm{\int f \,dv}_{H^\alpha(\Omega)} \lesssim \norm{f}_{L^2(\bar{\Omega} \times \R^n)} + \norm{(1-\Laplace_v)^{-m/2} g }_{L^2(\bar{\Omega} \times \R^n)}. \]
@@ -575,7 +579,7 @@ implies
 
 %-----------------------------------------------------
 
-\begin{frame}
+\begin{frame}{Hypoelliptic Fokker-Planck: Proof excerpt}
 Unfortunately: Can't apply lemma to $(f-\psi)_+$ due to truncation (nonlocal)
 \vskip.3cm
 
@@ -595,15 +599,15 @@ No regularity on $f$!
 
 %-----------------------------------------------------
 
-\begin{frame}
+\begin{frame}{Hypoelliptic Fokker-Planck: Proof excerpt}
 Solution: control of regularity is means to an end, control of integrability is the end
-
+\pause
 From energy inequality:
 \[ \norm{(f-\psi)_+}_{L^\infty_t(L^2_{x,v})} + \norm{(f-\psi)_+}_{L^2_{t,x}(L^{2+\eps}_v)} \lesssim \norm{(f-\psi)_+}_{L^2_{t,x,v}} + \norm{(f-\psi)_+}_{L^1_{t,x,v}} \]
-
+\pause
 From averaging lemma:
 \[ \norm{(f-\psi)_+}_{L^{2+\eps}_{t,x}(L^1_v)} \lesssim \norm{(f-\psi)_+}_{L^2_{t,x,v}} \]
-
+\pause
 Improvement in all three variables, for some $q > 2$
 \[ \norm{(f-\psi)}_{L^q_{t,x,v}} \lesssim \norm{(f-\psi)_+}_{L^2_{t,x,v}} \]
 \end{frame}
@@ -620,32 +624,27 @@ Improvement in all three variables, for some $q > 2$
 %-----%-----%-----% SQG %-----%-----%-----%-----%-----%-----%-----%-----%
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
 
-\begin{frame}{Global SQG}
+\begin{frame}{SQG in Bounded Domains}
+\pause
+\[ \textrm{e.g.} \qquad \del_t \theta + \paren{\grad^\perp (-\Laplace)^{-1/2} \theta} \cdot \grad \theta + \nu (-\Laplace)^s \theta = 0 \]
 \begin{itemize}
-\item Quasigeostrophic: perturbation of geostrophic wind, mid-latitude, atmospheric or ocean currents \\
+\item atmospheric or ocean currents, used in weather modelling
 \item $\R^2$: Constantin, Majda, Tabak (93); Kiselev, Nazarov, Volberg (08); Caffarelli, Vasseur (10); Constantin, Vicol (12)
 \item Bounded domain: Kriventsov ('15); Novack, Vasseur ('18,19)
-\item New model by Constantin, Ignatova ('16); Constantin, Ignatova, Nguyen (various)
+\item Best studied model by Constantin, Ignatova ('16); Constantin, Ignatova, Nguyen (various)
 \end{itemize}
-
-\[ \del_t \theta + \paren{\grad^\perp (-\Laplace)^{-1/2} \theta} \cdot \grad \theta + \nu (-\Laplace)^s \theta = 0 \]
 \end{frame}
 
 %-----------------------------------------------------
 
-\begin{frame}{Constantin, et al. Model}
-\begin{equation}\begin{cases}
+\begin{frame}{SQG in Bounded Domains}
+\begin{equation*}\begin{cases}
 \del_t \theta + u \cdot \grad \theta + \Lambda \theta = 0, \\
 u = \grad^\perp \Lambda^{-1} \theta.
-\end{cases} \end{equation}
+\end{cases} \end{equation*}
 $\Omega \subseteq \R^2$ smooth bounded open, $\Lambda := \sqrt{-\Laplace_D}$ (defined spectrally), $\Laplace_D$ the Dirichlet Laplacian on $\Omega$
 
-%\end{frame}
-%
-%%-----------------------------------------------------
-%
-%\begin{frame}{Main Theorem}
-\begin{theorem}[S., Vasseur]
+\begin{theorem}[S., Vasseur [ARMA, '20{]}]
 Let $\Omega \subseteq \R^2$ a bounded set, initial data $\theta_0 \in L^2(\Omega)$
 
 There exists a global-in-time solution $\theta$ to SQG such that:
@@ -658,7 +657,7 @@ For any $S > 0$, there exists $\alpha \in (0,1)$ and a constant $C$ so
 
 %-----------------------------------------------------
 
-\begin{frame}{Proof of SQG on Bounded Domain}
+\begin{frame}{SQG in Bounded Domains: Proof}
 \begin{itemize}
 \item De Giorgi method, Caffarelli, Vasseur (2010)
 \item Boundary issues: Laplacian \& gradient don't commute, Caffarelli-Stinga ('16) kernel representation degenerates
@@ -668,7 +667,7 @@ For any $S > 0$, there exists $\alpha \in (0,1)$ and a constant $C$ so
 
 %-----------------------------------------------------
 
-\begin{frame}{Localized Caccioppoli Inequality}
+\begin{frame}{SQG in Bounded Domains: Proof excerpt}
 $\theta$ solving transport-diffusion equation with velocity $u$
 
 Then $\theta_+$ satisfies
