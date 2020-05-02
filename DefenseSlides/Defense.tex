@@ -337,10 +337,11 @@ Multiply by test function $\phi(t,x) (u-k)_+$, obtain
 \begin{frame}{First De Giorgi Lemma}
 \begin{itemize}
 \item $L^2$-to-$L^\infty$ regularization
-\item local and nonlocal version
+\item global and local version
 \item proof by truncation, recursion
 \end{itemize}
-
+\pause
+\vskip.3cm
 Consider $k \in \N$
 \[ Q_0 := [-2,0]\times B_2 \supseteq Q_1 \supseteq \cdots \supseteq Q_k \supseteq \cdots \supseteq [-1,0]\times B_1 \]
 %\[ [-1,0]\times B_1 \subseteq \cdots \subseteq Q_{k+1} \subseteq Q_k \subseteq \cdots \subseteq Q_0 := [-2,0]\times B_2 \]
@@ -428,7 +429,7 @@ $u_\infty$ is $\leq 0$ on most of $[0,4]$ but $\geq 1$ on some of $[2,4]$, so en
 \begin{frame}{H\"{o}lder Continuity}
 Proof of H\"{o}lder continuity uses recursion
 \vskip.3cm
-apply two De Giorgi lemmas to rescaled solutions
+apply two De Giorgi lemmas to rescalings of solution
 
 \includegraphics{Oscillation_and_Continuity}
 \end{frame}
@@ -545,14 +546,14 @@ there exists $\alpha \in (0,1)$ depending on kernel, $C > 0$ depending on domain
 
 %-----------------------------------------------------
 
-\begin{frame}{Hypoelliptic Fokker-Planck: Proof}
-\begin{itemize}
-\item De Giorgi method 
-\item No distinction between $s \geq 1/2$, $s < 1/2$
-\item Averaging Lemma
-\end{itemize}
-
-\end{frame}
+%\begin{frame}{Hypoelliptic Fokker-Planck: Proof}
+%\begin{itemize}
+%\item De Giorgi method 
+%\item No distinction between $s \geq 1/2$, $s < 1/2$
+%\item Averaging Lemma
+%\end{itemize}
+%
+%\end{frame}
 
 %-----------------------------------------------------
 
@@ -600,24 +601,33 @@ No regularity on $f$!
 %-----------------------------------------------------
 
 \begin{frame}{Hypoelliptic Fokker-Planck: Proof excerpt}
-Solution: control of regularity is means to an end, control of integrability is the end
+From averaging lemma:
+\[ \norm{(f-\psi)_+}_{L^{2+\eps}_{t,x}(L^1_v)} \lesssim \norm{(f-\psi)_+}_{L^2_{t,x,v}} \]
 \pause
 From energy inequality:
 \[ \norm{(f-\psi)_+}_{L^\infty_t(L^2_{x,v})} + \norm{(f-\psi)_+}_{L^2_{t,x}(L^{2+\eps}_v)} \lesssim \norm{(f-\psi)_+}_{L^2_{t,x,v}} + \norm{(f-\psi)_+}_{L^1_{t,x,v}} \]
 \pause
-From averaging lemma:
-\[ \norm{(f-\psi)_+}_{L^{2+\eps}_{t,x}(L^1_v)} \lesssim \norm{(f-\psi)_+}_{L^2_{t,x,v}} \]
-\pause
 Improvement in all three variables, for some $q > 2$
 \[ \norm{(f-\psi)}_{L^q_{t,x,v}} \lesssim \norm{(f-\psi)_+}_{L^2_{t,x,v}} \]
+\pause
+Control of regularity is means to an end, control of integrability is the end
 \end{frame}
 
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
 %-----%-----%-----% Stability of Shocks --%-----%-----%-----%-----%-----%
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
 
-\begin{frame}{$L^2$ stability of Conservation Laws}
-[insert frame here]
+\begin{frame}{$L^2$ stability of Shocks}
+\pause
+Consider 1D scalar viscous conservation law
+\[ \del_t u + \del_x[Q(u)] = \eps \del_{xx} \eta'(u) \]
+where $\eta$, $Q$ uniformly elliptic and $\eps > 0$ arbitrary.
+
+\begin{theorem}[S. [Submitted{]}]
+For $u$ a solution and $s$ a sufficiently small shock solution, there exists Lipschitz $\gamma(t)$ such that
+\[ \norm{u(\cdot,t) - s(\cdot-\gamma(t))}_2 \] 
+stable in time, up to a constant factor.  Result is independent of $\eps$.  
+\end{theorem}
 \end{frame}
 
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
@@ -632,6 +642,7 @@ Improvement in all three variables, for some $q > 2$
 \item $\R^2$: Constantin, Majda, Tabak (93); Kiselev, Nazarov, Volberg (08); Caffarelli, Vasseur (10); Constantin, Vicol (12)
 \item Bounded domain: Kriventsov ('15); Novack, Vasseur ('18,19)
 \item Best studied model by Constantin, Ignatova ('16); Constantin, Ignatova, Nguyen (various)
+\item Boundary issues: Laplacian \& gradient don't commute, Caffarelli-Stinga ('16) kernel representation degenerates
 \end{itemize}
 \end{frame}
 
@@ -649,29 +660,30 @@ Let $\Omega \subseteq \R^2$ a bounded set, initial data $\theta_0 \in L^2(\Omega
 
 There exists a global-in-time solution $\theta$ to SQG such that:
 
-For any $S > 0$, there exists $\alpha \in (0,1)$ and a constant $C$ so
-\[ \norm{\theta}_{C^\alpha([S,\infty)\times\Omega)} \leq C \norm{\theta_0}_{L^2(\Omega)}. \]
+For any $\eps > 0$, there exists $\alpha \in (0,1)$ and a constant $C$ so
+\[ \norm{\theta}_{C^\alpha([\eps,\infty)\times\Omega)} \leq C \norm{\theta_0}_{L^2(\Omega)}. \]
 \end{theorem}
 
 \end{frame}
 
 %-----------------------------------------------------
 
-\begin{frame}{SQG in Bounded Domains: Proof}
-\begin{itemize}
-\item De Giorgi method, Caffarelli, Vasseur (2010)
-\item Boundary issues: Laplacian \& gradient don't commute, Caffarelli-Stinga ('16) kernel representation degenerates
-\end{itemize}
-
-\end{frame}
+%\begin{frame}{SQG in Bounded Domains: Proof}
+%\begin{itemize}
+%\item De Giorgi method, Caffarelli, Vasseur (2010)
+%\item Boundary issues: Laplacian \& gradient don't commute, Caffarelli-Stinga ('16) kernel representation degenerates
+%\end{itemize}
+%
+%\end{frame}
 
 %-----------------------------------------------------
 
 \begin{frame}{SQG in Bounded Domains: Proof excerpt}
-$\theta$ solving transport-diffusion equation with velocity $u$
+\pause
+Velocity $u$, energy inequality with cutoff $\Psi$ has drift term on RHS
+\[ \int_\Omega u (\theta-\Psi)_+ \cdot \textrm{d}\Psi \]
 
-Then $\theta_+$ satisfies
-\[ \ddt \int_\Omega \theta_+^2 + \int_\Omega \abs{ \Lambda^{1/2} \theta_+}^2 \leq \int_\Omega \theta_+^2 + \int_\Omega u \theta_+ \cdot \textrm{d}\Psi + \ldots \]
+recall $u$ is Riesz transform of $\theta \in L^\infty$
 
 \begin{table}
 \begin{tabular}{l | c | c | c }
@@ -700,86 +712,37 @@ scaling invariant & \checkmark & \checkmark & \checkmark
 %-----------------------------------------------------
 
 \begin{frame}{Control on u: Littlewood Paley theory}
-Littlewood paley operators $P_j$, functional calculus for $\Lambda$,
+Littlewood paley operators $P_j=P_j(\Lambda)$, functional calculus for $\Lambda$,
 \vskip.3cm
 Bernstein Inequalities
 \begin{align*} 
 \norm{\Lambda^s P_j f}_p &\approx 2^{sj} \norm{f}_p, \\
 \norm{\grad \Lambda P_j f}_p &\approx 2^{(1+s)j} \norm{f}_p.
 \end{align*}
-\vskip.3cm
-Can say nothing about 
-\[ P_j \grad \Lambda\n \theta, \]
-but can say much about
-\[ \grad \Lambda\n P_j \theta. \]
+Commutation Relation
+\[ \norm{P_i \grad P_j f}_p \lesssim \min(2^j,2^i) \norm{f}_p. \]
 
 \vskip.5cm
 
-Iwabuchi, Matsuyama, Taniguchi (``Bilinear estimates in Besov spaces generated by the Dirichlet Laplacian'' 2017)
+Bernstein: Iwabuchi, Matsuyama, Taniguchi (``Bilinear estimates in Besov spaces generated by the Dirichlet Laplacian'' 2017)
 \end{frame}
 
 %-----------------------------------------------------
 
 \begin{frame}{Control on u: high and low frequencies}
 
-To bound $u = \grad \Lambda\n \theta$, decompose as
+Instead of Besov norm $\sup_j \norm{P_j \grad \Lambda\n \theta}_\infty$ consider
+\[ \grad \Lambda\n P_j \theta. \]
+
+To bound $\int u \theta_+$, decompose as
 \[ u_{\textrm{low}} = \sum_{j=-\infty}^0 \grad \Lambda\n P_j \theta \]
 which is Lipschitz,
 \[ u_{\textrm{high}} = \sum_{j=0}^\infty \grad \Lambda\n P_j \theta \]
-which should be in $W^{-\eps, \infty}$.  
-
-Enough to control $\int u \theta_+ \cdot \textrm{d}\Psi$
+which is in $W^{-\eps, \infty}$.  
 
 \end{frame}
 
 %-----------------------------------------------------
-
-\begin{frame}{Control on u: high frequencies}
-
-How do we control
-\[ \norm{\Lambda^{-\eps} \grad \Lambda\n P_j \theta}_\infty? \]
-
-\vskip.3cm
-
-Consider $P_\mu \grad \Lambda\n P_j f$, $j$ fixed, $\mu \in \Z$
-
-\begin{align*} 
-\int g P_\mu \grad \Lambda\n P_j f &= \int \paren{ P_\mu g} \paren{\grad \Lambda\n P_j f} \leq \norm{g}_1 2^{(1-1)j} \norm{f}_\infty, \\
-\int g P_\mu \grad \Lambda\n P_j f &= -\int \paren{\grad P_\mu g} \paren{ \Lambda\n P_j f} \leq 2^{\mu} \norm{g}_1 2^{-j} \norm{f}_\infty
-\end{align*}
-
-\end{frame}
-
-%-----------------------------------------------------
-
-\begin{frame}{Control on u: high frequencies}
-
-How do we control
-\[ \norm{\Lambda^{-\eps} \grad \Lambda\n P_j \theta}_\infty? \]
-
-\vskip.3cm
-
-\[ \Lambda^{-\eps} \grad \Lambda\n P_j \theta = \sum_{\mu \in \Z} \Lambda^{-\eps} P_\mu \grad \Lambda\n P_j \theta \]
-
-\begin{itemize}
-\item $\mu$ large ($> j$), like $2^{-\eps \mu}$, summable \\
-\item $\mu$ small ($<j$), like $2^{-\eps \mu} 2^{\mu}$, summable
-\end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------
-
-\begin{frame}{Control on u}
-
-\begin{itemize}
-\item $u$ is a sum of something Lipschitz and something $W^{-\eps,\infty}$
-\item Either way, $\int u \theta \cdot \textrm{d}\Psi$ controlled
-\item Independent of scale
-\item De Giorgi argument gives regularity
-\end{itemize}
-
-\end{frame}
 
 %-----------------------------------------------------
 
