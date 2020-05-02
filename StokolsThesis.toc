@@ -1,5 +1,5 @@
-\contentsline {chapter}{Acknowledgments}{iv}%
-\contentsline {chapter}{Abstract}{v}%
+\contentsline {chapter}{Acknowledgments}{v}%
+\contentsline {chapter}{Abstract}{vi}%
 \contentsline {chapter}{Chapter 1.\hspace *{1em}Introduction}{1}%
 \contentsline {section}{\numberline {1.1}Hilbert's Nineteenth Problem}{1}%
 \contentsline {section}{\numberline {1.2}The De Giorgi Method}{3}%

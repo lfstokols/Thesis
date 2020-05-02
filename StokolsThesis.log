@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  29 APR 2020 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  1 MAY 2020 20:53
 entering extended mode
 **./StokolsThesis.tex
 (StokolsThesis.tex
@@ -300,8 +300,10 @@ Non-PDF special ignored!
 
 ] [4
 
-
 ] [5
+
+
+] [6
 
 ] (StokolsThesis.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
@@ -318,13 +320,13 @@ LaTeX Font Info:    Trying to load font information for U+esint on input line 4
 ("C:\Users\lfsto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/esint\uesint.fd"
 File: uesint.fd 
 )
-[6
+[7
 
 ])
 \tf@toc=\write3
 \openout3 = `StokolsThesis.toc'.
 
- [7]
+ [8]
 \openout2 = `chapter-intro.aux'.
 
  (chapter-intro.tex
@@ -389,7 +391,7 @@ Chapter 3.
 
 ] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63]
 [64] [65] [66] [67] [68] [69] [70]
-<NFP-diagram-Q-3.pdf, id=267, 438.59938pt x 580.49704pt>
+<NFP-diagram-Q-3.pdf, id=270, 438.59938pt x 580.49704pt>
 File: NFP-diagram-Q-3.pdf Graphic file (type pdf)
 <use NFP-diagram-Q-3.pdf>
 Package pdftex.def Info: NFP-diagram-Q-3.pdf  used on input line 705.
@@ -495,7 +497,7 @@ it/10.95 \OT1/cmr/m/n/10.95 ) [][] + \OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (
 
 
 ]
-<NFP-diagram-Cone.pdf, id=651, 550.0066pt x 347.84894pt>
+<NFP-diagram-Cone.pdf, id=654, 550.0066pt x 347.84894pt>
 File: NFP-diagram-Cone.pdf Graphic file (type pdf)
 <use NFP-diagram-Cone.pdf>
 Package pdftex.def Info: NFP-diagram-Cone.pdf  used on input line 43.
@@ -547,9 +549,9 @@ onts/cm/cmti7.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfsto
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on StokolsThesis.pdf (210 pages, 930736 bytes).
+Output written on StokolsThesis.pdf (211 pages, 931439 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
+ 825 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
