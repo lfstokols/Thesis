@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.12.23)  2 MAY 2020 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.12.23)  3 MAY 2020 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2236,7 +2236,7 @@ Package pdftex.def Info: Oscillation_and_Continuity.png used on input line 435.
 ] [38
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <17.92> on input line 631.
+LaTeX Font Info:    Calculating math sizes for size <17.92> on input line 633.
  [39
 
 ] [40
@@ -2268,14 +2268,14 @@ LaTeX Font Info:    Calculating math sizes for size <17.92> on input line 631.
 \tf@snm=\write8
 \openout8 = `Defense.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 760.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 760.
  (./Defense.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 760.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 760.
 Package rerunfilecheck Info: File `Defense.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 760.
  ) 
 Here is how much of TeX's memory you used:
  33405 strings out of 493029
@@ -2302,7 +2302,7 @@ texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on Defense.pdf (48 pages, 303897 bytes).
+Output written on Defense.pdf (48 pages, 303957 bytes).
 PDF statistics:
  422 PDF objects out of 1000 (max. 8388607)
  336 compressed objects within 4 object streams

@@ -306,7 +306,7 @@
 \begin{frame}{Overview of De Giorgi Method}
 
 Consider the toy problem
-\[ \del_t u + \div(A\grad u) = 0 \]
+\[ \del_t u - \div(A\grad u) = 0 \]
 
 \vskip.3cm
 Given $\lambda I \leq A \leq \Lambda I$ (in sense of positive matrices), parabolic, expect regularity
@@ -444,11 +444,11 @@ apply two De Giorgi lemmas to rescalings of solution
 \[\textrm{e.g.} \qquad \del_t u + |\grad u|^p - \eps \Laplace u = 0, \qquad \eps \in \{0,1,-1\} \]
 
 \begin{itemize}
-\item First considered by Lasry and Lions ('89), Schwab ('13) [homogenization]
-\item Best known results Cardaliaguet ('09), Cannarsa and Cardaliaguet ('10), Cardaliaguet and Silvestre ('12)
+\item First considered by Lasry and Lions ['89]; Schwab ['13] (homogenization)
+\item Strongest known results Cardaliaguet ['09], Cannarsa and Cardaliaguet ['10], Cardaliaguet and Silvestre ['12]
 \item $\eps = 0$ singularities can form, but solutions always continuous
 \item For $p > 2$, continuous even for $\eps = -1$ [first order drives regularization]
-\item Chan and Vasseur ('17) use De Giorgi for $\eps = 0$
+\item Chan and Vasseur ['17] use De Giorgi for $\eps = 0$
 \end{itemize}
 
 \end{frame}
@@ -472,7 +472,7 @@ Solutions (in appropriate weak sense) regularize from $L^\infty(\R^+\times\R^n)$
 \item De Giorgi method
 \item Adapted technique of Chan, Vasseur, overcome second-order term
 \item Combine divergence-form and non-divergence-form techniques
-\item Allow unbounded source term $f$, discontinuous $A$
+\item Allow discontinuous $A$
 \end{itemize}
 \end{frame}
 
@@ -524,7 +524,7 @@ Implementation:
 
 \begin{itemize}
 \item Rarefied gas, neutral particles in plasma
-\item Imbert and Silvestre ('16), Golse and Imbert and Mouhot and Vasseur ('16)
+\item Imbert and Silvestre ['16]; Golse and Imbert and Mouhot and Vasseur ['16]
 \item Hypoelliptic: non-elliptic regularization, mixed elliptic/hyperbolic type
 \item Averaging Lemma (Golse et al '88): $H^s$ theory of hypoellipticity, regularity of averages for kinetic equation
 \end{itemize}
@@ -572,7 +572,7 @@ on LHS
 %-----------------------------------------------------
 
 \begin{frame}{Averaging Lemma}
-Lemma (B\'{e}zard, 94): for $\alpha = 1/(2(1+m))$, $\Omega \Subset \bar{\Omega} \subseteq \R^+ \times \R^n$, and $f,g \in L^2(\bar{\Omega} \times \R^n)$, $f$ compactly supported, we have
+Lemma (B\'{e}zard, '94): for $\alpha = 1/(2(1+m))$, $\Omega \Subset \bar{\Omega} \subseteq \R^+ \times \R^n$, and $f,g \in L^2(\bar{\Omega} \times \R^n)$, $f$ compactly supported, we have
 \[ \bracket{\del_t + v\cdot\grad_x} f = g \]
 implies
 \[ \norm{\int f \,dv}_{H^\alpha(\Omega)} \lesssim \norm{f}_{L^2(\bar{\Omega} \times \R^n)} + \norm{(1-\Laplace_v)^{-m/2} g }_{L^2(\bar{\Omega} \times \R^n)}. \]
@@ -621,13 +621,15 @@ Control of regularity is means to an end, control of integrability is the end
 \pause
 Consider 1D scalar viscous conservation law
 \[ \del_t u + \del_x[Q(u)] = \eps \del_{xx} \eta'(u) \]
-where $\eta$, $Q$ uniformly elliptic and $\eps > 0$ arbitrary.
+where $\eta$, $Q$ uniformly convex and $\eps > 0$ arbitrary.
 
 \begin{theorem}[S. [Submitted{]}]
 For $u$ a solution and $s$ a sufficiently small shock solution, there exists Lipschitz $\gamma(t)$ such that
 \[ \norm{u(\cdot,t) - s(\cdot-\gamma(t))}_2 \] 
 stable in time, up to a constant factor.  Result is independent of $\eps$.  
 \end{theorem}
+
+c.f. Kang ['19], Kang \& Vasseur ['19]
 \end{frame}
 
 %-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%-----%
@@ -639,10 +641,10 @@ stable in time, up to a constant factor.  Result is independent of $\eps$.
 \[ \textrm{e.g.} \qquad \del_t \theta + \paren{\grad^\perp (-\Laplace)^{-1/2} \theta} \cdot \grad \theta + \nu (-\Laplace)^s \theta = 0 \]
 \begin{itemize}
 \item atmospheric or ocean currents, used in weather modelling
-\item $\R^2$: Constantin, Majda, Tabak (93); Kiselev, Nazarov, Volberg (08); Caffarelli, Vasseur (10); Constantin, Vicol (12)
-\item Bounded domain: Kriventsov ('15); Novack, Vasseur ('18,19)
-\item Best studied model by Constantin, Ignatova ('16); Constantin, Ignatova, Nguyen (various)
-\item Boundary issues: Laplacian \& gradient don't commute, Caffarelli-Stinga ('16) kernel representation degenerates
+\item $\R^2$: Constantin, Majda, Tabak ['93]; Kiselev, Nazarov, Volberg ['08]; Caffarelli, Vasseur ['10]; Constantin, Vicol ['12]
+\item Bounded domain: Kriventsov ['15]; Novack, Vasseur ['18,'19]
+\item Best studied model by Constantin, Ignatova ['16]; Constantin, Ignatova, Nguyen [various]
+\item Boundary issues: Laplacian \& gradient don't commute, Caffarelli-Stinga ['16] kernel representation degenerates
 \end{itemize}
 \end{frame}
 
@@ -717,7 +719,7 @@ Littlewood paley operators $P_j=P_j(\Lambda)$, functional calculus for $\Lambda$
 Bernstein Inequalities
 \begin{align*} 
 \norm{\Lambda^s P_j f}_p &\approx 2^{sj} \norm{f}_p, \\
-\norm{\grad \Lambda P_j f}_p &\approx 2^{(1+s)j} \norm{f}_p.
+\norm{\grad \Lambda^s P_j f}_p &\approx 2^{(1+s)j} \norm{f}_p.
 \end{align*}
 Commutation Relation
 \[ \norm{P_i \grad P_j f}_p \lesssim \min(2^j,2^i) \norm{f}_p. \]
