@@ -1,4 +1,4 @@
-\chapter{kinetic} \label{ch:kinetic}
+\chapter{A Family of Nonlocal Hypoelliptic Kinetic Equations} \label{ch:kinetic}
 
 %\documentclass[11pt]{amsart}
 %\usepackage{amssymb,amsbsy,upref,epsf,MnSymbol}
@@ -702,6 +702,7 @@ Since $\psi^1 = 0$ on $B_1$, the proposition is proven.
 In this section we will prove the second De Giorgi lemma, the intermediate value lemma.  It says that solutions to our PDE cannot have, in a small region, very much measure above a certain value and also very much measure below another value unless the solution also has sufficient measure between the two values.  The lemma is sometimes called an isoperimetric inequality. 
 
 \begin{figure}[h]
+\centering
 \includegraphics[width=.25 \textwidth]{NFP-diagram-Q-3}
 \caption{Four overlapping cylinders described in Proposition~\ref{thm:DG2.kinetic}.}
 \end{figure}

@@ -624,7 +624,8 @@ Since $\theta_+$ and $\theta_-$ have disjoint support, the $\theta_-$ term is no
 \end{align*}
 
 Put together, we arrive at 
-\begin{equation} \label{first form of cacciopolli} \paren{\frac{1}{2}} \ddt \int \theta_+^2 + \int \abs{\Lambda^{1/2} \theta_+}^2 + \int \Lambda^{1/2} \theta_+ \Lambda^{1/2} \Psi \leq -\int \theta_+ (\del_t \Psi + u \cdot \grad \Psi) - \eps \bracket{\int \grad\theta_+ \cdot \grad\Psi + \int \abs{\grad\theta_+}^2}. \end{equation}
+\begin{multline} \label{first form of cacciopolli} \paren{\frac{1}{2}} \ddt \int \theta_+^2 + \int \abs{\Lambda^{1/2} \theta_+}^2 + \int \Lambda^{1/2} \theta_+ \Lambda^{1/2} \Psi 
+\\* \leq -\int \theta_+ (\del_t \Psi + u \cdot \grad \Psi) - \eps \bracket{\int \grad\theta_+ \cdot \grad\Psi + \int \abs{\grad\theta_+}^2}. \end{multline}
 
 The $\eps$ term is bounded, using the fact that $\grad\theta_+ = \indic{\theta_+ > 0} \grad\theta_+$ and $\eps \in [0,1]$, by
 \begin{equation} \label{eps term for leray hopf} \begin{aligned}
