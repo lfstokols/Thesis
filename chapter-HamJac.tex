@@ -262,7 +262,7 @@ From here the result follows naturally.
 %****************************************************************************************
 %****************************************************************************************
 %****************************************************************************************
-\section{De Giorgi's first lemma}\label{sec:DG1}
+\section{First De Giorgi Lemma}\label{sec:DG1}
 
 Now we present De Giorgi's first lemma.  
 If we define
@@ -481,7 +481,7 @@ By the monotone convergence theorem, we conclude that $\norm{(u-1/2)_+}_{L^q([-1
 %****************************************************************************************
 %****************************************************************************************
 %****************************************************************************************
-\section{De Giorgi's second lemma} \label{sec:DG2}
+\section{Second De Giorgi Lemma} \label{sec:DG2}
 
 
 The second De Giorgi lemma is a quantitative version of the statement ``solutions to our PDE cannot have jump discontinuities.''  
@@ -522,7 +522,7 @@ To bound the spatial derivatives, we use the Energy Inequality~\eqref{energy_2} 
 
 By the Energy Inequality, we have
 \begin{align*} 
-\iint_{B_2\times [-4,0]} |\grad (u_i)_+^{\sigma +2}|^p &\leq (\sigma +2)^p \iint_{-4}^0 \psi (u_i)_+^{p(\sigma +1)} |\grad (u_i)_+|^p 
+\iint\limits_{B_2\times [-4,0]} |\grad (u_i)_+^{\sigma +2}|^p &\leq (\sigma +2)^p \iint_{-4}^0 \psi (u_i)_+^{p(\sigma +1)} |\grad (u_i)_+|^p 
 \\ &\leq C \iint_{-4}^0 \paren{ (u_i)_+^{p(\sigma+1)-\varq} + (u_i)_+^{p(\sigma+1)+1} } \indic{B_3} + C \paren{\iint_{-4}^0 (u_i)_+^{m^\ast p(\sigma +1)} \indic{B_3} }^{1/m^\ast}
 \\ &\leq C(\Lambda,p,n,m).
 \end{align*}
@@ -545,7 +545,7 @@ Consider any $\psi \in C_0^\infty(Q_3)$, and set $K = \norm{\psi}_\infty + \norm
 \[ \psi = \varphi^2 - K \phi.\]  
 Estimate
 \begin{align*}
-\iint_{Q_2} \psi \del_t (u_i)_+^{\sigma+2} &= -K\iint_{Q_3}\phi \del_t (u_i)_+^{\sigma+2} + \iint_{Q_3} \varphi^2 \del_t (u_i)_+^{\sigma+2}
+\iint\limits_{Q_2} \psi \del_t (u_i)_+^{\sigma+2} &= -K\iint\limits_{Q_3}\phi \del_t (u_i)_+^{\sigma+2} + \iint\limits_{Q_3} \varphi^2 \del_t (u_i)_+^{\sigma+2}
 \\ &\leq K \abs{\int_{-4}^0 \ddt \int \phi (u_i)_+^{\sigma+2} } + C \paren{\norm{\varphi}_\infty^2 + \norm{\grad\varphi}_\infty^2 }
 \\ &\leq K \left[ \int \phi (u_i)_+^{\sigma+2}(0,\cdot) + \int \phi (u_i)_+^{\sigma+2}(-4,\cdot) \right] + C \paren{ \norm{\psi + K \phi}_\infty + \norm{\paren{\grad \sqrt{\psi + K \phi} }^2}_\infty }.
 %C \paren{ \norm{\psi + K \phi}_\infty + \norm{\frac{|\grad \psi + K \grad \phi|^2}{\psi + K \phi}}_\infty }.
@@ -613,7 +613,7 @@ This means in particular that if $H(s) = 0$, then $H(t) = 0$ $\forall t \geq s$.
 %****************************************************************************************
 %****************************************************************************************
 %****************************************************************************************
-\section{Transporting improvement forwards in time}\label{sec:flowforward}
+\section{Transporting Improvement Forwards in Time}\label{sec:flowforward}
 
 
 
@@ -720,7 +720,7 @@ This last quantity is negative provided $K_0$ sufficiently small, depending on $
 %****************************************************************************************
 %****************************************************************************************
 %****************************************************************************************
-\section{Proof of the main theorem} \label{sec:main}
+\section{Proof of the Main Theorem} \label{sec:main}
 
 Having completed the core of the proof, we now come to the final section.  The pieces are all present, and we need only put them together.  This section contains three lemmas before the proof.  The first two (Lemmas \ref{th:scaling1} and \ref{th:scaling2}) tell us which scalings constitute symmetries of our PDE.  Lemma \ref{th:oscillation}, the Oscillation Lemma, applies Propositions~\ref{th:DG1} and \ref{th:DG2} iteratively in order to control the oscillation of solutions to our PDE.  Finally the proof of the Main Theorem will show how the Oscillation Lemma is equivalent to interior H\"{o}lder continuity.  
 

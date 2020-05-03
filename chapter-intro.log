@@ -1,9 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.31)  21 APR 2020 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.12.23)  2 MAY 2020 23:40
 entering extended mode
-**./chapter-intro.tex
-(chapter-intro.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**chapter-intro.tex
+(./chapter-intro.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 ! Undefined control sequence.
 l.1 \chapter
             {Introduction} \label{ch:intro}
@@ -394,12 +396,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 5--8
 
 Overfull \hbox (22.44061pt too wide) in paragraph at lines 5--8
 \OT1/cmr/m/n/10 
- \OMS/cmsy/m/n/10 []$
+ \OMS/cmsy/m/n/10 ^^R[]$
  []
 
 
 Overfull \hbox (19.62494pt too wide) in paragraph at lines 5--8
-\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 ^^R
  []
 
 
@@ -806,13 +808,13 @@ Overfull \hbox (24.09958pt too wide) in paragraph at lines 10--14
 
 
 Overfull \hbox (30.98785pt too wide) in paragraph at lines 10--14
-\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 \OT1/cmr/m/n/10 ) \OMS/cms
-y/m/n/10 
+\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 ) \OMS/c
+msy/m/n/10 ^^Y
  []
 
 
 Overfull \hbox (14.87679pt too wide) in paragraph at lines 10--14
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j[]$
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^X\OMS/cmsy/m/n/10 j[]$
  []
 
 
@@ -1268,8 +1270,8 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (54.10478pt too wide) detected at line 19
-\OMS/cmsy/m/n/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Au[]\OT1/cmr/m/n/10 ) = 0\O
-ML/cmm/m/it/10 :
+\OMS/cmsy/m/n/10 ^^D\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Au[]\OT1/cmr/m/n/10 ) = 0
+\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no T in font nullfont!
@@ -1736,7 +1738,7 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no H in font nullfont!
-LaTeX Font Info:    Trying to load font information for +cmr on input line 22.
+LaTeX Font Info:    Try loading font information for +cmr on input line 22.
 LaTeX Font Info:    No file cmr.fd. on input line 22.
 
 LaTeX Font Warning: Font shape `/cmr/m/n' undefined
@@ -1942,12 +1944,12 @@ Overfull \hbox (30.59256pt too wide) in paragraph at lines 22--23
 
 
 Overfull \hbox (10.00003pt too wide) in paragraph at lines 22--23
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
 Overfull \hbox (15.27776pt too wide) in paragraph at lines 22--23
-\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2
+\OML/cmm/m/it/10 ^^U \OMS/cmsy/m/n/10 2
  []
 
 
@@ -1957,17 +1959,19 @@ Overfull \hbox (22.22224pt too wide) in paragraph at lines 22--23
 
 
 Overfull \hbox (31.26566pt too wide) in paragraph at lines 22--23
-\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j[] 
+\OML/cmm/m/it/10 ^^U\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^X\OMS/cmsy/m/n/10 j[] 
+^^T
  []
 
 
 Overfull \hbox (26.7396pt too wide) in paragraph at lines 22--23
-\OML/cmm/m/it/10 [] \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 ^^X[]^^X \OMS/cmsy/m/n/10 ^^T
  []
 
 
 Overfull \hbox (20.71014pt too wide) in paragraph at lines 22--23
-\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j[]$
+\OML/cmm/m/it/10 ^^U\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^X\OMS/cmsy/m/n/10 j[]$
+
  []
 
 
@@ -2265,7 +2269,7 @@ Overfull \hbox (28.61113pt too wide) in paragraph at lines 27--28
 
 
 Overfull \hbox (41.03938pt too wide) in paragraph at lines 27--28
-\OMS/cmsy/m/n/10 \/cmr/m/n/10 (\OML/cmm/m/it/10 Aw\/cmr/m/n/10 ) =
+\OMS/cmsy/m/n/10 ^^D\/cmr/m/n/10 (\OML/cmm/m/it/10 Aw\/cmr/m/n/10 ) =
  []
 
 
@@ -2275,7 +2279,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 27--28
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 27--28
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
@@ -3200,7 +3204,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 38--39
 
 
 Overfull \hbox (15.76038pt too wide) in paragraph at lines 38--39
-\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 d \OMS/cmsy/m/n/10 ^^U
  []
 
 
@@ -3210,7 +3214,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 38--39
 
 
 Overfull \hbox (15.27776pt too wide) in paragraph at lines 38--39
-\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2
+\OML/cmm/m/it/10 ^^U \OMS/cmsy/m/n/10 2
  []
 
 
@@ -3225,28 +3229,30 @@ Overfull \hbox (19.69443pt too wide) in paragraph at lines 38--39
 
 
 Overfull \hbox (40.29416pt too wide) in paragraph at lines 38--39
-\OMS/cmsy/m/n/10 [] ![]$
+\OMS/cmsy/m/n/10 ^^B[] ![]$
  []
 
 
 Overfull \hbox (31.26566pt too wide) in paragraph at lines 38--39
-\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j[] 
+\OML/cmm/m/it/10 ^^U\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^X\OMS/cmsy/m/n/10 j[] 
+^^T
  []
 
 
 Overfull \hbox (48.2882pt too wide) in paragraph at lines 38--39
-\OML/cmm/m/it/10 []\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 )\OML/cmm/m
-/it/10  \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 ^^X[]\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 )\OML/cmm
+/m/it/10 ^^X \OMS/cmsy/m/n/10 ^^T
  []
 
 
 Overfull \hbox (20.71014pt too wide) in paragraph at lines 38--39
-\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j[]$
+\OML/cmm/m/it/10 ^^U\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^X\OMS/cmsy/m/n/10 j[]$
+
  []
 
 
 Overfull \hbox (18.94235pt too wide) in paragraph at lines 38--39
-\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2[]$
+\OML/cmm/m/it/10 ^^X \OMS/cmsy/m/n/10 2[]$
  []
 
 
@@ -3256,7 +3262,7 @@ Overfull \hbox (18.16667pt too wide) in paragraph at lines 38--39
 
 
 Overfull \hbox (25.2184pt too wide) in paragraph at lines 38--39
-\OMS/cmsy/m/n/10 [] !$
+\OMS/cmsy/m/n/10 ^^B[] !$
  []
 
 
@@ -3313,9 +3319,9 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (139.3759pt too wide) detected at line 41
-[][]\OML/cmm/m/it/10 u \/cmr/m/n/10 = \OMS/cmsy/m/n/10 \/cmr/m/n/10 (\OML/cmm/
-m/it/10 Au\/cmr/m/n/10 ) + \OML/cmm/m/it/10 f []\/cmr/m/n/10 (\OML/cmm/m/it/10 
-t; x\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2[] []\OML/cmm/m/it/10 :
+[][]\OML/cmm/m/it/10 u \/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^D\/cmr/m/n/10 (\OML/cm
+m/m/it/10 Au\/cmr/m/n/10 ) + \OML/cmm/m/it/10 f []\/cmr/m/n/10 (\OML/cmm/m/it/1
+0 t; x\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2[] ^^B[]\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no T in font nullfont!
@@ -4124,7 +4130,7 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 45--46
 
 Overfull \hbox (45.48155pt too wide) in paragraph at lines 45--46
 \OML/cmm/m/it/10 '\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 )(\OML/cmm/m/
-it/10 u \OMS/cmsy/m/n/10  
+it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -4154,12 +4160,12 @@ Overfull \hbox (5.52084pt too wide) in paragraph at lines 45--46
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 45--46
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
 Overfull \hbox (17.39128pt too wide) in paragraph at lines 45--46
-\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -4296,9 +4302,9 @@ and I'll forget about whatever was undefined.
 
 Overfull \hbox (414.24074pt too wide) detected at line 48
 [][]\/cmr/m/n/10 (\OML/cmm/m/it/10 u\/cmr/m/n/10 (\OML/cmm/m/it/10 t; \OMS/cmsy
-/m/n/10 \/cmr/m/n/10 ) \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 k\/cmr/m/n/10 )[] \
-OML/cmm/m/it/10 dx \/cmr/m/n/10 + [][] [][] [][] \OML/cmm/m/it/10 dxdt \OMS/cms
-y/m/n/10  \OML/cmm/m/it/10 C[]
+/m/n/10 ^^A\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 k\/cmr/m/n/10 )
+[] \OML/cmm/m/it/10 dx \/cmr/m/n/10 + [][] [][] [][] \OML/cmm/m/it/10 dxdt \OMS
+/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 C[]
  []
 
 Missing character: There is no w in font nullfont!
@@ -4904,7 +4910,7 @@ Overfull \hbox (7.86249pt too wide) in paragraph at lines 48--50
 
 
 Overfull \hbox (5.83336pt too wide) in paragraph at lines 48--50
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^U$
  []
 
 
@@ -4919,7 +4925,7 @@ Overfull \hbox (8.5868pt too wide) in paragraph at lines 48--50
 
 
 Overfull \hbox (24.05795pt too wide) in paragraph at lines 48--50
-[]\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+[]\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -4939,7 +4945,7 @@ Overfull \hbox (4.6875pt too wide) in paragraph at lines 48--50
 
 
 Overfull \hbox (28.50237pt too wide) in paragraph at lines 48--50
-[] \OMS/cmsy/m/n/10 j\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+[] \OMS/cmsy/m/n/10 j\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -5396,8 +5402,8 @@ Overfull \hbox (7.50002pt too wide) in paragraph at lines 51--52
 
 
 Overfull \hbox (35.13313pt too wide) in paragraph at lines 51--52
-\/cmr/m/n/10 [\OML/cmm/m/it/10 a\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 ; b\/cmr/m/n
-/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [\OML/cmm/m/it/10 a\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ; b\/cmr/m
+/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -5407,7 +5413,7 @@ Overfull \hbox (8.00002pt too wide) in paragraph at lines 51--52
 
 
 Overfull \hbox (27.35533pt too wide) in paragraph at lines 51--52
-\/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -5454,7 +5460,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 \newlabel{sec:intro-19}{{}{}}
-{C:/Users/lfsto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 ! Undefined control sequence.
 <write> ...rentiated Euler Lagrange}{{1}{\thepage 
                                                   }}
@@ -5609,10 +5615,10 @@ my insertion and my current dilemma will both disappear.
 
 
 Overfull \hbox (305.77007pt too wide) detected at line 54
-[][] [][]\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 k
-\/cmr/m/n/10 )[] + [][] [][] \OMS/cmsy/m/n/10 j\/cmr/m/n/10 (\OML/cmm/m/it/10 u
- \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 k\/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 j[]  \O
-ML/cmm/m/it/10 C[]
+[][] [][]\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10
+ k\/cmr/m/n/10 )[] + [][] [][] \OMS/cmsy/m/n/10 j\/cmr/m/n/10 (\OML/cmm/m/it/10
+ u \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 k\/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 j[] 
+^^T \OML/cmm/m/it/10 C[]
  []
 
 Missing character: There is no A in font nullfont!
@@ -6219,12 +6225,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 58--59
 
 
 Overfull \hbox (19.0695pt too wide) in paragraph at lines 58--59
-\OML/cmm/m/it/10 L[] \OMS/cmsy/m/n/10  
+\OML/cmm/m/it/10 L[] \OMS/cmsy/m/n/10 ^^@
  []
 
 
 Overfull \hbox (16.66672pt too wide) in paragraph at lines 58--59
-[] \OMS/cmsy/m/n/10  
+[] \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -6244,7 +6250,7 @@ Overfull \hbox (15.27782pt too wide) in paragraph at lines 58--59
 
 
 Overfull \hbox (17.39128pt too wide) in paragraph at lines 58--59
-\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -6259,7 +6265,7 @@ Overfull \hbox (11.2917pt too wide) in paragraph at lines 58--59
 
 
 Overfull \hbox (17.39128pt too wide) in paragraph at lines 58--59
-\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -6274,7 +6280,7 @@ Overfull \hbox (15.27782pt too wide) in paragraph at lines 58--59
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 58--59
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 Missing character: There is no S in font nullfont!
@@ -6475,7 +6481,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 60--63
 
 
 Overfull \hbox (8.93057pt too wide) in paragraph at lines 60--63
-\OML/cmm/m/it/10 []$
+\OML/cmm/m/it/10 ^^N[]$
  []
 
 
@@ -6485,7 +6491,7 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 60--63
 
 
 Overfull \hbox (27.77782pt too wide) in paragraph at lines 60--63
-\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 2] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 2] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -6495,7 +6501,7 @@ Overfull \hbox (12.07121pt too wide) in paragraph at lines 60--63
 
 
 Overfull \hbox (62.95622pt too wide) in paragraph at lines 60--63
-\OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 ^^T
  []
 
 
@@ -6519,8 +6525,8 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (108.15578pt too wide) detected at line 63
-[]\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10   \/cmr/m/n/10 0)[] \OML/cm
-m/m/it/10 dxdt \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 []
+[]\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@ \/cmr/m/n/10 0)[] \OML/
+cmm/m/it/10 dxdt \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 ^^N[]
  []
 
 Missing character: There is no t in font nullfont!
@@ -6547,7 +6553,7 @@ or  <return>  to continue without it.
 
 Overfull \hbox (37.82869pt too wide) in paragraph at lines 63--66
  $\OML/cmm/m/it/10 u\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy
-/m/n/10 
+/m/n/10 ^^T
  []
 
 
@@ -6562,7 +6568,7 @@ Overfull \hbox (30.993pt too wide) in paragraph at lines 63--66
 
 
 Overfull \hbox (27.77782pt too wide) in paragraph at lines 63--66
-\/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \/cmr/m/n/10 2] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \/cmr/m/n/10 2] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -6684,7 +6690,7 @@ Overfull \hbox (23.97804pt too wide) in paragraph at lines 67--68
 
 
 Overfull \hbox (17.39128pt too wide) in paragraph at lines 67--68
-\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -6699,12 +6705,12 @@ Overfull \hbox (26.15901pt too wide) in paragraph at lines 67--68
 
 
 Overfull \hbox (15.5556pt too wide) in paragraph at lines 67--68
-\/cmr/m/n/10 [1 \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 [1 \OMS/cmsy/m/n/10 ^^@
  []
 
 
 Overfull \hbox (36.17021pt too wide) in paragraph at lines 67--68
-\/cmr/m/n/10 2[]\OML/cmm/m/it/10 ; \/cmr/m/n/10 2] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 2[]\OML/cmm/m/it/10 ; \/cmr/m/n/10 2] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -6732,8 +6738,8 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (120.99757pt too wide) detected at line 68
-[]\OML/cmm/m/it/10 u[] \/cmr/m/n/10 =[] (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10   
-\/cmr/m/n/10 0)[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 []
+[]\OML/cmm/m/it/10 u[] \/cmr/m/n/10 =[] (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^
+@ \/cmr/m/n/10 0)[] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 ^^N[]
  []
 
 Missing character: There is no t in font nullfont!
@@ -6766,7 +6772,7 @@ and I'll forget about whatever was undefined.
 
 Overfull \hbox (142.77885pt too wide) detected at line 70
 [] []\OML/cmm/m/it/10 u[] \/cmr/m/n/10 =[] (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10
-   \/cmr/m/n/10 1)[] = 0\OML/cmm/m/it/10 :
+ ^^@ \/cmr/m/n/10 1)[] = 0\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no T in font nullfont!
@@ -7438,7 +7444,7 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (166.5834pt too wide) detected at line 76
-[][] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 C[]:
+[][] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 C[]:
  []
 
 Missing character: There is no W in font nullfont!
@@ -7723,7 +7729,7 @@ Overfull \hbox (10.64474pt too wide) in paragraph at lines 78--79
 
 
 Overfull \hbox (21.20026pt too wide) in paragraph at lines 78--79
-\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 ^^T
  []
 
 
@@ -7733,7 +7739,7 @@ Overfull \hbox (67.5305pt too wide) in paragraph at lines 78--79
 
 
 Overfull \hbox (15.55553pt too wide) in paragraph at lines 78--79
-\/cmr/m/n/10 0 \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T
  []
 
 
@@ -7748,7 +7754,7 @@ Overfull \hbox (4.29166pt too wide) in paragraph at lines 78--79
 
 
 Overfull \hbox (20.18399pt too wide) in paragraph at lines 78--79
-\OML/cmm/m/it/10 p[] \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 p[] \OMS/cmsy/m/n/10 ^^T
  []
 
 
@@ -7812,8 +7818,8 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (212.32886pt too wide) detected at line 79
-[]\OML/cmm/m/it/10 u[] \/cmr/m/n/10 + [][] \OMS/cmsy/m/n/10 [] \OML/cmm/m/it/1
-0 u[] \/cmr/m/n/10 + [][]\OML/cmm/m/it/10 :
+[]\OML/cmm/m/it/10 u[] \/cmr/m/n/10 + [][] \OMS/cmsy/m/n/10 ^^T[] \OML/cmm/m/it
+/10 u[] \/cmr/m/n/10 + [][]\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no N in font nullfont!
@@ -8032,7 +8038,7 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (200.61948pt too wide) detected at line 81
-[][] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 C[][]:
+[][] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 C[][]:
  []
 
 Missing character: There is no S in font nullfont!
@@ -9309,12 +9315,12 @@ Overfull \hbox (4.8229pt too wide) in paragraph at lines 84--85
 
 
 Overfull \hbox (19.0695pt too wide) in paragraph at lines 84--85
-\OML/cmm/m/it/10 L[] \OMS/cmsy/m/n/10  
+\OML/cmm/m/it/10 L[] \OMS/cmsy/m/n/10 ^^@
  []
 
 
 Overfull \hbox (16.66672pt too wide) in paragraph at lines 84--85
-[] \OMS/cmsy/m/n/10  
+[] \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -9584,7 +9590,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 88--91
 
 
 Overfull \hbox (21.06712pt too wide) in paragraph at lines 88--91
-\OML/cmm/m/it/10 [] >
+\OML/cmm/m/it/10 ^^V[] >
  []
 
 
@@ -9599,7 +9605,7 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 88--91
 
 
 Overfull \hbox (27.77782pt too wide) in paragraph at lines 88--91
-\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -9609,7 +9615,7 @@ Overfull \hbox (12.07121pt too wide) in paragraph at lines 88--91
 
 
 Overfull \hbox (62.95622pt too wide) in paragraph at lines 88--91
-\OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 ^^T
  []
 
 
@@ -9623,11 +9629,12 @@ Overfull \hbox (5.03125pt too wide) in paragraph at lines 88--91
  []
 
 
-Overfull \hbox (124.78172pt too wide) detected at line 91
+Overfull \hbox (132.55952pt too wide) detected at line 91
 []\OML/cmm/m/it/10 u\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy
-/m/n/10  \/cmr/m/n/10 2 \OMS/cmsy/m/n/10 8\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\
-/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10
- 4] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 B[]
+/m/n/10 ^^T \/cmr/m/n/10 2 \OMS/cmsy/m/n/10 8\/cmr/m/n/10 (\OML/cmm/m/it/10 t; 
+x\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \/cmr/m/n/10 [\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/
+10 1\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 ^^B \OML/cmm/m/it/10 B[
+]
  []
 
 Missing character: There is no a in font nullfont!
@@ -9644,7 +9651,7 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (111.72603pt too wide) detected at line 93
-[][] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 []
+[][] \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 ^^N[]
  []
 
 Missing character: There is no a in font nullfont!
@@ -9652,7 +9659,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
 l.95 ...n} \label{intro-DG2 assumption below} \abs
-                                                  {\{u \leq 0\} \cap [1,4] \...
+                                                  {\{u \leq 0\} \cap [0,4] \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9661,8 +9668,8 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 <argument> \abs 
-                {[1,4]\times B_2}
-l.95 ... B_2} \geq \frac{\abs{[1,4]\times B_2}}{2}
+                {[0,4]\times B_2}
+l.95 ... B_2} \geq \frac{\abs{[0,4]\times B_2}}{2}
                                                    \end{equation}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9672,7 +9679,7 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (149.48882pt too wide) detected at line 95
-[][] \OMS/cmsy/m/n/10  []
+[][] \OMS/cmsy/m/n/10 ^^U []
  []
 
 Missing character: There is no t in font nullfont!
@@ -9681,7 +9688,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 l.97 ...} \label{intro-DG2 assumption middle} \abs
-                                                  {\{0 < u < 1\} \cap [1,4] ...
+                                                  {\{0 < u < 1\} \cap [0,4] ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9690,7 +9697,7 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (134.41809pt too wide) detected at line 97
-[][] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 []:
+[][] \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 ^^V[]:
  []
 
 
@@ -10272,7 +10279,7 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 100--101
 
 
 Overfull \hbox (8.93057pt too wide) in paragraph at lines 100--101
-\OML/cmm/m/it/10 []$
+\OML/cmm/m/it/10 ^^N[]$
  []
 
 
@@ -10282,7 +10289,7 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 100--101
 
 
 Overfull \hbox (17.39128pt too wide) in paragraph at lines 100--101
-\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -10715,7 +10722,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 102--103
 
 
 Overfull \hbox (27.77782pt too wide) in paragraph at lines 102--103
-\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -10725,7 +10732,7 @@ Overfull \hbox (12.07121pt too wide) in paragraph at lines 102--103
 
 
 Overfull \hbox (17.39128pt too wide) in paragraph at lines 102--103
-\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -10746,7 +10753,7 @@ Overfull \hbox (86.17117pt too wide) in paragraph at lines 102--103
 
 
 Overfull \hbox (21.06712pt too wide) in paragraph at lines 102--103
-\OML/cmm/m/it/10 [] \/cmr/m/n/10 =
+\OML/cmm/m/it/10 ^^V[] \/cmr/m/n/10 =
  []
 
 
@@ -10979,7 +10986,7 @@ Overfull \hbox (86.17117pt too wide) in paragraph at lines 104--105
 
 
 Overfull \hbox (21.06712pt too wide) in paragraph at lines 104--105
-\OML/cmm/m/it/10 [] >
+\OML/cmm/m/it/10 ^^V[] >
  []
 
 
@@ -11003,7 +11010,7 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (136.74748pt too wide) detected at line 105
-[] \OMS/cmsy/m/n/10  []\OML/cmm/m/it/10 :
+[] \OMS/cmsy/m/n/10 ^^T []\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no T in font nullfont!
@@ -11695,7 +11702,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 108--109
 
 
 Overfull \hbox (17.39128pt too wide) in paragraph at lines 108--109
-\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 (\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -11750,7 +11757,7 @@ Overfull \hbox (14.19682pt too wide) in paragraph at lines 108--109
 
 
 Overfull \hbox (28.27318pt too wide) in paragraph at lines 108--109
-[]\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 
+[]\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 ^^U
  []
 
 
@@ -12296,7 +12303,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 114--115
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 114--115
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
@@ -12583,7 +12590,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 120--121
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 120--121
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 Missing character: There is no T in font nullfont!
@@ -12661,8 +12668,8 @@ and I'll forget about whatever was undefined.
 
 Overfull \hbox (112.0445pt too wide) detected at line 123
 \OML/cmm/m/it/10 S[]f \/cmr/m/n/10 := [] \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/c
-mm/m/it/10 x\/cmr/m/n/10 ) \OMS/cmsy/m/n/10   [] \OML/cmm/m/it/10 f\/cmr/m/n/10
- (\OML/cmm/m/it/10 x\/cmr/m/n/10 )\OML/cmm/m/it/10 :
+mm/m/it/10 x\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/it/10 f\/cmr/m/n/
+10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 )\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no T in font nullfont!
@@ -13084,7 +13091,7 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 123--127
 
 
 Overfull \hbox (20.875pt too wide) in paragraph at lines 123--127
-\OML/cmm/m/it/10 [] >
+\OML/cmm/m/it/10 ^^U[] >
  []
 
 
@@ -13099,7 +13106,7 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 123--127
 
 
 Overfull \hbox (27.77782pt too wide) in paragraph at lines 123--127
-\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -13109,12 +13116,12 @@ Overfull \hbox (12.07121pt too wide) in paragraph at lines 123--127
 
 
 Overfull \hbox (62.95622pt too wide) in paragraph at lines 123--127
-\OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 ^^T
  []
 
 
 Overfull \hbox (10.31949pt too wide) in paragraph at lines 123--127
-\OML/cmm/m/it/10 []$
+\OML/cmm/m/it/10 ^^U[]$
  []
 
 
@@ -13124,11 +13131,11 @@ Overfull \hbox (5.03125pt too wide) in paragraph at lines 123--127
 
 
 Overfull \hbox (150.89276pt too wide) detected at line 127
-\OMS/cmsy/m/n/10  \/cmr/m/n/10 2 \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 u\/cmr/m/n
-/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \/cmr/m/n/10 2 \OMS
-/cmsy/m/n/10 8\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy/m/n/1
-0 2 \/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10  \OML/c
-mm/m/it/10 B[]
+\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 u\/cmr
+/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \/cmr/m/n/10 
+2 \OMS/cmsy/m/n/10 8\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy
+/m/n/10 2 \/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 ^^
+B \OML/cmm/m/it/10 B[]
  []
 
 Missing character: There is no t in font nullfont!
@@ -13155,8 +13162,8 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (89.22626pt too wide) detected at line 129
-[][]\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10  \/cmr/m/n/10 4 \OMS/cmsy/m/n/10   \OM
-L/cmm/m/it/10 []:
+[][]\OML/cmm/m/it/10 u \OMS/cmsy/m/n/10 ^^T \/cmr/m/n/10 4 \OMS/cmsy/m/n/10 ^^@
+ \OML/cmm/m/it/10 ^^U[]:
  []
 
 
@@ -13237,10 +13244,20 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <recently read> \abs 
                      
-l.132 ...m above or below, depending whether $\abs
+l.132 ...elow, depending whether the measure $\abs
                                                   {\{u \leq 0\} \cap [1,4]\t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13394,7 +13411,7 @@ Overfull \hbox (33.47012pt too wide) in paragraph at lines 132--133
 
 
 Overfull \hbox (13.50238pt too wide) in paragraph at lines 132--133
-\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 u$ 
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 u$ 
  []
 
 Missing character: There is no C in font nullfont!
@@ -13633,7 +13650,7 @@ Overfull \hbox (23.97804pt too wide) in paragraph at lines 134--135
 
 
 Overfull \hbox (33.6587pt too wide) in paragraph at lines 134--135
-\/cmr/m/n/10 2\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 2\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -13930,12 +13947,12 @@ Overfull \hbox (10.64474pt too wide) in paragraph at lines 136--137
 
 
 Overfull \hbox (15.55553pt too wide) in paragraph at lines 136--137
-\/cmr/m/n/10 0 \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T
  []
 
 
 Overfull \hbox (16.07635pt too wide) in paragraph at lines 136--137
-\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 ^^T
  []
 
 
@@ -13954,8 +13971,9 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (191.7733pt too wide) detected at line 137
-[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 [] \OMS/cmsy/m/n/10 8\/cmr/m/n/10 0 \OM
-S/cmsy/m/n/10  \OML/cmm/m/it/10 k \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 k[]:
+[] \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 ^^V[] \OMS/cmsy/m/n/10 8\/cmr/m/n/10 0
+ \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 
+k[]:
  []
 
 Missing character: There is no B in font nullfont!
@@ -14184,7 +14202,7 @@ Overfull \hbox (9.69217pt too wide) in paragraph at lines 137--139
 
 
 Overfull \hbox (27.77782pt too wide) in paragraph at lines 137--139
-\/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -14204,7 +14222,7 @@ Overfull \hbox (20.24768pt too wide) in paragraph at lines 137--139
 
 
 Overfull \hbox (59.805pt too wide) in paragraph at lines 137--139
-[]\OML/cmm/m/it/10 =[]$
+[]\OML/cmm/m/it/10 =^^V[]$
  []
 
 
@@ -14294,7 +14312,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 140--141
 
 
 Overfull \hbox (22.1564pt too wide) in paragraph at lines 140--141
-\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10  
+\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -14305,7 +14323,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 140--141
 
 Overfull \hbox (46.48271pt too wide) in paragraph at lines 140--141
 \OML/cmm/m/it/10 u[]\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy
-/m/n/10 
+/m/n/10 ^^T
  []
 
 
@@ -14320,7 +14338,7 @@ Overfull \hbox (30.993pt too wide) in paragraph at lines 140--141
 
 
 Overfull \hbox (27.77782pt too wide) in paragraph at lines 140--141
-\/cmr/m/n/10 [3\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [3\OML/cmm/m/it/10 ; \/cmr/m/n/10 4] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -14331,12 +14349,12 @@ Overfull \hbox (12.07121pt too wide) in paragraph at lines 140--141
 
 Overfull \hbox (37.82869pt too wide) in paragraph at lines 140--141
 \OML/cmm/m/it/10 u\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr/m/n/10 ) \OMS/cmsy/m
-/n/10 
+/n/10 ^^T
  []
 
 
 Overfull \hbox (12.77782pt too wide) in paragraph at lines 140--141
-\/cmr/m/n/10 2 \OMS/cmsy/m/n/10  
+\/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -14423,7 +14441,7 @@ Overfull \hbox (5.12846pt too wide) in paragraph at lines 144--145
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 144--145
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
@@ -14457,7 +14475,7 @@ and I'll forget about whatever was undefined.
 
 Overfull \hbox (103.18033pt too wide) detected at line 145
 [][]\OML/cmm/m/it/10 g\/cmr/m/n/10 (\OML/cmm/m/it/10 y\/cmr/m/n/10 ) \OMS/cmsy/
-m/n/10  \OML/cmm/m/it/10 Cr[]:
+m/n/10 ^^T \OML/cmm/m/it/10 Cr[]:
  []
 
 Missing character: There is no T in font nullfont!
@@ -14566,7 +14584,7 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 145--147
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 145--147
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 Missing character: There is no B in font nullfont!
@@ -14846,7 +14864,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 148--149
 
 
 Overfull \hbox (10.51161pt too wide) in paragraph at lines 148--149
-\OML/cmm/m/it/10 []$
+\OML/cmm/m/it/10 ^^V[]$
  []
 
 
@@ -15314,6 +15332,12 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -16751,7 +16775,7 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 258--259
 
 
 Overfull \hbox (30.55338pt too wide) in paragraph at lines 258--259
-\/cmr/m/n/10 (\OMS/cmsy/m/n/10  []\/cmr/m/n/10 )[]\OML/cmm/m/it/10 f$
+\/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\/cmr/m/n/10 )[]\OML/cmm/m/it/10 f$
  []
 
 
@@ -16776,7 +16800,7 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 258--259
 
 
 Overfull \hbox (33.09732pt too wide) in paragraph at lines 258--259
-\/cmr/m/n/10 (\OMS/cmsy/m/n/10  \/cmr/m/n/10 )[]\OML/cmm/m/it/10 $
+\/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 )[]\OML/cmm/m/it/10 ^^R$
  []
 
 
@@ -17299,8 +17323,8 @@ and I'll forget about whatever was undefined.
 
 Overfull \hbox (182.59367pt too wide) detected at line 274
 []\OML/cmm/m/it/10 u \/cmr/m/n/10 = \OML/cmm/m/it/10 H\/cmr/m/n/10 (\OML/cmm/m/
-it/10 x; u; u; D[]u\/cmr/m/n/10 ) \OMS/cmsy/m/n/10   j\OML/cmm/m/it/10 u\OMS/c
-msy/m/n/10 j[] \/cmr/m/n/10 + []
+it/10 x; u; u; D[]u\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^Y ^^@j\OML/cmm/m/it/10 u\O
+MS/cmsy/m/n/10 j[] \/cmr/m/n/10 + []
  []
 
 Missing character: There is no w in font nullfont!
@@ -18431,7 +18455,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 274--281
 
 
 Overfull \hbox (17.49995pt too wide) in paragraph at lines 274--281
-\/cmr/m/n/10  \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 ^^C \OMS/cmsy/m/n/10 ^^U
  []
 
 
@@ -18461,7 +18485,7 @@ Overfull \hbox (13.05551pt too wide) in paragraph at lines 274--281
 
 
 Overfull \hbox (30.01045pt too wide) in paragraph at lines 274--281
-\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -18472,17 +18496,17 @@ Overfull \hbox (36.63663pt too wide) in paragraph at lines 274--281
 
 
 Overfull \hbox (48.2882pt too wide) in paragraph at lines 274--281
-[] \OMS/cmsy/m/n/10 
+[] \OMS/cmsy/m/n/10 ^^T
  []
 
 
 Overfull \hbox (21.82123pt too wide) in paragraph at lines 274--281
-\/cmr/m/n/10 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 \OMS/cmsy/m/n/10 j[]$
+\/cmr/m/n/10 ^^C\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^X\OMS/cmsy/m/n/10 j[]$
  []
 
 
 Overfull \hbox (4.83508pt too wide) in paragraph at lines 274--281
-\OML/cmm/m/it/10 $ 
+\OML/cmm/m/it/10 ^^X$ 
  []
 
 Missing character: There is no T in font nullfont!
@@ -18529,7 +18553,7 @@ Overfull \hbox (11.28008pt too wide) in paragraph at lines 282--283
 
 
 Overfull \hbox (30.01045pt too wide) in paragraph at lines 282--283
-\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -18568,8 +18592,8 @@ and I'll forget about whatever was undefined.
 
 Overfull \hbox (100.91142pt too wide) detected at line 283
 []\OML/cmm/m/it/10 u \/cmr/m/n/10 + []\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\OMS/
-cmsy/m/n/10 j[]  \OML/cmm/m/it/10 f \/cmr/m/n/10 + \OMS/cmsy/m/n/10 \/cmr/m/n
-/10 (\OML/cmm/m/it/10 Au\/cmr/m/n/10 )\OML/cmm/m/it/10 ;
+cmsy/m/n/10 j[] ^^T \OML/cmm/m/it/10 f \/cmr/m/n/10 + \OMS/cmsy/m/n/10 ^^D\/cmr
+/m/n/10 (\OML/cmm/m/it/10 Au\/cmr/m/n/10 )\OML/cmm/m/it/10 ;
  []
 
 ! Undefined control sequence.
@@ -18592,9 +18616,9 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (117.77904pt too wide) detected at line 284
-[]\OML/cmm/m/it/10 u \/cmr/m/n/10 + \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\OMS/c
-msy/m/n/10 j[]   \/cmr/m/n/10  + \OML/cmm/m/it/10 m[]\/cmr/m/n/10 (\OML/cmm/m
-/it/10 D[]u\/cmr/m/n/10 )
+[]\OML/cmm/m/it/10 u \/cmr/m/n/10 + ^^C\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\OMS
+/cmsy/m/n/10 j[] ^^U ^^@\/cmr/m/n/10 ^^C + \OML/cmm/m/it/10 m[]\/cmr/m/n/10 (\O
+ML/cmm/m/it/10 D[]u\/cmr/m/n/10 )
  []
 
 Missing character: There is no f in font nullfont!
@@ -18806,12 +18830,12 @@ Overfull \hbox (5.72458pt too wide) in paragraph at lines 284--288
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 284--288
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
 Overfull \hbox (31.12157pt too wide) in paragraph at lines 284--288
-\/cmr/m/n/10 (0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 (0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -18827,7 +18851,7 @@ Overfull \hbox (5.03125pt too wide) in paragraph at lines 284--288
 
 
 Overfull \hbox (6.94444pt too wide) in paragraph at lines 284--288
-\/cmr/m/n/10 $
+\/cmr/m/n/10 ^^C$
  []
 
 
@@ -20481,9 +20505,9 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (85.10123pt too wide) detected at line 301
-[][]\OML/cmm/m/it/10 f \/cmr/m/n/10 + \OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 [] \
-OML/cmm/m/it/10 f \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 Q\/cmr/m/n/10 (\OML/cmm/m
-/it/10 f\/cmr/m/n/10 ) = \OML/cmm/m/it/10 
+[][]\OML/cmm/m/it/10 f \/cmr/m/n/10 + \OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 ^^A[]
+ \OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Q\/cmr/m/n/10 (\OML/c
+mm/m/it/10 f\/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^[
  []
 
 Missing character: There is no f in font nullfont!
@@ -20727,7 +20751,7 @@ Overfull \hbox (7.90555pt too wide) in paragraph at lines 301--303
 
 
 Overfull \hbox (6.0729pt too wide) in paragraph at lines 301--303
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^[$
  []
 
 
@@ -20742,7 +20766,7 @@ Overfull \hbox (5.71527pt too wide) in paragraph at lines 301--303
 
 
 Overfull \hbox (13.01852pt too wide) in paragraph at lines 301--303
-\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 []$
+\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 ^^A[]$
  []
 
 Missing character: There is no G in font nullfont!
@@ -21418,7 +21442,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 304--305
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 304--305
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
@@ -21468,7 +21492,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 304--305
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 304--305
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
@@ -22294,7 +22318,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 306--307
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 306--307
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 Missing character: There is no I in font nullfont!
@@ -22399,8 +22423,8 @@ Overfull \hbox (239.888pt too wide) detected at line 309
 \OML/cmm/m/it/10 Q\/cmr/m/n/10 (\OML/cmm/m/it/10 f\/cmr/m/n/10 )(\OML/cmm/m/it/
 10 t; x; v\/cmr/m/n/10 ) := [] \OML/cmm/m/it/10 K\/cmr/m/n/10 (\OML/cmm/m/it/10
  t; x; v; w\/cmr/m/n/10 )[\OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x
-; w\/cmr/m/n/10 ) \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m
-/it/10 t; x; v\/cmr/m/n/10 )] \OML/cmm/m/it/10 dw;
+; w\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm
+/m/it/10 t; x; v\/cmr/m/n/10 )] \OML/cmm/m/it/10 dw;
  []
 
 Missing character: There is no w in font nullfont!
@@ -22719,23 +22743,23 @@ Overfull \hbox (7.42825pt too wide) in paragraph at lines 309--314
 
 
 Overfull \hbox (16.3171pt too wide) in paragraph at lines 309--314
-\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 ^^T \OMS/cmsy/m/n/10 ^^T
  []
 
 
 Overfull \hbox (68.04161pt too wide) in paragraph at lines 309--314
 \OML/cmm/m/it/10 K\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x; v; w\/cmr/m/n/10 )\OMS/c
-msy/m/n/10 j\OML/cmm/m/it/10 v \OMS/cmsy/m/n/10  
+msy/m/n/10 j\OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 ^^@
  []
 
 
 Overfull \hbox (40.10425pt too wide) in paragraph at lines 309--314
-\OML/cmm/m/it/10 w\OMS/cmsy/m/n/10 j[] 
+\OML/cmm/m/it/10 w\OMS/cmsy/m/n/10 j[] ^^T
  []
 
 
 Overfull \hbox (5.76158pt too wide) in paragraph at lines 309--314
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^T$
  []
 
 
@@ -22750,12 +22774,12 @@ Overfull \hbox (22.22224pt too wide) in paragraph at lines 309--314
 
 
 Overfull \hbox (5.76158pt too wide) in paragraph at lines 309--314
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^T$
  []
 
 
 Overfull \hbox (6.0729pt too wide) in paragraph at lines 309--314
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^[$
  []
 
 
@@ -22816,7 +22840,7 @@ Overfull \hbox (22.22224pt too wide) in paragraph at lines 309--314
 
 
 Overfull \hbox (16.3171pt too wide) in paragraph at lines 309--314
-\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 
+\OML/cmm/m/it/10 ^^T \OMS/cmsy/m/n/10 ^^U
  []
 
 
@@ -23738,7 +23762,7 @@ Overfull \hbox (10.00002pt too wide) in paragraph at lines 315--318
 
 
 Overfull \hbox (15.5173pt too wide) in paragraph at lines 315--318
-\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2
+\OML/cmm/m/it/10 ^^[ \OMS/cmsy/m/n/10 2
  []
 
 
@@ -23749,13 +23773,13 @@ Overfull \hbox (18.0946pt too wide) in paragraph at lines 315--318
 
 Overfull \hbox (45.19106pt too wide) in paragraph at lines 315--318
 \OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cms
-y/m/n/10 
+y/m/n/10 ^^B
  []
 
 
 Overfull \hbox (24.33226pt too wide) in paragraph at lines 315--318
 \/cmr/m/n/10 
-\OMS/cmsy/m/n/10 []\/cmr/m/n/10 )$
+\OMS/cmsy/m/n/10 ^^B[]\/cmr/m/n/10 )$
  []
 
 
@@ -23766,19 +23790,19 @@ Overfull \hbox (15.41666pt too wide) in paragraph at lines 315--318
 
 Overfull \hbox (49.17717pt too wide) in paragraph at lines 315--318
 \OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cms
-y/m/n/10 
+y/m/n/10 ^^B
  []
 
 
 Overfull \hbox (30.99895pt too wide) in paragraph at lines 315--318
 \/cmr/m/n/10 
-\OMS/cmsy/m/n/10 []\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 \
+\OMS/cmsy/m/n/10 ^^B[]\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 \
  []
 
 
 Overfull \hbox (45.19106pt too wide) in paragraph at lines 315--318
 \OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cms
-y/m/n/10 
+y/m/n/10 ^^B
  []
 
 
@@ -23789,12 +23813,12 @@ Overfull \hbox (42.17596pt too wide) in paragraph at lines 315--318
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 315--318
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
 Overfull \hbox (31.12157pt too wide) in paragraph at lines 315--318
-\/cmr/m/n/10 (0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 (0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -23805,7 +23829,7 @@ $
 
 
 Overfull \hbox (6.0729pt too wide) in paragraph at lines 315--318
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^[$
  []
 
 
@@ -24385,9 +24409,9 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (148.7711pt too wide) detected at line 327
-[][]\OML/cmm/m/it/10  \/cmr/m/n/10 + [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10  
-\/cmr/m/n/10 + (\OMS/cmsy/m/n/10  \/cmr/m/n/10 )[]\OML/cmm/m/it/10  \/cmr/m/n
-/10 = 0\OML/cmm/m/it/10 :
+[][]\OML/cmm/m/it/10 ^^R \/cmr/m/n/10 + [] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/1
+0 ^^R \/cmr/m/n/10 + (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 ^^A)[]\OML/cmm/m/it/10 ^
+^R \/cmr/m/n/10 = 0\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no N in font nullfont!
@@ -24428,12 +24452,12 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (36.45845pt too wide) in paragraph at lines 327--329
-  $\/cmr/m/n/10 (\OMS/cmsy/m/n/10  \/cmr/m/n/10 )[]$
+  $\/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 ^^A)[]$
  []
 
 
 Overfull \hbox (42.70847pt too wide) in paragraph at lines 327--329
-\/cmr/m/n/10 (\OMS/cmsy/m/n/10  \/cmr/m/n/10 )[]$
+\/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 ^^A)[]$
  []
 
 Missing character: There is no W in font nullfont!
@@ -25765,7 +25789,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 332--333
 
 
 Overfull \hbox (36.45845pt too wide) in paragraph at lines 332--333
-\/cmr/m/n/10 (\OMS/cmsy/m/n/10  \/cmr/m/n/10 )[]$
+\/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 ^^A)[]$
  []
 
 
@@ -25800,7 +25824,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 332--333
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 332--333
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 Missing character: There is no I in font nullfont!
@@ -26084,7 +26108,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 334--337
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 334--337
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
@@ -26115,12 +26139,12 @@ Overfull \hbox (22.23265pt too wide) in paragraph at lines 334--337
 
 
 Overfull \hbox (10.52773pt too wide) in paragraph at lines 334--337
-\OML/cmm/m/it/10  \/cmr/m/n/10 :
+\OML/cmm/m/it/10 ^^R \/cmr/m/n/10 :
  []
 
 
 Overfull \hbox (30.01045pt too wide) in paragraph at lines 334--337
-\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [0\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -26150,7 +26174,7 @@ Overfull \hbox (11.2917pt too wide) in paragraph at lines 334--337
 
 
 Overfull \hbox (9.18057pt too wide) in paragraph at lines 334--337
-\OML/cmm/m/it/10 []$ 
+\OML/cmm/m/it/10 ^^R[]$ 
  []
 
 Missing character: There is no T in font nullfont!
@@ -27599,17 +27623,17 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 338--345
 
 
 Overfull \hbox (4.97223pt too wide) in paragraph at lines 338--345
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^R$
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 338--345
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^?o
  []
 
 
 Overfull \hbox (25.01044pt too wide) in paragraph at lines 338--345
-\/cmr/m/n/10 [\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 
+\/cmr/m/n/10 [\OML/cmm/m/it/10 ; T\/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
  []
 
 
@@ -27634,13 +27658,13 @@ Overfull \hbox (19.06955pt too wide) in paragraph at lines 338--345
 
 
 Overfull \hbox (23.88896pt too wide) in paragraph at lines 338--345
-\/cmr/m/n/10 (\OMS/cmsy/m/n/10  \/cmr/m/n/10 )$
+\/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 ^^A)$
  []
 
 
 Overfull \hbox (46.45844pt too wide) in paragraph at lines 338--345
-\/cmr/m/n/10 [\OML/cmm/m/it/10 ; \/cmr/m/n/10 (\OMS/cmsy/m/n/10  \/cmr/m/n/10 
-)[]]$
+\/cmr/m/n/10 [\OML/cmm/m/it/10 ; \/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10
+ ^^A)[]]$
  []
 
 
@@ -27650,7 +27674,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 338--345
 
 
 Overfull \hbox (41.12512pt too wide) in paragraph at lines 338--345
-[]\/cmr/m/n/10 (\OMS/cmsy/m/n/10  \/cmr/m/n/10 )[]$
+[]\/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 )[]$
  []
 
 
@@ -28562,17 +28586,17 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 353--354
 
 
 Overfull \hbox (22.06947pt too wide) in paragraph at lines 353--354
-\OML/cmm/m/it/10 s\/cmr/m/n/10 (\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10  
+\OML/cmm/m/it/10 s\/cmr/m/n/10 (\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@
  []
 
 
 Overfull \hbox (13.57292pt too wide) in paragraph at lines 353--354
-\OML/cmm/m/it/10 t\/cmr/m/n/10 )$
+\OML/cmm/m/it/10 ^^[t\/cmr/m/n/10 )$
  []
 
 
 Overfull \hbox (6.0729pt too wide) in paragraph at lines 353--354
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^[$
  []
 
 
@@ -28641,12 +28665,12 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (210.1058pt too wide) detected at line 354
-\OMS/cmsy/m/n/10 8[]\OML/cmm/m/it/10 u; \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 [] 
-[] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/cmr
-/m/n/10 ) \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 s\/cmr/m/n/10 (\OML/cmm/m/it/10 x
- \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 \/cmr/m/n/10 (\OML/cmm/m/it/10 t\/cmr/m/n
-/10 ))\OMS/cmsy/m/n/10 j[] \OML/cmm/m/it/10 dx \OMS/cmsy/m/n/10  \/cmr/m/n/10 
-0\OML/cmm/m/it/10 :
+\OMS/cmsy/m/n/10 8[]\OML/cmm/m/it/10 u; \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 ^^M[
+] [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\/cmr/m/n/10 (\OML/cmm/m/it/10 t; x\/c
+mr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 s\/cmr/m/n/10 (\OML/cmm/m/it/
+10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^M\/cmr/m/n/10 (\OML/cmm/m/it/10 t\
+/cmr/m/n/10 ))\OMS/cmsy/m/n/10 j[] \OML/cmm/m/it/10 dx \OMS/cmsy/m/n/10 ^^T \/c
+mr/m/n/10 0\OML/cmm/m/it/10 :
  []
 
 Missing character: There is no I in font nullfont!
@@ -28727,9 +28751,9 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (89.12283pt too wide) detected at line 357
-[][]\OML/cmm/m/it/10 u \/cmr/m/n/10 + \OMS/cmsy/m/n/10 \OML/cmm/m/it/10 A\/cmr
-/m/n/10 (\OML/cmm/m/it/10 u\/cmr/m/n/10 ) = \OML/cmm/m/it/10 []\/cmr/m/n/10 (
-\OML/cmm/m/it/10 u\/cmr/m/n/10 )\OML/cmm/m/it/10 ;
+[][]\OML/cmm/m/it/10 u \/cmr/m/n/10 + \OMS/cmsy/m/n/10 ^^D\OML/cmm/m/it/10 A\/c
+mr/m/n/10 (\OML/cmm/m/it/10 u\/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^W^^Q[]\/cmr/m/
+n/10 (\OML/cmm/m/it/10 u\/cmr/m/n/10 )\OML/cmm/m/it/10 ;
  []
 
 Missing character: There is no m in font nullfont!
@@ -29152,7 +29176,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 357--359
 
 
 Overfull \hbox (32.18753pt too wide) in paragraph at lines 357--359
-\OML/cmm/m/it/10 []\/cmr/m/n/10 (\OML/cmm/m/it/10 u\/cmr/m/n/10 ) =
+\OML/cmm/m/it/10 ^^Q[]\/cmr/m/n/10 (\OML/cmm/m/it/10 u\/cmr/m/n/10 ) =
  []
 
 
@@ -29577,7 +29601,7 @@ Overfull \hbox (11.2917pt too wide) in paragraph at lines 360--363
 
 
 Overfull \hbox (5.57639pt too wide) in paragraph at lines 360--363
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^W$
  []
 
 
@@ -29587,7 +29611,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 360--363
 
 
 Overfull \hbox (32.82402pt too wide) in paragraph at lines 360--363
-\OML/cmm/m/it/10 ; A \/cmr/m/n/10 :\OMS/cmsy/m/n/10 !$
+\OML/cmm/m/it/10 ^^Q; A \/cmr/m/n/10 :\OMS/cmsy/m/n/10 !$
  []
 
 
@@ -29602,7 +29626,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 360--363
 
 
 Overfull \hbox (16.1319pt too wide) in paragraph at lines 360--363
-\OML/cmm/m/it/10  >
+\OML/cmm/m/it/10 ^^W >
  []
 
 
@@ -30037,7 +30061,7 @@ Overfull \hbox (20.24301pt too wide) in paragraph at lines 364--367
 
 
 Overfull \hbox (28.5348pt too wide) in paragraph at lines 364--367
-\OML/cmm/m/it/10 s[] \OMS/cmsy/m/n/10 $
+\OML/cmm/m/it/10 s[] \OMS/cmsy/m/n/10 ^^T$
  []
 
 
@@ -30067,7 +30091,7 @@ Overfull \hbox (35.79984pt too wide) in paragraph at lines 364--367
 
 
 Overfull \hbox (5.57639pt too wide) in paragraph at lines 364--367
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^W$
  []
 
 Missing character: There is no W in font nullfont!
@@ -30379,7 +30403,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 368--369
 
 
 Overfull \hbox (5.32408pt too wide) in paragraph at lines 368--369
-\OML/cmm/m/it/10 $
+\OML/cmm/m/it/10 ^^Q$
  []
 
 Missing character: There is no A in font nullfont!
@@ -30936,17 +30960,17 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 )
 ! Emergency stop.
-<*> ./chapter-intro.tex
-                       
+<*> chapter-intro.tex
+                     
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 62 strings out of 480897
- 856 string characters out of 2898199
- 264429 words of memory out of 3000000
- 16044 multiletter control sequences out of 15000+200000
- 532992 words of font info for 26 fonts, out of 3000000 for 9000
+ 105 strings out of 493029
+ 1011 string characters out of 6136233
+ 78091 words of memory out of 5000000
+ 3736 multiletter control sequences out of 15000+600000
+ 4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,5n,22p,1853b,151s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,5n,21p,1858b,152s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

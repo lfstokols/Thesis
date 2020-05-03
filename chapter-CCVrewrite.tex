@@ -125,9 +125,10 @@ Note that
 for $\lambda_1 < \lambda_2$, and for $\lambda$ sufficiently small we have $\psi_\lambda(x) \equiv 0$ for $|x| \leq 3$.  The function $F$ is non-positive, compactly supported in $B_3(0)$, and equal to $-1$ in $B_2$.  Therefore $\phi_0$ vanishes on $B_2(0)$.  
 
 It is proven in \cite{CaChVa.nio} that for $u$ solving \eqref{eq:CCV-main} with $u(x) \leq \psi_1(x)$ for all $|x|\leq 3$, we have
-\begin{equation} \label{CCV-energy inequality generic}
-\ddt \int (u - \psi)_+^2 + \norm{(u-\psi)_+}^2_{H^{s/2}(\R^d)} - B[(u-\psi)_+,(u-\psi)_-] \leq C \bracket{\int (u-\psi)_+^2 + \iint \indic{u-\psi_1 > 0}(x)[\psi(y)-\psi(x)]^2 \,dxdy }
-\end{equation}
+\begin{multline} \label{CCV-energy inequality generic}
+\ddt \int (u - \psi)_+^2 + \norm{(u-\psi)_+}^2_{H^{s/2}(\R^d)} - B[(u-\psi)_+,(u-\psi)_-] 
+\\ \leq C \bracket{\int (u-\psi)_+^2 + \iint \indic{u-\psi_1 > 0}(x)[\psi(y)-\psi(x)]^2 \,dxdy }
+\end{multline}
 
 The following lemma is equivalent to Lemma 4.1 in \cite{CaChVa.nio}.  
 \begin{lemma}[Isoperimetric Inequality for \cite{CaChVa.nio}]
@@ -135,9 +136,9 @@ Let $\delta>0$ be a constant, $s \in (0,2)$ and $d \in \N$.  Then, there exists 
 \begin{equation} \label{CCV-pointwise bound}
 u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, 
 \end{equation}
-\[ \abs{\{u < \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
+\[ \abs{\{u \leq \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
 and
-\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta, \]
+\[ \abs{\{u \geq \phi_1\} \cap (-2,0)\times B_3} \geq \delta, \]
 we have
 \[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} \geq \gamma. \]
 \end{lemma}
@@ -150,7 +151,7 @@ Define the following set-valued functions:
 \begin{align*}
 A_0(t) &= \{x\in B_1: u(x,t) \leq \phi_0(x)\} \\
 A_{1/2}(t) &= \{x\in \R^d: \phi_0 < u(x,t) < \phi_1 \} \\
-A_1(t) &= \{x\in \R^d: \phi_1 \leq u(x,t)\}.
+A_1(t) &= \{x\in B_3: \phi_1 \leq u(x,t)\}.
 \end{align*}
 Clearly $|A_0(t)| + |A_{1/2}(t)| + |A_1(t)| \geq |B_1|$ for all $t$.  By assumption, we must have $\int_{-3}^{-2} |A_0(t)|dt \geq |B_1|$ and $\int_{-2}^0 |A_1(t)|dt \geq \delta$.  From the assumption \eqref{CCV-pointwise bound} we know that $A_{1/2}(t), A_1(t) \subseteq B_3$ and of course $A_0(t) \subseteq B_1$ for all $t \in [-3,0]$.  
 
@@ -289,9 +290,9 @@ In chapter~\ref{ch:kinetic}, this combined approach in used to prove the isoperi
 \begin{lemma}[Isoperimetric Inequality]
 Let $\delta>0$ be a constant, $s \in (0,2)$, $d \in \N$, and let $X$ be a compact subset of $L^2([-3,0]\times\R^d)$.  Then, there exists $\gamma > 0$, and $\lambda \in (0,1)$, depending only on $\delta$, $d$, and $s$, such that for any solution $u:[-3,0] \times \R^d \to \R$ of \eqref{eq:CCV-main} satisfying $u \in X$, 
 \[ u(t,x) \leq 1 + \psi_\lambda(x) \qquad \textrm{on } [-3,0]\times\R^d, \]
-\[ \abs{\{u < \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
+\[ \abs{\{u \leq \phi_0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
 and
-\[ \abs{\{u > \phi_1\} \cap (-2,0)\times \R^d} \geq \delta, \]
+\[ \abs{\{u \geq \phi_1\} \cap (-2,0)\times B_3} \geq \delta, \]
 we have
 \[ \abs{\{\phi_0 < u < \phi_1\} \cap (-3,0)\times \R^d} \geq \gamma. \]
 \end{lemma}
@@ -301,9 +302,9 @@ Suppose that the lemma is false.  Then there must exist a sequence of solutions 
 \begin{equation} \label{CCV-pointwise bound k}
 u(t,x) \leq 1 + \psi_{1/k}(x) \qquad \textrm{on } [-3,0]\times\R^d, 
 \end{equation}
-\[ \abs{\{u < 0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
+\[ \abs{\{u \leq 0\} \cap (-3,-2)\times B_1} \geq |B_1|, \]
 and
-\[ \abs{\{u > 1 + (1/k)F\} \cap (-2,0)\times B_3} \leq \delta, \]
+\[ \abs{\{u \geq 1 + (1/k)F\} \cap (-2,0)\times B_3} \leq \delta, \]
 but
 \[ \abs{\{\phi_0 < u < 1 + (1/k)F\} \cap (-3,0)\times B_3} \leq 1/k. \]
 
