@@ -86,12 +86,12 @@ P.~Cannarsa and P.~Cardaliaguet.
   {H}amilton-{J}acobi equations.
 \newblock {\em Comm. Pure Appl. Math.}, 63(5):590--629, 2010.
 
-\bibitem[CCV11a]{CaChVa.nio}
+\bibitem[CCV11a]{CaChVa}
 L.~Caffarelli, C.-H. Chan, and A.~Vasseur.
 \newblock Regularity theory for parabolic nonlinear integral operators.
 \newblock {\em J. Amer. Math. Soc.}, 24(3):849--869, 2011.
 
-\bibitem[CCV11b]{CaChVa}
+\bibitem[CCV11b]{CaChVa.nio}
 L.~Caffarelli, C.-H. Chan, and A.~Vasseur.
 \newblock Regularity theory for parabolic nonlinear integral operators.
 \newblock {\em J. Amer. Math. Soc.}, 24(3):849--869, 2011.
@@ -544,11 +544,11 @@ S.~Resnick.
 \newblock ProQuest LLC, Ann Arbor, MI, 1995.
 \newblock Thesis (Ph.D.)--The University of Chicago.
 
-\bibitem[Sch13]{Sc}
-R.~W. Schwab.
-\newblock Stochastic homogenization for some nonlinear integro-differential
-  equations.
-\newblock {\em Comm. Partial Differential Equations}, 38(2):171--198, 2013.
+\bibitem[Sch09]{Sc.hamjac}
+Russell~W. Schwab.
+\newblock Stochastic homogenization of {H}amilton-{J}acobi equations in
+  stationary ergodic spatio-temporal media.
+\newblock {\em Indiana Univ. Math. J.}, 58(2):537--581, 2009.
 
 \bibitem[Ser99]{Se}
 Denis Serre.

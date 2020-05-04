@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.2)  3 MAY 2020 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.2)  3 MAY 2020 18:10
 entering extended mode
 **./StokolsThesis.tex
 (StokolsThesis.tex
@@ -457,7 +457,7 @@ Package pdftex.def Info: NFP-diagram-Cone.pdf  used on input line 44.
 ) (chapter-conservation.aux) (chapter-CCVrewrite.aux) (appendix.aux)) ) 
 Here is how much of TeX's memory you used:
  3890 strings out of 480896
- 55044 string characters out of 2898166
+ 55051 string characters out of 2898166
  302711 words of memory out of 3000000
  19662 multiletter control sequences out of 15000+200000
  549828 words of font info for 94 fonts, out of 3000000 for 9000
@@ -494,7 +494,7 @@ e1/public/amsfonts/cm/cmti8.pfb><C:/Users/lfsto/AppData/Local/Programs/MiKTeX 2
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lfs
 to/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on StokolsThesis.pdf (211 pages, 930864 bytes).
+Output written on StokolsThesis.pdf (211 pages, 930906 bytes).
 PDF statistics:
  825 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

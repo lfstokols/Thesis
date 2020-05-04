@@ -1,12 +1,12 @@
-This is BibTeX, Version 0.99d (MiKTeX 2.9.7380 64-bit)
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: StokolsThesis.aux
 A level-1 auxiliary file: chapter-intro.aux
 A level-1 auxiliary file: chapter-HamJac.aux
-A level-1 auxiliary file: chapter-CCVrewrite.aux
 A level-1 auxiliary file: chapter-kinetic.aux
 A level-1 auxiliary file: chapter-SQG.aux
 A level-1 auxiliary file: chapter-conservation.aux
+A level-1 auxiliary file: chapter-CCVrewrite.aux
 A level-1 auxiliary file: appendix.aux
 The style file: alpha.bst
 Database file #1: StokolsThesis.bib
@@ -16,7 +16,7 @@ Warning--can't use both author and editor fields in Se
 Warning--empty year in StVa.higher
 You've used 109 entries,
             2543 wiz_defined-function locations,
-            1301 strings with 20875 characters,
+            1301 strings with 20921 characters,
 and the built_in function-call counts, 47738 in all, are:
 = -- 5113
 > -- 1860
