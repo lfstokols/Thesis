@@ -161,7 +161,7 @@
 The surface quasigeostrophic equation (SQG) is a special case of the quasi-geostrophic system (QG) with uniform potential vorticity. The QG model is used extensively in meteorology and oceanography (e.g. Charney \cite{Ch}). These models are described in Pedlosky \cite{Pe}. The SQG model was popularized by Constantin, Majda and Tabak in \cite{CoMaTa}, due to its similarities with the Euler and Navier-Stokes  equation. They proposed it as a toy model for the study of 3D Fluid equations (see also Held, Garner, Pierrehumbert, and Swanson \cite{GaHePiSw}). 
 
 \vskip0.3cm
- We consider in this chapter critical SQG on a bounded domain. We will focus on the following model, which was introduced by Constantin and Ignatova in \cite{CoIg.fraclap} and \cite{CoIg.sqg}.
+ We consider in this chapter\footnote{The contents of this chapter are based on joint work of the author with Alexis Vasseur originally appearing in ``\bibentry{StVa.sqg}.''  Both authors contributed equally to this work.} critical SQG on a bounded domain. We will focus on the following model, which was introduced by Constantin and Ignatova in \cite{CoIg.fraclap} and \cite{CoIg.sqg}.
  Consider  $\Omega$ a connected bounded domain in $\R^2$ with $C^{2,\beta}$ boundary for some $\beta \in (0,1)$, and the Laplacian with homogeneous Dirichlet boundary conditions $-\Laplace_D$.  If $(\eigen{k})_{k \in \N}$ is the sequence of $L^2$-normalized eigenfunctions of $-\Laplace_D$ with corresponding eigenvalues $\lambda_k$ listed in non-decreasing order, define
 \[ \Lambda f := \sum_{k=0}^\infty \sqrt{\lambda_k} \chevron{f,\eigen{k}}_{L^2(\Omega)} \eigen{k}. \]
 The critical SQG problem on $\Omega$ with initial data $\theta_0 \in L^2(\Omega)$ is

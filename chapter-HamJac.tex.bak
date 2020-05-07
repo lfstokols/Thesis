@@ -97,7 +97,7 @@ $\circ$}\hbox{$#1$}} \baselineskip = 10pt\!}
 
 \section{Introduction}
 \index{Introduction}
-In this chapter, we will study $C^\gamma$ regularization of solutions to a Hamilton-Jacobi evolution equation with viscosity:
+In this chapter\footnote{The contents of this chapter are based on joint work of the author with Alexis Vasseur originally appearing in ``\bibentry{StVa.hamjac}.''  Both authors contributed equally to this work.}, we will study $C^\gamma$ regularization of solutions to a Hamilton-Jacobi evolution equation with viscosity:
 \[ \del_t u + H(x,u,\grad u) - \varepsilon \Laplace u = 0, \qquad (t,x)\in (0,T)\times\Omega, \]
 where $\Lambda > 0$, $\varepsilon \in [0,\Lambda]$, $\Omega \subseteq \R^n$, and the Hamiltonian has superquadratic growth in the gradient variable, uniform in $x$ and $t$:
 \[ \frac{1}{\Lambda} \abs{v}^p - f(x,t) \leq H(t,x,z,v) \leq \Lambda \abs{v}^p + \Lambda, \qquad p>2, f \in L^m, m > 1+ \frac{\max(n,2)}{p}.\]
@@ -129,7 +129,7 @@ Here $m^-$ is a function that returns the lowest eigenvalue of a symmetric matri
 
 Hamilton-Jacobi equations of this general form, with a viscosity term and polynomial growth in the gradient, were studied by Lasry and Lions \cite{LaLi.nonlinear} in 1989, in connection with stochastic control problems.  For the case $p < 2$, this first-order-term can be viewed as a perturbation of a simple heat equation, and indeed solutions will be regular so long as the viscosity term is uniformly parabolic.  However, in the superquadratic case $p > 2$, it is the first order term which dominates at small scales, so standard parabolic theory does not apply.  
 
-Schwab \cite{Sc} studied homogenization problems for Hamilton-Jacobi equations with superquadratic growth, which required him to prove that the regularity of solutions to these equations is independent of the regularity of the Hamiltonian.  His result still required, however, that the Hamiltonian be convex in $Du$.  It was Barles \cite{Ba.hamjac} and Dolcetta, Leoni, and Porretta \cite{DoLePo} who noticed that convexity was unnecessary in the time-independent case, and Cardaliaguet (\cite{Ca}, \cite{CaCa}, \cite{CaSi.hamjac}) for the time-dependent case.  
+Schwab \cite{Sc.hamjac} studied homogenization problems for Hamilton-Jacobi equations with superquadratic growth, which required him to prove that the regularity of solutions to these equations is independent of the regularity of the Hamiltonian.  His result still required, however, that the Hamiltonian be convex in $Du$.  It was Barles \cite{Ba.hamjac} and Dolcetta, Leoni, and Porretta \cite{DoLePo} who noticed that convexity was unnecessary in the time-independent case, and Cardaliaguet (\cite{Ca}, \cite{CaCa}, \cite{CaSi.hamjac}) for the time-dependent case.  
 
 In the case that $f$ is bounded, Cardaliaguet and Silvestre (\cite{CaSi.hamjac}, Theorem 1.2) showed H\"{o}lder continuity, using a second order term $m^+(D^2 u)$ instead of $\div(A \grad u)$ in \eqref{eq:mainPDEdist}.  In the case that $f$ is not assumed bounded, they could only show H\"{o}lder regularity with second order term $\trace(A D^2 u)$, $A \in C^1$.  Our result requires no regularity on $A$, at the expense of requiring that $\grad u \in L^p$ and $u$ solve Inequality~\eqref{eq:mainPDEdist} in the sense of distribution.  The motivation for considering $f$ unbounded is from Lasry and Lions \cite{LaLi.meanfield}.  
 

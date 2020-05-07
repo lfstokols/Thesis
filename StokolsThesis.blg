@@ -16,43 +16,43 @@ Warning--can't use both author and editor fields in Se
 Warning--empty year in StVa.higher
 You've used 109 entries,
             2543 wiz_defined-function locations,
-            1301 strings with 20921 characters,
-and the built_in function-call counts, 47738 in all, are:
-= -- 5113
+            1301 strings with 20941 characters,
+and the built_in function-call counts, 47266 in all, are:
+= -- 5043
 > -- 1860
-< -- 66
-+ -- 620
+< -- 64
++ -- 621
 - -- 603
-* -- 3343
-:= -- 7349
+* -- 3367
+:= -- 7333
 add.period$ -- 339
 call.type$ -- 109
 change.case$ -- 644
-chr.to.int$ -- 104
+chr.to.int$ -- 103
 cite$ -- 113
-duplicate$ -- 2066
-empty$ -- 3449
+duplicate$ -- 2000
+empty$ -- 3435
 format.name$ -- 747
-if$ -- 10069
-int.to.chr$ -- 6
+if$ -- 9909
+int.to.chr$ -- 7
 int.to.str$ -- 0
 missing$ -- 113
 newline$ -- 549
 num.names$ -- 327
-pop$ -- 480
+pop$ -- 474
 preamble$ -- 1
 purify$ -- 759
 quote$ -- 0
-skip$ -- 1946
+skip$ -- 1852
 stack$ -- 0
-substring$ -- 3402
-swap$ -- 590
-text.length$ -- 66
+substring$ -- 3400
+swap$ -- 524
+text.length$ -- 64
 text.prefix$ -- 36
 top$ -- 0
 type$ -- 848
 warning$ -- 4
-while$ -- 473
-width$ -- 114
+while$ -- 475
+width$ -- 113
 write$ -- 1430
 (There were 4 warnings)

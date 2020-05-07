@@ -125,7 +125,7 @@
 
 \section{Introduction}\label{sec:intro}
 
-We study in this chapter the family of nonlocal kinetic equations
+We study in this chapter\footnote{The contents of this chapter are based on work originally appearing in ``\bibentry{St.hypo}.''} the family of nonlocal kinetic equations
 \begin{gather} \label{eq:main.kinetic}
 \kinet f = \L f + a, \\
 \L f := \int K(t,x,v,w) [f(w)-f(v)] \, dw. \nonumber
@@ -192,7 +192,7 @@ is a weak solution to \eqref{eq:main.kinetic} subject to \eqref{eq:kappa_bound},
 \begin{sloppypar}
 Morover, for any $0 < \bar{T} < T$ and any compact set $\bar{\Omega} \subset \Omega$, there exists a constant $C = C(n,s,\kappa,\Omega,\bar{\Omega},T,\bar{T}) > 0$ independent of $f$ such that the following bound holds:
 %\end{sloppypar}
-\[ \norm{f}_{C^\alpha\paren{[\bar{T},T]\times\bar{\Omega}\times B_1}} \leq C \paren{\norm{f_0}_{L^\infty\paren{[0,T]\times\Omega\times \R^n}} + \norm{a}_{L^\sourceexp\paren{[0,T]\times\Omega\times \R^n}}}.  \]
+\[ \norm{f}_{C^\alpha\paren{[\bar{T},T]\times\bar{\Omega}\times B_1}} \leq C \paren{\norm{f}_{L^\infty\paren{[0,T]\times\Omega\times \R^n}} + \norm{a}_{L^\sourceexp\paren{[0,T]\times\Omega\times \R^n}}}.  \]
 \end{sloppypar}
 \end{theorem}
 

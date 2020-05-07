@@ -575,13 +575,13 @@ E.~Stein.
 \newblock Princeton Mathematical Series, No. 30. Princeton University Press,
   Princeton, N.J., 1970.
 
-\bibitem[{Sto}18]{St.hypo}
-L.~F. {Stokols}.
-\newblock Holder continuity for a family of nonlocal hypoelliptic kinetic
+\bibitem[Sto19a]{St.hypo}
+L.~F. Stokols.
+\newblock H\"{o}lder continuity for a family of nonlocal hypoelliptic kinetic
   equations.
-\newblock {\em arXiv e-prints}, page arXiv:1812.09006, Dec 2018.
+\newblock {\em SIAM J. Math. Anal.}, 51(6):4815--4847, 2019.
 
-\bibitem[Sto19]{St.shocks}
+\bibitem[Sto19b]{St.shocks}
 L.~F. Stokols.
 \newblock {$L^2$}-type contraction of viscous shocks for large family of scalar
   conservation laws.
@@ -605,11 +605,11 @@ L.~F. Stokols and A.~Vasseur.
   unbounded right-hand side.
 \newblock {\em Commun. Math. Sci.}, 16(6):1465--1487, 2018.
 
-\bibitem[SV19]{StVa.sqg}
-L.~F. Stokols and A.~Vasseur.
-\newblock Holder regularity up to the boundary for critical {SQG} on bounded
-  domains.
-\newblock {\em preprint}, page arXiv:1906.00251, 2019.
+\bibitem[SV20]{StVa.sqg}
+Logan~F. Stokols and Alexis~F. Vasseur.
+\newblock H\"{o}lder regularity up to the boundary for critical {SQG} on
+  bounded domains.
+\newblock {\em Arch. Ration. Mech. Anal.}, 236(3):1543--1591, 2020.
 
 \bibitem[Vas08]{Va.recent}
 Alexis~F. Vasseur.
